@@ -1,0 +1,197 @@
+h1 {
+  font-family: "Osaka";
+  font-size: 16pt;
+  color: #CC0000;
+  line-height: 22pt;
+  font-weight: bold;
+}
+
+h2 {
+  font-family: "Osaka";
+  font-size: 13pt;
+  color: #CC0000;
+  line-height: 22pt;
+  font-weight: bold;
+}
+
+.shadow23{
+  width: 600px;/*全体の幅*/
+  background-color: #76B97C;/*影の色*/
+  margin: 20px 10px 10px 20px;
+  padding-right: 20px;
+  }
+.text23{
+  width: 600px;/*全体の幅、shadowと同じに*/
+  font-size: 13pt;/*全体の文字サイズ*/
+  position: relative;
+  background: #FAFDFB;/*文字部分の背景色*/
+  margin: -10px -10px 10px -10px;
+  padding: 0.8em;/*内部の余白*/
+  border: solid 1px #66A966;
+  }
+.shadow23a{
+  width: 600px;/*全体の幅*/
+  background-color: #66A96C;/*影の色*/
+  margin: 20px 10px 10px 20px;
+  padding-right: 20px;
+  filter: alpha(opacity=20,finishopacity=100,style=1);
+  }
+.shadow23b{
+  width: 600px;/*全体の幅*/
+  background-color: #76B97C;/*影の色*/
+  margin: 20px 10px 10px 20px;
+  padding-right: 20px;
+  filter: blur(direction=305,strength=15)
+  }
+
+/* ■テーブルデザイン */
+
+.fx2 {
+	border-collapse: collapse;
+	border-top: 1px solid #666666;
+	border-left: 1px solid #666666;
+	width:650px;
+	margin: 0px 0px 10px 0px;
+	padding: 0;
+}
+
+.bl80 {
+	width:80px;
+	font-size: 13px;
+	padding: 2px;
+	color: #000000;
+	background-color: #99CCFF;
+	border-bottom: 1px solid #666666;
+	border-right: 1px solid #666666;
+	}
+
+.wh65 {
+	width:65px;
+	font-size: 13px;
+	padding: 2px;
+	color: #000000;
+	background-color: #FFFFFF;
+	border-bottom: 1px solid #666666;
+	border-right: 1px solid #666666;
+	}
+
+.bl120 {
+	width:120px;
+	font-size: 13px;
+	padding: 2px;
+	color: #000000;
+	background-color: #99CCFF;
+	border-bottom: 1px solid #666666;
+	border-right: 1px solid #666666;
+	}
+
+.wh120 {
+	width:120px;
+	font-size: 13px;
+	padding: 2px;
+	color: #000000;
+	background-color: #FFFFFF;
+	border-bottom: 1px solid #666666;
+	border-right: 1px solid #666666;
+	}
+
+.bl160 {
+	width:160px;
+	font-size: 13px;
+	padding: 2px;
+	color: #000000;
+	background-color: #99CCFF;
+	border-bottom: 1px solid #666666;
+	border-right: 1px solid #666666;
+	}
+
+.wh160 {
+	width:160px;
+	font-size: 13px;
+	padding: 2px;
+	color: #000000;
+	background-color: #FFFFFF;
+	border-bottom: 1px solid #666666;
+	border-right: 1px solid #666666;
+	}
+
+.bl300 {
+	width:200px;
+	font-size: 13px;
+	padding: 2px;
+	color: #000000;
+	background-color: #99CCFF;
+	border-bottom: 1px solid #666666;
+	border-right: 1px solid #666666;
+	}
+
+.wh300 {
+	width:200px;
+	font-size: 13px;
+	padding: 2px;
+	color: #000000;
+	background-color: #FFFFFF;
+	border-bottom: 1px solid #666666;
+	border-right: 1px solid #666666;
+	}
+
+.wh210 {
+	width:210px;
+	font-size: 13px;
+	padding: 2px;
+	color: #000000;
+	background-color: #FFFFFF;
+	border-bottom: 1px solid #666666;
+	border-right: 1px solid #666666;
+	}
+.wh200 {
+	width:200px;
+	font-size: 13px;
+	padding: 2px;
+	color: #000000;
+	background-color: #FFFFFF;
+	border-bottom: 1px solid #666666;
+	border-right: 1px solid #666666;
+	line-height: 13pt;
+	}
+
+.bl200 {
+	width:200px;
+	font-size: 13px;
+	padding: 2px;
+	color: #000000;
+	background-color: #99CCFF;
+	border-bottom: 1px solid #666666;
+	border-right: 1px solid #666666;
+	}
+
+.bl210 {
+	width:210px;
+	font-size: 13px;
+	padding: 2px;
+	color: #000000;
+	background-color: #99CCFF;
+	border-bottom: 1px solid #666666;
+	border-right: 1px solid #666666;
+	}
+
+.wh240 {
+	width:240px;
+	font-size: 13px;
+	padding: 2px;
+	color: #000000;
+	background-color: #FFFFFF;
+	border-bottom: 1px solid #666666;
+	border-right: 1px solid #666666;
+	line-height: 13pt;
+	}
+
+.bl230 {
+	width:230px;
+	font-size: 13px;
+	padding: 2px;
+	color: #000000;
+	background-color: #99CCFF;
+	border-bottom: 1px solid #666666;
+	border-right: 1px solid #666666;
+	}

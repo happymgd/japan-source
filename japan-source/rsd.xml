@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<rsd version="1.0" xmlns="http://archipelago.phrasewise.com/rsd">
+<service>
+<engineName>Movable Type 4.27-ja</engineName>
+<engineLink>http://www.sixapart.com/movabletype/</engineLink>
+<homePageLink>https://www.linuxmaster.jp/</homePageLink>
+<apis>
+<api name="MetaWeblog" preferred="true" apiLink="https://www.linuxmaster.jp/mt2/mt-xmlrpc.cgi" blogID="3" />
+<api name="MovableType" preferred="false" apiLink="https://www.linuxmaster.jp/mt2/mt-xmlrpc.cgi" blogID="3" />
+<api name="Blogger" preferred="false" apiLink="https://www.linuxmaster.jp/mt2/mt-xmlrpc.cgi" blogID="3" />
+<api name="Atom" preferred="false" apiLink="https://www.linuxmaster.jp/mt2/mt-atom.cgi/weblog" blogID="3" />
+</apis>
+</service>
+</rsd>

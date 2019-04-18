@@ -1,0 +1,739 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="ja">
+<head>
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-9286957635215255",
+          enable_page_level_ads: true
+     });
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, user-scalable=yes, maximum-scale=1.0, minimum-scale=1.0">
+<link rel="canonical" href="linux-4.html">
+
+
+
+
+
+
+<title>Linux､ﾎ･ﾝ｡ｼ･ﾈｾｷ､ﾎﾇｧ､ｹ､・lsof｡｢ss｡｢netstat｡｢nmap)｡ﾃLinux Tips</title>
+
+
+
+
+
+<meta name="description" content="Linux､ﾎ･ﾝ｡ｼ･ﾈｾｷ､ﾎﾇｧ､ｹ､・lsof｡｢ss｡｢netstat｡｢nmap) Linux､ﾎ･ﾝ｡ｼ･ﾈｾｷ､ﾎﾇｧ､ｹ､・lsof｡｢ss｡｢netstat｡｢nmap) linux､ﾎ･ﾝ｡ｼ･ﾈｳﾎﾇｧ､ﾋ､ﾏ｡｢lsof｡｢ss｡｢netstat｡｢nmapﾅ｢ﾍﾍ｡ｹ､ﾊ･ｳ･ﾞ･ﾉ､・ﾍﾑ､ｷ､ﾆｳﾎﾇｧ､ｹ､・ﾋ｡､ｬ､｢､熙ﾞ､ｹ｡｣ ､ｽ､ﾊlinux､ﾎ･ﾝ｡ｼ･ﾈｳﾎﾇｧﾊﾋ｡､・>
+
+
+
+<link rel="stylesheet" href="..\..\style.css" type="text/css" media="screen">
+<!--[if lt IE 9]>
+<script src="https://www.linuxmaster.jp/linux_skill/js/html5.js"></script>
+<script src="https://www.linuxmaster.jp/linux_skill/js/css3-mediaqueries.js"></script>
+<![endif]-->
+<script src="https://www.linuxmaster.jp/linux_skill/js/jquery1.7.2.min.js"></script>
+<script src="https://www.linuxmaster.jp/linux_skill/js/script.js"></script>
+<!--
+<script type="text/javascript" src="https://www.linuxmaster.jp/listcollector/script.js"></script>
+-->
+</head>
+<body>
+<header id="header" role="banner">
+	<div class="inner">
+		<hgroup>
+			
+			
+			
+
+			
+			
+			<h1>Linux､ﾎ･ﾝ｡ｼ･ﾈｾｷ､ﾎﾇｧ､ｹ､・lsof｡｢ss｡｢netstat｡｢nmap) Linux Tips</h1>
+			
+			
+
+			
+			
+			<h2>Linux､ﾎ･ﾝ｡ｼ･ﾈｾｷ､ﾎﾇｧ､ｹ､・lsof｡｢ss｡｢netstat｡｢nmap) Linux Tips､ﾈ､ｷ､ﾆｻﾈ､ｨ､・ﾂﾍﾑﾎ网筅ｷ､ﾆ､､､ﾞ､ｹ｡｣</h2>
+			
+			
+
+			<h2 class="logo"><a href="..\..\..\index.html" rel="home"><img src="..\..\..\images\top_image_title.gif" alt="Linuxｵｻｽﾑ ･・ﾊ･ﾃ･ｯ･ｹ･ﾞ･ｹ･ｿ｡ｼ.JP｡ﾊLinux･ﾞ･ｹ･ｿ｡ｼ.JP｡ﾋ"></a></h2>
+		</hgroup>
+		<div id="headerInfo">
+			| <a href="..\..\..\cat44\index.html">ｲﾒｳｵﾍﾗ</a>
+			| <a href="..\..\..\cat44\index-1.html#profile">ｱｿｱﾄｼﾔ･ﾗ･愠ﾕ･｣｡ｼ･・/a>
+			| <a href="..\..\..\2009\12\post-7.html">､隍ｯ､｢､・ﾁﾌ荀ﾋ､ﾄ､､､ﾆ</a>
+			| <a href="..\..\..\2009\12\post-6.html">､ｪﾌ荀､ｹ遉・ｻ</a> |
+		</div>
+	</div>
+</header>
+
+<nav id="mainNav">
+	<div class="inner">
+		<a class="menu" id="menu"><span>MENU</span></a>
+		<div class="panel">
+			<ul>
+				<li><a href="..\..\..\index.html"><span>･ﾈ･ﾃ･ﾗ･ﾚ｡ｼ･ｸ</span></a></li>
+				<li><a href="..\..\..\cat41\index.html"><span>ﾅｵ･､･ﾈ､ﾋ､ﾄ､､､ﾆ</span></a></li>
+				<li><a href="..\..\index.html"><span>Linuxｵｻｽﾑ</span></a>
+					<ul class="sub-menu">
+						<li><a href="..\..\010linux\index.html"><span>ﾆﾌ邏ﾃﾃﾎｼｱ</span></a></li>
+						<li><a href="..\..\01linuxcommand\index.html"><span>Linux･ｳ･ﾞ･ﾉ</span></a></li>
+						<li><a href="..\..\030linuxtips\index.html"><span>Linux Tips</span></a></li>
+						<li><a href="..\..\010linux\centos7\index.html"><span>CentOS7ﾆﾃｽｸ</span></a></li>
+					</ul>
+				</li>
+				<li><a href="..\..\..\2009\12\post-3.html"><span>ﾌｵﾎﾁｹﾖｺﾂ</span></a>
+					<ul class="sub-menu">
+						<li><a href="..\..\..\2011\01\linux.html"><span>ﾌｵﾎﾁ･ﾞ･ﾋ･螂｢･・/span></a></li>
+					</ul>
+				</li>
+				<li><a href="..\..\..\2009\12\post-4.html"><span>ﾍｭﾎﾁｹﾖｺﾂ</span></a>
+					<ul class="sub-menu">
+						<li><a href="..\..\..\kouza\index.html"><span>･ﾛ｡ｼ･爭ｹ･ｿ･ﾇ･｣ｹﾖｺﾂ</span></a></li>
+						<li><a href="..\..\..\2010\08\centos55.html"><span>･・ﾊ･ﾃ･ｯ･ｹ･ｻ･ﾟ･ﾊ｡ｼ</span></a></li>
+						<li><a href="..\..\..\cloud\index.html"><span>･ｯ･鬣ｦ･ﾉｹｽﾃﾛｹﾖｺﾂ</span></a></li>
+					</ul>
+				</li>
+				<li><a href="..\..\..\linux_blog\index.html"><span>･ｦ･ｧ･ﾖ･愠ｰ</span></a>
+					<ul class="sub-menu">
+						<li><a href="..\..\..\linux_blog\cat60\index.html"><span>Linux･ｻ･ﾟ･ﾊ｡ｼﾊ・/span></a></li>
+						<li><a href="..\..\..\linux_blog\linux-3\index.html"><span>ｵｻｽﾑ｡ｦ･ｻ･ｭ･螂・ﾆ･｣</span></a></li>
+						<li><a href="..\..\..\linux_blog\linux-1\index.html"><span>･ｨ･鬘ｼﾂﾐｽ靈｡</span></a></li>
+					</ul>
+				</li>
+				<li><a href="..\..\..\cat44\index.html"><span>ｲﾒｳｵﾍﾗ</span></a></li>
+			</ul>
+		</div>
+	</div>
+</nav>
+
+
+<div id="wrapper">
+	<div id="content">
+		
+		<section>
+		<article class="content">
+			
+			
+			<header><h2 class="title first"><span>Linux､ﾎ･ﾝ｡ｼ･ﾈｾｷ､ﾎﾇｧ､ｹ､・lsof｡｢ss｡｢netstat｡｢nmap)</span></h2></header>
+			
+			
+
+			<div class="post">
+				
+				
+				<div class="pan"><a href="..\..\..\index.html" title="home">｣ﾈ｣ﾏ｣ﾍ｣ﾅ</a> ｡・<a href="..\..\index.html" title="home">Linuxｵｻｽﾑ ･・ﾊ･ﾃ･ｯ･ｹ･ﾞ･ｹ･ｿ｡ｼ.JP｡ﾊLinux･ﾞ･ｹ･ｿ｡ｼ.JP｡ﾋ</a> ｡・<a href="..\..\030linuxtips\index.html">Linuxtips</a> ｡・<a href="..\..\030linuxtips\index.html">Linuxtips</a>, <a href="..\..\030linuxtips\080\index.html">･ﾍ･ﾃ･ﾈ･・ｼ･ｯ</a> ｡・Linux､ﾎ･ﾝ｡ｼ･ﾈｾｷ､ﾎﾇｧ､ｹ､・lsof｡｢ss｡｢netstat｡｢nmap)</div>
+				
+				
+
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ･・ﾊ･ﾃ･ｯ･ｹ･ﾞ･ｹ･ｿ｡ｼ･ｿ･､･ﾈ･・ｼ｡ﾊ･・ｯ･讌ﾋ･ﾃ･ﾈ｡ﾋ -->
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9286957635215255" data-ad-slot="9312021656" data-ad-format="link" data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+				<!--｢｣･ｻ･ﾟ･ﾊ｡ｼ｡ｦｹﾖｺﾂｹﾎ｢｣-->
+				<br>
+<b><font color="#dd0000">Linux･ｵ｡ｼ･ﾐ｡ｼｴﾉﾍｼﾔ､ﾎｵｻｽﾑ､ｲﾆ・ﾇｳﾘ､ﾙ､・ﾖｽ鯀ｴｼﾔｸ､ｱ･・ﾊ･ﾃ･ｯ･ｹ･ｻ･ﾟ･ﾊ｡ｼ｡ﾗ</font></b><br>
+ﾆﾈｳﾘ､ﾇ1ﾇｯｰﾊｾ蟲ﾝ､ｫ､・ﾗ･惕ﾎLinuxｵｻｽﾑ､｢､ｿ､ﾃ､ｿ2ﾆ・ﾖ､ﾇｽｬﾆﾀ､ﾇ､ｭ､ﾞ､ｹ｡｣<br>
+<img src="..\..\..\images\arrow2.gif"> <a href="..\..\..\2010\08\centos55.html" target="_blank">･・ﾊ･ﾃ･ｯ･ｹ･ﾞ･ｹ･ｿ｡ｼ｣ｲﾆ・ﾖｽｸﾃ讌ｻ･ﾟ･ﾊ｡ｼ｡ﾚCentOS7ﾈﾇ｡ﾛ</a><br>
+｡｡｡ﾊｺ｣､ｹ､ｰ｢ｬ､ｯ･・ﾃ･ｯ､ｷ､ﾆ､ｯ､ﾀ､ｵ､､｡｣｡ﾋ<br>
+<br>
+<!--
+<b><font color="#dd0000">Linux･ｵ｡ｼ･ﾐ｡ｼｴﾉﾍｼﾔ､ﾎｵｻｽﾑ､ｲﾆ・ﾇｳﾘ､ﾙ､・ﾖｽ鯀ｴｼﾔｸ､ｱ･・ﾊ･ﾃ･ｯ･ｹ･ｻ･ﾟ･ﾊ｡ｼ｡ﾗ</font></b><br>
+30ﾆ・ﾝ､ｫ､ﾃ､ﾆｳﾐ､ｨ､・ﾗ･惕ﾎｵｻｽﾑ､｢､ｿ､ﾃ､ｿ2ﾆ・ﾖ､ﾇｳﾘｽｬ､ﾇ､ｭ､ﾞ､ｹ｡｣<br>
+｡｡<b>｡ｦLinuxﾋﾜ､ﾇ､ﾏ､､､ﾄ､筵ｨ･鬘ｼ､ﾇﾀ隍ﾋｿﾊ､皃ﾊ､､｡｣</b><br>
+｡｡<b>｡ｦｾｭﾍ隍ﾎ､ｿ､皃ﾋ｡｢ﾃｻｴ・ﾖ､ﾇLinux･ｹ･ｭ･・ﾈ､ﾋﾉﾕ､ｱ､ｿ､､｡｣</b><br>
+｡｡<b>｡ｦｼ｡､ﾎｰﾆｷ・ｬLinux､ﾇ｡｢ﾁ盞ﾞ､ﾋ･ｹ･ｭ･・ﾈ､ﾋﾉﾕ､ｱ､ﾊ､ｱ､・ﾐ､ﾊ､鬢ﾊ､､｡｣</b><br>
+､ｽ､ﾊ､｢､ﾊ､ｿ､ﾋｺﾇﾅｬ､ﾊ･ｻ･ﾟ･ﾊ｡ｼ､ﾇ､ｹ｡｣<br>
+<img src="https://www.linuxmaster.jp/images/arrow2.gif"> <a href="https://www.linuxmaster.jp/2010/08/centos55.html" target="_blank">･・ﾊ･ﾃ･ｯ･ｹ･ﾞ･ｹ･ｿ｡ｼ｣ｲﾆ・ﾖｽｸﾃ讌ｻ･ﾟ･ﾊ｡ｼ｡ﾚCentOS7.0ﾈﾇ｡ﾛ</a><br>
+｡｡｡ﾊｺ｣､ｹ､ｰ｢ｬ､ｯ･・ﾃ･ｯ､ｷ､ﾆ､ｯ､ﾀ､ｵ､､｡｣｡ﾋ<br>
+<br>
+Linux･ｵ｡ｼ･ﾐ｡ｼｴﾉﾍｼﾔ､ﾎｵｻｽﾑ､ｿ､ﾃ､ｿ21ﾆ・ﾇｼｫﾂｬﾆﾀ､ﾇ､ｭ､・｣ｰ・ﾎｹﾖｺﾂ<br>
+<img src="https://www.linuxmaster.jp/images/arrow2.gif"> <a href="https://www.linuxmaster.jp/kouza/index.html" target="_blank">･・ﾊ･ﾃ･ｯ･ｹ･ﾞ･ｹ･ｿ｡ｼ｡ｦ･ﾛ｡ｼ･爭ｹ･ｿ･ﾇ･｣ｹﾖｺﾂ｡ﾚCentOS6.3ﾈﾇ｡ﾛ</a><br>
+<br>
+-->
+				<!--｢｣･ｻ･ﾟ･ﾊ｡ｼ｡ｦｹﾖｺﾂｹﾎ｢｣-->
+
+				<h2>Linux､ﾎ･ﾝ｡ｼ･ﾈｾｷ､ﾎﾇｧ､ｹ､・lsof｡｢ss｡｢netstat｡｢nmap)</h2>
+linux､ﾎ･ﾝ｡ｼ･ﾈｳﾎﾇｧ､ﾋ､ﾏ｡｢lsof｡｢ss｡｢netstat｡｢nmapﾅ｢ﾍﾍ｡ｹ､ﾊ･ｳ･ﾞ･ﾉ､・br>
+ﾍﾑ､ｷ､ﾆｳﾎﾇｧ､ｹ､・ﾋ｡､ｬ､｢､熙ﾞ､ｹ｡｣ ､ｽ､ﾊlinux､ﾎ･ﾝ｡ｼ･ﾈｳﾎﾇｧﾊﾋ｡､筅ｷ､ﾞ､ｹ｡｣<br>
+<br>
+<h2>･ﾝ｡ｼ･ﾈ､ﾈ､ﾏ｡ｩ</h2>
+､ｽ､筅ｽ､筵ﾝ｡ｼ･ﾈ､ﾈ､ﾏｲｿ､ﾇ､ｷ､遉ｦ､ｫ｡ｩ<br>
+<br>
+･ﾝ｡ｼ･ﾈ､ﾈ､ﾏ｡｢IP･｢･ﾉ･・ｹ､ﾈ､ﾋﾎ网ｨ､・ﾈ｡｢･ﾍ･ﾃ･ﾈ･・ｼ･ｯ､ﾈ･ｳ･ﾔ･蝪ｼ･ｿ､ﾔ､ｭﾍ隍ｹ､・ｿ､皃ﾎｽﾐﾆ､・､ﾋ､ﾊ､熙ﾞ､ｹ｡｣､ｳ､ﾎ･ﾝ｡ｼ･ﾈ､ﾑ､ｷ､ﾆ･ﾑ･ｱ･ﾃ･ﾈ､ｮ､ｹ､・ｳ､ﾈ､ﾇ･ｳ･ﾔ･蝪ｼ･ｿ､ﾏﾄﾌｿｮ､ﾔ､､､ﾞ､ｹ｡｣<br>
+<br>
+ｰ・ﾌﾅｪ､ﾋ｡｢Web･ｵ･､･ﾈ､ﾘ･｢･ｯ･ｻ･ｹ､ｹ､・ﾝ､ﾏ｡｢｡ﾖIP･｢･ﾉ･・ｹ｡ﾗ､ﾎ､ﾟ､ﾇﾀﾜﾂｳ､ｷ､ﾆ､､､・ﾈｻﾗ､・・ｬ､ﾁ､ﾇ､ｹ､ｬ｡｢ｼﾂ､ﾏ｡ﾖIP･｢･ﾉ･・ｹ+･ﾝ｡ｼ･ﾈﾈﾖｹ譯ﾗ､ﾇﾀﾜﾂｳ､ﾔ､ﾃ､ﾆ､､､ﾞ､ｹ｡｣<br>
+<br>
+･ﾍ･ﾃ･ﾈ･・ｼ･ｯｾ螟ﾎ､ﾉ､ﾎ･ｳ･ﾔ･蝪ｼ･ｿ､ﾋﾀﾜﾂｳ､ｹ､・ﾎ､ｫ､ﾖIP･｢･ﾉ･・ｹ｡ﾗ､ﾇｼｱﾊﾌ､ｷ｡｢､ｽ､ﾎ･ｳ･ﾔ･蝪ｼ･ｿｾ螟ﾇﾆｰ､､､ﾆ､､､・ﾉ､ﾎ･ﾗ･愠ｰ･鬣爨ﾋ･｢･ｯ･ｻ･ｹ､ｹ､・ﾎ､ｫ､ｱﾊﾌ､ｹ､・ﾎ､ﾋﾉｬﾍﾗ､ﾊ､ﾎ､ｬ｡ﾖ･ﾝ｡ｼ･ﾈﾈﾖｹ譯ﾗ､ﾋ､ﾊ､熙ﾞ､ｹ｡｣･ﾝ｡ｼ･ﾈﾈﾖｹ讀ﾏ16･ﾓ･ﾃ･ﾈﾀｰｿﾇ､｢､遙｢ 0ﾈﾖ｡ﾁ65535ﾈﾖ､ﾞ､ﾇ､｢､熙ﾞ､ｹ｡｣<br>
+<br>
+<h2>･ﾝ｡ｼ･ﾈ､ﾎｼ・・/h2>
+･ﾝ｡ｼ･ﾈ､ﾋ､ﾏ｡｢･ｦ･ｧ･・ﾎ･ｦ･ﾝ｡ｼ･ﾈ､ﾈ､､､ｦｵｬｳﾊ､ｬﾂｸｺﾟ､ｷ｡｢TCP(Transmission Control Protocol)､膓DP(User Datagram Protocol)､ﾇｻﾈﾍﾑ､ｹ､・ｭﾌｾ､ﾊ･ｵ｡ｼ･ﾓ･ｹ､茹ﾗ･愠ﾈ･ｳ･・ﾋ､ﾏ｡｢ｻｰ､ﾋ･ﾝ｡ｼ･ﾈﾈﾖｹ譯ﾊ0ﾈﾖ｡ﾁ1023ﾈﾖ｡ﾋ､ｬﾍｽﾌｵ､・ﾆ､､､ﾞ､ｹ｡｣<br>
+<br>
+ﾍｭﾌｾ､ﾊ･ﾝ｡ｼ･ﾈﾈﾖｹ讀ﾈ､ｷ､ﾆ､ﾏｲｼｵｭ､ｬ､｢､熙ﾞ､ｹ｡｣<br>
+<table class="table4">
+        <tr>
+          <td class="sb30">TCP 20</td>
+          <td class="s70">FTP (･ﾇ｡ｼ･ｿ)</td>
+        </tr>
+        <tr>
+          <td class="sb30">TCP 21</td>
+          <td class="s70">FTP (ﾀｩｸ・</td>
+        </tr>
+        <tr>
+          <td class="sb30">TCP 22</td>
+          <td class="s70">SSH</td>
+        </tr>
+        <tr>
+          <td class="sb30">TCP 23</td>
+          <td class="s70">Telnet</td>
+        </tr>
+        <tr>
+          <td class="sb30">TCP 25</td>
+          <td class="s70">SMTP</td>
+        </tr>
+        <tr>
+          <td class="sb30">UDP 53</td>
+          <td class="s70">DNS</td>
+        </tr>
+        <tr>
+          <td class="sb30">UDP 67</td>
+          <td class="s70">DHCP｡ﾊ･ｵ｡ｼ･ﾐ｡ﾋ</td>
+        </tr>
+        <tr>
+          <td class="sb30">UDP 68</td>
+          <td class="s70">DHCP｡ﾊ･ｯ･鬣､･｢･ﾈ｡ﾋ</td>
+        </tr>
+        <tr>
+          <td class="sb30">TCP 80</td>
+          <td class="s70">HTTP</td>
+        </tr>
+        <tr>
+          <td class="sb30">TCP 110</td>
+          <td class="s70">POP3</td>
+        </tr>
+        <tr>
+          <td class="sb30">UDP 123</td>
+          <td class="s70">NTP</td>
+        </tr>
+        <tr>
+          <td class="sb30">TCP 443</td>
+          <td class="s70">HTTPS</td>
+        </tr>
+</table><br>
+､ｿ､ﾀ､ｷ｡｢､ｳ､ﾎ･ｦ･ｧ･・ﾎ･ｦ･ﾝ｡ｼ･ﾈﾈﾖｹ讀ｽ､ﾎ､ﾞ､ﾞﾍﾑ､ｹ､・ﾈ｡｢･ｻ･ｭ･螂・ﾆ･｣ｾ蟷･､ﾞ､ｷ､ｯ､ﾊ､､ｾ・遉ﾏ｡｢ｴｺ､ｨ､ﾆﾇ､ｰﾕ､ﾎﾈﾖｹ讀ﾋﾊﾑｹｹ､ｷ､ﾆﾍﾑ､ｷ､ﾞ､ｹ｡｣ﾎ网ｨ､ﾐ｡｢･ﾝ｡ｼ･ﾈﾈﾖｹ・2､ﾎSSH､ﾊ､ﾉ､ﾏ｡｢･ﾇ･ﾕ･ｩ･・ﾈ､ﾇ､ﾏ､ﾊ､ｯﾂｾ､ﾎﾈﾖｹ讀ﾋﾊﾑｹｹ､ｷ､ﾆｱｿﾍﾑ､ｹ､・ｳ､ﾈ､ｬﾂｿ､､､ﾇ､ｹ｡｣<br>
+<br>
+<h2>･ﾗ･愠ｻ･ｹ､ｬｻﾈﾍﾑ､ｷ､ﾆ､､､・ﾝ｡ｼ･ﾈ､ﾎﾇｧ､ｹ､・ﾊlsof･ｳ･ﾞ･ﾉ｡ﾋ</h2>
+･ﾗ･愠ｻ･ｹ､ｬｻﾈﾍﾑ､ｷ､ﾆ､､､・ﾝ｡ｼ･ﾈ､ﾎﾇｧ､ｹ､・ﾋ､ﾏ｡ﾖlsof･ｳ･ﾞ･ﾉ｡ﾗ､ﾑ､ｷ､ﾞ､ｹ｡｣<br>
+Linux､ﾇ･ﾗ･愠ｻ･ｹ､ｬﾍﾑ､ｷ､ﾆ､､､・ﾝ｡ｼ･ﾈ､ﾎﾇｧ､ｹ､・ｳ､ﾈ､ﾏ｡｢ﾉﾔﾍﾗ･ﾗ･愠ｰ･鬣爨ｬｼﾂｹﾔ､ｵ､・ﾆ､ﾊ､､､ｫ｡｢ﾉﾔﾀｵ､ﾊ･ﾐ･ﾃ･ｯ･ﾉ･｢､ｬｻﾅｳﾝ､ｱ､鬢・ﾆ､ﾊ､､､ｫﾅｴ､ﾙ｡｢Linux､ﾎ･ｻ･ｭ･螂・ﾆ･｣ｾｷ､ﾎﾇｧ､ｹ､・螟ﾇﾈ・ﾋｽﾅﾍﾗ､ﾇ､ｹ｡｣<br>
+<br>
+lsof･ｳ･ﾞ･ﾉ､ﾏ｡｢Linux､ｬｻﾈﾍﾑ､ｷ､ﾆ､・ﾗ･愠ｻ･ｹﾌｾ､莨ﾂｹﾔ･譯ｼ･ｶﾌｾ､ｽｼｨ､ｹ､・ｳ､ﾈ､ｬ､ﾇ､ｭ､・ｳ･ﾞ･ﾉ､ﾋ､ﾊ､熙ﾞ､ｹ｡｣･ﾝ｡ｼ･ﾈ､ﾎﾍﾑｾﾎ､ﾟ､ﾎﾇｧ､ｷ､ｿ､､ｾ・遉ﾏ｡｢･ｪ･ﾗ･ｷ･逾ﾖ-i｡ﾗ､ﾕ､ｱ､ﾆｼﾂｹﾔ､ｷ､ﾞ､ｹ｡｣<br>
+<br>
+､ﾞ､ｿ｡｢lsof･ｳ･ﾞ･ﾉ､ﾇﾉｽｼｨ､ﾇ､ｭ､・ﾎ､ﾏ｡｢･ｳ･ﾞ･ﾉ､ﾂｹﾔ､ｹ､・譯ｼ･ｶ｡ｼ､ﾋﾂﾐ､ｷ､ﾆ｡｢ﾆﾉ､ﾟｼ隍・｢ｸﾂ､ｬﾀﾟﾄ熙ｵ､・・ﾕ･｡･､･・ﾋｸﾂ､熙ﾞ､ｹ｡｣､ﾄ､ﾞ､遙｢･ﾝ｡ｼ･ﾈ､ﾊ､ﾉ､ﾎﾍﾑｾｹ､ﾙ､ﾆ､ﾎﾇｧ､ｹ､・ｿ､皃ﾋ､ﾏ｡｢root･譯ｼ･ｶ｡ｼ､ﾇlsof･ｳ･ﾞ･ﾉ､ﾂｹﾔ､ｷ､ﾊ､ｱ､・ﾐ､ﾊ､熙ﾞ､ｻ､｣<br>
+<br>
+<strong>｢｣･ﾗ･愠ｻ･ｹ､ｬｻﾈﾍﾑ､ｷ､ﾆ､､､・ﾝ｡ｼ･ﾈ､ﾎﾇｧ､ｹ､・/strong><br>
+･ﾗ･愠ｻ･ｹ､ｬｻﾈﾍﾑ､ｷ､ﾆ､､､・ﾝ｡ｼ･ﾈ､・ｽｼｨ､ｹ､・ﾋ､ﾏ｡｢lsof･ｳ･ﾞ･ﾉ､ﾋ･ｪ･ﾗ･ｷ･逾ﾖ-i｡ﾗ､ﾕ､ｱ､ﾆｼﾂｹﾔ､ｷ､ﾞ､ｹ｡｣<br>
+<div style="border:solid 1px #006699;background-color:#000000;color:#FFFFFF;font-size:13px;padding:10px;"><pre>
+<p># <strong>lsof -i</strong><br>COMMAND     PID     USER   FD   TYPE DEVICE SIZE/OFF NODE NAME<br>proftpd     683   nobody    0u  IPv4  15203      0t0  TCP *:ftp (LISTEN)<br>chronyd     685   chrony    1u  IPv4  15207      0t0  UDP localhost:323<br>chronyd     685   chrony    2u  IPv6  15208      0t0  UDP localhost:323<br>php-fpm     925     root    6u  IPv4  19066      0t0  TCP localhost:cslistener (LISTEN)<br>sshd        934     root    3u  IPv4  19972      0t0  TCP *:EtherNet/IP-1 (LISTEN)<br>postgres    949 postgres    3u  IPv6  19990      0t0  TCP localhost:postgres (LISTEN)<br>postgres    949 postgres    4u  IPv4  19991      0t0  TCP localhost:postgres (LISTEN)<br>postgres    949 postgres    8u  IPv6  20026      0t0  UDP localhost:48654->localhost:48654</p>
+</pre></div>
+<br>
+
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ･・ﾊ･ﾃ･ｯ･ｹ･ﾞ･ｹ･ｿ｡ｼｵｭｻ・-->
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9286957635215255" data-ad-slot="1505560112" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+				<strong>｢｣lsof･ｳ･ﾞ･ﾉｼﾂｹﾔｷ・ﾌ､ﾎｳﾆｹ猯ﾜﾀ篶ﾀ</strong>
+<table class="table4">
+        <tr>
+          <td class="sb30">COMMAND</td>
+          <td class="s70">ｼﾂｹﾔ･ﾗ･愠ｰ･鬣・/td>
+        </tr>
+        <tr>
+          <td class="sb30">PID</td>
+          <td class="s70">･ﾗ･愠ｻ･ｹﾈﾖｹ・/td>
+        </tr>
+        <tr>
+          <td class="sb30">USER</td>
+          <td class="s70">ｼﾂｹﾔ･譯ｼ･ｶ｡ｼ</td>
+        </tr>
+        <tr>
+          <td class="sb30">NODE</td>
+          <td class="s70">･ﾗ･愠ﾈ･ｳ･・/td>
+        </tr>
+        <tr>
+          <td class="sb30">NAME</td>
+          <td class="s70">･ﾝ｡ｼ･ﾈ</td>
+        </tr>
+        <tr>
+          <td class="sb30">(LISTEN)</td>
+          <td class="s70">ﾂﾔ､ﾁｼｱｾﾖ</td>
+        </tr>
+</table>
+<br>
+<strong>｢｣ﾆﾃﾄ熙ﾎ･ﾝ｡ｼ･ﾈﾈﾖｹ讀ｫ､鮟ﾈﾍﾑ､ｷ､ﾆ､､､・ﾗ･愠ｻ･ｹ､ｽｼｨ､ｹ､・/strong><br>
+ﾆﾃﾄ熙ﾎ･ﾝ｡ｼ･ﾈﾈﾖｹ讀ﾈﾍﾑ､ｷ､ﾆ､､､・ﾗ･愠ｻ･ｹ､ﾎﾇｧ､ｹ､・ﾋ､ﾏ｡｢lsof･ｳ･ﾞ･ﾉ､ﾋ･ｪ･ﾗ･ｷ･逾ﾖ-i｡ﾗ､ﾕ､ｱ｡ﾖ:｡ﾗ｡ﾊ･ｳ･愠ﾋ､ﾇｶ霏ﾚ､ﾃ､ﾆﾆﾃﾄ熙ﾎ･ﾝ｡ｼ･ﾈﾈﾖｹ讀ﾘﾄ熙ｷ､ﾆｼﾂｹﾔ､ｷ､ﾞ､ｹ｡｣<br>
+ｲｼｵｭ､ﾎﾎ网ﾇ､ﾏ｡｢･ﾝ｡ｼ･ﾈ80ﾈﾖ､ｬNginx､ﾋﾍﾑ､ｵ､・ﾆ､､､・ｳ､ﾈ､ｬﾊｬ､ｫ､熙ﾞ､ｹ｡｣
+<div style="border:solid 1px #006699;background-color:#000000;color:#FFFFFF;font-size:13px;padding:10px;"><pre>
+<p># <strong>lsof -i:80</strong><br>COMMAND   PID  USER   FD   TYPE DEVICE SIZE/OFF NODE NAME<br>nginx   26810  root   12u  IPv4 206674      0t0  TCP *:http (LISTEN)<br>nginx   26811 nginx   12u  IPv4 206674      0t0  TCP *:http (LISTEN)</p>
+</pre></div>
+<br>
+ｲｼｵｭﾎ网ﾇ､ﾏ｡｢･ﾝ｡ｼ･ﾈ3306ﾈﾖ､ｬMySQL､ﾋﾍﾑ､ｵ､・ﾆ､､､・ｳ､ﾈ､ｬﾊｬ､ｫ､熙ﾞ､ｹ｡｣<br>
+<div style="border:solid 1px #006699;background-color:#000000;color:#FFFFFF;font-size:13px;padding:10px;"><pre>
+<p># <strong>lsof -i:3306</strong><br>COMMAND  PID  USER   FD   TYPE DEVICE SIZE/OFF NODE NAME<br>mysqld  1473 mysql   17u  IPv6  22561      0t0  TCP *:mysql (LISTEN)</p>
+</pre></div>
+｢ｨ､ｳ､・鬢ﾎｷ・ﾌ､ﾏ･ｵ｡ｼ･ﾐ｡ｼｴﾄｶｭ､ﾋ､隍ﾃ､ﾆｰﾛ､ﾊ､熙ﾞ､ｹ｡｣<br>
+｢ｨｾ蠏ｭ､ﾈﾆｱ､ｸｷ・ﾌ､ﾀ､・ﾋ､ﾏNginx｡｢MySQL､ｬLinux､ﾋ･､･ｹ･ﾈ｡ｼ･・ｵ､・ﾆ､､､・ｬﾍﾗ､ｬ､｢､熙ﾞ､ｹ｡｣<br>
+<br>
+<h2>Linux､ﾇﾀﾜﾂｳﾂﾔ､ﾁ､ｷ､ﾆ､､､・ﾝ｡ｼ･ﾈ､ﾎﾇｧ､ｹ､・ss･ｳ･ﾞ･ﾉ)</h2>
+Linux､ﾇﾀﾜﾂｳﾂﾔ､ﾁ､ｷ､ﾆ､､､・ﾝ｡ｼ･ﾈ､ﾎﾇｧ､ｹ､・ﾋ､ﾏ｡｢<br>
+ss･ｳ･ﾞ･ﾉ｡｢､ﾞ､ｿ､ﾏnetstat･ｳ･ﾞ･ﾉ､ﾑ､ｷ､ﾞ､ｹ｡｣<br>
+<span style="color:#FF0A0A"><span class="ylw"><></span></span><br>
+｢ｨnetstat･ｳ･ﾞ･ﾉ､ﾎｳﾎﾇｧﾊﾋ｡､ﾏ｡｢ﾋﾜ･ﾚ｡ｼ･ｸ､ﾎｼ｡ｾﾏ､ｲｾﾈ､ｷ､ﾆ､ｯ､ﾀ､ｵ､､｡｣<br>
+<br>
+<strong>｢｣ss･ｳ･ﾞ･ﾉ､ﾎ･ｪ･ﾗ･ｷ･逾・/strong>
+<table class="table4">
+        <tr>
+          <td class="sb30">-a</td>
+          <td class="s70">ﾁｴ､ﾆ､ﾎ･ｽ･ｱ･ﾃ･ﾈ､ｽｼｨ</td>
+        </tr>
+        <tr>
+          <td class="sb30">-n</td>
+          <td class="s70">･ｵ｡ｼ･ﾓ･ｹﾌｾ､ﾋﾊﾑｴｹ､ｻ､ｺ､ﾋﾉｽｼｨ</td>
+        </tr>
+        <tr>
+          <td class="sb30">-t</td>
+          <td class="s70">TCPｾﾎ､ﾟﾉｽｼｨ</td>
+        </tr>
+        <tr>
+          <td class="sb30">-u</td>
+          <td class="s70">UDPｾﾎ､ﾟﾉｽｼｨ</td>
+        </tr>
+</table>
+<br>
+<strong>｢｣ss･ｳ･ﾞ･ﾉ､ﾇﾀﾜﾂｳﾂﾔ､ﾁ､ｷ､ﾆ､､､・ﾝ｡ｼ･ﾈ､ﾎﾇｧ､ｹ､・/strong><br>
+<b>｡ｦTCP･ﾝ｡ｼ･ﾈ､ﾎ､ﾟ､ｽｼｨ､ｹ､・/b><br>
+ss･ｳ･ﾞ･ﾉ､ﾋ･ｪ･ﾗ･ｷ･逾ﾖ-atn｡ﾗ､ﾕ､ｱ､ﾆｼﾂｹﾔ､ｷ､ﾞ､ｹ｡｣<br>
+<div style="border:solid 1px #006699;background-color:#000000;color:#FFFFFF;font-size:13px;padding:10px;"><pre>
+<p># <strong>ss -atn</strong><br>State      Recv-Q Send-Q     Local Address:Port                    Peer Address:Port<br>LISTEN     0      100                    *:993                                *:*<br>LISTEN     0      100                    *:995                                *:*<br>LISTEN     0      128            127.0.0.1:10024                              *:*<br>LISTEN     0      128            127.0.0.1:9000                               *:*<br>LISTEN     0      100            127.0.0.1:10025                              *:*<br>LISTEN     0      100                    *:587                                *:*<br>LISTEN     0      100                    *:110                                *:*<br>LISTEN     0      128            127.0.0.1:783                                *:*<br>LISTEN     0      100                    *:143                                *:*<br>LISTEN     0      128                    *:80                                 *:*<br>LISTEN     0      128                    *:21                                 *:*<br>LISTEN     0      128            127.0.0.1:5432                               *:*<br>LISTEN     0      100                    *:25                                 *:*<br>LISTEN     0      128                    *:443                                *:*</p>
+</pre></div>
+<br>
+<strong>｡ｦUDP･ﾝ｡ｼ･ﾈ､ﾎ､ﾟ､ｽｼｨ､ｹ､・/strong><br>
+ss･ｳ･ﾞ･ﾉ､ﾋ･ｪ･ﾗ･ｷ･逾ﾖ-anu｡ﾗ､ﾕ､ｱ､ﾆｼﾂｹﾔ､ｷ､ﾞ､ｹ｡｣<br>
+<div style="border:solid 1px #006699;background-color:#000000;color:#FFFFFF;font-size:13px;padding:10px;"><pre>
+<p># <strong>ss -anu</strong><br>State      Recv-Q Send-Q     Local Address:Port                    Peer Address:Port<br>UNCONN     0      0              127.0.0.1:323                                *:*<br>UNCONN     0      0                    ::1:323                               :::*<br>ESTAB      0      0                    ::1:48654                            ::1:48654</p>
+</pre></div>
+<br>
+<strong>｡ｦTCP｡｢UDP･ﾝ｡ｼ･ﾈﾎｾﾊﾉｽｼｨ､ｹ､・/strong><br>
+ss･ｳ･ﾞ･ﾉ､ﾋ･ｪ･ﾗ･ｷ･逾ﾖ-atnu｡ﾗ､ﾕ､ｱ､ﾆｼﾂｹﾔ､ｷ､ﾞ､ｹ｡｣<br>
+<div style="border:solid 1px #006699;background-color:#000000;color:#FFFFFF;font-size:13px;padding:10px;"><pre>
+<p># <strong>ss -atnu</strong><br>Netid  State      Recv-Q Send-Q  Local Address:Port                 Peer Address:Port<br>udp    UNCONN     0      0           127.0.0.1:323                             *:*<br>udp    UNCONN     0      0                 ::1:323                            :::*<br>udp    ESTAB      0      0                 ::1:48654                         ::1:48654<br>tcp    LISTEN     0      100                 *:993                             *:*<br>tcp    LISTEN     0      100                 *:995                             *:*<br>tcp    LISTEN     0      128         127.0.0.1:10024                           *:*<br>tcp    LISTEN     0      128         127.0.0.1:9000                            *:*<br>tcp    LISTEN     0      100         127.0.0.1:10025                           *:*<br>tcp    LISTEN     0      100                 *:587                             *:*<br>tcp    LISTEN     0      100                 *:110                             *:*<br>tcp    LISTEN     0      128         127.0.0.1:783                             *:*<br>tcp    LISTEN     0      100                 *:143                             *:*<br>tcp    LISTEN     0      128                 *:80                              *:*<br>tcp    LISTEN     0      128                 *:21                              *:*<br>tcp    LISTEN     0      128         127.0.0.1:5432                            *:*<br>tcp    LISTEN     0      100                 *:25                              *:*<br>tcp    LISTEN     0      128                 *:443                             *:*</p>
+</pre></div>
+<br>
+<strong>｡ｦﾄﾌｿｮ､ｬｳﾎﾎｩ､ｷ､ﾆ､､､・ﾝ｡ｼ･ﾈ､ｽｼｨ､ｹ､・/strong><br>
+ss･ｳ･ﾞ･ﾉ､ﾋ･ｪ･ﾗ･ｷ･逾ﾖ-t｡ﾗ､ﾕ､ｱ､ﾆｼﾂｹﾔ､ｷ､ﾞ､ｹ｡｣<br>
+<div style="border:solid 1px #006699;background-color:#000000;color:#FFFFFF;font-size:13px;padding:10px;"><pre>
+<p># <strong>ss -t</strong><br>State      Recv-Q Send-Q   Local Address:Port                    Peer Address:Port<br>FIN-WAIT-2 0      0       150.95.XXX.XXX:https                 174.97.215.128:11774<br>ESTAB      0      0       150.95.XXX.XXX:https                   66.249.79.64:45943<br>ESTAB      0      0       150.95.XXX.XXX:http                    66.249.79.69:61550<br>ESTAB      0      96      150.95.XXX.XXX:EtherNet/IP-1         221.XXX.XXX.XXX:vrtl-vmf-ds<br>ESTAB      0      0       150.95.XXX.XXX:https                   66.249.79.69:60933<br>ESTAB      0      0       150.95.XXX.XXX:EtherNet/IP-1         221.XXX.XXX.XXX:gilatskysurfer<br>ESTAB      0      0       150.95.XXX.XXX:https                   66.249.79.67:51637<br>ESTAB      0      0       150.95.XXX.XXX:EtherNet/IP-1         221.XXX.XXX.XXX:61865</p>
+</pre></div>
+｢ｨ150.95.XXX.XXX｡｢221.XXX.XXX.XXX､ﾋ､ﾏLinux､ﾎIP･｢･ﾉ･・ｹ､ｬﾉｽｼｨ､ｵ､・ﾞ､ｹ｡｣<br>
+<br>
+<strong>｢｣ss･ｳ･ﾞ･ﾉｼﾂｹﾔｷ・ﾌ､ﾎｳﾆｹ猯ﾜﾀ篶ﾀ</strong>
+<table class="table4">
+        <tr>
+          <td class="sb30">Netid</td>
+          <td class="s70">	
+Socket､ﾎ･ｿ･､･ﾗ<br>
+u_str｡ｧUNIX Domain･ｽ･ｱ･ﾃ･ﾈ<br>
+tcp｡｡｡ｧTCP･ｽ･ｱ･ﾃ･ﾈ<br>
+udp｡｡｡ｧUDP･ｽ･ｱ･ﾃ･ﾈ<br>
+</td>
+        </tr>
+        <tr>
+          <td class="sb30">State</td>
+          <td class="s70">ﾄﾌｿｮ､ﾎｾﾖ</td>
+        </tr>
+        <tr>
+          <td class="sb30">Recv-Q</td>
+          <td class="s70">ｼｮ･ｭ･蝪ｼ､ﾎｿ・/td>
+        </tr>
+        <tr>
+          <td class="sb30">Send-Q</td>
+          <td class="s70">ﾁｮ･ｭ･蝪ｼ､ﾎｿ・/td>
+        </tr>
+        <tr>
+          <td class="sb30">Local Address:Port</td>
+          <td class="s70">･ｵ｡ｼ･ﾐ｡ｼﾂｦ､ﾎIPﾋﾏ･ｽ･ｱ･ﾃ･ﾈ･ﾕ･｡･､･・｢･ﾝ｡ｼ･ﾈ､ｽｼｨ</td>
+        </tr>
+        <tr>
+          <td class="sb30">Peer Address:Port</td>
+          <td class="s70">ﾄﾌｿｮ､ｷ､ﾆ､､､・ｦ､ﾎIPﾋﾏ･ｽ･ｱ･ﾃ･ﾈ･ﾕ･｡･､･・｢･ﾝ｡ｼ･ﾈ､ｽｼｨ</td>
+        </tr>
+</table><br>
+<br>
+<h2>Linux､ﾇﾀﾜﾂｳﾂﾔ､ﾁ､ｷ､ﾆ､､､・ﾝ｡ｼ･ﾈ､ﾎﾇｧ､ｹ､・netstat･ｳ･ﾞ･ﾉ)</h2>
+ﾁｰ､ﾎｾﾏ､ﾇ､篩ｨ､・ﾞ､ｷ､ｿ､ｬ｡｢CentOS7､ｫ､鬢ﾏ｡｢Linux､ﾇﾀﾜﾂｳﾂﾔ､ﾁ､ｷ､ﾆ､､､・ﾝ｡ｼ･ﾈ､・br>
+ｳﾎﾇｧ､ｹ､・ﾋ､ﾏ｡｢<br>netstat･ｳ･ﾞ･ﾉ､隍熙龝s･ｳ･ﾞ･ﾉ､ﾑ､ｹ､・ｳ､ﾈ､ｬｿ萓ｩ､ｵ､・ﾆ､､､ﾞ､ｹ｡｣<br>
+<br>
+､ｷ､ｫ､ｷ｡｢<br>
+<span class="ylw"><span style="color:#FF0A0A"><strong>ss･ｳ･ﾞ･ﾉ､ﾎｰ・ﾎ･ﾐ｡ｼ･ｸ･逾ﾇ､ﾏ｡｢TCP､ﾈUDP､ｱｻ､ﾋﾉｽｼｨ､ｵ､ｻ､ｿｾ・遑｢<br>UDP･ﾝ｡ｼ･ﾈ､ｬTCP･ﾝ｡ｼ･ﾈ､ﾈ､ｷ､ﾆﾉｽｼｨ､ｵ､・ﾆ､ｷ､ﾞ､ｦｴ鈊ﾎ､ﾎ･ﾐ･ｰ､ｬﾂｸｺﾟ､ｷ､ﾞ､ｹ｡｣</strong></span></span><br>
+<br>
+､ｽ､ﾎ､隍ｦ､ﾊｴﾄｶｭ､ﾇ､ﾏss･ｳ･ﾞ･ﾉ､ﾏﾍﾑ､ｻ､ｺ｡｢netstat･ｳ･ﾞ･ﾉ､ﾑ､ｹ､・ｳ､ﾈ､ｬｿ萓ｩ､ｵ､・ﾞ､ｹ｡｣<br>
+<br>
+<strong>｢｣netstat･ｳ･ﾞ･ﾉ､ﾎ･ｪ･ﾗ･ｷ･逾・/strong>
+<table class="table4">
+        <tr>
+          <td class="sb30">-a</td>
+          <td class="s70">ﾁｴ､ﾆ､ﾎ･ｽ･ｱ･ﾃ･ﾈ､ｽｼｨ</td>
+        </tr>
+        <tr>
+          <td class="sb30">-n</td>
+          <td class="s70">･ｵ｡ｼ･ﾓ･ｹﾌｾ､ﾋﾊﾑｴｹ､ｻ､ｺ､ﾋﾉｽｼｨ</td>
+        </tr>
+        <tr>
+          <td class="sb30">-t</td>
+          <td class="s70">TCPｾﾎ､ﾟﾉｽｼｨ</td>
+        </tr>
+        <tr>
+          <td class="sb30">-u</td>
+          <td class="s70">UDPｾﾎ､ﾟﾉｽｼｨ</td>
+        </tr>
+</table>
+<br>
+<strong>｢｣netstat･ｳ･ﾞ･ﾉ､ﾇﾀﾜﾂｳﾂﾔ､ﾁ､ｷ､ﾆ､､､・ﾝ｡ｼ･ﾈ､ﾎﾇｧ､ｹ､・/strong><br>
+<strong>｡ｦTCP･ﾝ｡ｼ･ﾈ､ﾎ､ﾟ､ｽｼｨ､ｹ､・/strong><br>
+netstat･ｳ･ﾞ･ﾉ､ﾋ･ｪ･ﾗ･ｷ･逾ﾖ-atn｡ﾗ､ﾕ､ｱ､ﾆｼﾂｹﾔ､ｷ､ﾞ､ｹ｡｣<br>
+<div style="border:solid 1px #006699;background-color:#000000;color:#FFFFFF;font-size:13px;padding:10px;"><pre>
+<p># <strong>netstat -atn</strong><br>Active Internet connections (servers and established)<br>Proto Recv-Q Send-Q Local Address           Foreign Address         State<br>tcp        0      0 0.0.0.0:993             0.0.0.0:*               LISTEN<br>tcp        0      0 0.0.0.0:995             0.0.0.0:*               LISTEN<br>tcp        0      0 127.0.0.1:10024         0.0.0.0:*               LISTEN<br>tcp        0      0 127.0.0.1:9000          0.0.0.0:*               LISTEN<br>tcp        0      0 127.0.0.1:10025         0.0.0.0:*               LISTEN<br>tcp        0      0 0.0.0.0:587             0.0.0.0:*               LISTEN<br>tcp        0      0 0.0.0.0:110             0.0.0.0:*               LISTEN<br>tcp        0      0 127.0.0.1:783           0.0.0.0:*               LISTEN<br>tcp        0      0 0.0.0.0:143             0.0.0.0:*               LISTEN<br>tcp        0      0 0.0.0.0:80              0.0.0.0:*               LISTEN<br>tcp        0      0 0.0.0.0:21              0.0.0.0:*               LISTEN<br>tcp        0      0 127.0.0.1:5432          0.0.0.0:*               LISTEN<br>tcp        0      0 0.0.0.0:25              0.0.0.0:*               LISTEN<br>tcp        0      0 0.0.0.0:443             0.0.0.0:*               LISTEN</p>
+</pre></div>
+<br>
+<strong>｡ｦUDP･ﾝ｡ｼ･ﾈ､ﾎ､ﾟ､ｽｼｨ､ｹ､・/strong><br>
+netstat･ｳ･ﾞ･ﾉ､ﾋ･ｪ･ﾗ･ｷ･逾ﾖ-anu｡ﾗ､ﾕ､ｱ､ﾆｼﾂｹﾔ､ｷ､ﾞ､ｹ｡｣<p>
+<div style="border:solid 1px #006699;background-color:#000000;color:#FFFFFF;font-size:13px;padding:10px;"><pre>
+<p># <strong>netstat -anu</strong><br>Active Internet connections (servers and established)<br>Proto Recv-Q Send-Q Local Address           Foreign Address         State<br>udp        0      0 127.0.0.1:323           0.0.0.0:*<br>udp6       0      0 ::1:323                 :::*<br>udp6       0      0 ::1:48654               ::1:48654               ESTABLISHED</p>
+</pre></div>
+<br>
+<strong>｡ｦTCP｡｢UDP･ﾝ｡ｼ･ﾈﾎｾﾊﾉｽｼｨ､ｹ､・/strong><br>
+netstat･ｳ･ﾞ･ﾉ､ﾋ･ｪ･ﾗ･ｷ･逾ﾖ-atnu｡ﾗ､ﾕ､ｱ､ﾆｼﾂｹﾔ､ｷ､ﾞ､ｹ｡｣</p>
+<div style="border:solid 1px #006699;background-color:#000000;color:#FFFFFF;font-size:13px;padding:10px;"><pre>
+<p># <strong>netstat -atnu</strong><br>Active Internet connections (servers and established)<br>Proto Recv-Q Send-Q Local Address           Foreign Address         State<br>tcp        0      0 0.0.0.0:993             0.0.0.0:*               LISTEN<br>tcp        0      0 0.0.0.0:995             0.0.0.0:*               LISTEN<br>tcp        0      0 127.0.0.1:10024         0.0.0.0:*               LISTEN<br>tcp        0      0 127.0.0.1:9000          0.0.0.0:*               LISTEN<br>tcp        0      0 127.0.0.1:10025         0.0.0.0:*               LISTEN<br>tcp        0      0 0.0.0.0:587             0.0.0.0:*               LISTEN<br>tcp        0      0 0.0.0.0:110             0.0.0.0:*               LISTEN<br>tcp        0      0 127.0.0.1:783           0.0.0.0:*               LISTEN<br>tcp        0      0 0.0.0.0:143             0.0.0.0:*               LISTEN<br>tcp        0      0 0.0.0.0:80              0.0.0.0:*               LISTEN<br>tcp        0      0 0.0.0.0:21              0.0.0.0:*               LISTEN<br>tcp        0      0 127.0.0.1:5432          0.0.0.0:*               LISTEN<br>tcp        0      0 0.0.0.0:25              0.0.0.0:*               LISTEN<br>tcp        0      0 0.0.0.0:443             0.0.0.0:*               LISTEN<br>tcp        0      0 127.0.0.1:9000          127.0.0.1:48142         TIME_WAIT<br>｡ﾁﾃ賽ｬ｡ﾁ<br>udp        0      0 127.0.0.1:323           0.0.0.0:*<br>udp6       0      0 ::1:323                 :::*<br>udp6       0      0 ::1:48654               ::1:48654               ESTABLISHED</p>
+</pre></div>
+<br>
+<strong>｡ｦﾄﾌｿｮ､ｬｳﾎﾎｩ､ｷ､ﾆ､､､・ﾝ｡ｼ･ﾈ､ｽｼｨ､ｹ､・/strong><br>
+ss･ｳ･ﾞ･ﾉ､ﾋ･ｪ･ﾗ･ｷ･逾ﾖ-t｡ﾗ､ﾕ､ｱ､ﾆｼﾂｹﾔ､ｷ､ﾞ､ｹ｡｣<br>
+<div style="border:solid 1px #006699;background-color:#000000;color:#FFFFFF;font-size:13px;padding:10px;"><pre>
+<p># <strong>netstat -t</strong><br>Active Internet connections (w/o servers)<br>Proto Recv-Q Send-Q Local Address           Foreign Address         State<br>tcp        0      0 localhost:cslistener    localhost:48232         TIME_WAIT<br>tcp        0      0 localhost:cslistener    localhost:48222         TIME_WAIT<br>tcp        0     96 v150-95-1:EtherNet/IP-1 221x254x141:vrtl-vmf-ds ESTABLISHED<br>tcp        0      0 v150-95-XXX-XXX.a:https cpe-174-97-215-12:12582 ESTABLISHED<br>tcp        0      0 localhost:cslistener    localhost:48226         TIME_WAIT<br>tcp        0      0 localhost:cslistener    localhost:48224         TIME_WAIT<br>tcp        0      0 v150-95-XXX-XXX.a0:http crawl-66-249-79-8:41706 ESTABLISHED<br>tcp        0      0 v150-95-XXX-XXX.a:https crawl-66-249-79-6:60933 TIME_WAIT<br>tcp        0      0 v150-95-XXX-XXX.a:https crawl-66-249-79-6:63493 ESTABLISHED<br>tcp        0      0 v150-95-1:EtherNet/IP-1 221x254x:gilatskysurfer ESTABLISHED<br>tcp        0      0 v150-95-XXX-XXX.a:https crawl-66-249-79-7:50643 TIME_WAIT<br>tcp        0      0 v150-95-XXX-XXX.a:https crawl-66-249-79-6:56649 ESTABLISHED<br>tcp        0      0 localhost:48234         localhost:cslistener    ESTABLISHED<br>tcp        0      0 v150-95-1:EtherNet/IP-1 221x254xXXXxXX.ap:61865 ESTABLISHED<br>tcp        0      0 localhost:cslistener    localhost:48230         TIME_WAIT</p>
+</pre></div>
+<br>
+｢ｨ150-95-XXX-XXX.､ﾋ､ﾏLinux､ﾎIP･｢･ﾉ･・ｹ､ｬﾉｽｼｨ､ｵ､・ﾞ､ｹ｡｣<br>
+<br>
+
+<strong>｢｣netstat･ｳ･ﾞ･ﾉｼﾂｹﾔｷ・ﾌ､ﾎｳﾆｹ猯ﾜﾀ篶ﾀ</strong>
+<table class="table4">
+        <tr>
+          <td class="sb30">Proto</td>
+          <td class="s70">	
+Socket､ﾎ･ｿ･､･ﾗ<br>
+u_str｡ｧUNIX Domain･ｽ･ｱ･ﾃ･ﾈ<br>
+tcp｡｡｡ｧTCP･ｽ･ｱ･ﾃ･ﾈ<br>
+udp｡｡｡ｧUDP･ｽ･ｱ･ﾃ･ﾈ<br>
+</td>
+        </tr>
+        <tr>
+          <td class="sb30">Recv-Q</td>
+          <td class="s70">ｼｮ･ｭ･蝪ｼ､ﾎｿ・/td>
+        </tr>
+        <tr>
+          <td class="sb30">Send-Q</td>
+          <td class="s70">ﾁｮ･ｭ･蝪ｼ､ﾎｿ・/td>
+        </tr>
+        <tr>
+          <td class="sb30">Local Address</td>
+          <td class="s70">･ｵ｡ｼ･ﾐ｡ｼﾂｦ､ﾎIPﾋﾏ･ｽ･ｱ･ﾃ･ﾈ･ﾕ･｡･､･・｢･ﾝ｡ｼ･ﾈ､ｽｼｨ</td>
+        </tr>
+        <tr>
+          <td class="sb30">Foreign Address</td>
+          <td class="s70">ﾄﾌｿｮ､ｷ､ﾆ､､､・ｦ､ﾎIPﾋﾏ･ｽ･ｱ･ﾃ･ﾈ･ﾕ･｡･､･・｢･ﾝ｡ｼ･ﾈ､ｽｼｨ</td>
+        </tr>
+        <tr>
+          <td class="sb30">State</td>
+          <td class="s70">ﾄﾌｿｮ､ﾎｾﾖ</td>
+        </tr>
+</table>
+<br>
+<h2>ｳｰﾉｫ､鬣ﾝ｡ｼ･ﾈ､ｬ､ﾉ､ﾎ･ﾝ｡ｼ･ﾈ､ｬｳｫ､､､ﾆ､､､・ｫｳﾎﾇｧ､ｹ､・nmap･ｳ･ﾞ･ﾉ)</h2>
+､ｳ､・ﾞ､ﾇ､ﾏ｡｢Linux･ｷ･ｹ･ﾆ･猗筅ﾇ･ﾝ｡ｼ･ﾈ､ﾎﾇｧ､ｹ､・ﾋ｡､ﾒｲｷ､ﾆ､ｭ､ﾞ､ｷ､ｿ､ｬ｡｢<br>
+ﾋﾜｾﾏ､ﾇ､ﾏLinux､ﾋ･愠ｰ･､･ｻ､ｺ｡｢ｳｰﾉｫ､鬢ﾉ､ﾎ･ﾝ｡ｼ･ﾈ､ｬｳｫ､､､ﾆ､､､・ｫｳﾎﾇｧ､ｹ､・ﾋ｡､ﾒｲｷ､ﾞ､ｹ｡｣<br>
+<br>
+
+<span class="ylw"><span style="color:#FF0A0A"><strong><<ｽﾅﾍﾗ>></ｽﾅﾍﾗ></strong></span></span><br>
+<span class="ylw">ﾋﾜｾﾏ､ﾇｾﾒｲｹ､・・遉ﾏ｡｢ｼｫﾊｬ､ｬｴﾉﾍ､ｷ､ﾆ､､､・｡ｴ・ﾋﾂﾐ､ｷ､ﾆ､ﾎ､ﾟｹﾔ､ﾃ､ﾆ､ｯ､ﾀ､ｵ､､｡｣</span><br><span class="ylw">ﾂｾｿﾍ､萃ｾﾁﾈｿ･､ｬｴﾉﾍ､ｷ､ﾆ､､､・｡ｴ・ﾋｹﾔ､ﾃ､ｿｾ・遑｢･ﾏ･ﾃ･ｭ･ｰｹﾔｰﾙ､ﾈｸｫ､ﾊ､ｵ､・ﾞ､ｹ｡｣</span><br><span class="ylw">ｼ隍・ｷ､､､ﾋ､ﾏｽｼﾊｬ､ﾋﾃ擎ﾕ､ｷ､ﾆ､ｯ､ﾀ､ｵ､､｡｣</span><br>
+<br>
+ｳｰﾉｫ､鬢ﾉ､ﾎ･ﾝ｡ｼ･ﾈ､ｬｶ､､ﾆ､､､・ｫ､ﾎﾇｧ､ｹ､・ﾋ､ﾏ｡｢<br>
+Linuxｴﾄｶｭ､ﾇ､ﾏnmap･ｳ･ﾞ･ﾉ､ﾈﾍﾑ､ｷ､ｿ･ﾝ｡ｼ･ﾈ･ｹ･ｭ･罕ﾂｻﾜ､ｷ､ﾞ､ｹ｡｣<br>
+<br>
+<strong>｢｣nmap･ｳ･ﾞ･ﾉ:ｳｰﾉｫ､鬣ﾝ｡ｼ･ﾈ､ｬ､ﾉ､ﾎ･ﾝ｡ｼ･ﾈ､ｬｳｫ､､､ﾆ､､､・ｫｳﾎﾇｧ､ｹ､・/strong><br>
+<div style="border:solid 1px #006699;background-color:#000000;color:#FFFFFF;font-size:13px;padding:10px;"><pre>
+<p># <strong>nmap 150.XXX.XXX.XXX</strong><br>Starting Nmap 6.40 ( http://nmap.org ) at 2018-05-23 03:57 JST<br>Nmap scan report for v150-XXX-XXX-XXX.a088.g.XXX.XXXX.XXX.io (150.XXX.XXX.XXX)<br>Host is up (0.00068s latency).<br>Not shown: 992 filtered ports<br>PORT     STATE  SERVICE<br>20/tcp   closed ftp-data<br>21/tcp   open   ftp<br>25/tcp   open   smtp<br>53/tcp   closed domain<br>80/tcp   open   http<br>110/tcp  open   pop3<br>443/tcp  open   https</p>
+</pre></div>
+｢ｨﾎ网ﾇ､ﾏ｡｢IP･｢･ﾉ･・ｹ､ﾘﾄ熙ｷ､ﾆ､､､ﾞ､ｹ､ｬ｡｢ﾉ妤ｻｻ妤ﾋ､ｷ､ﾆ､､､ﾞ､ｹ｡｣<br>
+nmap､ﾂｹﾔ､ｹ､・ﾈ｡｢･ﾝ｡ｼ･ﾈ･ｹ･ｭ･罕ｷ､ｿﾂﾐｾﾝ､ﾎ･ｵ｡ｼ･ﾐ｡ｼ､ﾎ<br>
+､ﾉ､ﾎ･ﾝ｡ｼ･ﾈ､ｬｳｫ､､､ﾆ､､､・ｫｰ・ｽｼｨ､ｵ､・ﾞ､ｹ｡｣<br>
+<br>
+<strong>｢｣ｳｰﾉｫ､鬣ﾝ｡ｼ･ﾈ･ｹ･ｭ･罕ｬ､ｬｹﾔ､ｨ､ﾊ､､ｾ・遉ﾎｳﾎﾇｧ･ﾝ･､･ﾈ</strong><br>
+Linux､ｬｵｯﾆｰ､ｷ､ﾆ､､､ﾆ｡｢･ﾍ･ﾃ･ﾈ･・ｼ･ｯ､ﾋ､簑ﾜﾂｳｽﾐﾍ隍ﾆ､､､・ﾖ､ﾇ｡｢<br>
+ｳｰﾉｫ､鬣ﾝ｡ｼ･ﾈ･ｹ･ｭ･罕ｬｹﾔ､ｨ､ﾊ､､ｾ・遉ﾏ｡｢ｰﾊｲｼ､ﾎﾅﾀ､ﾋ､ﾄ､､､ﾆｳﾎﾇｧ､ｷ､ﾆ､ﾟ､ﾆ､ｯ､ﾀ､ｵ､､｡｣<br>
+<br>
+<strong>｡ｦ･ﾝ｡ｼ･ﾈ･ｹ･ｭ･罕ﾐｾﾝ､ﾎｵ｡ｴ・ﾇ･ﾕ･｡･､･｢･ｦ･ｩ｡ｼ･・ｬﾍｭｸ妤ﾋ､ﾊ､ﾃ､ﾆ､､､ﾞ､ｻ､ｫ｡ｩ<br>｡ﾊiptables｡｢firewalldﾅﾋ</strong><br>
+<strong>｡ｦ･・ｼ･ｿ｡ｼ､ﾎ･ﾝ｡ｼ･ﾈ､ﾏｳｫ､､､ﾆ､､､ﾞ､ｹ､ｫ｡ｩ</strong><br><strong>｡ｦ･ﾕ･｡･､･｢･ｦ･ｩ｡ｼ･・｡ｴ・ﾎ･ﾝ｡ｼ･ﾈ､ﾏｳｫ､､､ﾆ､､､ﾞ､ｹ､ｫ｡ｩ</strong><br>
+<strong>｡ｦ･ﾝ｡ｼ･ﾈ･ｹ･ｭ･罕ﾐｺｽ･ﾕ･ﾈ､ｬﾆｳﾆ､ｵ､・ﾆ､､､ﾞ､ｻ､ｫ｡ｩ</strong>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ZinKGDwweRI" frameborder="0" allowfullscreen=""></iframe>
+<br>
+ﾋﾜ･ﾚ｡ｼ･ｸ､ﾎｲ筅ｰｲ隍ﾇ､ｴﾍｺ､ｱ､ﾞ､ｹ｡｣<br>
+ｹ･ﾉｾ､ﾊ､鮗｣ｸ螟簇ｰｲ隘｢･ﾃ･ﾗ､ｷ､ﾞ､ｹ､ﾎ､ﾇ､隍惕ｷ､ｯ､ｪ､ﾍ､ｬ､､､ｷ､ﾞ､ｹ｡｣
+
+
+				<!--｢｣ﾌｵﾎﾁ･ﾞ･ﾋ･螂｢･・ｼ-->
+				<center>･ｹ･ﾝ･ｵ｡ｼ･ﾉ･・ｯ</center><br>
+<p style="display: inline"><script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ･・ﾊ･ﾃ･ｯ･ｹ･ﾞ･ｹ･ｿ｡ｼｵｭｻｼ･・ｯ･ｿ･ｰ･・-->
+<ins class="adsbygoogle" style="display:inline-block;width:300px;height:250px" data-ad-client="ca-pub-9286957635215255" data-ad-slot="6310330085"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ･・ﾊ･ﾃ･ｯ･ｹ･ﾞ･ｹ･ｿ｡ｼｵｭｻｼ･・ｯ･ｿ･ｰ･・-->
+<ins class="adsbygoogle" style="display:inline-block;width:300px;height:250px" data-ad-client="ca-pub-9286957635215255" data-ad-slot="6310330085"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</p>
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ･・ﾊ･ﾃ･ｯ･ｹ･ﾞ･ｹ･ｿ｡ｼｵｭｻｼ･・ｯ･讌ﾋ･ﾃ･ﾈ -->
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9286957635215255" data-ad-slot="4526475120" data-ad-format="link" data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br>
+<strong>｢｣CentOS7.4･ｵ｡ｼ･ﾐ｡ｼｹｽﾃﾛ･ﾞ･ﾋ･螂｢･・ｵﾎﾁ･ﾗ･・ｼ･ﾈ</strong><br>
+ｲｼｵｭ｣ｳｺ､ﾎ･ﾞ･ﾋ･螂｢･・ｵﾎﾁ･ﾗ･・ｼ･ﾈ､ｷ､ﾆ､､､ﾞ､ｹ｡｣<br>
+<b>｡ｦCentOS7.4･ｵ｡ｼ･ﾐ｡ｼｹｽﾃﾛ･ﾞ･ﾋ･螂｢･・ﾊ105･ﾚ｡ｼ･ｸ｡ﾋ<br>
+｡ｦVMware Player､ﾇｺ釥・ｾﾁﾛLinuxｴﾄｶｭｹｽﾃﾛ･ﾞ･ﾋ･螂｢･・ﾊ40･ﾚ｡ｼ･ｸ｡ﾋ<br>
+｡ｦ･ﾇ｡ｼ･ｿ･ﾙ｡ｼ･ｹ(PostgreSQL｡ｦMySQL)ｹｽﾃﾛ｡ｦCentOS･ﾐ｡ｼ･ｸ･逾｢･ﾃ･ﾗ･ﾞ･ﾋ･螂｢･・ﾊ33･ﾚ｡ｼ･ｸ｡ﾋ</b><br>
+｢ｨｾ・ﾋｺﾇｿｷ､ﾎCentOS､ｬｻﾈﾍﾑ､ﾇ､ｭ､ﾞ､ｹ｡｣<br>
+ｾﾜ､ｷ､ｯ､ﾏ｢ｭ､ﾎ･ﾚ｡ｼ･ｸ､ﾇﾀ篶ﾀ､ｷ､ﾆ､､､ﾞ､ｹ｡｣ｺ｣､ｹ､ｰ･ｯ･・ﾃ･ｯ､ｷ､ﾆ､ｯ､ﾀ､ｵ､､｡｣<br>
+｡｡<a href="..\..\..\2011\01\linux.html"><img alt="ﾌｵﾎﾁ･ﾞ･ﾋ･螂｢･・ﾀ･ｦ･悅ｼ･ﾉ､ｹ､・ src="..\..\..\images\free_manual_icon.gif"></a>
+
+｡｡<a href="..\..\..\kouza\index.html"><img alt="ﾌｵﾎﾁ･ﾞ･ﾋ･螂｢･・ﾀ･ｦ･悅ｼ･ﾉ､ｹ､・ src="..\..\..\images\home_study_icon.gif"></a>
+
+<br><br><br>
+
+				<!--｢｣ﾌｵﾎﾁ･ﾞ･ﾋ･螂｢･・ｪﾎｻ-->
+			</div>
+		</article>
+		</section>
+</div><!-- / content -->
+
+	<aside id="sidebar">
+		<div id="banners">
+			<p class="banner">
+				<a href="..\..\index.html"><img src="..\..\..\images\banners\banner_s1.jpeg" alt="Linuxｵｻｽﾑ"></a>
+			</p>
+			<p class="banner">
+				<a href="..\..\..\2009\12\post-3.html"><img src="..\..\..\images\banners\banner_s2.jpeg" alt="Linuxﾌｵﾎﾁｹﾖｺﾂ"></a>
+			</p>
+			<p class="banner">
+				<a href="..\..\..\2009\12\post-4.html"><img src="..\..\..\images\banners\banner_s3.jpeg" alt="Linuxﾍｭﾎﾁｹﾖｺﾂ"></a>
+			</p>
+		</div>
+			<ul>
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ･・ﾊ･ﾃ･ｯ･ｹ･ﾞ･ｹ･ｿ｡ｼ･ｵ･､･ﾉ･ﾐ｡ｼ･・ｯ･讌ﾋ･ﾃ･ﾈ -->
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9286957635215255" data-ad-slot="3959422934" data-ad-format="link" data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			</ul>
+		<div class="newsTitle">
+			<h3 class="title"><span>Menu</span></h3>
+		</div>
+		<div class="news">
+			<p><a href="..\..\..\index.html"><span>･ﾈ･ﾃ･ﾗ･ﾚ｡ｼ･ｸ</span></a>
+			<p><a href="..\..\index.html"><span>Linuxｵｻｽﾑ</span></a>
+			<p><a href="..\..\010linux\index.html"><span>Linux､ﾎﾆﾌ邏ﾃﾃﾎｼｱ</span></a>
+			<p><a href="..\..\010linux\centos7\index.html"><span>CentOS7</span></a>
+			<p><a href="..\..\01linuxcommand\index.html"><span>Linux･ｳ･ﾞ･ﾉ</span></a>
+			<p><a href="..\..\030linuxtips\index.html"><span>Linux tips</span></a>
+			<p><a href="..\..\2006\01\centos54linux.html"><span>Linux･ｵ｡ｼ･ﾐ｡ｼｹｽﾃﾛ</span></a>
+			<p><a href="..\..\050linux\index.html"><span>Linuxﾍﾑｸ・/span></a>
+			<p><a href="..\..\..\2009\12\post-3.html"><span>Linuxﾌｵﾎﾁｹﾖｺﾂ</span></a>
+			<p><a href="..\..\..\2009\12\post-4.html"><span>Linuxﾍｭﾎﾁｹﾖｺﾂ</span></a>
+			<p><a href="..\..\..\2010\08\centos55.html"><span>Linux･ｻ･ﾟ･ﾊ｡ｼ</span></a>
+			<p><a href="..\..\..\kouza\index.html"><span>Linuxｹﾖｺﾂ</span></a>
+			<p><a href="..\..\..\linux_blog\index.html"><span>ｸｰ･ﾖ･愠ｰ</span></a>
+			<p><a href="..\..\..\linux_blog\cat60\index.html"><span>Linux･ｻ･ﾟ･ﾊ｡ｼﾊ・/span></a>
+			<p><a href="http://www.enetmercury.com" target="_blank"><span>Linux･ｵ｡ｼ･ﾐ｡ｼｹｽﾃﾛｱｿﾍﾑｴﾉﾍ</span></a>
+			<p><a href="https://www.facebook.com/miyazakiandFriends2" target="_blank"><span>Facebookｸｰ･ﾚ｡ｼ･ｸ</span></a>
+			<p><a href="https://www.facebook.com/miyazakiandFriends" target="_blank"><span>ｴﾉﾍｿﾍ､ﾎFacebook･ﾚ｡ｼ･ｸ</span></a>
+		</div>
+		<div class="newsTitle">
+			<h3 class="title"><span>･ｵ･､･ﾈﾆ篋｡ｺ・</span></h3>
+		</div>
+			<ul>
+			<form action="https://www.google.co.jp/cse" id="cse-search-box" target="_blank" accept-charset="UTF-8">
+				<div>
+					<input type="hidden" name="cx" value="partner-pub-9286957635215255:8808115079">
+					<input type="hidden" name="oe" value="EUC-JP">
+					<input type="text" name="q" size="30">
+					<input type="submit" name="sa" value="ｸ｡ｺ・">
+				</div>
+			</form>
+			<script type="text/javascript" src="https://www.google.co.jp/coop/cse/brand?form=cse-search-box&amp;lang=ja"></script>
+			</ul>
+		<div class="newsTitle">
+			<h3 class="title"><span>Linuxｴﾃ</span></h3>
+		</div>
+		<div class="news">
+			<p><a href="..\..\010linux\index.html"><span>Linux､ﾎｴﾃﾃﾎｼｱ</span></a>
+		</div>
+
+		<div class="newsTitle">
+			<h3 class="title"><span>Linux･ｳ･ﾞ･ﾉ</span></h3>
+		</div>
+		<div class="news">
+			<p><a href="..\..\01linuxcommand\index.html"><span>Linux･ｳ･ﾞ･ﾉ</span></a>
+			<p><a href="..\..\01linuxcommand\cat3\index.html"><span>･ﾕ･｡･､･・ｦ･ﾇ･｣･・ｯ･ﾈ･・ﾉﾍ･ｳ･ﾞ･ﾉ</span></a>
+			<p><a href="..\..\01linuxcommand\cat7\index.html"><span>･譯ｼ･ｶ｡ｦ･ｰ･・ｼ･ﾗｴﾉﾍ･ｳ･ﾞ･ﾉ</span></a>
+			<p><a href="..\..\01linuxcommand\cat9\index.html"><span>･ﾆ･ｭ･ｹ･ﾈｽ靉･ｳ･ﾞ･ﾉ</span></a>
+			<p><a href="..\..\01linuxcommand\cat10\index.html"><span>･ﾍ･ﾃ･ﾈ･・ｼ･ｯｴﾉﾍ･ｳ･ﾞ･ﾉ</span></a>
+			<p><a href="..\..\01linuxcommand\cat11\index.html"><span>･ｷ･ｹ･ﾆ･犇ﾉﾍ･ｳ･ﾞ･ﾉ</span></a>
+			<p><a href="..\..\01linuxcommand\cat12\index.html"><span>･ﾗ･愠ｻ･ｹｴﾉﾍ･ｳ･ﾞ･ﾉ</span></a>
+			<p><a href="..\..\01linuxcommand\cat13\index.html"><span>ｰｵｽﾌ｡ｦｲ爍ｦ･｢｡ｼ･ｫ･､･ﾖｴﾉﾍ･ｳ･ﾞ･ﾉ</span></a>
+			<p><a href="..\..\01linuxcommand\cat14\index.html"><span>･ﾑ･ﾃ･ｱ｡ｼ･ｸｴﾉﾍ･ｳ･ﾞ･ﾉ</span></a>
+			<p><a href="..\..\01linuxcommand\linuxa-e\index.html"><span>Linux･ｳ･ﾞ･ﾉA-E</span></a>
+			<p><a href="..\..\01linuxcommand\linuxf-j\index.html"><span>Linux･ｳ･ﾞ･ﾉF-J</span></a>
+			<p><a href="..\..\01linuxcommand\linuxk-o\index.html"><span>Linux･ｳ･ﾞ･ﾉK-O</span></a>
+			<p><a href="..\..\01linuxcommand\linuxp-t\index.html"><span>Linux･ｳ･ﾞ･ﾉP-T</span></a>
+			<p><a href="..\..\01linuxcommand\linuxu-z\index.html"><span>Linux･ｳ･ﾞ･ﾉU-Z</span></a>
+		</div>
+
+		<div class="newsTitle">
+			<h3 class="title"><span>Linux Tips</span></h3>
+		</div>
+		<div class="news">
+			<p><a href="..\..\030linuxtips\index.html"><span>Linux tips</span></a>
+			<p><a href="..\..\030linuxtips\110\index.html"><span>･､･ｹ･ﾈ｡ｼ･・/span></a>
+			<p><a href="..\..\030linuxtips\010\index.html"><span>ｵｯﾆｰ</span></a>
+			<p><a href="..\..\030linuxtips\020\index.html"><span>･譯ｼ･ｶ｡ｼｴﾉﾍ</span></a>
+			<p><a href="..\..\030linuxtips\030\index.html"><span>･ﾇ･｣･・ｯ･ﾈ･遙ｦ･ﾕ･｡･､･・犲・/span></a>
+			<p><a href="..\..\030linuxtips\040\index.html"><span>･ﾇ･｣･ｹ･ｯﾁ犲・/span></a>
+			<p><a href="..\..\030linuxtips\130\index.html"><span>･ﾇ･ﾐ･､･ｹｴﾉﾍ</span></a>
+			<p><a href="..\..\030linuxtips\050\index.html"><span>･ﾆ･ｭ･ｹ･ﾈｽ靉</span></a>
+			<p><a href="..\..\030linuxtips\060\index.html"><span>･ｷ･ｹ･ﾆ･犇ﾉﾍ</span></a>
+			<p><a href="..\..\030linuxtips\070rpm\index.html"><span>RPM</span></a>
+			<p><a href="..\..\030linuxtips\080\index.html"><span>･ﾍ･ﾃ･ﾈ･・ｼ･ｯ</span></a>
+			<p><a href="..\..\030linuxtips\090\index.html"><span>･ｻ･ｭ･螂・ﾆ･｣</span></a>
+			<p><a href="..\..\030linuxtips\100\index.html"><span>･ｵ｡ｼ･ﾐ｡ｼｴﾉﾍ</span></a>
+			<p><a href="..\..\030linuxtips\120\index.html"><span>･愠ｰｴﾉﾍ</span></a>
+			<p><a href="..\..\030linuxtips\web\index.html"><span>Web･ｵ｡ｼ･ﾐ｡ｼｴﾉﾍ</span></a>
+			<p><a href="..\..\030linuxtips\cat68\index.html"><span>･ﾇ｡ｼ･ｿ｡ｼ･ﾙ｡ｼ･ｹｴﾉﾍ</span></a>
+		</div>
+
+		<div class="newsTitle">
+			<h3 class="title"><span>Linux･ｵ｡ｼ･ﾐ｡ｼｹｽﾃﾛ</span></h3>
+		</div>
+		<div class="news">
+			<p><a href="..\..\2010\03\vmware-player-3.html"><span>VMware Player 3､ﾎ･ﾀ･ｦ･悅ｼ･ﾉ､ﾈ･､･ｹ･ﾈ｡ｼ･・/span></a>
+			<p><a href="..\..\2010\03\vmware-player-3-1.html"><span>VMware Player 3､ﾎｻﾈ､､ﾊ</span></a>
+			<p><a href="..\..\040linux\020centos54\index.html"><span>CentOS5.4､ﾇ･ｵ｡ｼ･ﾐ｡ｼｹｽﾃﾛ</span></a>
+		</div>
+
+		<div class="newsTitle">
+			<h3 class="title"><span>Linuxﾍﾑｸ・/span></h3>
+		</div>
+		<div class="news">
+			<p><a href="..\..\050linux\linuxworda-e\index.html"><span>linuxwordA-E</span></a>
+			<p><a href="..\..\050linux\linuxwordf-j\index.html"><span>linuxwordF-J</span></a>
+			<p><a href="..\..\050linux\linuxwordk-o\index.html"><span>linuxwordK-O</span></a>
+		</div>
+
+		<div class="newsTitle">
+			<h3 class="title"><span>Linux･ﾖ･愠ｰ</span></h3>
+		</div>
+		<div class="news">
+			<p><a href="..\..\..\linux_blog\index.html"><span>Linux･ﾖ･愠ｰ</span></a>
+			<p><a href="..\..\..\linux_blog\cat53\index.html"><span>､ｪﾃﾎ､鬢ｻ</span></a>
+			<p><a href="..\..\..\linux_blog\linux-3\index.html"><span>Linuxｾｦｵｻｽﾑ</span></a>
+			<p><a href="..\..\..\linux_blog\linux-1\index.html"><span>Linux･ｨ･鬘ｼﾂﾐｽ靈｡</span></a>
+			<p><a href="..\..\..\linux_blog\cat60\index.html"><span>Linux･ｻ･ﾟ･ﾊ｡ｼﾊ・/span></a>
+			<p><a href="..\..\..\linux_blog\linux\index.html"><span>Linuxﾆ・ｭ</span></a>
+			<p><a href="..\..\..\linux_blog\cat52\index.html"><span>ﾆ・・ﾎﾆ・ｭ</span></a>
+		</div>
+
+		<div class="newsTitle">
+			<h3 class="title"><span>Linux､ﾎｼﾁﾌ・/span></h3>
+		</div>
+		<div class="news">
+			<p><a href="..\..\..\linux_blog\linux-2\index.html"><span>Linux､ﾎｼﾁﾌ・/span></a>
+			<p><a href="..\..\..\linux_blog\linux-2\linux-4\index.html"><span>Linuxﾁｴﾈﾌ</span></a>
+			<p><a href="..\..\..\linux_blog\linux-2\10\index.html"><span>･､･ｹ･ﾈ｡ｼ･・ﾘﾏ｢</span></a>
+			<p><a href="..\..\..\linux_blog\linux-2\cat57\index.html"><span>･ﾍ･ﾃ･ﾈ･・ｼ･ｯｴﾘﾏ｢</span></a>
+			<p><a href="..\..\..\linux_blog\linux-2\vmware-player\index.html"><span>VMware Playerｴﾘﾏ｢</span></a>
+			<p><a href="..\..\..\linux_blog\linux-2\cat58\index.html"><span>､ｽ､ﾎﾂｾ</span></a>
+		</div>
+
+		<div class="newsTitle">
+			<h3 class="title"><span>Linux･ｹ･ｭ･・｢･ﾃ･ﾗ</span></h3>
+		</div>
+		<div class="news">
+			<p><a href="..\..\..\kouza\index.html"><span>Linuxｹﾖｺﾂ</span></a>
+			<p><a href="..\..\..\2010\08\centos55.html"><span>Linux･ｻ･ﾟ･ﾊ｡ｼ</span></a>
+		</div>
+
+		<div class="newsTitle">
+			<h3 class="title"><span>RSSﾅﾐﾏｿ</span></h3>
+		</div>
+			<p>atom:<a href="..\..\..\atom.xml"><img src="..\..\..\images\atom_xml.jpeg"></a>
+			<p>RSS:<a href="..\..\..\index.xml"><img src="..\..\..\images\rss.png"></a>
+		</aside></div>
+		
+	
+
+<!-- / wrapper -->
+<footer id="footer">
+	<div class="inner">
+		<ul>
+			<li><a href="..\..\..\index.html">｣ﾈ｣ﾏ｣ﾍ｣ﾅ</a></li>
+			<li><a href="..\..\..\cat41\index.html">ﾅｵ･､･ﾈ､ﾋ､ﾄ､､､ﾆ</a></li>
+			<li><a href="..\..\index.html">Linuxｵｻｽﾑ</a></li>
+			<li><a href="..\..\..\2009\12\post-3.html">ﾌｵﾎﾁｹﾖｺﾂ</a></li>
+			<li><a href="..\..\..\2009\12\post-4.html">ﾍｭﾎﾁｹﾖｺﾂ</a></li>
+			<li><a href="..\..\..\linux_blog\index.html">･ﾖ･愠ｰ</a></li>
+			<li><a href="..\..\..\2009\12\post-7.html">､隍ｯ､｢､・ﾁﾌ・/a></li>
+			<li><a href="..\..\..\2009\12\post-8.html">ﾆﾃﾄ・ｦｼ隹妤ﾋｴﾘ､ｹ､・ｽｵｭ</a></li>
+			<li class="end"><a href="..\..\..\cat45\index.html">ﾁ・ﾟ･・ｯﾊ鄂ｸ､ﾋ､ﾄ､､､ﾆ</a></li>
+		</ul>
+		<p id="copyright">Copyright &copy; 2009-2019 Linuxｵｻｽﾑ ･・ﾊ･ﾃ･ｯ･ｹ･ﾞ･ｹ･ｿ｡ｼ.JP｡ﾊLinux･ﾞ･ｹ･ｿ｡ｼ.JP｡ﾋ All rights Reserved.
+	</div>
+</footer>
+<!-- / footer -->
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-63594523-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="EUC-JP"?>
+<rss version="2.0">
+   <channel>
+      <title>リナックスマスター.JP 公式ブログ</title>
+      <link>https://www.linuxmaster.jp/linux_blog/</link>
+      <description>ブログではメルマガ読者からの質問、日々の活動の様子などを紹介しています。</description>
+      <language>ja</language>
+      <copyright>Copyright 2019</copyright>
+      <lastBuildDate>Wed, 10 Apr 2019 15:19:53 +0900</lastBuildDate>
+      <generator>http://www.sixapart.com/movabletype/</generator>
+      <docs>http://blogs.law.harvard.edu/tech/rss</docs> 
+
+      
+      <item>
+         <title>2019年3月1回目リナックスマスターセミナーを開催しました。</title>
+         <description><![CDATA[リナックスマスター.JPの宮崎です。<br />
+<br />
+3/23（土）〜3/24（日）の2日間、<br />
+2019年3月1回目のリナックスマスター２日間集中セミナーを開催しました。<br />
+<br />
+次回以降のセミナーの日程や詳細は↓のページで公開しています。<br />
+参加ご希望の方は、いますぐ↓URLをクリックしてください。<br />
+<span class="mt-enclosure mt-enclosure-image" style="display: inline;"><a href="https://www.linuxmaster.jp/linux_blog/assets_c/2019/03/MIYA6544-2460.html" onclick="window.open('https://www.linuxmaster.jp/linux_blog/assets_c/2019/03/MIYA6544-2460.html','popup','width=1024,height=682,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img src="https://www.linuxmaster.jp/linux_blog/assets_c/2019/03/MIYA6544-thumb-300x199-2460.jpg" width="300" height="199" alt="MIYA6544.jpg" class="mt-image-none" style="" /></a></span>]]></description>
+         <link>https://www.linuxmaster.jp/linux_blog/2019/04/201931.html</link>
+         <guid>https://www.linuxmaster.jp/linux_blog/2019/04/201931.html</guid>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">Linuxセミナー報告</category>
+        
+        
+         <pubDate>Wed, 10 Apr 2019 15:19:53 +0900</pubDate>
+      </item>
+      
+      <item>
+         <title>2019年2月2回目リナックスマスターセミナーを開催しました。</title>
+         <description><![CDATA[リナックスマスター.JPの宮崎です。<br />
+<br />
+2/27（水）〜2/28（木）の2日間、<br />
+2019年2月2回目のリナックスマスター２日間集中セミナーを開催しました。<br />
+<br />
+次回以降のセミナーの日程や詳細は↓のページで公開しています。<br />
+参加ご希望の方は、いますぐ↓URLをクリックしてください。<br />
+<a href="https://www.linuxmaster.jp/2010/08/centos55.html">リナックスマスター2日間集中セミナー</a><br />
+<br />
+<span class="mt-enclosure mt-enclosure-image" style="display: inline;"><a href="https://www.linuxmaster.jp/linux_blog/assets_c/2019/03/DSC09881-2454.html" onclick="window.open('https://www.linuxmaster.jp/linux_blog/assets_c/2019/03/DSC09881-2454.html','popup','width=1024,height=768,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img src="https://www.linuxmaster.jp/linux_blog/assets_c/2019/03/DSC09881-thumb-300x225-2454.jpg" width="300" height="225" alt="DSC09881.jpg" class="mt-image-none" style="" /></a></span>]]></description>
+         <link>https://www.linuxmaster.jp/linux_blog/2019/04/201922.html</link>
+         <guid>https://www.linuxmaster.jp/linux_blog/2019/04/201922.html</guid>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">Linuxセミナー報告</category>
+        
+        
+         <pubDate>Wed, 03 Apr 2019 15:13:19 +0900</pubDate>
+      </item>
+      
+      <item>
+         <title>2019年2月1回目リナックスマスターセミナーを開催しました。</title>
+         <description><![CDATA[リナックスマスター.JPの宮崎です。<br />
+<br />
+2/23（土）〜2/24（日）の2日間、<br />
+2019年2月1回目のリナックスマスター２日間集中セミナーを開催しました。<br />
+<br />
+次回以降のセミナーの日程や詳細は↓のページで公開しています。<br />
+参加ご希望の方は、いますぐ↓URLをクリックしてください。<br />
+<span class="mt-enclosure mt-enclosure-image" style="display: inline;"><a href="https://www.linuxmaster.jp/linux_blog/assets_c/2019/03/MIYA6276-2439.html" onclick="window.open('https://www.linuxmaster.jp/linux_blog/assets_c/2019/03/MIYA6276-2439.html','popup','width=1024,height=682,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img src="https://www.linuxmaster.jp/linux_blog/assets_c/2019/03/MIYA6276-thumb-300x199-2439.jpg" width="300" height="199" alt="MIYA6276.jpg" class="mt-image-none" style="" /></a></span>]]></description>
+         <link>https://www.linuxmaster.jp/linux_blog/2019/04/201921.html</link>
+         <guid>https://www.linuxmaster.jp/linux_blog/2019/04/201921.html</guid>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">Linuxセミナー報告</category>
+        
+        
+         <pubDate>Mon, 01 Apr 2019 15:04:29 +0900</pubDate>
+      </item>
+      
+      <item>
+         <title>2019年1月2回目リナックスマスターセミナーを開催しました。</title>
+         <description><![CDATA[リナックスマスター.JPの宮崎です。<br />
+<br />
+1/30（水）〜1/31（木）の2日間、<br />
+2019年1月2回目のリナックスマスター２日間集中セミナーを開催しました。<br />
+<br />
+次回以降のセミナーの日程や詳細は↓のページで公開しています。<br />
+参加ご希望の方は、いますぐ↓URLをクリックしてください。<br />
+<a href="https://www.linuxmaster.jp/2010/08/centos55.html">リナックスマスター2日間集中セミナー</a><br />
+<br />
+<span class="mt-enclosure mt-enclosure-image" style="display: inline;"><a href="https://www.linuxmaster.jp/linux_blog/assets_c/2019/03/DSC09847-2442.html" onclick="window.open('https://www.linuxmaster.jp/linux_blog/assets_c/2019/03/DSC09847-2442.html','popup','width=800,height=600,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img src="https://www.linuxmaster.jp/linux_blog/assets_c/2019/03/DSC09847-thumb-300x225-2442.jpg" width="300" height="225" alt="DSC09847.jpg" class="mt-image-none" style="" /></a></span>]]></description>
+         <link>https://www.linuxmaster.jp/linux_blog/2019/03/201912.html</link>
+         <guid>https://www.linuxmaster.jp/linux_blog/2019/03/201912.html</guid>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">Linuxセミナー報告</category>
+        
+        
+         <pubDate>Wed, 27 Mar 2019 14:58:55 +0900</pubDate>
+      </item>
+      
+      <item>
+         <title>2019年1月1回目リナックスマスターセミナーを開催しました。</title>
+         <description><![CDATA[リナックスマスター.JPの宮崎です。<br />
+<br />
+1/26（土）〜1/27（日）の2日間、<br />
+2019年1月1回目のリナックスマスター２日間集中セミナーを開催しました。<br />
+<br />
+次回以降のセミナーの日程や詳細は↓のページで公開しています。<br />
+参加ご希望の方は、いますぐ↓URLをクリックしてください。<br />
+<a href="https://www.linuxmaster.jp/2010/08/centos55.html">リナックスマスター2日間集中セミナー</a><br />
+<br />
+<span class="mt-enclosure mt-enclosure-image" style="display: inline;"><a href="https://www.linuxmaster.jp/linux_blog/assets_c/2019/03/DSC09822-2418.html" onclick="window.open('https://www.linuxmaster.jp/linux_blog/assets_c/2019/03/DSC09822-2418.html','popup','width=800,height=600,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img src="https://www.linuxmaster.jp/linux_blog/assets_c/2019/03/DSC09822-thumb-300x225-2418.jpg" width="300" height="225" alt="DSC09822.jpg" class="mt-image-none" style="" /></a></span>]]></description>
+         <link>https://www.linuxmaster.jp/linux_blog/2019/03/201911.html</link>
+         <guid>https://www.linuxmaster.jp/linux_blog/2019/03/201911.html</guid>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">Linuxセミナー報告</category>
+        
+        
+         <pubDate>Mon, 25 Mar 2019 14:53:06 +0900</pubDate>
+      </item>
+      
+      <item>
+         <title>MySQLコンパイル時にc++: internal compiler error: Killed (program cc1plus)が発生した時の対処法</title>
+         <description><![CDATA[MySQLをコンパイルしている時に、下記エラーが発生して
+処理が停止してしまう場合の対処法をご紹介します。
+
+<em>[ 45%] Built target rpl
+[ 45%] Built target comp_sql
+[ 45%] Built target GenSysSchema
+[ 45%] Built target gen_lex_token
+[ 45%] Built target GenDigestServerSource
+[ 45%] Built target GenBootstrapPriv
+[ 45%] Building CXX object sql/CMakeFiles/sql.dir/item_geofunc.cc.o
+c++: internal compiler error: Killed (program cc1plus)
+Please submit a full bug report,
+with preprocessed source if appropriate.
+See <http://bugzilla.redhat.com/bugzilla> for instructions.
+make[2]: *** [sql/CMakeFiles/sql.dir/item_geofunc.cc.o] Error 4
+make[1]: *** [sql/CMakeFiles/sql.dir/all] Error 2
+make: *** [all] Error 2</em>
+]]></description>
+         <link>https://www.linuxmaster.jp/linux_blog/2019/03/mysqlc-internal-compiler-error-killed-program-cc1plus.html</link>
+         <guid>https://www.linuxmaster.jp/linux_blog/2019/03/mysqlc-internal-compiler-error-killed-program-cc1plus.html</guid>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">Linuxエラー対処法</category>
+        
+        
+         <pubDate>Tue, 12 Mar 2019 14:43:18 +0900</pubDate>
+      </item>
+      
+      <item>
+         <title>Let&apos;s EncryptのSSL証明書更新処理がエラーになった場合の対処</title>
+         <description><![CDATA[無料SSL証明書として有名なLet's Encryptを使用していて、
+証明書更新処理で下記エラーが発生しました。
+自動更新処理でも同様のエラーが発生しています。
+
+<b>■エラーログ</b>
+<strong>OSError: Command /opt/eff.org/certbot/venv/bin/python2.7 - setuptools pip wheel failed with error code 1</strong>]]></description>
+         <link>https://www.linuxmaster.jp/linux_blog/2019/02/lets-encrypt.html</link>
+         <guid>https://www.linuxmaster.jp/linux_blog/2019/02/lets-encrypt.html</guid>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">Linuxエラー対処法</category>
+        
+        
+         <pubDate>Sat, 23 Feb 2019 01:04:06 +0900</pubDate>
+      </item>
+      
+      <item>
+         <title>/lib/ld-linux.so.2: bad ELF interpreter: そのようなファイルやディレクトリはありません</title>
+         <description><![CDATA[ CentOS 64bit環境で下記エラーが発生した場合の対処法を紹介します。
+
+<b>エラーメッセージ内容</b>
+<strong>/lib/ld-linux.so.2: bad ELF interpreter: そのようなファイルやディレクトリはありません</strong>
+<strong>/lib/ld-linux.so.2: bad ELF interpreter: No such file or directory </strong>
+]]></description>
+         <link>https://www.linuxmaster.jp/linux_blog/2019/01/libld-linuxso2-bad-elf-interpreter.html</link>
+         <guid>https://www.linuxmaster.jp/linux_blog/2019/01/libld-linuxso2-bad-elf-interpreter.html</guid>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">Linuxエラー対処法</category>
+        
+        
+         <pubDate>Sat, 26 Jan 2019 12:03:23 +0900</pubDate>
+      </item>
+      
+      <item>
+         <title>warning: connect to transport private/smtp-amavis: No such file or directoryの対処法</title>
+         <description><![CDATA[Postfix + Clam AntiVirus + SpamAssassin環境下で、
+/var/log/maillogファイルに下記ログが出力され、
+メール送信が出来ない場合の対処法を紹介します。
+<strong>warning: connect to transport private/smtp-amavis: No such file or directory</strong>
+]]></description>
+         <link>https://www.linuxmaster.jp/linux_blog/2019/01/warning-connect-to-transport-privatesmtp-amavis-no-such-file-or-directory.html</link>
+         <guid>https://www.linuxmaster.jp/linux_blog/2019/01/warning-connect-to-transport-privatesmtp-amavis-no-such-file-or-directory.html</guid>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">Linuxエラー対処法</category>
+        
+        
+         <pubDate>Wed, 16 Jan 2019 00:45:47 +0900</pubDate>
+      </item>
+      
+      <item>
+         <title>2018年12月リナックスマスターセミナーを開催しました。</title>
+         <description><![CDATA[ リナックスマスター.JPの宮崎です。<br />
+<br />
+12/6（木）〜12/7（金）の2日間、<br />
+2018年12月のリナックスマスター２日間集中セミナーを開催しました。<br />
+<br />
+次回以降のセミナーの日程や詳細は↓のページで公開しています。<br />
+参加ご希望の方は、いますぐ↓URLをクリックしてください。<br />
+<a href="https://www.linuxmaster.jp/2010/08/centos55.html">リナックスマスター2日間集中セミナー</a><br />
+<br />
+<span class="mt-enclosure mt-enclosure-image" style="display: inline;"><a href="https://www.linuxmaster.jp/linux_blog/assets_c/2018/12/DSC09797-2412.html" onclick="window.open('https://www.linuxmaster.jp/linux_blog/assets_c/2018/12/DSC09797-2412.html','popup','width=1280,height=960,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img src="https://www.linuxmaster.jp/linux_blog/assets_c/2018/12/DSC09797-thumb-300x225-2412.jpg" width="300" height="225" alt="DSC09797.jpg" class="mt-image-none" style="" /></a></span>]]></description>
+         <link>https://www.linuxmaster.jp/linux_blog/2018/12/201812-1.html</link>
+         <guid>https://www.linuxmaster.jp/linux_blog/2018/12/201812-1.html</guid>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">Linuxセミナー報告</category>
+        
+        
+         <pubDate>Thu, 13 Dec 2018 09:18:12 +0900</pubDate>
+      </item>
+      
+      <item>
+         <title>2018年11月2回目リナックスマスターセミナーを開催しました。</title>
+         <description><![CDATA[ リナックスマスター.JPの宮崎です。<br />
+<br />
+11/21（水）〜11/22（木）の2日間、<br />
+2018年11月2回目のリナックスマスター２日間集中セミナーを開催しました。<br />
+<br />
+次回以降のセミナーの日程や詳細は↓のページで公開しています。<br />
+参加ご希望の方は、いますぐ↓URLをクリックしてください。<br />
+<a href="https://www.linuxmaster.jp/2010/08/centos55.html">リナックスマスター2日間集中セミナー</a><br />
+<br />
+<span class="mt-enclosure mt-enclosure-image" style="display: inline;"><a href="https://www.linuxmaster.jp/linux_blog/assets_c/2018/12/MIYA4305-2406.html" onclick="window.open('https://www.linuxmaster.jp/linux_blog/assets_c/2018/12/MIYA4305-2406.html','popup','width=1280,height=853,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img src="https://www.linuxmaster.jp/linux_blog/assets_c/2018/12/MIYA4305-thumb-300x199-2406.jpg" width="300" height="199" alt="MIYA4305.jpg" class="mt-image-none" style="" /></a></span>]]></description>
+         <link>https://www.linuxmaster.jp/linux_blog/2018/12/2018112.html</link>
+         <guid>https://www.linuxmaster.jp/linux_blog/2018/12/2018112.html</guid>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">Linuxセミナー報告</category>
+        
+        
+         <pubDate>Fri, 07 Dec 2018 09:14:20 +0900</pubDate>
+      </item>
+      
+      <item>
+         <title>2018年11月1回目リナックスマスターセミナーを開催しました。</title>
+         <description><![CDATA[ リナックスマスター.JPの宮崎です。<br />
+<br />
+11/17（土）〜11/18（日）の2日間、<br />
+2018年11月1回目のリナックスマスター２日間集中セミナーを開催しました。<br />
+<br />
+次回以降のセミナーの日程や詳細は↓のページで公開しています。<br />
+参加ご希望の方は、いますぐ↓URLをクリックしてください。<br />
+<a href="https://www.linuxmaster.jp/2010/08/centos55.html">リナックスマスター2日間集中セミナー</a><br />
+<br />
+<span class="mt-enclosure mt-enclosure-image" style="display: inline;"><a href="https://www.linuxmaster.jp/linux_blog/assets_c/2018/12/MIYA4283-2400.html" onclick="window.open('https://www.linuxmaster.jp/linux_blog/assets_c/2018/12/MIYA4283-2400.html','popup','width=1280,height=853,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img src="https://www.linuxmaster.jp/linux_blog/assets_c/2018/12/MIYA4283-thumb-300x199-2400.jpg" width="300" height="199" alt="MIYA4283.jpg" class="mt-image-none" style="" /></a></span>]]></description>
+         <link>https://www.linuxmaster.jp/linux_blog/2018/12/2018111.html</link>
+         <guid>https://www.linuxmaster.jp/linux_blog/2018/12/2018111.html</guid>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">Linuxセミナー報告</category>
+        
+        
+         <pubDate>Sat, 01 Dec 2018 09:11:31 +0900</pubDate>
+      </item>
+      
+      <item>
+         <title>2018年10月2回目リナックスマスターセミナーを開催しました。</title>
+         <description><![CDATA[  リナックスマスター.JPの宮崎です。<br />
+<br />
+10/30（火）〜10/31（水）の2日間、<br />
+2018年10月2回目のリナックスマスター２日間集中セミナーを開催しました。<br />
+<br />
+次回以降のセミナーの日程や詳細は↓のページで公開しています。<br />
+参加ご希望の方は、いますぐ↓URLをクリックしてください。<br />
+<a href="https://www.linuxmaster.jp/2010/08/centos55.html">リナックスマスター2日間集中セミナー</a><br />
+<br />
+<span class="mt-enclosure mt-enclosure-image" style="display: inline;"><a href="https://www.linuxmaster.jp/linux_blog/assets_c/2018/12/MIYA3926-2394.html" onclick="window.open('https://www.linuxmaster.jp/linux_blog/assets_c/2018/12/MIYA3926-2394.html','popup','width=1280,height=853,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img src="https://www.linuxmaster.jp/linux_blog/assets_c/2018/12/MIYA3926-thumb-300x199-2394.jpg" width="300" height="199" alt="MIYA3926.jpg" class="mt-image-none" style="" /></a></span>]]></description>
+         <link>https://www.linuxmaster.jp/linux_blog/2018/11/2018102.html</link>
+         <guid>https://www.linuxmaster.jp/linux_blog/2018/11/2018102.html</guid>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">Linuxセミナー報告</category>
+        
+        
+         <pubDate>Tue, 20 Nov 2018 09:02:50 +0900</pubDate>
+      </item>
+      
+      <item>
+         <title>2018年10月1回目リナックスマスターセミナーを開催しました。</title>
+         <description><![CDATA[ リナックスマスター.JPの宮崎です。<br />
+<br />
+10/27（土）〜10/28（日）の2日間、<br />
+2018年10月1回目のリナックスマスター２日間集中セミナーを開催しました。<br />
+<br />
+次回以降のセミナーの日程や詳細は↓のページで公開しています。<br />
+参加ご希望の方は、いますぐ↓URLをクリックしてください。<br />
+<a href="https://www.linuxmaster.jp/2010/08/centos55.html">リナックスマスター2日間集中セミナー</a><br />
+<br />
+<span class="mt-enclosure mt-enclosure-image" style="display: inline;"><a href="https://www.linuxmaster.jp/linux_blog/assets_c/2018/12/MIYA3849-2388.html" onclick="window.open('https://www.linuxmaster.jp/linux_blog/assets_c/2018/12/MIYA3849-2388.html','popup','width=1280,height=853,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img src="https://www.linuxmaster.jp/linux_blog/assets_c/2018/12/MIYA3849-thumb-300x199-2388.jpg" width="300" height="199" alt="MIYA3849.jpg" class="mt-image-none" style="" /></a></span>]]></description>
+         <link>https://www.linuxmaster.jp/linux_blog/2018/11/2018101.html</link>
+         <guid>https://www.linuxmaster.jp/linux_blog/2018/11/2018101.html</guid>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">Linuxセミナー報告</category>
+        
+        
+         <pubDate>Mon, 12 Nov 2018 08:53:16 +0900</pubDate>
+      </item>
+      
+      <item>
+         <title>2018年9月リナックスマスターセミナーを開催しました。</title>
+         <description><![CDATA[リナックスマスター.JPの宮崎です。<br />
+<br />
+9/13（木）〜9/14（金）の2日間、<br />
+2018年9月のリナックスマスター２日間集中セミナーを開催しました。<br />
+<br />
+次回以降のセミナーの日程や詳細は↓のページで公開しています。<br />
+参加ご希望の方は、いますぐ↓URLをクリックしてください。<br />
+<a href="https://www.linuxmaster.jp/2010/08/centos55.html">リナックスマスター2日間集中セミナー</a><br />
+<br />
+<span class="mt-enclosure mt-enclosure-image" style="display: inline;"><a href="https://www.linuxmaster.jp/linux_blog/assets_c/2018/09/MIYA3467-2382.html" onclick="window.open('https://www.linuxmaster.jp/linux_blog/assets_c/2018/09/MIYA3467-2382.html','popup','width=1280,height=853,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img src="https://www.linuxmaster.jp/linux_blog/assets_c/2018/09/MIYA3467-thumb-300x199-2382.jpg" width="300" height="199" alt="MIYA3467.jpg" class="mt-image-none" style="" /></a></span>]]></description>
+         <link>https://www.linuxmaster.jp/linux_blog/2018/10/20189.html</link>
+         <guid>https://www.linuxmaster.jp/linux_blog/2018/10/20189.html</guid>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">Linuxセミナー報告</category>
+        
+        
+         <pubDate>Mon, 01 Oct 2018 20:23:51 +0900</pubDate>
+      </item>
+      
+   </channel>
+</rss>

@@ -1,0 +1,409 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="ja">
+<head>
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-9286957635215255",
+          enable_page_level_ads: true
+     });
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, user-scalable=yes, maximum-scale=1.0, minimum-scale=1.0">
+<link rel="canonical" href="03centos-54.html">
+
+
+
+
+
+
+
+<title>03.CentOS 5.4､ﾎ･､･ｹ･ﾈ｡ｼ･・ﾃLinux･ｵ｡ｼ･ﾐ｡ｼｹｽﾃﾛ</title>
+
+
+
+
+
+<meta name="description" content="03.CentOS 5.4､ﾎ･､･ｹ･ﾈ｡ｼ･・､ｳ､ｳ､ﾇｹｽﾃﾛ､ｹ､・entOS5.4･ｵ｡ｼ･ﾐ｡ｼ､ﾏ｡｢LANﾆ筅ﾇｻﾈﾍﾑ､ｹ､・､･ﾈ･鬣ｵ｡ｼ･ﾐ｡ｼ､ﾋ､ﾊ､熙ﾞ､ｹ｡｣･､･ｿ｡ｼ･ﾍ･ﾃ･ﾈ､ﾋ､ﾏｷ隍ｷ､ﾆｸｫ､ｷ､ﾊ､､､隍ｦ､ﾋ､ｷ､ﾆ､ｯ､ﾀ､ｵ､､｡｣｡ﾊ･､･ｿ｡ｼ･ﾍ･ﾃ･ﾈ､ﾋｸｫ､ｹ､・ﾋ､ﾏﾊﾌﾅﾓ･ｻ･ｭ･螂・ﾆ･｣ﾀﾟﾄ熙ｬﾉｬﾍﾗ､ﾋ､ﾊ､熙ﾞ､ｹ｡｣｡ﾋ1.｡ﾖCentOS5.4､ﾎ">
+
+
+<link rel="stylesheet" href="..\..\style.css" type="text/css" media="screen">
+<!--[if lt IE 9]>
+<script src="https://www.linuxmaster.jp/linux_skill/js/html5.js"></script>
+<script src="https://www.linuxmaster.jp/linux_skill/js/css3-mediaqueries.js"></script>
+<![endif]-->
+<script src="https://www.linuxmaster.jp/linux_skill/js/jquery1.7.2.min.js"></script>
+<script src="https://www.linuxmaster.jp/linux_skill/js/script.js"></script>
+<!--
+<script type="text/javascript" src="https://www.linuxmaster.jp/listcollector/script.js"></script>
+-->
+</head>
+<body>
+<header id="header" role="banner">
+	<div class="inner">
+		<hgroup>
+			
+			
+			
+
+			
+			
+			
+			<h1>03.CentOS 5.4､ﾎ･､･ｹ･ﾈ｡ｼ･・Linux･ｵ｡ｼ･ﾐ｡ｼｹｽﾃﾛ</h1>
+			
+
+			
+			
+			
+			<h2>03.CentOS 5.4､ﾎ･､･ｹ･ﾈ｡ｼ･・Linux･ｵ｡ｼ･ﾐ｡ｼｹｽﾃﾛｼ・遉筅ｷ､ﾆ､､､ﾞ､ｹ｡｣</h2>
+			
+
+			<h2 class="logo"><a href="..\..\..\index.html" rel="home"><img src="..\..\..\images\top_image_title.gif" alt="Linuxｵｻｽﾑ ･・ﾊ･ﾃ･ｯ･ｹ･ﾞ･ｹ･ｿ｡ｼ.JP｡ﾊLinux･ﾞ･ｹ･ｿ｡ｼ.JP｡ﾋ"></a></h2>
+		</hgroup>
+		<div id="headerInfo">
+			| <a href="..\..\..\cat44\index.html">ｲﾒｳｵﾍﾗ</a>
+			| <a href="..\..\..\cat44\index-1.html#profile">ｱｿｱﾄｼﾔ･ﾗ･愠ﾕ･｣｡ｼ･・/a>
+			| <a href="..\..\..\2009\12\post-7.html">､隍ｯ､｢､・ﾁﾌ荀ﾋ､ﾄ､､､ﾆ</a>
+			| <a href="..\..\..\2009\12\post-6.html">､ｪﾌ荀､ｹ遉・ｻ</a> |
+		</div>
+	</div>
+</header>
+
+<nav id="mainNav">
+	<div class="inner">
+		<a class="menu" id="menu"><span>MENU</span></a>
+		<div class="panel">
+			<ul>
+				<li><a href="..\..\..\index.html"><span>･ﾈ･ﾃ･ﾗ･ﾚ｡ｼ･ｸ</span></a></li>
+				<li><a href="..\..\..\cat41\index.html"><span>ﾅｵ･､･ﾈ､ﾋ､ﾄ､､､ﾆ</span></a></li>
+				<li><a href="..\..\index.html"><span>Linuxｵｻｽﾑ</span></a>
+					<ul class="sub-menu">
+						<li><a href="..\..\010linux\index.html"><span>ﾆﾌ邏ﾃﾃﾎｼｱ</span></a></li>
+						<li><a href="..\..\01linuxcommand\index.html"><span>Linux･ｳ･ﾞ･ﾉ</span></a></li>
+						<li><a href="..\..\030linuxtips\index.html"><span>Linux Tips</span></a></li>
+						<li><a href="..\..\010linux\centos7\index.html"><span>CentOS7ﾆﾃｽｸ</span></a></li>
+					</ul>
+				</li>
+				<li><a href="..\..\..\2009\12\post-3.html"><span>ﾌｵﾎﾁｹﾖｺﾂ</span></a>
+					<ul class="sub-menu">
+						<li><a href="..\..\..\2011\01\linux.html"><span>ﾌｵﾎﾁ･ﾞ･ﾋ･螂｢･・/span></a></li>
+					</ul>
+				</li>
+				<li><a href="..\..\..\2009\12\post-4.html"><span>ﾍｭﾎﾁｹﾖｺﾂ</span></a>
+					<ul class="sub-menu">
+						<li><a href="..\..\..\kouza\index.html"><span>･ﾛ｡ｼ･爭ｹ･ｿ･ﾇ･｣ｹﾖｺﾂ</span></a></li>
+						<li><a href="..\..\..\2010\08\centos55.html"><span>･・ﾊ･ﾃ･ｯ･ｹ･ｻ･ﾟ･ﾊ｡ｼ</span></a></li>
+						<li><a href="..\..\..\cloud\index.html"><span>･ｯ･鬣ｦ･ﾉｹｽﾃﾛｹﾖｺﾂ</span></a></li>
+					</ul>
+				</li>
+				<li><a href="..\..\..\linux_blog\index.html"><span>･ｦ･ｧ･ﾖ･愠ｰ</span></a>
+					<ul class="sub-menu">
+						<li><a href="..\..\..\linux_blog\cat60\index.html"><span>Linux･ｻ･ﾟ･ﾊ｡ｼﾊ・/span></a></li>
+						<li><a href="..\..\..\linux_blog\linux-3\index.html"><span>ｵｻｽﾑ｡ｦ･ｻ･ｭ･螂・ﾆ･｣</span></a></li>
+						<li><a href="..\..\..\linux_blog\linux-1\index.html"><span>･ｨ･鬘ｼﾂﾐｽ靈｡</span></a></li>
+					</ul>
+				</li>
+				<li><a href="..\..\..\cat44\index.html"><span>ｲﾒｳｵﾍﾗ</span></a></li>
+			</ul>
+		</div>
+	</div>
+</nav>
+
+
+<div id="wrapper">
+	<div id="content">
+		
+		<section>
+		<article class="content">
+			
+			
+			
+			<header><h2 class="title first"><span>03.CentOS 5.4､ﾎ･､･ｹ･ﾈ｡ｼ･・/span></h2></header>
+			
+
+			<div class="post">
+				
+				
+				
+				<div class="pan"><a href="..\..\..\index.html" title="home">｣ﾈ｣ﾏ｣ﾍ｣ﾅ</a> ｡・<a href="..\..\index.html" title="home">Linuxｵｻｽﾑ ･・ﾊ･ﾃ･ｯ･ｹ･ﾞ･ｹ･ｿ｡ｼ.JP｡ﾊLinux･ﾞ･ｹ･ｿ｡ｼ.JP｡ﾋ</a> ｡・<a href="..\..\040linux\index.html">Linux･ｵ｡ｼ･ﾐ｡ｼｹｽﾃﾛ</a> ｡・<a href="..\..\040linux\020centos54\index.html">CentOS5.4､ﾇ･ｵ｡ｼ･ﾐ｡ｼｹｽﾃﾛ</a>, <a href="..\..\040linux\index.html">Linux･ｵ｡ｼ･ﾐ｡ｼｹｽﾃﾛ</a> ｡・03.CentOS 5.4､ﾎ･､･ｹ･ﾈ｡ｼ･・/div>
+				
+
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ･・ﾊ･ﾃ･ｯ･ｹ･ﾞ･ｹ･ｿ｡ｼ･ｿ･､･ﾈ･・ｼ｡ﾊ･・ｯ･讌ﾋ･ﾃ･ﾈ｡ﾋ -->
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9286957635215255" data-ad-slot="9312021656" data-ad-format="link" data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+				<!--｢｣･ｻ･ﾟ･ﾊ｡ｼ｡ｦｹﾖｺﾂｹﾎ｢｣-->
+				<br>
+<b><font color="#dd0000">Linux･ｵ｡ｼ･ﾐ｡ｼｴﾉﾍｼﾔ､ﾎｵｻｽﾑ､ｲﾆ・ﾇｳﾘ､ﾙ､・ﾖｽ鯀ｴｼﾔｸ､ｱ･・ﾊ･ﾃ･ｯ･ｹ･ｻ･ﾟ･ﾊ｡ｼ｡ﾗ</font></b><br>
+ﾆﾈｳﾘ､ﾇ1ﾇｯｰﾊｾ蟲ﾝ､ｫ､・ﾗ･惕ﾎLinuxｵｻｽﾑ､｢､ｿ､ﾃ､ｿ2ﾆ・ﾖ､ﾇｽｬﾆﾀ､ﾇ､ｭ､ﾞ､ｹ｡｣<br>
+<img src="..\..\..\images\arrow2.gif"> <a href="..\..\..\2010\08\centos55.html" target="_blank">･・ﾊ･ﾃ･ｯ･ｹ･ﾞ･ｹ･ｿ｡ｼ｣ｲﾆ・ﾖｽｸﾃ讌ｻ･ﾟ･ﾊ｡ｼ｡ﾚCentOS7ﾈﾇ｡ﾛ</a><br>
+｡｡｡ﾊｺ｣､ｹ､ｰ｢ｬ､ｯ･・ﾃ･ｯ､ｷ､ﾆ､ｯ､ﾀ､ｵ､､｡｣｡ﾋ<br>
+<br>
+<!--
+<b><font color="#dd0000">Linux･ｵ｡ｼ･ﾐ｡ｼｴﾉﾍｼﾔ､ﾎｵｻｽﾑ､ｲﾆ・ﾇｳﾘ､ﾙ､・ﾖｽ鯀ｴｼﾔｸ､ｱ･・ﾊ･ﾃ･ｯ･ｹ･ｻ･ﾟ･ﾊ｡ｼ｡ﾗ</font></b><br>
+30ﾆ・ﾝ､ｫ､ﾃ､ﾆｳﾐ､ｨ､・ﾗ･惕ﾎｵｻｽﾑ､｢､ｿ､ﾃ､ｿ2ﾆ・ﾖ､ﾇｳﾘｽｬ､ﾇ､ｭ､ﾞ､ｹ｡｣<br>
+｡｡<b>｡ｦLinuxﾋﾜ､ﾇ､ﾏ､､､ﾄ､筵ｨ･鬘ｼ､ﾇﾀ隍ﾋｿﾊ､皃ﾊ､､｡｣</b><br>
+｡｡<b>｡ｦｾｭﾍ隍ﾎ､ｿ､皃ﾋ｡｢ﾃｻｴ・ﾖ､ﾇLinux･ｹ･ｭ･・ﾈ､ﾋﾉﾕ､ｱ､ｿ､､｡｣</b><br>
+｡｡<b>｡ｦｼ｡､ﾎｰﾆｷ・ｬLinux､ﾇ｡｢ﾁ盞ﾞ､ﾋ･ｹ･ｭ･・ﾈ､ﾋﾉﾕ､ｱ､ﾊ､ｱ､・ﾐ､ﾊ､鬢ﾊ､､｡｣</b><br>
+､ｽ､ﾊ､｢､ﾊ､ｿ､ﾋｺﾇﾅｬ､ﾊ･ｻ･ﾟ･ﾊ｡ｼ､ﾇ､ｹ｡｣<br>
+<img src="https://www.linuxmaster.jp/images/arrow2.gif"> <a href="https://www.linuxmaster.jp/2010/08/centos55.html" target="_blank">･・ﾊ･ﾃ･ｯ･ｹ･ﾞ･ｹ･ｿ｡ｼ｣ｲﾆ・ﾖｽｸﾃ讌ｻ･ﾟ･ﾊ｡ｼ｡ﾚCentOS7.0ﾈﾇ｡ﾛ</a><br>
+｡｡｡ﾊｺ｣､ｹ､ｰ｢ｬ､ｯ･・ﾃ･ｯ､ｷ､ﾆ､ｯ､ﾀ､ｵ､､｡｣｡ﾋ<br>
+<br>
+Linux･ｵ｡ｼ･ﾐ｡ｼｴﾉﾍｼﾔ､ﾎｵｻｽﾑ､ｿ､ﾃ､ｿ21ﾆ・ﾇｼｫﾂｬﾆﾀ､ﾇ､ｭ､・｣ｰ・ﾎｹﾖｺﾂ<br>
+<img src="https://www.linuxmaster.jp/images/arrow2.gif"> <a href="https://www.linuxmaster.jp/kouza/index.html" target="_blank">･・ﾊ･ﾃ･ｯ･ｹ･ﾞ･ｹ･ｿ｡ｼ｡ｦ･ﾛ｡ｼ･爭ｹ･ｿ･ﾇ･｣ｹﾖｺﾂ｡ﾚCentOS6.3ﾈﾇ｡ﾛ</a><br>
+<br>
+-->
+				<!--｢｣･ｻ･ﾟ･ﾊ｡ｼ｡ｦｹﾖｺﾂｹﾎ｢｣-->
+
+				､ｳ､ｳ､ﾇｹｽﾃﾛ､ｹ､・entOS5.4･ｵ｡ｼ･ﾐ｡ｼ､ﾏ｡｢LANﾆ筅ﾇｻﾈﾍﾑ､ｹ､・､･ﾈ･鬣ｵ｡ｼ･ﾐ｡ｼ､ﾋ､ﾊ､熙ﾞ､ｹ｡｣<br>･､･ｿ｡ｼ･ﾍ･ﾃ･ﾈ､ﾋ､ﾏｷ隍ｷ､ﾆｸｫ､ｷ､ﾊ､､､隍ｦ､ﾋ､ｷ､ﾆ､ｯ､ﾀ､ｵ､､｡｣<br>｡ﾊ･､･ｿ｡ｼ･ﾍ･ﾃ･ﾈ､ﾋｸｫ､ｹ､・ﾋ､ﾏﾊﾌﾅﾓ･ｻ･ｭ･螂・ﾆ･｣ﾀﾟﾄ熙ｬﾉｬﾍﾗ､ﾋ､ﾊ､熙ﾞ､ｹ｡｣｡ﾋ<br><br>1.｡ﾖ<a href="..\01\02centos54cd.html">CentOS5.4､ﾎ･､･ｹ･ﾈ｡ｼ･・Dｺ鋿ｮ</a>｡ﾗ､ﾇｺ鋿ｮ､ｷ､ｿCentOS5.4､ﾎCD､ｵ｡ｼ･ﾐ｡ｼ､ﾋ･ｻ･ﾃ･ﾈ､ｷ｡｢<br>｡｡ﾅﾅｸｻ､､・ﾞ､ｹ｡｣<br><br>VMware3､ﾇLinux､､･ｹ･ﾈ｡ｼ･・ｹ､・・遉ﾋ､ﾏCentOS5.4､ﾎCD､ｵ｡ｼ･ﾐ｡ｼ､ﾋ･ｻ･ﾃ･ﾈ､ｹ､・螟・熙ﾋ<br>｡ﾖ<a href="vmware-player-3-1.html">VMware Player 3､ﾎｻﾈ､､ﾊ</a>｡ﾗ､隍ﾋｼﾂｻﾜ､ｷ､ﾆ､ｯ､ﾀ､ｵ､､｡｣<br><br><span class="mt-enclosure mt-enclosure-image" style="display: inline;"><a href="..\..\assets_c\2010\03\centos54_inst_00-211.html" onclick="https://www.linuxmaster.jp/linux_skill/assets_c/2010/03/centos54_inst_00-211.html','popup','width=472,height=353,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img src="..\..\assets_c\2010\03\centos54_inst_00-thumb-300x224-211.jpeg" alt="centos54_inst_00.jpg" class="mt-image-none" style="" width="300" height="224"></a></span><br><br><br><br><br><div><br></div><embed id="Siber_embed1" type="application/rf-np-plugin" style="left: 0px; top: 0px; width: 0px; height: 0px; position: fixed; display: block; ">
+
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ･・ﾊ･ﾃ･ｯ･ｹ･ﾞ･ｹ･ｿ｡ｼｵｭｻ・-->
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9286957635215255" data-ad-slot="1505560112" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+				2.CD･ﾖ｡ｼ･ﾈﾀﾟﾄ熙ｬﾀｵ､ｷ､､､ﾈｲｼｵｭ､ﾎｲ靂ﾌ､ｬﾉｽｼｨ､・ﾞ､ｹ､ﾎ､ﾇ｡｢､ｽ､ﾎ､ﾞ､ﾞ｡ﾖEnter｡ﾗ･ｭ｡ｼ､｡､ｷ､ﾞ､ｹ｡｣<span class="mt-enclosure mt-enclosure-image" style="display: inline;"><a href="..\..\assets_c\2010\03\centos54_inst_01-214.html" onclick="https://www.linuxmaster.jp/linux_skill/assets_c/2010/03/centos54_inst_01-214.html','popup','width=642,height=482,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img src="..\..\assets_c\2010\03\centos54_inst_01-thumb-300x225-214.jpeg" alt="centos54_inst_01.jpg" class="mt-image-none" style="" width="300" height="225"></a></span><br><div><br>3.Welcome to CentOS ､ﾈﾉｽｼｨ､ｵ､・・ﾎ､ﾇ｡｢｡ﾖSKIP｡ﾗ､｡ｲｼ､ｷ､ﾞ､ｹ｡｣<br><span class="mt-enclosure mt-enclosure-image" style="display: inline;"><a href="..\..\assets_c\2010\03\centos54_inst_02-217.html" onclick="https://www.linuxmaster.jp/linux_skill/assets_c/2010/03/centos54_inst_02-217.html','popup','width=720,height=402,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img src="..\..\assets_c\2010\03\centos54_inst_02-thumb-300x167-217.jpeg" alt="centos54_inst_02.jpg" class="mt-image-none" style="" width="300" height="167"></a></span><br><br>4.ｲｼｵｭ､ﾎｲ靂ﾌ､ｬﾉｽｼｨ､ｵ､・・ﾎ､ﾇ｡ﾖNext｡ﾗ､ｯ･・ﾃ･ｯ､ｷ､ﾞ､ｹ｡｣<br><span class="mt-enclosure mt-enclosure-image" style="display: inline;"><a href="..\..\assets_c\2010\03\centos54_inst_03-220.html" onclick="https://www.linuxmaster.jp/linux_skill/assets_c/2010/03/centos54_inst_03-220.html','popup','width=802,height=602,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img src="..\..\assets_c\2010\03\centos54_inst_03-thumb-300x225-220.jpeg" alt="centos54_inst_03.jpg" class="mt-image-none" style="" width="300" height="225"></a></span><br><br>5.ｸﾀｸ・ﾎﾁｪﾂ・br>ｸﾀｸ・ｪﾂ靂ﾌ､ﾋ､ﾊ､熙ﾞ､ｷ､ｿ､鬘｢｡ﾖJapanese(ﾆ・ﾜｸ・｡ﾗ､ｪﾂｷ､ﾆ｡｢｡ﾖNEXT｡ﾗ､｡ｲｼ､ｷ､ﾆ､ｯ､ﾀ､ｵ､､｡｣<br>｢ｨ･ｫ｡ｼ･ｽ･・ﾎｰﾜﾆｰ､ﾏ&lt;Tab&gt;･ｭ｡ｼ｡｢ｷ霪熙ﾏ&lt;Enter&gt;･ｭ｡ｼ､ﾇｽﾐﾍ隍ﾞ､ｹ｡｣<br><span class="mt-enclosure mt-enclosure-image" style="display: inline;"><a href="..\..\assets_c\2010\03\centos54_inst_04-223.html" onclick="https://www.linuxmaster.jp/linux_skill/assets_c/2010/03/centos54_inst_04-223.html','popup','width=803,height=601,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img src="..\..\assets_c\2010\03\centos54_inst_04-thumb-300x224-223.jpeg" alt="centos54_inst_04.jpg" class="mt-image-none" style="" width="300" height="224"></a></span><br><br>6.･ｭ｡ｼ･ﾜ｡ｼ･ﾉ､ﾎﾁｪﾂ・br>･ｭ｡ｼ･ﾜ｡ｼ･ﾉ､ﾎ･筵ﾇ･・ｪﾂｷ､ﾞ､ｹ｡｣｡ﾖﾆ・ﾜｸ・ﾗ､ｪﾂｷ､ﾆ｡ﾖｼ｡｡ﾗ､｡ｲｼ､ｷ､ﾆ､ｯ､ﾀ､ｵ､､｡｣<br><span class="mt-enclosure mt-enclosure-image" style="display: inline;"><a href="..\..\assets_c\2010\03\centos54_inst_05-226.html" onclick="https://www.linuxmaster.jp/linux_skill/assets_c/2010/03/centos54_inst_05-226.html','popup','width=802,height=603,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img src="..\..\assets_c\2010\03\centos54_inst_05-thumb-300x225-226.jpeg" alt="centos54_inst_05.jpg" class="mt-image-none" style="" width="300" height="225"></a></span><br><br>7.ｲｼｵｭ､ﾎ･皈ﾃ･ｻ｡ｼ･ｸ､ｬﾉｽｼｨ､ｵ､・ｿｾ・遉ﾏ｡ﾖ､ﾏ､､｡ﾗ､ｯ･・ﾃ･ｯ､ｷ､ﾆ､ｯ､ﾀ､ｵ､､｡｣<br>ﾉｽｼｨ､ｵ､・ﾊ､ｫ､ﾃ､ｿｾ・遉ﾏ､ｽ､ﾎ､ﾞ､ﾞ8､ﾘｿﾊ､ﾇ､ｯ､ﾀ､ｵ､､｡｣<br><span class="mt-enclosure mt-enclosure-image" style="display: inline;"><a href="..\..\assets_c\2010\03\centos54_inst_06-229.html" onclick="https://www.linuxmaster.jp/linux_skill/assets_c/2010/03/centos54_inst_06-229.html','popup','width=802,height=604,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img src="..\..\assets_c\2010\03\centos54_inst_06-thumb-300x225-229.jpeg" alt="centos54_inst_06.jpg" class="mt-image-none" style="" width="300" height="225"></a></span><br><br>8.･ﾏ｡ｼ･ﾉ･ﾇ･｣･ｹ･ｯ､ﾎﾀﾟﾄ・br>Web ･ｵ｡ｼ･ﾐ｡ｼ､ｽﾃﾛ､ｷ､ﾞ､ｹ､ﾎ､ﾇ｡｢･､･ｹ･ﾈ｡ｼ･・ｹ､・ｰ､ﾋ･ﾏ｡ｼ･ﾉ･ﾇ･｣･ｹ･ｯ､ﾋﾊﾝﾂｸ､ｵ､・ﾆ､､､・br>･ﾇ｡ｼ･ｿ､・・ｷ｡｢ｴｰﾁｴ､ﾋ･・ｻ･ﾃ･ﾈ､ｷ､ﾞ､ｹ｡｣<br>｡ﾖﾁｪﾂｷ､ｿ･ﾉ･鬣､･ﾖｾ螟ﾎ､ｹ､ﾙ､ﾆ､ﾎ･ﾑ｡ｼ･ﾆ･｣･ｷ･逾・・ｷ､ﾆ･ﾇ･ﾕ･ｩ･・ﾈ､ﾎ･・､･｢･ｦ･ﾈ｡ｦ｡ｦ｡ｦ｡ﾗ､ｪﾂｷ｡｢<br>｡ﾖ･ﾑ｡ｼ･ﾆ･｣･ｷ･逾・､･｢･ｦ･ﾈ､ﾎｺﾆｳﾎﾇｧ､ﾈﾊﾑｹｹ｡ﾗ､ﾋ･ﾁ･ｧ･ﾃ･ｯ､､・ﾆ｡｢｡ﾖｼ｡｡ﾗ､｡ｲｼ､ｷ､ﾆ､ｯ､ﾀ､ｵ､､｡｣<br></div><div><span class="mt-enclosure mt-enclosure-image" style="display: inline;"><a href="..\..\assets_c\2010\03\centos54_inst_07-232.html" onclick="https://www.linuxmaster.jp/linux_skill/assets_c/2010/03/centos54_inst_07-232.html','popup','width=801,height=602,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img src="..\..\assets_c\2010\03\centos54_inst_07-thumb-300x225-232.jpeg" alt="centos54_inst_07.jpg" class="mt-image-none" style="" width="300" height="225"></a></span><br><br>｢ｨ｡ﾖsda｡ﾗ､ﾈ､ﾏSCSI ･ﾇ･｣･ｹ･ｯ､ﾎ､ｳ､ﾈ､ﾇ｡｢ﾊ｣ｿ｢､・・遉ﾏｽ遉ﾋsda｡｢sdb｡｢sdc ､ﾈﾌｾﾉﾕ､ｱ､鬢・ﾞ､ｹ｡｣<br>､ﾞ､ｿ｡｢IDE ･ﾇ･｣･ｹ･ｯ､ﾊ､馼da｡｢hdb｡｢hdc ､ﾈﾌｾﾉﾕ､ｱ､鬢・ﾞ､ｹ｡｣<br><br>9.ｺ・・ｰｷﾙｹ・br>ﾋﾜﾅﾋ･ﾏ｡ｼ･ﾉ･ﾇ･｣･ｹ･ｯ､ﾎ･ﾇ｡ｼ･ｿ､ｬ､ｹ､ﾙ､ﾆｺ・・ｵ､・ﾆ､簧ﾉ､､､ｫﾊｹ､ｫ､・ﾞ､ｹ､ﾎ､ﾇ｡｢<br>｡ﾖ､ﾏ､､｡ﾗ､｡ｲｼ､ｷ､ﾆ､ｯ､ﾀ､ｵ､､｡｣<br></div><div><span class="mt-enclosure mt-enclosure-image" style="display: inline;"><a href="..\..\assets_c\2010\03\centos54_inst_08-235.html" onclick="https://www.linuxmaster.jp/linux_skill/assets_c/2010/03/centos54_inst_08-235.html','popup','width=801,height=602,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img src="..\..\assets_c\2010\03\centos54_inst_08-thumb-300x225-235.jpeg" alt="centos54_inst_08.jpg" class="mt-image-none" style="" width="300" height="225"></a></span><br><b><br>･ﾑ･ｽ･ｳ･ﾋﾊﾝﾂｸ､ｵ､・ﾆ､､､・ﾇ｡ｼ･ｿ､ｬ､ｹ､ﾙ､ﾆｺ・・ｵ､・ﾞ､ｹ､ﾎ､ﾇﾃ擎ﾕ､ｷ､ﾆ､ｯ､ﾀ､ｵ､､｡｣</b><br>､ｿ､ﾀ､ｷ｡｢VMware､ﾈﾍﾑ､ｷ､ﾆ･､･ｹ･ﾈ｡ｼ･・ｷ､ﾆ､､､・・遉ﾏ｡｢ｾ蠢ﾞ､ﾎ､隍ｦ､ﾋﾉｽｼｨ､ｵ､・ﾆ｡ﾖ､ﾏ､､｡ﾗ､・br>ﾁｪﾂｷ､ﾆ､筍｢Windows ､ｬｺ・・ｵ､・・ｳ､ﾈ､ﾏ､｢､熙ﾞ､ｻ､ﾎ､ﾇ､ｴｰﾂｿｴ､ｯ､ﾀ､ｵ､､｡｣<br>､ｽ､ﾎ､ﾞ､ﾞ｡ﾖ､ﾏ､､｡ﾗ､ｪﾂｷ､ﾆ･､･ｹ･ﾈ｡ｼ･・ﾑﾂｳ､ｷ､ﾆ､ｯ､ﾀ､ｵ､､｡｣<br><br>10.･ﾑ｡ｼ･ﾆ･｣･ｷ･逾ﾟﾄ熙ﾎｳﾎﾇｧ<br>ｼｫﾆｰ･ﾑ｡ｼ･ﾆ･｣･ｷ･逾ﾇﾊｬｳ荀ｷ､ｿｷ・ﾌ､ｬﾉｽｼｨ､ｵ､・ﾞ､ｹ､ﾎ､ﾇ｡｢､ｽ､ﾎ､ﾞ､ﾞ｡ﾖｼ｡｡ﾗ､｡ｲｼ､ｷ､ﾆ､ｯ､ﾀ､ｵ､､｡｣<br><span class="mt-enclosure mt-enclosure-image" style="display: inline;"><a href="..\..\assets_c\2010\03\centos54_inst_09-238.html" onclick="https://www.linuxmaster.jp/linux_skill/assets_c/2010/03/centos54_inst_09-238.html','popup','width=801,height=603,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img src="..\..\assets_c\2010\03\centos54_inst_09-thumb-300x225-238.jpeg" alt="centos54_inst_09.jpg" class="mt-image-none" style="" width="300" height="225"></a></span><br></div><div><br>ｻﾈﾍﾑ､ｷ､ﾆ､､､・ﾑ･ｽ･ｳ･ﾋ､隍ﾃ､ﾆ｡｢ｾ蠢ﾞ､ﾎﾀﾟﾄ・簣ﾆ､ｬｰﾛ､ﾊ､・・遉ｬ､｢､熙ﾞ､ｹ､ｬﾌ萃熙ﾏ､｢､熙ﾞ､ｻ､｣<br>､ｽ､ﾎ､隍ｦ､ﾋ､ﾊ､・ﾎ､ﾏ｡｢Linux ､ｬ･ﾑ･ｽ･ｳ･ﾎｾﾖ､ｽﾃﾇ､ｷ｡｢ｼｫﾆｰ､ﾇ･ﾑ｡ｼ･ﾆ･｣･ｷ･逾ﾟﾄ熙ﾔ､ﾃ､ﾆ､､､・ｫ､・br>､ﾇ､ｹ｡｣<br>･ﾑ｡ｼ･ﾆ･｣･ｷ･逾ﾈ､ﾏ･ﾏ｡ｼ･ﾉ･ﾇ･｣･ｹ･ｯ､｣ｿﾋﾊｬｳ荀ｷ｡｢ｸ昀ｨ､隍ｯ･ﾏ｡ｼ･ﾉ･ﾇ･｣･ｹ･ｯ､ﾈﾍﾑ､ｹ､・ｿ､皃ﾎｵｻｽﾑ､ﾇ<br>､ｹ｡｣ﾄﾌｾ・｢･ｵ｡ｼ･ﾐ｡ｼ､ﾎﾀﾟｷﾗﾃﾊｳｬ､ﾇ･ｵ｡ｼ･ﾐ｡ｼ､ﾎﾍﾑﾅﾓ､ﾍﾎｸ､ｷ､ﾆ｡｢･ﾑ｡ｼ･ﾆ･｣･ｷ･逾ﾟﾄ熙ｷ､ﾞ､ｹ｡｣<br>ﾎ网ｨ､ﾐ｡｢･ﾕ･｡･､･・ｵ｡ｼ･ﾐ｡ｼ､ﾇ､｢､・ﾐ/home ･ﾇ･｣･・ｯ･ﾈ･熙ﾎﾍﾆﾎﾌ､ｿ､ｯ､ﾈ､・ｬﾍﾗ､ｬ､｢､熙ﾞ､ｹ､ｷ｡｢･癸ｼ･・ｵ<br>｡ｼ･ﾐ｡ｼ､ﾎｾ・遉ﾀ､ﾈ｡｢･癸ｼ･・ｬ･ｹ･ﾗ｡ｼ･・ｵ､・・ﾑ｡ｼ･ﾆ･｣･ｷ･逾ｿ､ｯ､ﾈ､鬢ﾊ､ｱ､・ﾐ､ﾊ､熙ﾞ､ｻ､｣<br>ﾊ｣ｿﾎ･ｵ｡ｼ･ﾓ･ｹ､ｬﾆｱｵ・ｹ､・ｵ｡ｼ･ﾐ｡ｼ､ｽﾃﾛ､ｹ､・・遉ﾋ､ﾏｸﾂ､鬢・ｿ･ﾏ｡ｼ･ﾉ･ﾇ･｣･ｹ･ｯ､ﾎﾍﾆﾎﾌ､ﾉ､ﾎ､・br>､ｦ､ﾋﾊｬｳ荀ｷ｡｢ｻﾈﾍﾑ､ｹ､・ｫｽｼﾊｬ､ﾋｸ｡ﾆ､､ｷ､ﾊ､ｱ､・ﾐ､ﾊ､熙ﾞ､ｻ､｣､ｷ､ｫ､ｷ｡｢ｺ｣ｲﾏWeb ･ｵ｡ｼ･ﾐ｡ｼﾀ・ﾑ､ﾎ･ｵ<br>｡ｼ･ﾐ｡ｼ､ｽﾃﾛ､ｷ､ﾞ､ｹ､ﾎ､ﾇ｡｢ｼｫﾆｰ･ﾐ｡ｼ･ﾆ･｣･ｷ･逾ﾇ･ﾏ｡ｼ･ﾉ･ﾇ･｣･ｹ･ｯ､ｬｳ荀ｷ､ﾞ､ｹ｡｣<br><br>11.･ﾖ｡ｼ･ﾈ･悅ｼ･ﾀ､ﾎﾀﾟﾄ・br>｡ﾖGRUB ･ﾖ｡ｼ･ﾈ･悅ｼ･ﾀ､ﾏ｡ｦ｡ｦ｡ｦ｡ﾗ､ｬﾁｪﾂｵ､・ﾆ､､､・ｳ､ﾈ､ﾎﾇｧ､ｷ､ﾆ｡｢｡ﾖｼ｡｡ﾗ､｡ｲｼ､ｷ､ﾆ､ｯ､ﾀ､ｵ､､｡｣<br><span class="mt-enclosure mt-enclosure-image" style="display: inline;"><a href="..\..\assets_c\2010\03\centos54_inst_10-241.html" onclick="https://www.linuxmaster.jp/linux_skill/assets_c/2010/03/centos54_inst_10-241.html','popup','width=802,height=603,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img src="..\..\assets_c\2010\03\centos54_inst_10-thumb-300x225-241.jpeg" alt="centos54_inst_10.jpg" class="mt-image-none" style="" width="300" height="225"></a></span><br><br>GRUB｡ﾊ･ｰ･鬣ﾖ｡ﾋ､ﾈ､ﾏ｡｢GNU ､ｬｳｫﾈｯ､ｷ､ｿ･ﾖ｡ｼ･ﾈ･悅ｼ･ﾀ､ﾇ･ﾕ･｡･､･・ｷ･ｹ･ﾆ･爨ｲｷ､ﾆ<br>･ﾕ･｡･､･・ﾋ･｢･ｯ･ｻ･ｹ､ｹ､・ﾎ､ｬﾆﾃﾄｧ､ﾇ､ｹ｡｣､ﾞ､ｿGRUB ､ﾏﾆﾈｼｫ､ﾎ･ｷ･ｧ･・ｨ､ﾆ､ｪ､遙｢<br>ﾋ・ｬｰ・ｯﾆｰ､ｷ､ﾊ､ｯ､ﾊ､ﾃ､ﾆ､筍｢ﾊﾌ､ﾎ･ﾖ｡ｼ･ﾈ･､･癸ｼ･ｸ､ｫ､魴ｯﾆｰ､ｹ､・ﾊ､ﾉ､ﾈ､､､ﾃ､ｿﾉ・・鋐ﾈ､ｬ<br>､ｷ､荀ｹ､､､ﾎ､ｬﾆﾃﾄｧ､ﾇ､ｹ｡｣<br><br>｢ｨ ･ﾖ｡ｼ･ﾈ･悅ｼ･ﾀ､ﾈ､ﾏ｡｢OS ､皈筵熙ﾋ･悅ｼ･ﾉ､ｹ､・ﾗ･愠ｰ･鬣爨ﾇ､ｹ｡｣<br></div><div><br>12.･ﾍ･ﾃ･ﾈ･・ｼ･ｯ､ﾎﾀﾟﾄ・br>｡ﾖﾊﾔｽｸ｡ﾗ､ｯ･・ﾃ･ｯ､ｷ､ﾞ､ｹ｡｣<br><span class="mt-enclosure mt-enclosure-image" style="display: inline;"><a href="..\..\assets_c\2010\03\centos54_inst_11-244.html" onclick="https://www.linuxmaster.jp/linux_skill/assets_c/2010/03/centos54_inst_11-244.html','popup','width=803,height=602,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img src="..\..\assets_c\2010\03\centos54_inst_11-thumb-300x224-244.jpeg" alt="centos54_inst_11.jpg" class="mt-image-none" style="" width="300" height="224"></a></span><br><br>｡ﾚ･ﾍ･ﾃ･ﾈ･・ｼ･ｯﾀﾟﾄ・靂ﾌ､ｬﾉｽｼｨ､ｵ､・ﾊ､､ｾ・遑ﾛ<br>ｴﾋｾ蠏ｭ､ﾎ･ﾍ･ﾃ･ﾈ･・ｼ･ｯﾀﾟﾄ・靂ﾌ､ｬﾉｽｼｨ､ｵ､・ﾊ､､ｾ・遉ｬ､｢､熙ﾞ､ｹ｡｣<br>､ｽ､ﾎｾ・遑｢ｲｼｵｭ､ﾎﾅﾀ､ﾎ､ｴｳﾎﾇｧ､ｷ､ﾆ､ｯ､ﾀ､ｵ､､｡｣<br><br>｡ｦ･ﾍ･ﾃ･ﾈ･・ｼ･ｯ･ｫ｡ｼ･ﾉ｡ﾊNIC｡ﾋ､ｬ･ﾑ･ｽ･ｳ･ﾋﾀﾜﾂｳ､ｵ､・ﾆ､､､・ｫ｡ｩ<br>･ﾍ･ﾃ･ﾈ･・ｼ･ｯ･ｫ｡ｼ･ﾉ､ｬﾀﾜﾂｳ､ｵ､・ﾆ､､､・ﾋ､箒ﾘ､・鬢ｺ｡｢･ﾍ･ﾃ･ﾈ･・ｼ･ｯﾀﾟﾄ・靂ﾌ､ｬﾉｽｼｨ､ｵ､・ﾊ､､ｾ・遑｢<br>､ｽ､ﾎ･ﾑ･ｽ･ｳ･ﾋﾀﾜﾂｳ､ｵ､・ﾆ､､､・IC ､ﾏLinux ､ﾇｻﾈ､ｨ､ﾊ､､､筅ﾎ､ﾋ､ﾊ､熙ﾞ､ｹ｡｣<br>､ｽ､ﾎｾ・遉ﾏ｡｢ﾊﾌﾅﾓPC ､ﾑｰﾕ､ｷ､ﾆﾄｺ､ｯ､ｫ｡｢ﾊﾌ､ﾎNIC ､ｴﾍﾑｰﾕ､ｯ､ﾀ､ｵ､､｡｣<br><br>13.ｼ・ｰ､ﾇ･ｵ｡ｼ･ﾐ｡ｼIP ･｢･ﾉ･・ｹ｡｢･ﾍ･ﾃ･ﾈ･ﾞ･ｹ･ｯ､ﾎﾏ､ｷ､ﾞ､ｹ｡｣<br><span class="mt-enclosure mt-enclosure-image" style="display: inline;"><a href="..\..\assets_c\2010\03\centos54_inst_12-247.html" onclick="https://www.linuxmaster.jp/linux_skill/assets_c/2010/03/centos54_inst_12-247.html','popup','width=799,height=602,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img src="..\..\assets_c\2010\03\centos54_inst_12-thumb-300x226-247.jpeg" alt="centos54_inst_12.jpg" class="mt-image-none" style="" width="300" height="226"></a></span><br><br>ｲ靂ﾌ､ﾎﾎ网ﾇ､ﾏ･・ｼ･ｿ､ﾋ､隍・悅ｼ･ｫ･・ｨ･・｢･ﾍ･ﾃ･ﾈ･・ｼ･ｯ､ｽﾃﾛ､ｷ｡｢ｸﾇﾄ鶫P ･｢･ﾉ･・ｹ､・br>ﾀﾟﾄ熙ｷ､ｿｾ・遉ﾎﾎ网ﾇ､ｹ｡｣<br><br>ﾀﾟﾄ・罍ﾋ<br>IP ･｢･ﾉ･・ｹ 192.168.1.36 ｡ﾊ･ｵ｡ｼ･ﾐ｡ｼ､ﾎIP ･｢･ﾉ･・ｹ､ﾟﾄ熙ｷ､ﾞ､ｹ｡ﾋ<br>･ﾍ･ﾃ･ﾈ･ﾞ･ｹ･ｯ 255.255.255.0<br><br>IP ･｢･ﾉ･・ｹ､ﾎ･｢･ﾉ･・ｹﾂﾎｷﾏ､ﾏ･・ｼ･ｿ､ﾋ､隍・ﾛ､ﾊ､熙ﾞ､ｹ｡｣､｢､ﾊ､ｿ､ﾎ･・ｼ･ｿ､ﾋｹ遉・ｻ､ﾆ<br>ﾊﾑｹｹ､ｷ､ﾆ､ｯ､ﾀ､ｵ､､｡｣<br><br>､筅ｷ｡｢､｢､ﾊ､ｿ､ｬ･ﾍ･ﾃ･ﾈ･・ｼ･ｯ､ﾎﾀﾟﾄ熙ﾋｼｫｿｮ､ｬ､ﾊ､ｱ､・ﾐ｡ﾖDynamic IP Configuration(DHCP)｡ﾗ､ﾋ<br>･ﾁ･ｧ･ﾃ･ｯ､､・ｿ､ﾞ､ﾞ｡ﾖｼ｡､ﾘ｡ﾗ､ｯ･・ﾃ･ｯ､ｷ､ﾆ､篶萃熙｢､熙ﾞ､ｻ､ｬ｡｢Linux ､ｭﾍ隘ｵ｡ｼ･ﾐ｡ｼ､ﾈ､ｷ､ﾆ<br>ｻﾈ､､､ｿ､､､ﾊ､鬢ﾇ､ｭ､・ﾀ､ｱｸﾇﾄ鶫P ･｢･ﾉ･・ｹ､ﾟﾄ熙ｹ､・ｳ､ﾈ､ｪ､ｹ､ｹ､皃ｷ､ﾞ､ｹ｡｣<br><br>14.､ｽ､ﾎﾂｾ･ﾍ･ﾃ･ﾈ･・ｼ･ｯ､ﾎﾀﾟﾄ・br>･ﾛ･ｹ･ﾈﾌｾ｡｢･ｲ｡ｼ･ﾈ･ｦ･ｧ･､｡ﾊ･・ｼ･ｿ･｢･ﾉ･・ｹ｡ﾋ｡｢DNS ､ﾎIP ･｢･ﾉ･・ｹ､ﾎﾏ､ｷ｡｢｡ﾖｼ｡｡ﾗ､｡ｲｼ､ｷ､ﾞ､ｹ｡｣<br><span class="mt-enclosure mt-enclosure-image" style="display: inline;"><a href="..\..\assets_c\2010\03\centos54_inst_13-250.html" onclick="https://www.linuxmaster.jp/linux_skill/assets_c/2010/03/centos54_inst_13-250.html','popup','width=803,height=603,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img src="..\..\assets_c\2010\03\centos54_inst_13-thumb-300x225-250.jpeg" alt="centos54_inst_13.jpg" class="mt-image-none" style="" width="300" height="225"></a></span><br><br>ﾀﾟﾄ・・<br>･ﾛ･ｹ･ﾈﾌｾ <b>Tiger</b>｡ﾊ･ｵ｡ｼ･ﾐ｡ｼ､ﾎ･ﾛ･ｹ･ﾈﾌｾ､ﾟﾄ熙ｷ､ﾞ､ｹ｡｣ﾌｾﾁｰ､ﾏｼｫﾍｳ､ﾋﾉﾕ､ｱ､鬢・ﾞ､ｹ｡ﾋ<br>･ｲ｡ｼ･ﾈ･ｦ･ｧ･､ <b>192.168.1.1</b>(ｴﾜﾅｪ､ﾋ･・ｼ･ｿ､ﾎ･｢･ﾉ･・ｹ､ﾘﾄ熙ｷ､ﾞ､ｹ)<br>1 ﾈﾖﾌﾜ､ﾎDNS <b>222.222.222.222</b>｡ﾊ･ﾗ･愠ﾐ･､･ﾀ｡ｼ､ｫ､鮟ﾘﾄ熙ｵ､・ﾆ､､､・ﾗ･鬣､･ﾞ･鵐NS ､ﾎﾏ､ｷ､ﾞ､ｹ｡ﾋ<br>2 ﾈﾖﾌﾜ､ﾎDNS <b>203.203.203.203</b>｡ﾊ･ﾗ･愠ﾐ･､･ﾀ｡ｼ､ｫ､鮟ﾘﾄ熙ｵ､・ﾆ､､､・ｻ･ｫ･ﾀ･鵐NS ､ﾎﾏ､ｷ､ﾞ､ｹ｡ﾋ<br><br>｢ｨ DNS ､ﾋ､ﾄ､､､ﾆ､ﾏ･・ｼ･ｿ､ﾎ･｢･ﾉ･・ｹ､ﾘﾄ熙ｷ､ﾆ､篶萃熙ﾊ､､ｾ・遉ｬ､｢､熙ﾞ､ｹ｡｣<br>｡｡｡｡､｢､ﾊ､ｿ､ﾎ･ﾍ･ﾃ･ﾈ･・ｼ･ｯｴﾄｶｭ､ﾋｹ遉・ｻ､ﾆﾀﾟﾄ熙ｷ､ﾆ､ｯ､ﾀ､ｵ､､｡｣<br><br>15.･ｿ･､･爭ｾ｡ｼ･ﾎﾁｪﾂ・br>｡ﾖ･｢･ｸ･｢/ﾅ・｡ﾗ､ﾋ､ﾊ､ﾃ､ﾆ､､､・ｳ､ﾈ､ﾎﾇｧ､ｷ｡｢｡ﾖ･ｷ･ｹ･ﾆ･爭ｯ･愠ﾃ･ｯ､ﾇ｡ｦ｡ｦ｡ｦ｡ﾗ､ﾋ･ﾁ･ｧ･ﾃ･ｯ､ｬ<br>ﾉﾕ､､､ﾆ､､､・ｳ､ﾈ､ﾎﾇｧ､ｷ､ﾞ､ｹ｡｣<br><span class="mt-enclosure mt-enclosure-image" style="display: inline;"><a href="..\..\assets_c\2010\03\centos54_inst_14-253.html" onclick="https://www.linuxmaster.jp/linux_skill/assets_c/2010/03/centos54_inst_14-253.html','popup','width=803,height=603,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img src="..\..\assets_c\2010\03\centos54_inst_14-thumb-300x225-253.jpeg" alt="centos54_inst_14.jpg" class="mt-image-none" style="" width="300" height="225"></a></span><br><br>16.root ･ﾑ･ｹ･・ｼ･ﾉ､ﾎﾀﾟﾄ・br>root ･ﾑ･ｹ･・ｼ･ﾉ､ﾎﾏ､ｷ｡｢｡ﾖOK｡ﾗ､｡ｲｼ､ｷ､ﾞ､ｹ｡｣<br>｢ｨ･ﾑ･ｹ･・ｼ･ﾉ､ﾏﾇ､ｰﾕ､ﾎ､筅ﾎ､ﾎﾏ､ｷ､ﾆ､ｯ､ﾀ､ｵ､､｡｣<br>､ｳ､ﾎ･ﾑ･ｹ･・ｼ･ﾉ､ﾏｺ｣ｸ螂ｵ｡ｼ･ﾐ｡ｼ､ｽﾃﾛ､ｹ､・螟ﾇﾂ醋ﾑｽﾅﾍﾗ､ﾋ､ﾊ､熙ﾞ､ｹ､ﾎ､ﾇ｡｢<br>ｷ隍ｷ､ﾆﾋｺ､・ﾊ､､､隍ｦ､ﾋ､ｷ､ﾆ､ｯ､ﾀ､ｵ､､｡｣<br><br>･ﾑ･ｹ･・ｼ･ﾉ､ﾟﾄ熙ｹ､・ﾝ､ﾏｱﾑｿ妤ﾞ､爛ｸﾊｸｻ嵓ﾊｾ螟ﾟﾄ熙ｹ､・ｳ､ﾈ､萓ｩ､ｷ､ﾞ､ｹ｡｣<br><span class="mt-enclosure mt-enclosure-image" style="display: inline;"><a href="..\..\assets_c\2010\03\centos54_inst_15-256.html" onclick="https://www.linuxmaster.jp/linux_skill/assets_c/2010/03/centos54_inst_15-256.html','popup','width=802,height=603,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img src="..\..\assets_c\2010\03\centos54_inst_15-thumb-300x225-256.jpeg" alt="centos54_inst_15.jpg" class="mt-image-none" style="" width="300" height="225"></a></span><br><br>root ･ﾑ･ｹ･・ｼ･ﾉ､ﾈ､ﾏ｡｢･ｷ･ｹ･ﾆ･犇ﾉﾍｼﾔﾍﾑ､ﾎ･ﾑ･ｹ･・ｼ･ﾉ､ﾋ､ﾊ､熙ﾞ､ｹ｡｣Windows ､ﾇｸﾀ､ｦ､ﾈ｡｢<br>administrator ､ﾋ､｢､ｿ､・筅ﾎ､ﾇ･ｷ･ｹ･ﾆ･爨ﾋﾂﾐ､ｷ､ﾆ｡｢ﾀ萃ﾐﾅｪｸ｢ﾎﾏ､ｯｴｹ､・筅ﾎ､ﾇ､ｹ｡｣<br>､ｳ､ｳ､ﾇﾀﾟﾄ熙ｷ､ｿ･ﾑ･ｹ･・ｼ･ﾉ､ﾏｷ隍ｷ､ﾆﾋｺ､・ﾊ､､､隍ｦ､ﾋ､ｷ､ﾆ､ｯ､ﾀ､ｵ､､｡｣<br><br>16.｡ﾖ･､･ｹ･ﾈ｡ｼ･・ﾎｼ・爨ｪﾂﾗ､ﾇ､ｽ､ﾎ､ﾞ､ﾞ｡ﾖｼ｡､ﾘ｡ﾗ､ｯ･・ﾃ･ｯ､ｷ､ﾞ､ｹ｡｣<br><span class="mt-enclosure mt-enclosure-image" style="display: inline;"><a href="..\..\assets_c\2010\03\centos54_inst_16-259.html" onclick="https://www.linuxmaster.jp/linux_skill/assets_c/2010/03/centos54_inst_16-259.html','popup','width=802,height=603,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img src="..\..\assets_c\2010\03\centos54_inst_16-thumb-300x225-259.jpeg" alt="centos54_inst_16.jpg" class="mt-image-none" style="" width="300" height="225"></a></span><br><br></div>17.･､･ｹ･ﾈ｡ｼ･・ｰｳﾎﾇｧ<br>ｲｼｵｭ､ﾎｲ靂ﾌ､ｬﾉｽｼｨ､ｵ､・ｿ､鬘ﾖｼ｡｡ﾗ､ｯ･・ﾃ･ｯ､ｷ､ﾞ､ｹ｡｣<br><span class="mt-enclosure mt-enclosure-image" style="display: inline;"><a href="..\..\assets_c\2010\03\centos54_inst_17-262.html" onclick="https://www.linuxmaster.jp/linux_skill/assets_c/2010/03/centos54_inst_17-262.html','popup','width=802,height=603,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img src="..\..\assets_c\2010\03\centos54_inst_17-thumb-300x225-262.jpeg" alt="centos54_inst_17.jpg" class="mt-image-none" style="" width="300" height="225"></a></span><br><div><br>18.･､･ｹ･ﾈ｡ｼ･・皈ﾇ･｣･｢､ﾎｳﾎﾇｧ<br>ｺ｣ｲｪﾂｷ､ｿ･ｫ･ｹ･ｿ･爭､･ｹ･ﾈ｡ｼ･・ﾇﾉｬﾍﾗ､ﾊ･､･ｹ･ﾈ｡ｼ･・D ､ﾎﾈﾖｹ讀ｬﾉｽｼｨ､ｵ､・・ﾎ､ﾇ<br>ｳﾎﾇｧ､ｷ､ﾆ｡ﾖﾂｳｹﾔ｡ﾗ､ｯ･・ﾃ･ｯ､ｷ､ﾞ､ｹ｡｣<br><span class="mt-enclosure mt-enclosure-image" style="display: inline;"><a href="..\..\assets_c\2010\03\centos54_inst_18-265.html" onclick="https://www.linuxmaster.jp/linux_skill/assets_c/2010/03/centos54_inst_18-265.html','popup','width=802,height=603,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img src="..\..\assets_c\2010\03\centos54_inst_18-thumb-300x225-265.jpeg" alt="centos54_inst_18.jpg" class="mt-image-none" style="" width="300" height="225"></a></span><br></div><div><br>19.･､･ｹ･ﾈ｡ｼ･・ｬｻﾏ､ﾞ､熙ﾞ､ｹ｡｣<br>･ﾕ･｡･､･・ｷ･ｹ･ﾆ･爨ﾎ･ﾕ･ｩ｡ｼ･ﾞ･ﾃ･ﾈ<br><span class="mt-enclosure mt-enclosure-image" style="display: inline;"><a href="..\..\assets_c\2010\03\centos54_inst_19-268.html" onclick="https://www.linuxmaster.jp/linux_skill/assets_c/2010/03/centos54_inst_19-268.html','popup','width=802,height=601,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img src="..\..\assets_c\2010\03\centos54_inst_19-thumb-300x224-268.jpeg" alt="centos54_inst_19.jpg" class="mt-image-none" style="" width="300" height="224"></a></span><br><br><span class="mt-enclosure mt-enclosure-image" style="display: inline;"><a href="..\..\assets_c\2010\03\centos54_inst_20-271.html" onclick="https://www.linuxmaster.jp/linux_skill/assets_c/2010/03/centos54_inst_20-271.html','popup','width=804,height=603,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img src="..\..\assets_c\2010\03\centos54_inst_20-thumb-300x225-271.jpeg" alt="centos54_inst_20.jpg" class="mt-image-none" style="" width="300" height="225"></a></span></div><br>･ﾑ･ﾃ･ｱ｡ｼ･ｸ､ﾎ･､･ｹ･ﾈ｡ｼ･・br><span class="mt-enclosure mt-enclosure-image" style="display: inline;"><a href="..\..\assets_c\2010\03\centos54_inst_21-274.html" onclick="https://www.linuxmaster.jp/linux_skill/assets_c/2010/03/centos54_inst_21-274.html','popup','width=801,height=603,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img src="..\..\assets_c\2010\03\centos54_inst_21-thumb-300x225-274.jpeg" alt="centos54_inst_21.jpg" class="mt-image-none" style="" width="300" height="225"></a></span><br><br><div>22.･ﾇ･｣･ｹ･ｯ､ﾎｸｹ<br>･ﾇ･｣･ｹ･ｯ､ﾎｸｹ､ｬｻﾘｼｨ､ｵ､・ｿ､颪D ･ﾉ･鬣､･ﾖ､ﾋｻﾘﾄ熙ｵ､・ｿ･､･ｹ･ﾈ｡ｼ･・D ､ﾞﾆ､ｷ､ﾆ<br>｡ﾖ｣ﾏ｣ﾋ｡ﾗ､ｯ･・ﾃ･ｯ､ｷ､ﾆ､ｯ､ﾀ､ｵ､､｡｣<br><span class="mt-enclosure mt-enclosure-image" style="display: inline;"><a href="..\..\assets_c\2010\03\centos54_inst_23-277.html" onclick="https://www.linuxmaster.jp/linux_skill/assets_c/2010/03/centos54_inst_23-277.html','popup','width=801,height=604,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img src="..\..\assets_c\2010\03\centos54_inst_23-thumb-300x226-277.jpeg" alt="centos54_inst_23.jpg" class="mt-image-none" style="" width="300" height="226"></a></span><br><br><br><b>VMware3､ﾇ･､･ｹ･ﾈ｡ｼ･・ｷ､ﾆ､､､・・遉ﾎ･ﾇ･｣･ｹ･ｯｸｹﾊﾋ｡</b><br>?｡ﾖVM｡ﾗ､ｫ､鬘ﾖﾀﾟﾄ遙ﾗ､ｯ･・ﾃ･ｯ､ｷ､ﾞ､ｹ｡｣<br><span class="mt-enclosure mt-enclosure-image" style="display: inline;"><a href="..\..\assets_c\2010\03\centos54_inst_24-280.html" onclick="https://www.linuxmaster.jp/linux_skill/assets_c/2010/03/centos54_inst_24-280.html','popup','width=366,height=193,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img src="..\..\assets_c\2010\03\centos54_inst_24-thumb-300x158-280.jpeg" alt="centos54_inst_24.jpg" class="mt-image-none" style="" width="300" height="158"></a></span><br><br>?｡ﾖCD/DVD｡ﾗ､ｯ･・ﾃ･ｯ､ｷ｡｢｡ﾖﾀﾜﾂｳｺﾑ､ﾟ｡ﾗ､ﾋ･ﾁ･ｧ･ﾃ･ｯ､､・ﾆ｡ﾖｻｲｾﾈ｡ﾗ､ｯ･・ﾃ･ｯ､ｷ､ﾞ､ｹ｡｣<br><span class="mt-enclosure mt-enclosure-image" style="display: inline;"><a href="..\..\assets_c\2010\03\centos54_inst_25-283.html" onclick="https://www.linuxmaster.jp/linux_skill/assets_c/2010/03/centos54_inst_25-283.html','popup','width=701,height=567,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img src="..\..\assets_c\2010\03\centos54_inst_25-thumb-300x242-283.jpeg" alt="centos54_inst_25.jpg" class="mt-image-none" style="" width="300" height="242"></a></span><br><br>?ｼ｡､ﾎ･ﾇ･｣･ｹ･ｯ･､･癸ｼ･ｸ･ﾕ･｡･､･・ｪﾂｷ､ﾆ｡ﾖｳｫ､ｯ｡ﾗ､ｯ･・ﾃ･ｯ､ｷ､ﾞ､ｹ｡｣<br><span class="mt-enclosure mt-enclosure-image" style="display: inline;"><a href="..\..\assets_c\2010\03\centos54_inst_26-286.html" onclick="https://www.linuxmaster.jp/linux_skill/assets_c/2010/03/centos54_inst_26-286.html','popup','width=610,height=480,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img src="..\..\assets_c\2010\03\centos54_inst_26-thumb-300x236-286.jpeg" alt="centos54_inst_26.jpg" class="mt-image-none" style="" width="300" height="236"></a></span><br><br></div><div>?ｲｾﾁﾛ･ﾞ･ｷ･ﾟﾄ・靂ﾌ､ﾋ､ﾊ､・ﾎ､ﾇ｡ﾖOK｡ﾗ､ｯ･・ﾃ･ｯ､ｷ､ﾞ､ｹ｡｣<br><span class="mt-enclosure mt-enclosure-image" style="display: inline;"><a href="..\..\assets_c\2010\03\centos54_inst_27-289.html" onclick="https://www.linuxmaster.jp/linux_skill/assets_c/2010/03/centos54_inst_27-289.html','popup','width=701,height=567,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img src="..\..\assets_c\2010\03\centos54_inst_27-thumb-300x242-289.jpeg" alt="centos54_inst_27.jpg" class="mt-image-none" style="" width="300" height="242"></a></span><br></div><div><br>､ｳ､ﾎｺ鋐ﾈ､ﾇ･｣･ｹ･ｯｸｹｻﾘｼｨ､ｬｽﾐ､・ﾙ､ﾋｷｫ､・ﾖ､ｷ､ﾞ､ｹ｡｣<br><br>23.ｺﾆｵｯﾆｰ<br>ｲｼｵｭ､ﾎｲ靂ﾌ､ｬﾉｽｼｨ､ｵ､・ｿ､鬘｢｡ﾖｺﾆｵｯﾆｰ｡ﾗ､ｯ･・ﾃ･ｯ､ｷ｡｢･ｵ｡ｼ･ﾐ｡ｼ､ﾆｵｯﾆｰ､ｷ､ﾞ､ｹ｡｣<br><span class="mt-enclosure mt-enclosure-image" style="display: inline;"><a href="..\..\assets_c\2010\03\centos54_inst_28-292.html" onclick="https://www.linuxmaster.jp/linux_skill/assets_c/2010/03/centos54_inst_28-292.html','popup','width=802,height=601,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img src="..\..\assets_c\2010\03\centos54_inst_28-thumb-300x224-292.jpeg" alt="centos54_inst_28.jpg" class="mt-image-none" style="" width="300" height="224"></a></span><br><br>･､･ｹ･ﾈ｡ｼ･・ｬｴｰﾎｻ､ｹ､・ﾈ｡｢ｾ蠏ｭ､ﾎｲ靂ﾌ､ｬﾉｽｼｨ､ｵ､・ﾞ､ｹ｡｣､ｽ､ﾎ､ﾞ､ﾞ｡ﾖｺﾆｵｯﾆｰ｡ﾗ､｡ｲｼ､ｹ､・br>､ﾈ｡｢･ｵ｡ｼ･ﾐ｡ｼ､ｬｺﾆｵｯﾆｰｽ靉､ﾂｻﾜ､ｷ､ﾞ､ｹ｡｣<br>､ｽ､ﾎｺﾝ｡｢･､･ｹ･ﾈ｡ｼ･・D ､隍・ﾐ､ｷ､ﾆ､ｯ､ﾀ､ｵ､､｡｣<br><br>24.CentOS ､ﾎﾀﾟﾄ・br>｡ﾖｿﾊ､爍ﾗ､ｯ･・ﾃ･ｯ､ｷ､ﾞ､ｹ｡｣<br><span class="mt-enclosure mt-enclosure-image" style="display: inline;"><a href="..\..\assets_c\2010\03\centos54_inst_29-295.html" onclick="https://www.linuxmaster.jp/linux_skill/assets_c/2010/03/centos54_inst_29-295.html','popup','width=803,height=602,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img src="..\..\assets_c\2010\03\centos54_inst_29-thumb-300x224-295.jpeg" alt="centos54_inst_29.jpg" class="mt-image-none" style="" width="300" height="224"></a></span><br><br>25.･ﾕ･｡･､･｢･ｦ･ｩ｡ｼ･・ﾎﾀﾟﾄ熙ｷ､ﾞ､ｹ｡｣<br>｡ﾖ･ﾕ･｡･､･｢･ｦ･ｩ｡ｼ･・ﾗ､ｬﾍｭｸ妤ﾋ､ﾊ､ﾃ､ﾆ､､､・ｳ､ﾈ､ﾎﾇｧ､ｷ､ﾆ｡｢｡ﾖｿｮﾍ熙ﾇ､ｭ､・ｵ｡ｼ･ﾓ･ｹ｡ﾗ､ﾎ<br>ｲｼｵｭｹ猯ﾜ､ﾋ･ﾁ･ｧ･ﾃ･ｯ､ｬﾆ､ﾃ､ﾆ､､､・ｫｳﾎﾇｧ､ｷ､ﾆ､ｯ､ﾀ､ｵ､､｡｣<br><br>･ﾁ･ｧ･ﾃ･ｯ､ｬﾆ､ﾃ､ﾆ､､､ﾊ､､ｾ・遉ﾏ｡｢･ﾁ･ｧ･ﾃ･ｯ､､・ﾆ､ｯ､ﾀ､ｵ､､｡｣<br>｡ｦFTP<br>｡ｦSSH<br>｡ｦWWW(HTTP)<br>｢ｨFTP ､ﾈWWW(HTTP)､ﾋ･ﾁ･ｧ･ﾃ･ｯ､､・・ｬﾍﾗ､ｬ､｢､熙ﾞ､ｹ｡｣</div><br><span class="mt-enclosure mt-enclosure-image" style="display: inline;"><a href="..\..\assets_c\2010\03\centos54_inst_30-298.html" onclick="https://www.linuxmaster.jp/linux_skill/assets_c/2010/03/centos54_inst_30-298.html','popup','width=802,height=602,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img src="..\..\assets_c\2010\03\centos54_inst_30-thumb-300x225-298.jpeg" alt="centos54_inst_30.jpg" class="mt-image-none" style="" width="300" height="225"></a></span><br><br><div>26.･ﾕ･｡･､･｢･ｦ･ｩ｡ｼ･・ﾎﾀﾟﾄ熙蠖ｭｳﾎﾇｧ､ｬﾉｽｼｨ､ｵ､・ﾞ､ｹ､ﾎ､ﾇ｡｢｡ﾖ､ﾏ､､｡ﾗ､ｯ･・ﾃ･ｯ､ｷ､ﾞ､ｹ｡｣<br><span class="mt-enclosure mt-enclosure-image" style="display: inline;"><a href="..\..\assets_c\2010\03\centos54_inst_31-301.html" onclick="https://www.linuxmaster.jp/linux_skill/assets_c/2010/03/centos54_inst_31-301.html','popup','width=802,height=604,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img src="..\..\assets_c\2010\03\centos54_inst_31-thumb-300x225-301.jpeg" alt="centos54_inst_31.jpg" class="mt-image-none" style="" width="300" height="225"></a></span><br><br>27.SELinux ､ﾎﾀﾟﾄ・br>｡ﾖSELinux ﾀﾟﾄ遙ﾗ､ﾎｲﾕｽ熙ﾖﾌｵｸ奛ﾗ､ﾋ､ｷ､ﾆ｡｢｡ﾖｿﾊ､爍ﾗ､ｯ･・ﾃ･ｯ､ｷ､ﾞ､ｹ｡｣<br><span class="mt-enclosure mt-enclosure-image" style="display: inline;"><a href="..\..\assets_c\2010\03\centos54_inst_32-304.html" onclick="https://www.linuxmaster.jp/linux_skill/assets_c/2010/03/centos54_inst_32-304.html','popup','width=802,height=602,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img src="..\..\assets_c\2010\03\centos54_inst_32-thumb-300x225-304.jpeg" alt="centos54_inst_32.jpg" class="mt-image-none" style="" width="300" height="225"></a></span><br></div><div><br>28.ｺﾆｵｯﾆｰ､ﾎｳﾎﾇｧ､ｬﾉｽｼｨ､ｵ､・ﾞ､ｹ､ﾎ､ﾇ｡｢｡ﾖ､ﾏ､､｡ﾗ､ｯ･・ﾃ･ｯ､ｷ､ﾞ､ｹ｡｣<br>｡ﾊﾃ｢､ｷ｡｢､ｳ､ｳ､ﾇ､ﾏｺﾆｵｯﾆｰ､ｵ､・ﾞ､ｻ､｣｡ﾋ<br><span class="mt-enclosure mt-enclosure-image" style="display: inline;"><a href="..\..\assets_c\2010\03\centos54_inst_33-307.html" onclick="https://www.linuxmaster.jp/linux_skill/assets_c/2010/03/centos54_inst_33-307.html','popup','width=802,height=604,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img src="..\..\assets_c\2010\03\centos54_inst_33-thumb-300x225-307.jpeg" alt="centos54_inst_33.jpg" class="mt-image-none" style="" width="300" height="225"></a></span><br><br>29.｡ﾖﾆ・ﾕ､ﾈｻｹ・ﾗﾀﾟﾄ熙ﾔ､､､ﾞ､ｹ｡｣<br>ﾆ・ﾕ｡｢ｻｹ・ｬﾀｵ､ｷ､､ｾ・遉ﾏ､ｽ､ﾎ､ﾞ､ﾞ｡ﾖｿﾊ､爍ﾗ､ｯ･・ﾃ･ｯ､ｷ､ﾆ､ｯ､ﾀ､ｵ､､｡｣<br>､筅ｷ｡｢ｻｹ・ｬｰﾛ､ﾊ､・・遉ﾏｽ､ﾀｵ､ｷ､ﾆ､ｯ､ﾀ､ｵ､､｡｣<br><span class="mt-enclosure mt-enclosure-image" style="display: inline;"><a href="..\..\assets_c\2010\03\centos54_inst_35-313.html" onclick="https://www.linuxmaster.jp/linux_skill/assets_c/2010/03/centos54_inst_35-313.html','popup','width=800,height=602,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img src="..\..\assets_c\2010\03\centos54_inst_35-thumb-300x225-313.jpeg" alt="centos54_inst_35.jpg" class="mt-image-none" style="" width="300" height="225"></a></span><br><br>30.｡ﾖ･譯ｼ･ｶ｡ｼ､ﾎｺ鋿ｮ｡ﾗ､ﾇｰ・ﾌ･譯ｼ･ｶ､ﾈｰ・ﾌ･譯ｼ･ｶ｡ｼ､ﾎ･ﾑ･ｹ･・ｼ･ﾉ､ﾟﾄ熙ｷ､ﾞ､ｹ｡｣<br>ﾀﾟﾄ熙ｹ､・ﾑ･ｹ･・ｼ･ﾉ､ﾏｱﾑｿ妤ﾞ､爛ｸﾊｸｻ嵓ﾊｾ螟萓ｩ､ｷ､ﾞ､ｹ｡｣<br><br>｢ｨ ､ｳ､ﾎ･ﾑ･ｹ･・ｼ･ﾉ､ﾏLinux ･ｵ｡ｼ･ﾐ｡ｼ､ﾈ､ｦｾ螟ﾇﾂ醋ﾑｽﾅﾍﾗ､ﾇ､ｹ､ﾎ､ﾇ｡｢ｷ隍ｷ､ﾆﾋｺ､・ﾊ､､､ﾇ､ｯ､ﾀ､ｵ､､｡｣<br><span class="mt-enclosure mt-enclosure-image" style="display: inline;"><a href="..\..\assets_c\2010\03\centos54_inst_36-316.html" onclick="https://www.linuxmaster.jp/linux_skill/assets_c/2010/03/centos54_inst_36-316.html','popup','width=801,height=603,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img src="..\..\assets_c\2010\03\centos54_inst_36-thumb-300x225-316.jpeg" alt="centos54_inst_36.jpg" class="mt-image-none" style="" width="300" height="225"></a></span><br><br>ﾀﾟﾄ・罍ﾋ<br>･譯ｼ･ｶﾌｾ pakira ｡ﾊﾇ､ｰﾕ､ﾎﾌｾﾁｰ､ﾎﾏ､ｷ､ﾆ､ｯ､ﾀ､ｵ､､｡ﾋ<br>･ﾑ･ｹ･・ｼ･ﾉ ﾇ､ｰﾕ､ﾎ･ﾑ･ｹ･・ｼ･ﾉ､ﾎﾏ(ｱﾑｿ妤ﾞ､爛ｸﾊｸｻ嵓ﾊｾ螟萓ｩ)<br>ｳﾎﾇｧ ｳﾎﾇｧ､ﾎ､ｿ､皃ﾋ､筅ｦｰ・ﾙ･ﾑ･ｹ･・ｼ･ﾉ､ﾎﾏ<br><br>31.｡ﾖ･ｵ･ｦ･ﾉ･ｫ｡ｼ･ﾉ｡ﾗ､ﾎﾀﾟﾄ熙ﾏ､ｽ､ﾎ､ﾞ､ﾞ｡ﾖｿﾊ､爍ﾗ､ｯ･・ﾃ･ｯ､ｷ､ﾆ､ｯ､ﾀ､ｵ､､｡｣<br><span class="mt-enclosure mt-enclosure-image" style="display: inline;"><a href="..\..\assets_c\2010\03\centos54_inst_37-319.html" onclick="https://www.linuxmaster.jp/linux_skill/assets_c/2010/03/centos54_inst_37-319.html','popup','width=802,height=602,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img src="..\..\assets_c\2010\03\centos54_inst_37-thumb-300x225-319.jpeg" alt="centos54_inst_37.jpg" class="mt-image-none" style="" width="300" height="225"></a></span><br><br>32.｡ﾖﾄﾉｲﾃ､ﾎCD｡ﾗﾀﾟﾄ熙ﾏ､ｽ､ﾎ､ﾞ､ﾞ｡ﾖｿﾊ､爍ﾗ､ｯ･・ﾃ･ｯ､ｷ､ﾆ､ｯ､ﾀ､ｵ､､｡｣<br><span class="mt-enclosure mt-enclosure-image" style="display: inline;"><a href="..\..\assets_c\2010\03\centos54_inst_38-322.html" onclick="https://www.linuxmaster.jp/linux_skill/assets_c/2010/03/centos54_inst_38-322.html','popup','width=802,height=601,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img src="..\..\assets_c\2010\03\centos54_inst_38-thumb-300x224-322.jpeg" alt="centos54_inst_38.jpg" class="mt-image-none" style="" width="300" height="224"></a></span><br><br></div><div>33.｡ﾖｺﾆｵｯﾆｰｳﾎﾇｧ｡ﾗ､ｬﾉｽｼｨ､ｵ､・ﾞ､ｹ､ﾎ､ﾇ｡｢｡ﾖOK｡ﾗ､ｯ･・ﾃ･ｯ､ｷ､ﾞ､ｹ｡｣<br><span class="mt-enclosure mt-enclosure-image" style="display: inline;"><a href="..\..\assets_c\2010\03\centos54_inst_39-325.html" onclick="https://www.linuxmaster.jp/linux_skill/assets_c/2010/03/centos54_inst_39-325.html','popup','width=803,height=603,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img src="..\..\assets_c\2010\03\centos54_inst_39-thumb-300x225-325.jpeg" alt="centos54_inst_39.jpg" class="mt-image-none" style="" width="300" height="225"></a></span><br><br>34.ｺﾆｵｯﾆｰｸ蟯ｼｿﾞ､ﾎｲ靂ﾌ､ﾋ､ﾊ､・ﾐ･､･ｹ･ﾈ｡ｼ･・ｬﾀｮｸｷ､ﾆ､､､ﾞ､ｹ｡｣<br></div><div><span class="mt-enclosure mt-enclosure-image" style="display: inline;"><a href="..\..\assets_c\2010\03\centos54_inst_47-328.html" onclick="https://www.linuxmaster.jp/linux_skill/assets_c/2010/03/centos54_inst_47-328.html','popup','width=803,height=602,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img src="..\..\assets_c\2010\03\centos54_inst_47-thumb-300x224-328.jpeg" alt="centos54_inst_47.jpg" class="mt-image-none" style="" width="300" height="224"></a></span></div><div><br><br><br></div>
+
+				<!--｢｣ﾌｵﾎﾁ･ﾞ･ﾋ･螂｢･・ｼ-->
+				<center>･ｹ･ﾝ･ｵ｡ｼ･ﾉ･・ｯ</center><br>
+<p style="display: inline"><script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ･・ﾊ･ﾃ･ｯ･ｹ･ﾞ･ｹ･ｿ｡ｼｵｭｻｼ･・ｯ･ｿ･ｰ･・-->
+<ins class="adsbygoogle" style="display:inline-block;width:300px;height:250px" data-ad-client="ca-pub-9286957635215255" data-ad-slot="6310330085"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ･・ﾊ･ﾃ･ｯ･ｹ･ﾞ･ｹ･ｿ｡ｼｵｭｻｼ･・ｯ･ｿ･ｰ･・-->
+<ins class="adsbygoogle" style="display:inline-block;width:300px;height:250px" data-ad-client="ca-pub-9286957635215255" data-ad-slot="6310330085"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</p>
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ･・ﾊ･ﾃ･ｯ･ｹ･ﾞ･ｹ･ｿ｡ｼｵｭｻｼ･・ｯ･讌ﾋ･ﾃ･ﾈ -->
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9286957635215255" data-ad-slot="4526475120" data-ad-format="link" data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br>
+<strong>｢｣CentOS7.4･ｵ｡ｼ･ﾐ｡ｼｹｽﾃﾛ･ﾞ･ﾋ･螂｢･・ｵﾎﾁ･ﾗ･・ｼ･ﾈ</strong><br>
+ｲｼｵｭ｣ｳｺ､ﾎ･ﾞ･ﾋ･螂｢･・ｵﾎﾁ･ﾗ･・ｼ･ﾈ､ｷ､ﾆ､､､ﾞ､ｹ｡｣<br>
+<b>｡ｦCentOS7.4･ｵ｡ｼ･ﾐ｡ｼｹｽﾃﾛ･ﾞ･ﾋ･螂｢･・ﾊ105･ﾚ｡ｼ･ｸ｡ﾋ<br>
+｡ｦVMware Player､ﾇｺ釥・ｾﾁﾛLinuxｴﾄｶｭｹｽﾃﾛ･ﾞ･ﾋ･螂｢･・ﾊ40･ﾚ｡ｼ･ｸ｡ﾋ<br>
+｡ｦ･ﾇ｡ｼ･ｿ･ﾙ｡ｼ･ｹ(PostgreSQL｡ｦMySQL)ｹｽﾃﾛ｡ｦCentOS･ﾐ｡ｼ･ｸ･逾｢･ﾃ･ﾗ･ﾞ･ﾋ･螂｢･・ﾊ33･ﾚ｡ｼ･ｸ｡ﾋ</b><br>
+｢ｨｾ・ﾋｺﾇｿｷ､ﾎCentOS､ｬｻﾈﾍﾑ､ﾇ､ｭ､ﾞ､ｹ｡｣<br>
+ｾﾜ､ｷ､ｯ､ﾏ｢ｭ､ﾎ･ﾚ｡ｼ･ｸ､ﾇﾀ篶ﾀ､ｷ､ﾆ､､､ﾞ､ｹ｡｣ｺ｣､ｹ､ｰ･ｯ･・ﾃ･ｯ､ｷ､ﾆ､ｯ､ﾀ､ｵ､､｡｣<br>
+｡｡<a href="..\..\..\2011\01\linux.html"><img alt="ﾌｵﾎﾁ･ﾞ･ﾋ･螂｢･・ﾀ･ｦ･悅ｼ･ﾉ､ｹ､・ src="..\..\..\images\free_manual_icon.gif"></a>
+
+｡｡<a href="..\..\..\kouza\index.html"><img alt="ﾌｵﾎﾁ･ﾞ･ﾋ･螂｢･・ﾀ･ｦ･悅ｼ･ﾉ､ｹ､・ src="..\..\..\images\home_study_icon.gif"></a>
+
+<br><br><br>
+
+				<!--｢｣ﾌｵﾎﾁ･ﾞ･ﾋ･螂｢･・ｪﾎｻ-->
+			</div>
+		</article>
+		</section>
+</div><!-- / content -->
+
+	<aside id="sidebar">
+		<div id="banners">
+			<p class="banner">
+				<a href="..\..\index.html"><img src="..\..\..\images\banners\banner_s1.jpeg" alt="Linuxｵｻｽﾑ"></a>
+			</p>
+			<p class="banner">
+				<a href="..\..\..\2009\12\post-3.html"><img src="..\..\..\images\banners\banner_s2.jpeg" alt="Linuxﾌｵﾎﾁｹﾖｺﾂ"></a>
+			</p>
+			<p class="banner">
+				<a href="..\..\..\2009\12\post-4.html"><img src="..\..\..\images\banners\banner_s3.jpeg" alt="Linuxﾍｭﾎﾁｹﾖｺﾂ"></a>
+			</p>
+		</div>
+			<ul>
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ･・ﾊ･ﾃ･ｯ･ｹ･ﾞ･ｹ･ｿ｡ｼ･ｵ･､･ﾉ･ﾐ｡ｼ･・ｯ･讌ﾋ･ﾃ･ﾈ -->
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9286957635215255" data-ad-slot="3959422934" data-ad-format="link" data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			</ul>
+		<div class="newsTitle">
+			<h3 class="title"><span>Menu</span></h3>
+		</div>
+		<div class="news">
+			<p><a href="..\..\..\index.html"><span>･ﾈ･ﾃ･ﾗ･ﾚ｡ｼ･ｸ</span></a>
+			<p><a href="..\..\index.html"><span>Linuxｵｻｽﾑ</span></a>
+			<p><a href="..\..\010linux\index.html"><span>Linux､ﾎﾆﾌ邏ﾃﾃﾎｼｱ</span></a>
+			<p><a href="..\..\010linux\centos7\index.html"><span>CentOS7</span></a>
+			<p><a href="..\..\01linuxcommand\index.html"><span>Linux･ｳ･ﾞ･ﾉ</span></a>
+			<p><a href="..\..\030linuxtips\index.html"><span>Linux tips</span></a>
+			<p><a href="..\..\2006\01\centos54linux.html"><span>Linux･ｵ｡ｼ･ﾐ｡ｼｹｽﾃﾛ</span></a>
+			<p><a href="..\..\050linux\index.html"><span>Linuxﾍﾑｸ・/span></a>
+			<p><a href="..\..\..\2009\12\post-3.html"><span>Linuxﾌｵﾎﾁｹﾖｺﾂ</span></a>
+			<p><a href="..\..\..\2009\12\post-4.html"><span>Linuxﾍｭﾎﾁｹﾖｺﾂ</span></a>
+			<p><a href="..\..\..\2010\08\centos55.html"><span>Linux･ｻ･ﾟ･ﾊ｡ｼ</span></a>
+			<p><a href="..\..\..\kouza\index.html"><span>Linuxｹﾖｺﾂ</span></a>
+			<p><a href="..\..\..\linux_blog\index.html"><span>ｸｰ･ﾖ･愠ｰ</span></a>
+			<p><a href="..\..\..\linux_blog\cat60\index.html"><span>Linux･ｻ･ﾟ･ﾊ｡ｼﾊ・/span></a>
+			<p><a href="http://www.enetmercury.com" target="_blank"><span>Linux･ｵ｡ｼ･ﾐ｡ｼｹｽﾃﾛｱｿﾍﾑｴﾉﾍ</span></a>
+			<p><a href="https://www.facebook.com/miyazakiandFriends2" target="_blank"><span>Facebookｸｰ･ﾚ｡ｼ･ｸ</span></a>
+			<p><a href="https://www.facebook.com/miyazakiandFriends" target="_blank"><span>ｴﾉﾍｿﾍ､ﾎFacebook･ﾚ｡ｼ･ｸ</span></a>
+		</div>
+		<div class="newsTitle">
+			<h3 class="title"><span>･ｵ･､･ﾈﾆ篋｡ｺ・</span></h3>
+		</div>
+			<ul>
+			<form action="https://www.google.co.jp/cse" id="cse-search-box" target="_blank" accept-charset="UTF-8">
+				<div>
+					<input type="hidden" name="cx" value="partner-pub-9286957635215255:8808115079">
+					<input type="hidden" name="oe" value="EUC-JP">
+					<input type="text" name="q" size="30">
+					<input type="submit" name="sa" value="ｸ｡ｺ・">
+				</div>
+			</form>
+			<script type="text/javascript" src="https://www.google.co.jp/coop/cse/brand?form=cse-search-box&amp;lang=ja"></script>
+			</ul>
+		<div class="newsTitle">
+			<h3 class="title"><span>Linuxｴﾃ</span></h3>
+		</div>
+		<div class="news">
+			<p><a href="..\..\010linux\index.html"><span>Linux､ﾎｴﾃﾃﾎｼｱ</span></a>
+		</div>
+
+		<div class="newsTitle">
+			<h3 class="title"><span>Linux･ｳ･ﾞ･ﾉ</span></h3>
+		</div>
+		<div class="news">
+			<p><a href="..\..\01linuxcommand\index.html"><span>Linux･ｳ･ﾞ･ﾉ</span></a>
+			<p><a href="..\..\01linuxcommand\cat3\index.html"><span>･ﾕ･｡･､･・ｦ･ﾇ･｣･・ｯ･ﾈ･・ﾉﾍ･ｳ･ﾞ･ﾉ</span></a>
+			<p><a href="..\..\01linuxcommand\cat7\index.html"><span>･譯ｼ･ｶ｡ｦ･ｰ･・ｼ･ﾗｴﾉﾍ･ｳ･ﾞ･ﾉ</span></a>
+			<p><a href="..\..\01linuxcommand\cat9\index.html"><span>･ﾆ･ｭ･ｹ･ﾈｽ靉･ｳ･ﾞ･ﾉ</span></a>
+			<p><a href="..\..\01linuxcommand\cat10\index.html"><span>･ﾍ･ﾃ･ﾈ･・ｼ･ｯｴﾉﾍ･ｳ･ﾞ･ﾉ</span></a>
+			<p><a href="..\..\01linuxcommand\cat11\index.html"><span>･ｷ･ｹ･ﾆ･犇ﾉﾍ･ｳ･ﾞ･ﾉ</span></a>
+			<p><a href="..\..\01linuxcommand\cat12\index.html"><span>･ﾗ･愠ｻ･ｹｴﾉﾍ･ｳ･ﾞ･ﾉ</span></a>
+			<p><a href="..\..\01linuxcommand\cat13\index.html"><span>ｰｵｽﾌ｡ｦｲ爍ｦ･｢｡ｼ･ｫ･､･ﾖｴﾉﾍ･ｳ･ﾞ･ﾉ</span></a>
+			<p><a href="..\..\01linuxcommand\cat14\index.html"><span>･ﾑ･ﾃ･ｱ｡ｼ･ｸｴﾉﾍ･ｳ･ﾞ･ﾉ</span></a>
+			<p><a href="..\..\01linuxcommand\linuxa-e\index.html"><span>Linux･ｳ･ﾞ･ﾉA-E</span></a>
+			<p><a href="..\..\01linuxcommand\linuxf-j\index.html"><span>Linux･ｳ･ﾞ･ﾉF-J</span></a>
+			<p><a href="..\..\01linuxcommand\linuxk-o\index.html"><span>Linux･ｳ･ﾞ･ﾉK-O</span></a>
+			<p><a href="..\..\01linuxcommand\linuxp-t\index.html"><span>Linux･ｳ･ﾞ･ﾉP-T</span></a>
+			<p><a href="..\..\01linuxcommand\linuxu-z\index.html"><span>Linux･ｳ･ﾞ･ﾉU-Z</span></a>
+		</div>
+
+		<div class="newsTitle">
+			<h3 class="title"><span>Linux Tips</span></h3>
+		</div>
+		<div class="news">
+			<p><a href="..\..\030linuxtips\index.html"><span>Linux tips</span></a>
+			<p><a href="..\..\030linuxtips\110\index.html"><span>･､･ｹ･ﾈ｡ｼ･・/span></a>
+			<p><a href="..\..\030linuxtips\010\index.html"><span>ｵｯﾆｰ</span></a>
+			<p><a href="..\..\030linuxtips\020\index.html"><span>･譯ｼ･ｶ｡ｼｴﾉﾍ</span></a>
+			<p><a href="..\..\030linuxtips\030\index.html"><span>･ﾇ･｣･・ｯ･ﾈ･遙ｦ･ﾕ･｡･､･・犲・/span></a>
+			<p><a href="..\..\030linuxtips\040\index.html"><span>･ﾇ･｣･ｹ･ｯﾁ犲・/span></a>
+			<p><a href="..\..\030linuxtips\130\index.html"><span>･ﾇ･ﾐ･､･ｹｴﾉﾍ</span></a>
+			<p><a href="..\..\030linuxtips\050\index.html"><span>･ﾆ･ｭ･ｹ･ﾈｽ靉</span></a>
+			<p><a href="..\..\030linuxtips\060\index.html"><span>･ｷ･ｹ･ﾆ･犇ﾉﾍ</span></a>
+			<p><a href="..\..\030linuxtips\070rpm\index.html"><span>RPM</span></a>
+			<p><a href="..\..\030linuxtips\080\index.html"><span>･ﾍ･ﾃ･ﾈ･・ｼ･ｯ</span></a>
+			<p><a href="..\..\030linuxtips\090\index.html"><span>･ｻ･ｭ･螂・ﾆ･｣</span></a>
+			<p><a href="..\..\030linuxtips\100\index.html"><span>･ｵ｡ｼ･ﾐ｡ｼｴﾉﾍ</span></a>
+			<p><a href="..\..\030linuxtips\120\index.html"><span>･愠ｰｴﾉﾍ</span></a>
+			<p><a href="..\..\030linuxtips\web\index.html"><span>Web･ｵ｡ｼ･ﾐ｡ｼｴﾉﾍ</span></a>
+			<p><a href="..\..\030linuxtips\cat68\index.html"><span>･ﾇ｡ｼ･ｿ｡ｼ･ﾙ｡ｼ･ｹｴﾉﾍ</span></a>
+		</div>
+
+		<div class="newsTitle">
+			<h3 class="title"><span>Linux･ｵ｡ｼ･ﾐ｡ｼｹｽﾃﾛ</span></h3>
+		</div>
+		<div class="news">
+			<p><a href="vmware-player-3.html"><span>VMware Player 3､ﾎ･ﾀ･ｦ･悅ｼ･ﾉ､ﾈ･､･ｹ･ﾈ｡ｼ･・/span></a>
+			<p><a href="vmware-player-3-1.html"><span>VMware Player 3､ﾎｻﾈ､､ﾊ</span></a>
+			<p><a href="..\..\040linux\020centos54\index.html"><span>CentOS5.4､ﾇ･ｵ｡ｼ･ﾐ｡ｼｹｽﾃﾛ</span></a>
+		</div>
+
+		<div class="newsTitle">
+			<h3 class="title"><span>Linuxﾍﾑｸ・/span></h3>
+		</div>
+		<div class="news">
+			<p><a href="..\..\050linux\linuxworda-e\index.html"><span>linuxwordA-E</span></a>
+			<p><a href="..\..\050linux\linuxwordf-j\index.html"><span>linuxwordF-J</span></a>
+			<p><a href="..\..\050linux\linuxwordk-o\index.html"><span>linuxwordK-O</span></a>
+		</div>
+
+		<div class="newsTitle">
+			<h3 class="title"><span>Linux･ﾖ･愠ｰ</span></h3>
+		</div>
+		<div class="news">
+			<p><a href="..\..\..\linux_blog\index.html"><span>Linux･ﾖ･愠ｰ</span></a>
+			<p><a href="..\..\..\linux_blog\cat53\index.html"><span>､ｪﾃﾎ､鬢ｻ</span></a>
+			<p><a href="..\..\..\linux_blog\linux-3\index.html"><span>Linuxｾｦｵｻｽﾑ</span></a>
+			<p><a href="..\..\..\linux_blog\linux-1\index.html"><span>Linux･ｨ･鬘ｼﾂﾐｽ靈｡</span></a>
+			<p><a href="..\..\..\linux_blog\cat60\index.html"><span>Linux･ｻ･ﾟ･ﾊ｡ｼﾊ・/span></a>
+			<p><a href="..\..\..\linux_blog\linux\index.html"><span>Linuxﾆ・ｭ</span></a>
+			<p><a href="..\..\..\linux_blog\cat52\index.html"><span>ﾆ・・ﾎﾆ・ｭ</span></a>
+		</div>
+
+		<div class="newsTitle">
+			<h3 class="title"><span>Linux､ﾎｼﾁﾌ・/span></h3>
+		</div>
+		<div class="news">
+			<p><a href="..\..\..\linux_blog\linux-2\index.html"><span>Linux､ﾎｼﾁﾌ・/span></a>
+			<p><a href="..\..\..\linux_blog\linux-2\linux-4\index.html"><span>Linuxﾁｴﾈﾌ</span></a>
+			<p><a href="..\..\..\linux_blog\linux-2\10\index.html"><span>･､･ｹ･ﾈ｡ｼ･・ﾘﾏ｢</span></a>
+			<p><a href="..\..\..\linux_blog\linux-2\cat57\index.html"><span>･ﾍ･ﾃ･ﾈ･・ｼ･ｯｴﾘﾏ｢</span></a>
+			<p><a href="..\..\..\linux_blog\linux-2\vmware-player\index.html"><span>VMware Playerｴﾘﾏ｢</span></a>
+			<p><a href="..\..\..\linux_blog\linux-2\cat58\index.html"><span>､ｽ､ﾎﾂｾ</span></a>
+		</div>
+
+		<div class="newsTitle">
+			<h3 class="title"><span>Linux･ｹ･ｭ･・｢･ﾃ･ﾗ</span></h3>
+		</div>
+		<div class="news">
+			<p><a href="..\..\..\kouza\index.html"><span>Linuxｹﾖｺﾂ</span></a>
+			<p><a href="..\..\..\2010\08\centos55.html"><span>Linux･ｻ･ﾟ･ﾊ｡ｼ</span></a>
+		</div>
+
+		<div class="newsTitle">
+			<h3 class="title"><span>RSSﾅﾐﾏｿ</span></h3>
+		</div>
+			<p>atom:<a href="..\..\..\atom.xml"><img src="..\..\..\images\atom_xml.jpeg"></a>
+			<p>RSS:<a href="..\..\..\index.xml"><img src="..\..\..\images\rss.png"></a>
+		</aside></div>
+		
+	
+
+<!-- / wrapper -->
+<footer id="footer">
+	<div class="inner">
+		<ul>
+			<li><a href="..\..\..\index.html">｣ﾈ｣ﾏ｣ﾍ｣ﾅ</a></li>
+			<li><a href="..\..\..\cat41\index.html">ﾅｵ･､･ﾈ､ﾋ､ﾄ､､､ﾆ</a></li>
+			<li><a href="..\..\index.html">Linuxｵｻｽﾑ</a></li>
+			<li><a href="..\..\..\2009\12\post-3.html">ﾌｵﾎﾁｹﾖｺﾂ</a></li>
+			<li><a href="..\..\..\2009\12\post-4.html">ﾍｭﾎﾁｹﾖｺﾂ</a></li>
+			<li><a href="..\..\..\linux_blog\index.html">･ﾖ･愠ｰ</a></li>
+			<li><a href="..\..\..\2009\12\post-7.html">､隍ｯ､｢､・ﾁﾌ・/a></li>
+			<li><a href="..\..\..\2009\12\post-8.html">ﾆﾃﾄ・ｦｼ隹妤ﾋｴﾘ､ｹ､・ｽｵｭ</a></li>
+			<li class="end"><a href="..\..\..\cat45\index.html">ﾁ・ﾟ･・ｯﾊ鄂ｸ､ﾋ､ﾄ､､､ﾆ</a></li>
+		</ul>
+		<p id="copyright">Copyright &copy; 2009-2019 Linuxｵｻｽﾑ ･・ﾊ･ﾃ･ｯ･ｹ･ﾞ･ｹ･ｿ｡ｼ.JP｡ﾊLinux･ﾞ･ｹ･ｿ｡ｼ.JP｡ﾋ All rights Reserved.
+	</div>
+</footer>
+<!-- / footer -->
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-63594523-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+</body>
+</html>

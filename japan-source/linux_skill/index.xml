@@ -1,0 +1,1321 @@
+<?xml version="1.0" encoding="EUC-JP"?>
+<rss version="2.0">
+   <channel>
+      <title>Linux技術 リナックスマスター.JP（Linuxマスター.JP）</title>
+      <link>https://www.linuxmaster.jp/linux_skill/</link>
+      <description>Linux初心者が上級者になるために必要なLinuxコマンドやTips、サーバー構築手順などの技術情報を無料で公開しています。初心者向けLinux無料マニュアルの配布、現場の技術が身に付くセミナーや通信講座も開催しています。</description>
+      <language>ja</language>
+      <copyright>Copyright 2019</copyright>
+      <lastBuildDate>Wed, 10 Apr 2019 14:35:16 +0900</lastBuildDate>
+      <generator>http://www.sixapart.com/movabletype/</generator>
+      <docs>http://blogs.law.harvard.edu/tech/rss</docs> 
+
+      
+      <item>
+         <title>dig </title>
+         <description><![CDATA[<h2>digコマンドとは</h2>
+digコマンドは、DNSサーバーにドメイン名を元にIPアドレスを<br />
+問い合わせる（正引き）コマンドになります。<br />
+CentOS6系まではnslookupが使用されていましたが、<br />
+CentOS7からはdigコマンドの使用が推奨されています。<br />
+<br />
+<h2>digコマンドの書式</h2>
+<strong>dig<オプション><@DNSサーバ>ドメイン名<クエリタイプ><クエリクラス></strong><br />
+※<>の物は省略可<br />
+<table class="table4">
+        <tr>
+          <td class="sb30">書式項目</td>
+          <td class="s70">意味</td>
+        </tr>
+        <tr>
+          <td class="sb30">オプション</td>
+          <td class="s70">digコマンドのオプション</td>
+        </tr>
+        <tr>
+          <td class="sb30">@DNSサーバー</td>
+          <td class="s70">名前解決の問い合わせを行うDNSサーバーを指定します。<br />
+                          省略時は/etc/resolve.confに設定されている<br />DNSサーバーを使用します。</td>
+        </tr>
+        <tr>
+          <td class="sb30">クエリタイプ</td>
+          <td class="s70">どのタイプ（レコード）の名前解決を行いたいか設定します。省略時は「a」（正引き）となる</td>
+        </tr>
+        <tr>
+          <td class="sb30">クエリクラス</td>
+          <td class="s70">クエリタイプを指定しない場合、<br />「in」のインターネットクラスドメインになります。</td>
+        </tr>
+        <tr>
+          <td class="sb30">クエリオプション</td>
+          <td class="s70">表示結果の指定や問い合わせ方法を細かく指定できます。</td>
+        </tr>
+</table><br />
+
+]]></description>
+         <link>https://www.linuxmaster.jp/linux_skill/2019/04/dig.html</link>
+         <guid>https://www.linuxmaster.jp/linux_skill/2019/04/dig.html</guid>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">CentOS7</category>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">Linuxコマンド</category>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">LinuxコマンドA-E</category>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">ネットワーク管理コマンド</category>
+        
+        
+         <pubDate>Wed, 10 Apr 2019 14:35:16 +0900</pubDate>
+      </item>
+      
+      <item>
+         <title>CentOS7でrootのSSHログインを無効化する</title>
+         <description><![CDATA[CentOS7環境下で、SSHを使用したrootのログインを禁止するには、<br />
+/etc/ssh/sshd_configファイルを編集します。<br />
+<br />
+SSHは、暗号化された状態でリモート接続することができるサービスで、<br />
+sshdデーモンが提供しています。<br />
+<br />
+CentOSでは、デフォルト環境のままだと、<br />
+SSHでのrootログインが行えてしまいます。<br />
+インターネットに公開するサーバーを構築する場合、<br />
+その設定のままだとセキュリティ上非常に好ましくないので<br />
+無効化する必要があります。<br />
+]]></description>
+         <link>https://www.linuxmaster.jp/linux_skill/2019/03/centos7rootssh.html</link>
+         <guid>https://www.linuxmaster.jp/linux_skill/2019/03/centos7rootssh.html</guid>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">CentOS7</category>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">CentOS7</category>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">Linuxtips</category>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">サーバー管理</category>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">システム管理</category>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">セキュリティ</category>
+        
+        
+         <pubDate>Sun, 31 Mar 2019 10:02:47 +0900</pubDate>
+      </item>
+      
+      <item>
+         <title>CentOS7でfirewalldの確認と停止（ファイアウォール）</title>
+         <description>CentOS7のファイアウォールでは、これまでのCentOS6系で使用されていた
+iptablesよりもfirewalldを使用することが推奨されています。
+
+※CentOS7でもiptablesが使用できます。その場合、firewalldを停止する必要があります。
+　逆に、firewalldを使用する場合は、iptablesを停止する必要があります。
+
+インターネットに公開するサーバーでは、ファイアウォールは必須になりますが、
+信頼できる内部ネットワーク、開発環境及びテスト環境では無効にしておいた方が
+良い場合もあります。
+
+本ページでは、CentOS7から推奨されているfirewalldの状態の確認と、
+停止方法を紹介します。</description>
+         <link>https://www.linuxmaster.jp/linux_skill/2019/03/centos7firewalld.html</link>
+         <guid>https://www.linuxmaster.jp/linux_skill/2019/03/centos7firewalld.html</guid>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">CentOS7</category>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">CentOS7</category>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">Linuxtips</category>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">サーバー管理</category>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">システム管理</category>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">セキュリティ</category>
+        
+        
+         <pubDate>Sat, 30 Mar 2019 14:09:33 +0900</pubDate>
+      </item>
+      
+      <item>
+         <title>CentOS7でSELinuxを無効化する</title>
+         <description><![CDATA[CentOS7でSElinuxを無効化する手順を紹介します。<br />
+SELinux無効化設定を行う前に、現在のSElinuxの状態を確認しましょう。<br />
+<br />
+SELinuxの状態を確認するには、getenforceコマンドを使用します。<br />
+このコマンドを実行すると、SELinuxの状態が確認できます。<br />
+ステータスは、次の通りです。<br />
+<table class="table4">
+        <tr>
+          <td class="sb30">Enforcing</td>
+          <td class="s70">有効な状態</td>
+        </tr>
+        <tr>
+          <td class="sb30">Permissive</td>
+          <td class="s70">無効な状態であるが、SELinuxのログは記録している状態</td>
+        </tr>
+        <tr>
+          <td class="sb30">Disabled</td>
+          <td class="s70">無効な状態</td>
+        </tr>
+</table><br />]]></description>
+         <link>https://www.linuxmaster.jp/linux_skill/2019/03/centos7selinux.html</link>
+         <guid>https://www.linuxmaster.jp/linux_skill/2019/03/centos7selinux.html</guid>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">CentOS7</category>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">CentOS7</category>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">Linuxtips</category>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">サーバー管理</category>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">システム管理</category>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">セキュリティ</category>
+        
+        
+         <pubDate>Fri, 29 Mar 2019 15:59:46 +0900</pubDate>
+      </item>
+      
+      <item>
+         <title>CentOS7バージョンアップ手順</title>
+         <description><![CDATA[CentOSを最新バージョンにアップデートする手順を紹介します。
+本作業を行うことで、常に最新のCentOS を利用することが可能になります。
+
+<strong>注意</strong>
+実行タイミングやサーバー環境によっては、システムやアプリケーションの誤作動や
+不具合、場合によっては、サーバー自体が起動しなくなる可能性があります。
+そうなっても良いように、実行する場合は、必ずテスト環境（壊れても良い環境）で
+事前確認を行ってください。
+
+今回の例では、CentOS7.4を使用していますが、
+他のバージョンでも基本的に手順は同じになります。
+
+
+<strong>1.Linux のバージョンを確認します。</strong>
+$ <b><font color="#dd0000">su -</font></b>
+パスワード:  　　　<b>←rootパスワードを入力します(パスワードは入力しても表示されません)</b>
+# <b><font color="#dd0000">cat /etc/redhat-release</font></b>
+CentOS Linux release 7.4.1708 (Core)
+
+
+<strong>2.カーネルバージョンを確認します。</strong>
+# <b><font color="#dd0000">uname -a</font></b>
+Linux Tiger 3.10.0-693.el7.x86_64 #1 SMP Tue Aug 22 21:09:27 UTC 2017 x86_64 x86_64 x86_64 GNU/Linux
+
+
+<strong>3.カーネルをアップデート対象から除外する設定を行います。</strong>
+バージョンアップの多くのトラブル原因は、
+カーネルアップデートなので、取り敢えず除外します。
+13 行目に「exclude=kernel*」を追加します。
+# <b><font color="#dd0000">vi /etc/yum.conf</font></b>
+--------------------------------------------------------------------
+[main]
+cachedir=/var/cache/yum/$basearch/$releasever
+keepcache=0
+debuglevel=2
+logfile=/var/log/yum.log
+exactarch=1
+obsoletes=1
+gpgcheck=1
+plugins=1
+installonly_limit=5
+bugtracker_url=http://bugs.centos.org/set_project.php?project_id=23&ref=http://bugs.centos.org/bug_repor
+t_page.php?category=yum
+distroverpkg=centos-release
+<strong>exclude=kernel*</strong>　　<b>←「exclude=kernel*」を追加します。</b>
+--------------------------------------------------------------------
+編集後、「<b><font color="#dd0000">:wq</font></b>」で保存終了します。
+
+
+<strong>4.yumアップデートを実施します。</strong>
+yum コマンドでアップデートを実施します。
+途中、処理を続行するか問われるので「y」を入力します。
+※表示される内容は、実行タイミングによって異なります。
+--------------------------------------------------------------------
+# <b><font color="#dd0000">yum update</font></b>
+読み込んだプラグイン:fastestmirror, langpacks
+base | 3.6 kB 00:00:00
+extras | 3.4 kB 00:00:00
+updates | 3.4 kB 00:00:00
+(1/4): extras/7/x86_64/primary_db | 147 kB 00:00:03
+(2/4): updates/7/x86_64 /primary_db | 2.0 MB 00:00:08
+
+<b><font color="#dd0000">〜中略〜</font></b>
+
+libinput x86_64 1.8.4 -2.el7 base 142 k
+libwayland-client x86_64 1.14.0-2.el7 base 32 k
+libwayland-cursor x86_64 1.14.0 -2.el7 base 20 k
+libwayland-server x86_64 1.14.0 -2.el7 base 38 k
+llvm-private x86_64 5.0.0 -3.el7 base 20 M
+lz4 x86_64 1.7.5 -2.el7 base 98 k
+mesa-libwayland-egl x86_64 17.2.3 -8.20171019.el7 base 17 k
+unbound-libs x86_64 1.6.6 -1.el7 base 405 k
+volume_key-libs x86_64 0.3.9-8.el7 base 140 k
+
+トランザクションの要約
+============================================================
+インストール 4 パッケージ(+20 個の依存関係のパッケージ)
+更新 613 パッケージ　　<b>←この辺りの数字は、実行タイミングによって異なります。</b>
+
+合計容量: 642 M
+総ダウンロード容量: 641 M
+Is this ok [y/d/N]:  <b><font color="#dd0000">y</font></b>　　<b>←「y」を入力します。</b>
+
+<b><font color="#dd0000">〜中略〜</font></b>
+
+xorg-x11-server-common.x86_64 0:1.19.5-5.el7
+xorg-x11-xinit.x86_64 0:1.3.4-2.el7
+yum.noarch 0:3.4.3-158.el7.centos
+yum-plugin-fastestmirror.noarch 0:1.1.31 -45.el7
+yum-utils.noarch 0:1.1.31-45.el7
+
+置換:
+grub2.x86_64 1:2.02-0.64.el7.centos grub2 -tools.x86_64 1:2.02-0.64.el7.centos
+
+完了しました!
+--------------------------------------------------------------------
+
+
+<strong>5.サーバーを再起動します。</strong>
+# <b><font color="#dd0000">shutdown -r now</font></b>
+
+
+<strong>6.再起動後、Linux のバージョンを確認します。</strong>
+下記の例では、CentOS7.5 にバージョンアップしていますが、
+実行タイミングによってバージョンが異なる場合があります。
+$ <b><font color="#dd0000">su -</font></b>
+パスワード:
+# <b><font color="#dd0000">cat /etc/redhat-release</font></b>
+CentOS Linux release 7.5.1804 (Core)
+
+
+<strong>7.カーネルバージョンを確認します。</strong>
+カーネルのバージョンはアップデートから除外しているので、変わっていません。
+# <b><font color="#dd0000">uname -a</font></b>
+Linux Tiger 3.10.0-693.el7.x86_64 #1 SMP Tue Aug 22 21:09:27 UTC 2017 x86_64 x86_64 x86_64 GNU/Linux
+
+
+<strong>8.カーネルのバージョンアップをします。</strong>
+13 行目の「exclude=kernel*」行頭に「#」を追加します。
+# <b><font color="#dd0000">vi /etc/yum.conf</font></b>
+--------------------------------------------------------------------
+[main]
+cachedir=/var/cache/yum/$basearch/$releasever
+keepcache=0
+debuglevel=2
+logfile=/var/log/yum.log
+exactarch=1
+obsoletes=1
+gpgcheck=1
+plugins=1
+installonly_limit=5
+bugtracker_url=http://bugs.centos.org/set_project.php?project_id=23&ref=http://bugs.centos.org/bug_repor
+t_page.php?category=yum
+distroverpkg=centos-release
+<b><font color="#dd0000">#</font></b>exclude=kernel* 　　　<b>←行頭に「#」を追加します。</b>
+--------------------------------------------------------------------
+編集後、「<b><font color="#dd0000">:wq</font></b>」で保存終了します。
+
+
+<strong>9.yumアップデートを実施します。</strong>
+yum コマンドでアップデートを実施します。
+途中、処理を続行するか問われるので「y」を入力します。
+※表示される内容は、実行タイミングによって異なります。
+--------------------------------------------------------------------
+# <b><font color="#dd0000">yum update</font></b>
+読み込んだプラグイン:fastestmirror, langpacks
+Loading mirror speeds from cached hostfile
+* base: ftp.nara.wide.ad.jp
+* extras: ftp.nara.wide.ad.jp
+
+<b><font color="#dd0000">〜中略〜</font></b>
+
+---> パッケージkernel-tools-libs.x86_64 0:3.10.0-693.el7 を更新
+---> パッケージkernel-tools-libs.x86_64 0:3.10.0-862.3.2.el7 をアップデート
+--> 依存性解決を終了しました。
+
+依存性を解決しました
+
+============================================================
+Package アーキテクチャーバージョン リポジトリー 容量
+============================================================
+インストール中:
+kernel x86_64 3.10.0-862.3.2.el7 updates 46 M
+kernel-devel x86_64 3.10.0-862.3.2.el7 updates 16 M
+更新します:
+kernel-headers x86_64 3.10.0-862.3.2.el7 updates 7.1 M
+kernel-tools x86_64 3.10.0-862.3.2.el7 updates 6.2 M
+kernel-tools-libs x86_64 3.10.0-862.3.2.el7 updates 6.2 M
+
+トランザクションの要約
+============================================================
+インストール 2 パッケージ　　<b>←この辺りの数字や内容は、実行タイミングによって異なります。</b>
+更新 3 パッケージ
+
+総ダウンロード容量: 81 M
+Is this ok [y/d/N]: <b><font color="#dd0000">y</font></b>　<b>←「y」を入力します。</b>
+
+〜中略〜
+
+検証中 : kernel-headers-3.10.0-693.el7.x86_64 7/8
+検証中 : kernel-tools-libs-3.10.0-693.el7.x86_64 8/8
+
+インストール:
+kernel.x86_64 0:3.10.0-862.3.2.el7 kernel -devel.x86_64 0:3.10.0-862.3.2.el7
+
+更新:
+kernel-headers.x86_64 0:3.10.0-862.3.2.el7 kernel-tools.x86_64 0:3.10.0-862.3.2.el7
+kernel-tools-libs.x86_64 0:3.10.0-862.3.2.el7
+
+完了しました!
+--------------------------------------------------------------------
+
+
+<strong>10.サーバーを再起動します。</strong>
+# <b><font color="#dd0000">shutdown -r now</font></b>
+
+
+<strong>11.カーネルバージョンを確認します。</strong>
+カーネルがバージョンアップしています。
+$ <b><font color="#dd0000">su -</font></b>
+パスワード:
+[root@Tiger ~]# <b><font color="#dd0000">uname -a</font></b>
+Linux Tiger 3.10.0-862.3.2.el7.x86_64 #1 SMP Mon May 21 23:36:36 UTC 2018 x86_64 x86_64 x86_64 GNU/Linux
+
+
+本手順を実施することで、常に最新のCentOS を利用することが出来ます。
+しかし、冒頭でも説明しましたが、アップデートによるトラブルが発生する場合も
+ありますので、実施する際は、必ずテスト環境で問題がないことを確認してから、
+本番環境で実施してください。]]></description>
+         <link>https://www.linuxmaster.jp/linux_skill/2018/06/centos.html</link>
+         <guid>https://www.linuxmaster.jp/linux_skill/2018/06/centos.html</guid>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">CentOS7</category>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">Linuxtips</category>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">サーバー管理</category>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">システム管理</category>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">セキュリティ</category>
+        
+        
+         <pubDate>Wed, 13 Jun 2018 10:00:02 +0900</pubDate>
+      </item>
+      
+      <item>
+         <title>CentOS7のNICをCentOS6系のeth0にする</title>
+         <description><![CDATA[CentOS7では、NICのパーティション名を自動で割り当てるよう仕様変更されています。
+しかし、その仕様でNICを命名されると、一部正しく動作しないソフトウェアが存在します。
+そのようなソフトウェアを利用したい場合、従来のCentOS6系で使用されているeth0に
+NICの名前を変更します。
+
+<b>1.「/etc/default/grub」を編集します。</b>
+[root@Tiger src]# <strong>grep net.ifnames /etc/default/grub || sed '/^GRUB_CMDLINE_LINUX/s/\"$/ net.ifnames=0 biosdevname=0\"/g' /etc/default/grub</strong>
+GRUB_CMDLINE_LINUX="crashkernel=auto rd.lvm.lv=centos_tiger/root rd.lvm.lv=centos_tiger/swap net.ifnames=0 rhgb quiet"
+
+<b>2.設定を反映させます。</b>
+[root@Tiger src]# <strong>grub2-mkconfig -o /boot/grub2/grub.cfg</strong>
+Generating grub configuration file ...
+Found linux image: /boot/vmlinuz-3.10.0-693.el7.x86_64
+Found initrd image: /boot/initramfs-3.10.0-693.el7.x86_64.img
+Found linux image: /boot/vmlinuz-0-rescue-8680acc02b184dddaeb10d6dafc68539
+Found initrd image: /boot/initramfs-0-rescue-8680acc02b184dddaeb10d6dafc68539.img
+done
+
+<b>3.NICの設定ファイルをリネームします。</b>
+※ifcfg-p4p2 の「ip4p2」の箇所は環境によって異なりますので変更してください。
+[root@Tiger src]# <strong>mv /etc/sysconfig/network-scripts/ifcfg-p4p2 /etc/sysconfig/network-scripts/ifcfg-eth0</strong>
+
+<b>4.デバイス情報を表示し、MACアドレスを確認します。</b>
+[root@Tiger ~]# nmcli device show
+GENERAL.デバイス:                       p4p2
+GENERAL.タイプ:                         ethernet
+GENERAL.ハードウェアアドレス:           <strong>58:8A:5A:29:2B:BA</strong>   <b>←控える</b>
+GENERAL.MTU:                            1500
+GENERAL.状態:                           100 (接続済み)
+GENERAL.接続:                           eth0
+GENERAL.CON パス:                       /org/freedesktop/NetworkManager/ActiveConnection/1
+WIRED-PROPERTIES.キャリア:              オン
+IP4.アドレス[1]:                        192.168.0.36/24
+IP4.ゲートウェイ:                       192.168.0.1
+IP4.DNS[1]:                             192.168.0.1
+IP6.アドレス[1]:                        fe80::5a8a:5aff:fe29:2bba/64
+IP6.ゲートウェイ:                       --
+
+GENERAL.デバイス:                       wlan0
+GENERAL.タイプ:                         wifi
+GENERAL.ハードウェアアドレス:           C6:A5:AA:5F:4B:0A
+GENERAL.MTU:                            0
+GENERAL.状態:                           30 (切断済み)
+GENERAL.接続:                           --
+GENERAL.CON パス:                       --
+
+GENERAL.デバイス:                       lo
+GENERAL.タイプ:                         loopback
+GENERAL.ハードウェアアドレス:           00:00:00:00:00:00
+GENERAL.MTU:                            65536
+GENERAL.状態:                           10 (管理無し)
+GENERAL.接続:                           --
+GENERAL.CON パス:                       --
+IP4.アドレス[1]:                        127.0.0.1/8
+IP4.ゲートウェイ:                       --
+IP6.アドレス[1]:                        ::1/128
+IP6.ゲートウェイ:                       --
+
+<b>5.NICのデバイスファイルを編集します。</b>
+3でリネームしたファイルを編集します。
+[root@Tiger ~]# <strong>vi /etc/sysconfig/network-scripts/ifcfg-eth0</strong>
+TYPE=Ethernet
+PROXY_METHOD=none
+BROWSER_ONLY=no
+BOOTPROTO=none
+DEFROUTE=yes
+IPV4_FAILURE_FATAL=no
+IPV6INIT=no
+IPV6_AUTOCONF=yes
+IPV6_DEFROUTE=yes
+IPV6_FAILURE_FATAL=no
+IPV6_ADDR_GEN_MODE=stable-privacy
+<strong>NAME=eth0</strong>　　　　　　　　 <b>←eth0に修正します。</b>
+<strong>HWADDR=58:8A:5A:29:2B:BA</strong>　<b>←4で確認したMACアドレスを追加します。</b>
+UUID=22f748d6-6718-47ac-bc27-7188a419465f
+<strong>DEVICE=eth0 </strong>             <b>←eth0に修正します。</b>
+ONBOOT=yes
+IPADDR=192.168.0.36
+PREFIX=24
+GATEWAY=192.168.0.1
+DNS1=192.168.0.1
+
+<b>6.サーバーを再起動します。</b>
+[root@Tiger ~]# <strong>shutdown -r now</strong>
+
+<b>7.再起動後、NIC名をを確認します。</b>
+[root@Tiger ~]# <strong>nmcli device show</strong>
+
+
+
+
+]]></description>
+         <link>https://www.linuxmaster.jp/linux_skill/2018/04/centos7niccentos6eth0.html</link>
+         <guid>https://www.linuxmaster.jp/linux_skill/2018/04/centos7niccentos6eth0.html</guid>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">CentOS7</category>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">Linuxtips</category>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">デバイス管理</category>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">ネットワーク</category>
+        
+        
+         <pubDate>Fri, 06 Apr 2018 12:08:34 +0900</pubDate>
+      </item>
+      
+      <item>
+         <title>Linuxのカーネルバージョンを確認する</title>
+         <description><![CDATA[ Linuxでカーネルのバージョンを確認するには、確認コマンドを実行する方法と<br />
+カーネルバージョンを保持したファイルを確認する方法があります。<br />
+<br />
+<h3>コマンドでカーネルバージョンを確認する方法</h3>
+コマンドでカーネルバージョンを確認する場合は、unameコマンドを使用します。<br />
+unameにはいくつかのオプションがありますので、代表的なものを紹介します。<br />
+<br />
+<strong>■カーネルバージョンのみ表示する</strong><br />
+unameコマンドに「-r」オプションを付けて実行します。<br />
+$ <b>uname -r</b><br />
+3.10.0-693.11.6.el7.x86_64<br />
+<br />
+<strong>■ハードウェアアーキテクチャのみ表示する</strong><br />
+unameコマンドに「-m」オプションを付けて実行します。<br />
+$ <b>uname -m</b><br />
+x86_64<br />
+<br />
+<strong>■すべての情報を表示する</strong><br />
+unameコマンドに「-a」オプションを付けて実行します。<br />
+$ <b>uname -a</b><br />
+Linux Tiger 3.10.0-693.11.6.el7.x86_64 #1 SMP Thu Jan 4 01:06:37 UTC 2018 x86_64 x86_64 x86_64 GNU/Linux<br />
+<br />
+<h3>ファイルでカーネルバージョンを確認する方法</h3>
+カーネルバージョン情報は、/proc/version ファイルに保存されています。<br />
+ファイル参照コマンド（cat,more,less,view,viなど）で内容を参照します。<br />
+<br />
+$ <b>cat /proc/version</b><br />
+Linux version 3.10.0-693.11.6.el7.x86_64 (builder@kbuilder.dev.centos.org) (gcc version 4.8.5 20150623 (Red Hat 4.8.5-16) (GCC) ) #1 SMP Thu Jan 4 01:06:37 UTC 2018<br />
+<br />]]></description>
+         <link>https://www.linuxmaster.jp/linux_skill/2018/01/post-175.html</link>
+         <guid>https://www.linuxmaster.jp/linux_skill/2018/01/post-175.html</guid>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">Linuxtips</category>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">LinuxコマンドU-Z</category>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">システム管理</category>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">システム管理コマンド</category>
+        
+        
+         <pubDate>Fri, 19 Jan 2018 03:38:03 +0900</pubDate>
+      </item>
+      
+      <item>
+         <title>cronのログファイル「/var/log/cron」を確認する</title>
+         <description><![CDATA[Linuxシステムで、定期的にコマンドを実行させる
+スケジューリング機能としてcronがあります。
+
+cronを利用するには、crontabコマンドを使用します。
+詳しくは下記ページをご確認ください。
+<a href="https://www.linuxmaster.jp/linux_skill/2007/06/102crontab.html" target="_blank">crontabコマンド</a>
+
+cornの実行結果のログを確認にするには、/var/log/cronファイルを確認します。
+
+# <strong>more /var/log/cron</strong>
+Nov 14 11:58:01 Tiger CROND[3132]: (pcp) CMD ( /usr/libexec/pcp/bin/pmie_check -C)
+Nov 14 12:00:01 Tiger CROND[3692]: (root) CMD (/usr/lib64/sa/sa1 1 1)
+Nov 14 12:00:01 Tiger CROND[3693]: (root) CMD (/usr/share/clamav/freshclam-sleep)
+Nov 14 12:01:02 Tiger CROND[3715]: (root) CMD (run-parts /etc/cron.hourly)
+Nov 14 12:01:02 Tiger CROND[3717]: (root) CMD (/var/www/system/snortsnarf.sh)
+Nov 14 12:01:02 Tiger run-parts(/etc/cron.hourly)[3715]: starting 0anacron
+Nov 14 12:01:03 Tiger anacron[3731]: Anacron started on 2017-11-14
+Nov 14 12:01:03 Tiger run-parts(/etc/cron.hourly)[3733]: finished 0anacron
+Nov 14 12:01:03 Tiger run-parts(/etc/cron.hourly)[3715]: starting 0yum-hourly.cron
+Nov 14 12:01:03 Tiger run-parts(/etc/cron.hourly)[3739]: finished 0yum-hourly.cron
+Nov 14 12:01:03 Tiger anacron[3731]: Will run job `cron.daily' in 15 min.
+Nov 14 12:01:03 Tiger anacron[3731]: Will run job `cron.weekly' in 35 min.
+Nov 14 12:01:03 Tiger anacron[3731]: Will run job `cron.monthly' in 55 min.
+Nov 14 12:01:03 Tiger anacron[3731]: Jobs will be executed sequentially
+
+上記の様にcronの実行ログが表示されます。
+
+
+]]></description>
+         <link>https://www.linuxmaster.jp/linux_skill/2017/11/cronvarlogcron.html</link>
+         <guid>https://www.linuxmaster.jp/linux_skill/2017/11/cronvarlogcron.html</guid>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">Linuxtips</category>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">ログ管理</category>
+        
+        
+         <pubDate>Tue, 14 Nov 2017 11:56:14 +0900</pubDate>
+      </item>
+      
+      <item>
+         <title>yumでシステムアップデートする（カーネルは除く）</title>
+         <description><![CDATA[yumはrpmをインストールしたり、アップデートするコマンドです。<br />
+このyumを使用することで、Linuxシステムにインストールされている<br />
+すべてのパッケージをアップデートすることができます。<br />
+<br />
+<b>■yumのサブコマンド</b>
+<table class="table4">
+        <tr>
+          <td class="sb30">yum check-update</td>
+          <td class="s70">アップデート可能なパッケージを調査します。</td>
+        </tr>
+        <tr>
+          <td class="sb30">yum update</td>
+          <td class="s70">インストールされている全てのパッケージをアップデートします。</td>
+        </tr>
+        <tr>
+          <td class="sb30">yum update パッケージ</td>
+          <td class="s70">指定したパッケージのみアップデートします。</td>
+        </tr>
+        <tr>
+          <td class="sb30">yum upgrade</td>
+          <td class="s70">システムをアップグレードします。<br />(CentOS7.1→CentOS7.4)<br />実質yum updateと同じ</td>
+        </tr>
+</table><br />
+yum updateにおいて、カーネルアップデートは行わないほうが無難です。<br />
+なぜなら、カーネルアップデートを行うと、<br />
+システムの再起動やサービスの停止措置が必要だったり、<br />
+最悪カーネルパニックが発生して、システムが起動しない場合があるからです。<br />
+<br />
+<br />
+<b>■カーネルを除外してアップデートする</b><br />
+yum -y updateの後ろに「--exclude=kernel*」を指定して実行することで<br />
+カーネルをアップデート対象から除外することできます。<br />
+<br />
+# <strong>yum -y update --exclude=kernel*</strong><br />
+<br />
+ただし、この方法だと毎回「--exclude=kernel*」を指定する必要があり、<br />
+指定し忘れてしまう危険性があります。<br />
+<br />
+そこで、/etc/yum.confにカーネルアップデートを除外する設定を行うのがオススメです。<br />
+<br />
+# <strong>vi /etc/yum.conf</strong><br />
+[main]<br />
+cachedir=/var/cache/yum/$basearch/$releasever<br />
+keepcache=0<br />
+debuglevel=2<br />
+logfile=/var/log/yum.log<br />
+exactarch=1<br />
+obsoletes=1<br />
+gpgcheck=1<br />
+plugins=1<br />
+installonly_limit=5<br />
+<strong>exclude=kernel*</strong>   <b>←追加します。</b><br />
+<br />
+追加したら「:wq」で保存終了します。<br />
+<br />
+<b>・カーネルのバージョンを確認します。</b><br />
+# <strong>uname -r</strong><br />
+3.10.0-229.el7.x86_64<br />
+<br />
+<b>・CentOSのバージョンを確認します。</b><br />
+# cat /etc/redhat-release<br />
+CentOS Linux release 7.1.1503 (Core)<br />
+<br />
+<b>・アップデート可能なパッケージを確認します。</b><br />
+アップデートリストを確認して、カーネルが対象になっていない事を確認します。<br />
+# <strong>yum check-update</strong><br />
+jasper-libs.x86_64                            1.900.1-31.el7                               base<br />
+kbd.x86_64                                    1.15.5-13.el7                                base<br />
+kbd-legacy.noarch                             1.15.5-13.el7                                base<br />
+kbd-misc.noarch                               1.15.5-13.el7                                base<br />
+kexec-tools.x86_64                            2.0.14-17.el7                                base<br />
+kmod.x86_64                                   20-15.el7_4.2                                updates<br />
+kmod-libs.x86_64                              20-15.el7_4.2                                updates<br />
+kpartx.x86_64                                 0.4.9-111.el7                                base<br />
+kpatch.noarch                                 0.4.0-1.el7                                  base<br />
+krb5-devel.x86_64                             1.15.1-8.el7                                 base<br />
+krb5-libs.x86_64                              1.15.1-8.el7                                 base<br />
+langtable.noarch                              0.0.31-3.el7                                 base<br />
+<br />
+<b>・アップデートを実施します。</b><br />
+# <strong>yum update</strong><br />
+<br />
+<b>・アップデート後のカーネルのバージョンを確認します。</b><br />
+# <strong>uname -r</strong><br />
+3.10.0-229.el7.x86_64<br />
+<br />
+<b>・アップデート後のCentOSのバージョンを確認します。</b><br />
+# <strong>cat /etc/redhat-release</strong><br />
+CentOS Linux release 7.4.1708 (Core)　　<b>←CentOS7.4にアップグレードしています。</b><br />
+<br />
+<b>・アップデート後にアップグレード可能なパッケージが存在しないことを確認します。</b><br />
+対象パッケージがなければ問題ありません。<br />
+# <strong>yum check-update</strong><br />
+<br />
+<b>・ログファイルでもアップデート状況の確認が行なえます。</b><br />
+# <strong>less /var/log/yum.log</strong><br />
+Sep 22 15:37:14 Updated: libgcc-4.8.5-16.el7.x86_64<br />
+Sep 22 15:37:15 Installed: 1:grub2-common-2.02-0.64.el7.centos.noarch<br />
+Sep 22 15:37:15 Updated: centos-release-7-4.1708.el7.centos.x86_64<br />
+Sep 22 15:37:16 Updated: setup-2.8.71-7.el7.noarch<br />
+Sep 22 15:37:19 Updated: filesystem-3.2-21.el7.x86_64<br />
+Sep 22 15:37:19 Updated: 1:emacs-filesystem-24.3-20.el7_4.noarch<br />
+Sep 22 15:37:19 Updated: libreport-filesystem-2.1.11-38.el7.centos.x86_64<br />
+Sep 22 15:37:19 Updated: 32:bind-license-9.9.4-51.el7.noarch<br />
+Sep 22 15:37:19 Updated: langtable-0.0.31-3.el7.noarch<br />
+Sep 22 15:37:20 Updated: langtable-data-0.0.31-3.el7.noarch<br />
+Sep 22 15:37:20 Installed: 1:grub2-pc-modules-2.02-0.64.el7.centos.noarch<br />
+Sep 22 15:37:20 Installed: firewalld-filesystem-0.4.4.4-6.el7.noarch<br />
+Sep 22 15:37:20 Updated: 2:vim-filesystem-7.4.160-2.el7.x86_64<br />
+<br />
+<br />
+カーネルアップデートを行わない場合でも、<br />
+何らかの不具合が発生する可能性がありますので、<br />
+アップデートを行う際は、事前に必ずテスト環境での検証を行うことが必要です。<br />
+<br />
+yum upgradeは、「yum update --obsoletes」と同じ扱いになります。<br />
+CentOSでは、/etc/yum.confにobsoletes=1と設定されているため、<br />
+デフォルトで--obsoletesが有効の状態になっています。<br />
+結果的に、「yum update」も「yum upgrade」も同じ扱いになります。<br />
+<br />]]></description>
+         <link>https://www.linuxmaster.jp/linux_skill/2017/09/yum-1.html</link>
+         <guid>https://www.linuxmaster.jp/linux_skill/2017/09/yum-1.html</guid>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">Linuxtips</category>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">サーバー管理</category>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">システム管理</category>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">システム管理コマンド</category>
+        
+        
+         <pubDate>Fri, 22 Sep 2017 15:18:59 +0900</pubDate>
+      </item>
+      
+      <item>
+         <title>CentOS7でログ容量制限を設定する</title>
+         <description><![CDATA[ログが肥大化すると、システムファイルの空き容量が無くなり、
+システムの動作に悪影響を及ぼします。
+そのため、ログ容量を予め設定しておくのが一般的です。
+
+CentOS7から採用されているjournaldは、デフォルトでファイルシステムの
+10%がログの容量として割り当てられています。
+
+また、journaldには、ログの肥大化を防ぐために、ログの最大サイズの指定して、
+古いログを自動的に削除するログローテート機能、従来のsyslogデーモン、
+カーネルログバッファ(kmsg)にログ転送するなどの機能があります。
+
+<strong>■ログの容量制限をする</strong>
+journaldで生成されるログの容量を制限するには、
+「/etc/systemd/journald.conf」ファイルの「SystemMaxUse」パラメータを設定します。
+下記例ではログの容量を256MBに制限しています。
+
+# <strong>vi /etc/systemd/journald.conf</strong>
+以下、ファイル内容
+#  This file is part of systemd.
+#
+#  systemd is free software; you can redistribute it and/or modify it
+#  under the terms of the GNU Lesser General Public License as published by
+#  the Free Software Foundation; either version 2.1 of the License, or
+#  (at your option) any later version.
+#
+# See journald.conf(5) for details
+
+[Journal]
+#Storage=auto
+Storage=persistent
+#Compress=yes
+#Seal=yes
+#SplitMode=login
+#SyncIntervalSec=5m
+#RateLimitInterval=30s
+#RateLimitBurst=1000
+#SystemMaxUse=
+<strong>SystemMaxUse=256M</strong>　<b>←追加します。</b>
+
+追加したら「:wq」で保存終了します。
+
+<strong>■journaldサービスを再起動します。</strong>
+設定を変更したら、journaldサービスを再起動します。
+# <strong>systemctl restart systemd-journald.service</strong>
+
+
+<strong>■journaldで管理されているすべてのログ容量を確認する</strong>
+journalctlコマンドに「--disk-usage」を付けて実行します。
+# journalctl --disk-usage
+Journals take up 24.0M on disk.
+]]></description>
+         <link>https://www.linuxmaster.jp/linux_skill/2017/08/centos7-8.html</link>
+         <guid>https://www.linuxmaster.jp/linux_skill/2017/08/centos7-8.html</guid>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">CentOS7</category>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">Linuxの入門基礎知識</category>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">LinuxコマンドF-J</category>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">サーバー管理</category>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">システム管理</category>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">システム管理コマンド</category>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">ログ管理</category>
+        
+        
+         <pubDate>Wed, 09 Aug 2017 13:29:29 +0900</pubDate>
+      </item>
+      
+      <item>
+         <title>CentOS7でログ保存設定をする</title>
+         <description><![CDATA[CentOS7のjournaldのログファイルは、/run/log/journalディレクトリに保存されます。
+しかし、/runディレクトリは、tmpsファイルシステムでマウントされているため、
+OSの再起動を行うと、/run/log/journalディレクトリ配下に保存されている
+ログファイルは、削除されてしまいます。
+
+# <strong>df -HT | grep tmpfs</strong>
+devtmpfs                      devtmpfs   504M     0  504M    0% /dev
+tmpfs                         tmpfs      514M     0  514M    0% /dev/shm
+tmpfs                         tmpfs      514M   14M  501M    3% /run　←tmpfsでマウント
+tmpfs                         tmpfs      514M     0  514M    0% /sys/fs/cgroup
+
+そこで、OSを再起動してもログが削除されないようにするには、
+journaldの設定ファイル「/etc/systemd/journald.conf」に
+「Storage=persistent<」を追加します。
+
+
+<strong>■ファイルを編集します。</strong>
+# <strong>vi /etc/systemd/journald.conf</strong>
+以下、ファイル内容
+#  This file is part of systemd.
+#
+#  systemd is free software; you can redistribute it and/or modify it
+#  under the terms of the GNU Lesser General Public License as published by
+#  the Free Software Foundation; either version 2.1 of the License, or
+#  (at your option) any later version.
+#
+# See journald.conf(5) for details
+
+[Journal]
+#Storage=auto
+<strong>Storage=persistent</strong>　←追加する
+
+追加したら「:wq」で保存終了します。
+
+
+<strong>■journaldサービスを再起動します。</strong>
+# <strong>systemctl restart systemd-journald.service</strong>
+
+「Storage=persistent」設定を行うと、ログの保存先ディレクトリが、
+「/run/log/journal」から「/var/log/journal/」に変更され、
+その配下にmachine-id名が付与されたディレクトリが作成されます。
+そのディレクトリ内にログが永続的に保存されます。
+
+# <strong>ls -l /var/log/journal/</strong>
+合計 0
+drwxr-xr-x 2 root root 27  8月  8 15:40 c035188450f4455691b947425145773d
+
+※「c035188450f4455691b947425145773d」がmachine-id名が作成されたディレクトリ
+※machine-idは、/etc/machine-idファイルで確認できます。
+
+また、/etc/systemd/journald.confファイルに「Storage=auto」を設定した場合、
+「/var/log/journal/」ディレクトリが存在する場合は、「/var/log/journal/」に保存し、
+存在しない場合は、「/run/log/journal」に保存します。]]></description>
+         <link>https://www.linuxmaster.jp/linux_skill/2017/08/centos7-7.html</link>
+         <guid>https://www.linuxmaster.jp/linux_skill/2017/08/centos7-7.html</guid>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">CentOS7</category>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">Linuxの入門基礎知識</category>
+        
+        
+         <pubDate>Tue, 08 Aug 2017 15:31:36 +0900</pubDate>
+      </item>
+      
+      <item>
+         <title>CentOS7のログ管理(systemd、journald)</title>
+         <description><![CDATA[CentOS7では、これまでログ管理を行っていたsyslogベースの管理手法から<br />
+systemdがログ管理を行う新しい仕組みが導入されています。<br />
+<br />
+従来のsyslogは、複数システムのログをネットワーク経由で一括管理出来たり、<br />
+多くの管理ソフトウェア製品とも連携が可能でしたが、<br />
+膨大なログの中から欲しい情報を抽出するには、<br />
+様々なコマンドやツールを駆使する必要がありました。<br />
+<br />
+そこでCentOS7では、syslogでのログ抽出作業量を軽減するために、<br />
+以前と比べて格段に情報を抽出しやすい仕組みに変更されています。<br />
+<br />
+<br />
+<strong>■journaldの状態を確認する</strong><br />
+CentOS7では、ログ収集の仕組みとして、「journald」を使用します。<br />
+サービス名は「systemd-journald.service」です。<br />
+<br />
+journaldの起動確認は、systemctlコマンドを実行します。<br />
+# <strong>systemctl status systemd-journald.service</strong><br />
+systemd-journald.service - Journal Service<br />
+   Loaded: loaded (/usr/lib/systemd/system/systemd-journald.service; static)<br />
+   Active: active (running) since 金 2017-08-04 13:39:06 JST; 46min ago<br />
+     Docs: man:systemd-journald.service(8)<br />
+           man:journald.conf(5)<br />
+ Main PID: 712 (systemd-journal)<br />
+   Status: "Processing requests..."<br />
+   CGroup: /system.slice/systemd-journald.service<br />
+           mq712 /usr/lib/systemd/systemd-journald<br />
+<br />
+ 8月 04 13:39:06 Tiger systemd-journal[712]: Runtime journal is using 6.1M (max 48.9M, leavin...M).<br />
+ 8月 04 13:39:06 Tiger systemd-journal[712]: Runtime journal is using 6.1M (max 48.9M, leavin...M).<br />
+ 8月 04 13:39:06 Tiger systemd-journal[712]: Journal started<br />
+ 8月 04 13:39:07 Tiger systemd-journal[712]: Runtime journal is using 6.1M (max 48.9M, leavin...M).<br />
+Hint: Some lines were ellipsized, use -l to show in full.<br />
+<br />
+<br />
+<strong>■ブートログを確認する</strong><br />
+journaldが収集したログを出力するためのコマンドは、「journalctl」になります。<br />
+サーバーに搭載されている各種ハードウェアの情報を確認するには、<br />
+CentOS7が起動した時のブートログを確認します。<br />
+ブートログを確認するには、journalctlコマンドにオプション「-b」を付けて実行します。<br />
+<br />
+# <strong>journalctl -b</strong><br />
+-- Logs begin at 金 2017-08-04 13:39:02 JST, end at 金 2017-08-04 14:29:01 JST. --<br />
+ 8月 04 13:39:02 Tiger systemd-journal[336]: Runtime journal is using 6.1M (max 48.9M, leaving 73.4M<br />
+ 8月 04 13:39:02 Tiger systemd-journal[336]: Runtime journal is using 6.1M (max 48.9M, leaving 73.4M<br />
+ 8月 04 13:39:02 Tiger kernel: Initializing cgroup subsys cpuset<br />
+ 8月 04 13:39:02 Tiger kernel: Initializing cgroup subsys cpu<br />
+ 8月 04 13:39:02 Tiger kernel: Initializing cgroup subsys cpuacct<br />
+ 8月 04 13:39:02 Tiger kernel: Linux version 3.10.0-229.el7.x86_64 (builder@kbuilder.dev.centos.org)<br />
+ 8月 04 13:39:02 Tiger kernel: Command line: BOOT_IMAGE=/vmlinuz-3.10.0-229.el7.x86_64 root=/dev/map<br />
+ 8月 04 13:39:02 Tiger kernel: Disabled fast string operations<br />
+ 8月 04 13:39:02 Tiger kernel: e820: BIOS-provided physical RAM map:<br />
+<br />
+<br />
+<strong>■ログを日時でフィルタリングする</strong><br />
+journalctlコマンドには、日時でログをフィルタリングする機能が備わっています。<br />
+日時開始を「--since=""」で、日時終了を「--until=""」で指定します。<br />
+<br />
+下記例では、2017年8月4日 14時29分〜14時33分1秒までのログを出力しています。<br />
+# <strong>journalctl --since="2017-08-04 14:29:00" --until="2017-08-04 14:33:01"</strong><br />
+-- Logs begin at 金 2017-08-04 13:39:02 JST, end at 金 2017-08-04 14:35:01 JST. --<br />
+ 8月 04 14:29:01 Tiger systemd[1]: Starting Session 62 of user root.<br />
+ 8月 04 14:29:01 Tiger systemd[1]: Started Session 62 of user root.<br />
+ 8月 04 14:29:01 Tiger CROND[5038]: (root) CMD (/var/www/system/check_process.pl > /dev/null 2>&1)<br />
+ 8月 04 14:29:25 Tiger clamd[1113]: SelfCheck: Database status OK.<br />
+ 8月 04 14:29:25 Tiger clamd[1113]: SelfCheck: Database status OK.<br />
+ 8月 04 14:30:01 Tiger systemd[1]: Starting Session 64 of user root.<br />
+ 8月 04 14:30:01 Tiger systemd[1]: Started Session 64 of user root.<br />
+ 8月 04 14:30:01 Tiger systemd[1]: Starting Session 63 of user root.<br />
+ 8月 04 14:30:01 Tiger systemd[1]: Started Session 63 of user root.<br />
+ 8月 04 14:30:01 Tiger CROND[5046]: (root) CMD (/usr/lib64/sa/sa1 1 1)<br />
+ 8月 04 14:30:01 Tiger CROND[5047]: (root) CMD (/var/www/system/check_process.pl > /dev/null 2>&1)<br />
+ 8月 04 14:31:01 Tiger systemd[1]: Starting Session 65 of user root.<br />
+ 8月 04 14:31:01 Tiger systemd[1]: Started Session 65 of user root.<br />
+ 8月 04 14:31:01 Tiger CROND[5056]: (root) CMD (/var/www/system/check_process.pl > /dev/null 2>&1)<br />
+ 8月 04 14:32:01 Tiger systemd[1]: Starting Session 66 of user root.<br />
+ 8月 04 14:32:01 Tiger systemd[1]: Started Session 66 of user root.<br />
+ 8月 04 14:32:01 Tiger CROND[5061]: (root) CMD (/var/www/system/check_process.pl > /dev/null 2>&1)<br />
+<br />
+デフォルトでは、自動的にlessページャが起動するので、<br />
+スペースでページ送りをしますが、<br />
+不要な場合は、「--no-pager」オプションを付与します。<br />
+<br />
+<br />
+<strong>■今日のログを出力する</strong><br />
+実行日当時のログを出力したい場合は、--sinceオプションに「today」を指定します。<br />
+# <strong>journalctl --since=today</strong><br />
+- Logs begin at 金 2017-08-04 13:39:02 JST, end at 金 2017-08-04 14:40:01 JST. --<br />
+ 8月 04 13:39:02 Tiger systemd-journal[336]: Runtime journal is using 6.1M (max 48.9M, leaving 73.4M<br />
+ 8月 04 13:39:02 Tiger systemd-journal[336]: Runtime journal is using 6.1M (max 48.9M, leaving 73.4M<br />
+ 8月 04 13:39:02 Tiger kernel: Initializing cgroup subsys cpuset<br />
+ 8月 04 13:39:02 Tiger kernel: Initializing cgroup subsys cpu<br />
+ 8月 04 13:39:02 Tiger kernel: Initializing cgroup subsys cpuacct<br />
+ 8月 04 13:39:02 Tiger kernel: Linux version 3.10.0-229.el7.x86_64 (builder@kbuilder.dev.centos.org)<br />
+ 8月 04 13:39:02 Tiger kernel: Command line: BOOT_IMAGE=/vmlinuz-3.10.0-229.el7.x86_64 root=/dev/map<br />
+ 8月 04 13:39:02 Tiger kernel: Disabled fast string operations<br />
+ 8月 04 13:39:02 Tiger kernel: e820: BIOS-provided physical RAM map:<br />
+<br />
+他にも「yesterday」や何に使うか分かりませんが「tomorrow」も指定できます。<br />
+<br />
+<br />
+<strong>■特定のサービスに絞ってログを表示する</strong><br />
+特定のサービスのみのログを出力したい場合は、<br />
+「-u」オプションにサービス名を付けて実行します。<br />
+<br />
+下記例では、SSHサービスのログを出力しています。<br />
+# <strong>journalctl --since="2017-08-03 14:29:00" --until="2017-08-04 14:33:01" -u sshd.service</strong><br />
+-- Logs begin at 金 2017-08-04 13:39:02 JST, end at 金 2017-08-04 14:44:01 JST. --<br />
+ 8月 04 13:39:09 Tiger systemd[1]: Starting OpenSSH server daemon...<br />
+ 8月 04 13:39:09 Tiger systemd[1]: Started OpenSSH server daemon.<br />
+ 8月 04 13:39:09 Tiger sshd[1106]: Server listening on 0.0.0.0 port 2222.<br />
+ 8月 04 14:24:24 Tiger sshd[3972]: Accepted publickey for pakira from 192.168.0.80 port 50700 ssh2:<br />
+<br />
+<br />
+<strong>■リアルタイムでログを確認する</strong><br />
+現在、リアルタイムで出力しているログを表示させたい場合は、<br />
+journalctlコマンドに「-f」オプションを付けて実行します。<br />
+従来の「tail -f /var/log/messages」と同様な表示ができます。<br />
+<br />
+# <strong>journalctl -f</strong><br />
+-- Logs begin at 金 2017-08-04 13:39:02 JST. --<br />
+ 8月 04 18:32:01 Tiger systemd[1]: Started Session 267 of user root.<br />
+ 8月 04 18:32:01 Tiger CROND[11781]: (root) CMD (/var/www/system/check_process.pl > /dev/null 2>&1)<br />
+ 8月 04 18:33:01 Tiger systemd[1]: Created slice user-0.slice.<br />
+ 8月 04 18:33:01 Tiger systemd[1]: Starting Session 268 of user root.<br />
+ 8月 04 18:33:01 Tiger systemd[1]: Started Session 268 of user root.<br />
+ 8月 04 18:33:01 Tiger CROND[11787]: (root) CMD (/var/www/system/check_process.pl > /dev/null 2>&1)<br />
+ 8月 04 18:34:01 Tiger systemd[1]: Created slice user-0.slice.<br />
+ 8月 04 18:34:01 Tiger systemd[1]: Starting Session 269 of user root.<br />
+ 8月 04 18:34:01 Tiger systemd[1]: Started Session 269 of user root.<br />
+ 8月 04 18:34:01 Tiger CROND[11793]: (root) CMD (/var/www/system/check_process.pl > /dev/null 2>&1)<br />
+<br />
+<br />
+■プライオリティによるログのフィルタリング<br />
+syslogでは、ログのプライオリティ(緊急度)に応じた管理ができましたが、<br />
+journalctlでも同様の出力が行なえます。<br />
+プライオリティには、緊急度の高いものからemerg、alert、err、warning、<br />
+notice、debugがあります。<br />
+<br />
+<strong>■warningプライオリティを表示する</strong><br />
+特定のプライオリティを表示させるには、journalctlにオプション「-p」を付けて、<br />
+フィルタリングしたいプライオリティを指定します。<br />
+<br />
+下記例では、warningプライオリティを表示しています。<br />
+<br />
+# <strong>journalctl -p warning</strong><br />
+-- Logs begin at 金 2017-08-04 13:39:02 JST, end at 金 2017-08-04 18:42:01 JST. --<br />
+ 8月 04 13:39:02 Tiger kernel: ACPI: RSDP 00000000000f6a10 00024 (v02 PTLTD )<br />
+ 8月 04 13:39:02 Tiger kernel: ACPI: XSDT 000000003feea65b 0005C (v01 INTEL  440BX    06040000 VMW<br />
+ 8月 04 13:39:02 Tiger kernel: ACPI: FACP 000000003fefee73 000F4 (v04 INTEL  440BX    06040000 PTL<br />
+ 8月 04 13:39:02 Tiger kernel: ACPI: DSDT 000000003feec3fc 12A77 (v01 PTLTD  Custom   06040000 MSFT<br />
+ 8月 04 13:39:02 Tiger kernel: ACPI: FACS 000000003fefffc0 00040<br />
+ 8月 04 13:39:02 Tiger kernel: ACPI: BOOT 000000003feec3d4 00028 (v01 PTLTD  $SBFTBL$ 06040000  LTP<br />
+ 8月 04 13:39:02 Tiger kernel: ACPI: APIC 000000003feeb8bd 00742 (v01 PTLTD  ? APIC   06040000  LTP<br />
+ 8月 04 13:39:02 Tiger kernel: ACPI: MCFG 000000003feeb881 0003C (v01 PTLTD  $PCITBL$ 06040000  LTP<br />
+ 8月 04 13:39:02 Tiger kernel: ACPI: SRAT 000000003feea757 008A8 (v02 VMWARE MEMPLUG  06040000 VMW<br />
+ 8月 04 13:39:02 Tiger kernel: ACPI: HPET 000000003feea71f 00038 (v01 VMWARE VMW HPET 06040000 VMW<br />
+ 8月 04 13:39:02 Tiger kernel: ACPI: WAET 000000003feea6f7 00028 (v01 VMWARE VMW WAET 06040000 VMW<br />
+ 8月 04 13:39:02 Tiger kernel: kexec: crashkernel=auto resulted in zero bytes of reserved memory.<br />
+<br />
+<br />
+<strong>■errプライオリティを表示する</strong><br />
+# <strong>journalctl -p err</strong><br />
+-- Logs begin at 金 2017-08-04 13:39:02 JST, end at 金 2017-08-04 18:44:01 JST. --<br />
+ 8月 04 13:39:02 Tiger kernel: Detected CPU family 6 model 78<br />
+ 8月 04 13:39:02 Tiger kernel: Warning: Intel CPU model - this hardware has not undergone upstream t<br />
+ 8月 04 13:39:03 Tiger kernel: sd 0:0:0:0: [sda] Assuming drive cache: write through<br />
+ 8月 04 13:39:07 Tiger kernel: piix4_smbus 0000:00:07.3: Host SMBus controller not enabled!<br />
+ 8月 04 13:39:08 Tiger NetworkManager[839]: _nl_get_vtable: assertion 'vtable.handle' failed<br />
+ 8月 04 13:39:23 Tiger systemd[1]: Failed to start Crash recovery kernel arming.<br />
+<br />
+これまでの例では各プライオリティ名を指定してフィルタリングしましたが、<br />
+これをプライオリティの値で指定することも可能です。<br />
+各プライオリティと値は下記の対応となっています。<br />
+<table class="table4">
+        <tr>
+          <td class="sb30">emerg </td>
+          <td class="s70">0</td>
+        </tr>
+        <tr>
+          <td class="sb30">alert</td>
+          <td class="s70">1</td>
+        </tr>
+        <tr>
+          <td class="sb30">crit</td>
+          <td class="s70">2</td>
+        </tr>
+        <tr>
+          <td class="sb30">err</td>
+          <td class="s70">3</td>
+        </tr>
+        <tr>
+          <td class="sb30">warning</td>
+          <td class="s70">4</td>
+        </tr>
+        <tr>
+          <td class="sb30">notice</td>
+          <td class="s70">5</td>
+        </tr>
+        <tr>
+          <td class="sb30">debug</td>
+          <td class="s70">6</td>
+        </tr>
+</table>
+<br />
+<strong>■emergプライオリティのログをプライオリティ値で表示する</strong><br />
+emergログが存在しないので、loggerコマンドを使用してテストログを吐き出し、<br />
+その後プライオリティ値「0」でemergログを表示します。<br />
+<br />
+# <strong>logger -p daemon.emerg "TEST LOG EMERG"</strong><br />
+#<br />
+Message from syslogd@Tiger at Aug  7 16:23:46 ...<br />
+ pakira:TEST LOG EMERG<br />
+<br />
+# <strong>journalctl -p 0</strong><br />
+-- Logs begin at 月 2017-08-07 15:57:16 JST, end at 月 2017-08-07 16:23:46 JST. --<br />
+ 8月 07 16:23:46 Tiger pakira[3402]: TEST LOG EMERG<br />
+<br />
+<br />
+<strong>■alertプライオリティのログをプライオリティ値で表示する</strong><br />
+プライオリティ値「1」でalertログを表示します。<br />
+<br />
+# <strong>logger -p daemon.alert "TEST LOG ALERT"</strong><br />
+# <strong>journalctl -p 1</strong><br />
+-- Logs begin at 月 2017-08-07 15:57:16 JST, end at 月 2017-08-07 16:26:26 JST. --<br />
+ 8月 07 16:23:46 Tiger pakira[3402]: TEST LOG EMERG<br />
+ 8月 07 16:26:26 Tiger pakira[3789]: TEST LOG ALERT<br />
+<br />
+journalctlを実行すると、alertよりプライオリティの高い<br />
+emergプライオリティも表示されていることが分かります。<br />
+<br />
+<br />
+<strong>■カーネルログを表示する</strong><br />
+カーネルログを表示するには、<br />
+journalctlコマンドにオプション「-k」を付けて実行します。<br />
+従来の「dmesg」コマンドに相当します。<br />
+<br />
+# <strong>journalctl -k</strong><br />
+-- Logs begin at 月 2017-08-07 15:57:16 JST, end at 月 2017-08-07 16:29:01 JST. --<br />
+ 8月 07 15:57:16 Tiger kernel: Initializing cgroup subsys cpuset<br />
+ 8月 07 15:57:16 Tiger kernel: Initializing cgroup subsys cpu<br />
+ 8月 07 15:57:16 Tiger kernel: Initializing cgroup subsys cpuacct<br />
+ 8月 07 15:57:16 Tiger kernel: Linux version 3.10.0-229.el7.x86_64 (builder@kbuilder.dev.centos.org)<br />
+ 8月 07 15:57:16 Tiger kernel: Command line: BOOT_IMAGE=/vmlinuz-3.10.0-229.el7.x86_64 root=/dev/map<br />
+ 8月 07 15:57:16 Tiger kernel: Disabled fast string operations<br />
+ 8月 07 15:57:16 Tiger kernel: e820: BIOS-provided physical RAM map:<br />
+ 8月 07 15:57:16 Tiger kernel: BIOS-e820: [mem 0x0000000000000000-0x000000000009ebff] usable<br />
+ 8月 07 15:57:16 Tiger kernel: BIOS-e820: [mem 0x000000000009ec00-0x000000000009ffff] reserved<br />
+ 8月 07 15:57:16 Tiger kernel: BIOS-e820: [mem 0x00000000000dc000-0x00000000000fffff] reserved<br />
+ 8月 07 15:57:16 Tiger kernel: BIOS-e820: [mem 0x0000000000100000-0x000000003fedffff] usable<br />
+ 8月 07 15:57:16 Tiger kernel: BIOS-e820: [mem 0x000000003fee0000-0x000000003fefefff] ACPI data<br />
+ 8月 07 15:57:16 Tiger kernel: BIOS-e820: [mem 0x000000003feff000-0x000000003fefffff] ACPI NVS<br />
+ 8月 07 15:57:16 Tiger kernel: BIOS-e820: [mem 0x000000003ff00000-0x000000003fffffff] usable<br />
+ 8月 07 15:57:16 Tiger kernel: BIOS-e820: [mem 0x00000000f0000000-0x00000000f7ffffff] reserved<br />
+ 8月 07 15:57:16 Tiger kernel: BIOS-e820: [mem 0x00000000fec00000-0x00000000fec0ffff] reserved<br />
+ 8月 07 15:57:16 Tiger kernel: BIOS-e820: [mem 0x00000000fee00000-0x00000000fee00fff] reserved<br />
+ 8月 07 15:57:16 Tiger kernel: BIOS-e820: [mem 0x00000000fffe0000-0x00000000ffffffff] reserved<br />
+<br />
+<br />
+<strong>■特定のプロセスIDのログを表示する</strong><br />
+特定のプロセスIDに関係するログを表示する場合は、<br />
+journalctlコマンドに「_PID=プロセス番号」を付けて実行します。<br />
+<br />
+# <strong>journalctl _PID=1112</strong><br />
+-- Logs begin at 月 2017-08-07 15:57:16 JST, end at 月 2017-08-07 16:32:01 JST. --<br />
+ 8月 07 15:57:23 Tiger clamd[1112]: clamd daemon 0.98.7 (OS: linux-gnu, ARCH: x86_64, CPU: x86_64)<br />
+ 8月 07 15:57:23 Tiger clamd[1112]: Running as user amavis (UID 991, GID 991)<br />
+ 8月 07 15:57:23 Tiger clamd[1112]: Log file size limited to 1048576 bytes.<br />
+ 8月 07 15:57:23 Tiger clamd[1112]: Reading databases from /var/lib/clamav<br />
+ 8月 07 15:57:23 Tiger clamd[1112]: Not loading PUA signatures.<br />
+ 8月 07 15:57:23 Tiger clamd[1112]: Bytecode: Security mode set to "TrustSigned".<br />
+<br />
+<br />
+<strong>■実行ファイルのパス指定でのログ表示</strong><br />
+journalctlコマンドにサービスを提供する実行ファイルのパスを指定して<br />
+それに関連するログを表示することができます。<br />
+下記例では、SSHサービスの実行ファイルである「/usr/sbin/sshd」関連のログを<br />
+表示しています。<br />
+<br />
+# <strong>journalctl /usr/sbin/sshd</strong><br />
+-- Logs begin at 月 2017-08-07 15:57:16 JST, end at 月 2017-08-07 16:34:06 JST. --<br />
+ 8月 07 15:57:23 Tiger sshd[1105]: Server listening on 0.0.0.0 port 22.<br />
+ 8月 07 16:22:03 Tiger sshd[3308]: Accepted publickey for pakira from 192.168.0.80 port 54097 ssh2:<br />
+ 8月 07 16:22:04 Tiger sshd[3308]: pam_unix(sshd:session): session opened for user pakira by (uid=0)<br />
+<br />
+
+]]></description>
+         <link>https://www.linuxmaster.jp/linux_skill/2017/08/centos7systemdjournald.html</link>
+         <guid>https://www.linuxmaster.jp/linux_skill/2017/08/centos7systemdjournald.html</guid>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">CentOS7</category>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">Linuxの入門基礎知識</category>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">LinuxコマンドF-J</category>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">サーバー管理</category>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">システム管理</category>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">システム管理コマンド</category>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">ログ管理</category>
+        
+        
+         <pubDate>Fri, 04 Aug 2017 14:07:41 +0900</pubDate>
+      </item>
+      
+      <item>
+         <title>Postfixのメールログを確認する</title>
+         <description><![CDATA[Postfixのログは、「/var/log/maillog」ファイルに出力されます。
+1週間単位で自動ローテションされ、/var/log/maillogファイルの他に
+「/var/log/maillog.1」〜「/var/log/maillog.4」までの4週間分を
+歴として保持しています。
+
+何かトラブルが発生した際、「/var/log/maillog」ファイルを
+確認することで多くの原因を特定することができます。
+
+<b>■メールログファイル（/var/log/maillog）を確認する</b>
+# <strong>ls -l /var/log/maillog*</strong>
+-rw------- 1 root root  1941316  7月 24 16:47 /var/log/maillog
+-rw------- 1 root root 10497049  7月 23 04:02 /var/log/maillog.1
+-rw------- 1 root root 10312833  7月 16 04:02 /var/log/maillog.2
+-rw------- 1 root root 10810720  7月  9 04:02 /var/log/maillog.3
+-rw------- 1 root root  9886779  7月  2 04:02 /var/log/maillog.4
+
+■メールログファイルの内容を確認する
+# <strong>tail /var/log/maillog</strong>
+Jul 24 16:47:28 Mail_001_Enetmercury postfix/smtpd[30065]: warning: unknown[80.82.XX.XX]: SASL LOGIN authentication failed: authentication failure
+Jul 24 16:47:29 Mail_001_Enetmercury postfix/smtpd[30065]: disconnect from unknown[80.82.XX.XX]
+Jul 24 16:48:04 Mail_001_Enetmercury postfix/qmgr[1388]: 03D037E257: from=<pakira2@XXXXXXXXXXXXX.net>, size=20169, nrcpt=1 (queue active)
+Jul 24 16:48:05 Mail_001_Enetmercury postfix/smtp[29975]: 03D037E257: to=<kinya.shiraiwa@gmail.co.jp>, relay=none, delay=60457, delays=60456/0.01/0.87/0, dsn=4.4.3, status=deferred (Host or domain name not found. Name service error for name=gmail.co.jp type=MX: Host not found, try again)
+Jul 24 16:49:44 Mail_001_Enetmercury postfix/qmgr[1388]: 813897E249: from=<pakira2@XXXXXXXXXXXXX.net>, size=15939, nrcpt=1 (queue active)
+Jul 24 16:50:14 Mail_001_Enetmercury postfix/smtp[29975]: connect to aaa.com[63.240.XXX.XXX]: Connection timed out (port 25)
+Jul 24 16:50:14 Mail_001_Enetmercury postfix/smtp[29975]: 813897E249: to=<akiara@XXXX.com>, relay=none, delay=60582, delays=60552/0/30/0, dsn=4.4.1, status=deferred (connect to aaa.com[63.240.178.216]: Connection timed out)
+Jul 24 16:50:49 Mail_001_Enetmercury postfix/anvil[30067]: statistics: max connection rate 1/60s for (smtp:80.82.XX.XX) at Jul 24 16:47:27
+Jul 24 16:50:49 Mail_001_Enetmercury postfix/anvil[30067]: statistics: max connection count 1 for (smtp:80.82.XX.XX) at Jul 24 16:47:27
+Jul 24 16:50:49 Mail_001_Enetmercury postfix/anvil[30067]: statistics: max cache size 1 at Jul 24 16:47:27
+
+
+
+
+
+]]></description>
+         <link>https://www.linuxmaster.jp/linux_skill/2017/07/postfix-7.html</link>
+         <guid>https://www.linuxmaster.jp/linux_skill/2017/07/postfix-7.html</guid>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">Linuxtips</category>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">Postfix</category>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">サーバー管理</category>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">メールサーバー管理</category>
+        
+        
+         <pubDate>Tue, 25 Jul 2017 10:45:23 +0900</pubDate>
+      </item>
+      
+      <item>
+         <title>MTAをSendmailからPostfixに変更する</title>
+         <description><![CDATA[MTAをSendmailからPostfixに変更する場合は、alternatives コマンドを実行します。
+実行する際は、「--config」オプションに「mta」を指定します。
+
+# <strong>alternatives --config mta</strong>
+
+2 プログラムがあり 'mta' を提供します。
+
+  選択       コマンド
+-----------------------------------------------
+*+ 1           /usr/sbin/sendmail.sendmail
+     2           /usr/sbin/sendmail.postfix
+Enter を押して現在の選択 [+] を保持するか、選択番号を入力します:<strong>2</strong>  ←Postfixの2を入力します。
+
+# <strong>alternatives --config mta</strong>
+
+2 プログラムがあり 'mta' を提供します。
+
+  選択       コマンド
+-----------------------------------------------
+*  1           /usr/sbin/sendmail.sendmail
+ + 2           /usr/sbin/sendmail.postfix
+
+MTAがPostfixに変更されます。
+
+最後に、sendmailを停止し、Postfixを起動します。
+
+
+]]></description>
+         <link>https://www.linuxmaster.jp/linux_skill/2017/07/mtasendmailpostfix.html</link>
+         <guid>https://www.linuxmaster.jp/linux_skill/2017/07/mtasendmailpostfix.html</guid>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">Linuxtips</category>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">Postfix</category>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">サーバー管理</category>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">メールサーバー管理</category>
+        
+        
+         <pubDate>Mon, 24 Jul 2017 10:12:48 +0900</pubDate>
+      </item>
+      
+      <item>
+         <title>Postfixでメールキューを削除する</title>
+         <description><![CDATA[Postfixでメールキューを削除するには、postsuperコマンドで行なえます。
+
+postsuperコマンドにオプション「-d」を付け、
+引数にQueue IDを指定します。
+
+Queue IDの確認は、「<a href="https://www.linuxmaster.jp/linux_skill/2017/07/postfix-
+4.html" target="_blank">Postfixでメールキューの状態を確認する</a>」で
+紹介している「postqueue -p」コマンドで行えます。
+
+<b>■Queue IDが「CDDE97E240」のキューを削除する</b>
+# <strong>postsuper -d CDDE97E240</strong>
+postsuper: CDDE97E240: removed
+postsuper: Deleted: 1 message
+
+ソフトウェアの不具合により、メールが溜まってしまった場合は、
+postsuperコマンドに、オプション「-d ALL」を付け、一括削除します。
+# <strong>postsuper -d ALL</strong>
+postsuper: Deleted: 6 messages
+]]></description>
+         <link>https://www.linuxmaster.jp/linux_skill/2017/07/postfix-6.html</link>
+         <guid>https://www.linuxmaster.jp/linux_skill/2017/07/postfix-6.html</guid>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">Linuxtips</category>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">Postfix</category>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">サーバー管理</category>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">メールサーバー管理</category>
+        
+        
+         <pubDate>Sun, 23 Jul 2017 10:30:49 +0900</pubDate>
+      </item>
+      
+   </channel>
+</rss>

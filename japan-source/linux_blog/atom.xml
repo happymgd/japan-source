@@ -1,0 +1,1926 @@
+<?xml version="1.0" encoding="EUC-JP"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>リナックスマスター.JP 公式ブログ</title>
+    <link rel="alternate" type="text/html" href="https://www.linuxmaster.jp/linux_blog/" />
+    <link rel="self" type="application/atom+xml" href="https://www.linuxmaster.jp/linux_blog/atom.xml" />
+    <id>tag:www.linuxmaster.jp,2009-11-09:/linux_blog//5</id>
+    <updated>2019-03-25T06:22:50Z</updated>
+    <subtitle>ブログではメルマガ読者からの質問、日々の活動の様子などを紹介しています。</subtitle>
+    <generator uri="http://www.sixapart.com/movabletype/">Movable Type 4.27-ja</generator>
+
+<entry>
+    <title>2019年3月1回目リナックスマスターセミナーを開催しました。</title>
+    <link rel="alternate" type="text/html" href="https://www.linuxmaster.jp/linux_blog/2019/04/201931.html" />
+    <id>tag:www.linuxmaster.jp,2019:/linux_blog//5.1447</id>
+
+    <published>2019-04-10T06:19:53Z</published>
+    <updated>2019-03-25T06:22:50Z</updated>
+
+    <summary></summary>
+    <author>
+        <name>pakira</name>
+        
+    </author>
+    
+        <category term="Linuxセミナー報告" scheme="http://www.sixapart.com/ns/types#category" />
+    
+    
+    <content type="html" xml:lang="ja" xml:base="https://www.linuxmaster.jp/linux_blog/">
+        <![CDATA[リナックスマスター.JPの宮崎です。<br />
+<br />
+3/23（土）〜3/24（日）の2日間、<br />
+2019年3月1回目のリナックスマスター２日間集中セミナーを開催しました。<br />
+<br />
+次回以降のセミナーの日程や詳細は↓のページで公開しています。<br />
+参加ご希望の方は、いますぐ↓URLをクリックしてください。<br />
+<span class="mt-enclosure mt-enclosure-image" style="display: inline;"><a href="https://www.linuxmaster.jp/linux_blog/assets_c/2019/03/MIYA6544-2460.html" onclick="window.open('https://www.linuxmaster.jp/linux_blog/assets_c/2019/03/MIYA6544-2460.html','popup','width=1024,height=682,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img src="https://www.linuxmaster.jp/linux_blog/assets_c/2019/03/MIYA6544-thumb-300x199-2460.jpg" width="300" height="199" alt="MIYA6544.jpg" class="mt-image-none" style="" /></a></span>]]>
+        <![CDATA[<br />
+東京都、神奈川県、千葉県から6名の方が受講してくださいました。<br />
+<br />
+今回もCentOS7での開催となり、ネットワークの説明、インストールからスタートし、<br />
+FTPサーバー、WEBサーバー、データベースサーバーのインストールと設定を行い、<br />
+インターネットにサーバー公開して、自分の携帯やスマホでアクセスして動作検証をしました。<br />
+<br />
+<b>自分で構築したサーバーにインターネットからアクセスして、<br />
+Webサイトが表示された時には、皆さん感動しそれを構築できた実績が自信になります。</b><br />
+<br />
+<strong>Linux技術習得で一番重要な事は、自分で動作検証を行うことです。</strong><br />
+<br />
+自分で動作検証すると実感が沸き、その経験がそのままスキルになります。<br />
+<strong>実体験に勝る技術習得法はありません。</strong><br />
+<br />
+<strong>その後、インターネットからどのような経路でサーバーにアクセスしているのか、<br />
+サーバーの各機能の概要説明、サーバー構築する上で守らなければならない<br />
+セキュリティ対策などを説明しました。</strong><br />
+<br />
+自分で構築した直後に説明しますので、より理解しやすく、<br />
+<b>サーバーセキュリティ対策、ネットワークの説明は、とても勉強になったと言って頂けます。</b><br />
+<br />
+やはり、「鉄は熱いうちに打て」ではないですが、<br />
+その場その場で、すぐに必要な事が聞けるのがセミナーのメリットです。<br />
+<br />
+リナックスマスターセミナーでは、<br />
+実際に自分でサーバーを構築、動作検証をして<br />
+「<strong>Linuxの正しい状態</strong>」を、理解・習得できます。<br />
+<br />
+<b>Linuxで挫折する初心者に共通するのは、<br />
+「どのような設定が正しい状態なのか」、<br />
+「実行結果がどうのようになれば正しい状態なのか」<br />
+「どこが間違っているのか」<br />
+が、分からないことです。</b><br />
+<br />
+しかし、セミナーではそれを短時間に実体験を通じて習得できます。<br />
+<br />
+書籍に載っている技術を、すべて勉強することは望ましいことですが、<br />
+それらすべてが決して現場、実践で必要な技術とは限りませんし、<br />
+時間が限られている人にとって現実的ではありません。<br />
+<br />
+<strong>本当に現場で使う技術を厳選し、安全で安定したサーバーを<br />
+構築する技術を体系的に２日間という短期間で技術修得できるのは、<br />
+時間の節約として非常に有効です。</strong><br />
+<br />
+セミナー中の２日間は、休憩時間や懇親会に関係なくどんなご質問にもお答えします。<br />
+それまで分からなかったことが、その場でクリアになると大変好評を頂いています。<br />
+<br />
+更に、<br />
+<strong>・どう学習すれば、Linux技術を最短でマスターできるか。</strong><br />
+<strong>・なぜ、Linux本ではエラーになって先に進めなくなるのか。</strong><br />
+<strong>・その回避法とは。</strong><br />
+<br />
+という事も私の経験を踏まえてお話しますので、<br />
+その後も様々なLinux技術を自力でマスターしていただくことが可能です。<br />
+<br />
+セミナーに参加した人の話を聞くと、<br />
+やはり実機を使った実技はわかりやすく、<br />
+自宅で学習するのとは違い、集中して取り組めるので<br />
+短時間でスキルアップを実感できるという感想を多く頂きます。<br />
+<br />
+<strong>特にCentOS7の様なこれまでのCentOS6系とは<br />
+大きく仕様が異なる技術は、セミナー受講した方が、<br />
+本当に必要な情報と技術を効率よく吸収できます。</strong><br />
+<br />
+翌日も真剣にセミナーに取り組んで頂きました。<br />
+本セミナーは少人数なので、アットホームな感じで質問しやすく、<br />
+集中できる環境なのもメリットです。<br />
+<span class="mt-enclosure mt-enclosure-image" style="display: inline;"><a href="https://www.linuxmaster.jp/linux_blog/assets_c/2019/03/MIYA6548-2463.html" onclick="window.open('https://www.linuxmaster.jp/linux_blog/assets_c/2019/03/MIYA6548-2463.html','popup','width=1024,height=682,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img src="https://www.linuxmaster.jp/linux_blog/assets_c/2019/03/MIYA6548-thumb-300x199-2463.jpg" width="300" height="199" alt="MIYA6548.jpg" class="mt-image-none" style="" /></a></span>
+<br />
+リナックスマスターセミナーは、受講者のスキル差を十分にカバーする為、<br />
+最大６名の<strong>少人数</strong>で行います。<br />
+実機で一人一人しっかりとサポートする環境で行いますので、<br />
+それぞれの学習スピードに合わせて<br />
+丁寧なサポートをする為、この人数が限界です。<br />
+<br />
+<strong>学習に必要な機材、Linux用サーバー、管理するWindowsPCすべてをレンタルします。<br />
+筆記用具さえあれば、現場で使うLinux技術を2日という短時間で習得できます。</strong><br />
+<br />
+<b>また、自分のスキルが足りなくて、<br />
+セミナーについていけるか心配という方でも、<br />
+Linuxに興味があって、キーボードが打てれば、<br />
+サーバー構築できる内容、構成になっています。</b><br />
+<br />
+<b>これまでも未経験の方が何人も受講していますが、<br />
+最後まで内容をやり遂げていますのでご安心ください。</b><br />
+<br />
+また、それでも不安という人のために、<br />
+↓の受講特典も用意していますので、受講後の学習も安心です。<br />
+<br />
+<strong>受講特典は、<br />
+・受講後１年間の再受講は、何回でも無料。<br />
+・リナックスマスター・ホームスタディ講座【初級編】(21,000円)で自宅学習ができます。　<br />
+・受講後１年間は、メールとサポートフォーラムでの質問サポートが受けられます。<br />
+</strong><br />
+<br />
+１回の参加では不安という方は、<br />
+ぜひ再受講も視野に入れて受講して頂ければと思います。<br />
+<br />
+また当セミナーでは、もし直前で都合が悪くなり、キャンセルになった場合でも、<br />
+「再受講枠」を利用して受講することができます。<br />
+もし突発的な予定で参加出来なくても、再受講が可能なセミナーなので<br />
+安心して申し込みができる特典として好評です。<br />
+<br />
+リナックスマスターセミナーは、しっかりとしたサーバー構築手順と、<br />
+セキュリティ対策が学べるので、「サーバーの正しい状態」が理解でき、<br />
+自信に変わります。<br />
+<br />
+特にセキュリティは、現在進行形でサーバー運用した結果をフィードバックしますので、<br />
+検証済みの対策が学べます。<br />
+<br />
+更にセミナーでは疑問点がその場で解決するのと、<br />
+2日間の成果として1台のサーバーが構築でき、<br />
+その構築に必要な技術が学べる点もご支持を頂いています。<br />
+<br />
+1度でもサーバー構築が出来た経験があるのとないのでは、<br />
+更に高度なLinux技術を身につける上で大きな差になります。<br />
+<br />
+エラーで先に進めないと面白くないし、モチベーションも下がりますものね。<br />
+市販の書籍や独学で、いつもエラーになって先に進めないという人ほど、<br />
+セミナーはオススメです。<br />
+<br />
+次回のセミナー開催は、下記ページにてご案内しています。<br />
+参加ご希望の方は、いますぐ↓をクリックしてください。<br />
+<a href="https://www.linuxmaster.jp/2010/08/centos55.html">リナックスマスター２日間集中セミナー(CentOS版)のお申し込みはこちら</a>]]>
+    </content>
+</entry>
+
+<entry>
+    <title>2019年2月2回目リナックスマスターセミナーを開催しました。</title>
+    <link rel="alternate" type="text/html" href="https://www.linuxmaster.jp/linux_blog/2019/04/201922.html" />
+    <id>tag:www.linuxmaster.jp,2019:/linux_blog//5.1446</id>
+
+    <published>2019-04-03T06:13:19Z</published>
+    <updated>2019-03-25T06:16:49Z</updated>
+
+    <summary></summary>
+    <author>
+        <name>pakira</name>
+        
+    </author>
+    
+        <category term="Linuxセミナー報告" scheme="http://www.sixapart.com/ns/types#category" />
+    
+    
+    <content type="html" xml:lang="ja" xml:base="https://www.linuxmaster.jp/linux_blog/">
+        <![CDATA[リナックスマスター.JPの宮崎です。<br />
+<br />
+2/27（水）〜2/28（木）の2日間、<br />
+2019年2月2回目のリナックスマスター２日間集中セミナーを開催しました。<br />
+<br />
+次回以降のセミナーの日程や詳細は↓のページで公開しています。<br />
+参加ご希望の方は、いますぐ↓URLをクリックしてください。<br />
+<a href="https://www.linuxmaster.jp/2010/08/centos55.html">リナックスマスター2日間集中セミナー</a><br />
+<br />
+<span class="mt-enclosure mt-enclosure-image" style="display: inline;"><a href="https://www.linuxmaster.jp/linux_blog/assets_c/2019/03/DSC09881-2454.html" onclick="window.open('https://www.linuxmaster.jp/linux_blog/assets_c/2019/03/DSC09881-2454.html','popup','width=1024,height=768,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img src="https://www.linuxmaster.jp/linux_blog/assets_c/2019/03/DSC09881-thumb-300x225-2454.jpg" width="300" height="225" alt="DSC09881.jpg" class="mt-image-none" style="" /></a></span>]]>
+        <![CDATA[<br />
+神奈川県、埼玉県、北海道、長崎県から5名の方が受講してくださいました。<br />
+<br />
+今回もCentOS7での開催となり、ネットワークの説明、インストールからスタートし、<br />
+FTPサーバー、WEBサーバー、データベースサーバーのインストールと設定を行い、<br />
+インターネットにサーバー公開して、自分の携帯やスマホでアクセスして動作検証をしました。<br />
+<br />
+<b>自分で構築したサーバーにインターネットからアクセスして、<br />
+Webサイトが表示された時には、皆さん感動しそれを構築できた実績が自信になります。</b><br />
+<br />
+<strong>Linux技術習得で一番重要な事は、自分で動作検証を行うことです。</strong><br />
+<br />
+自分で動作検証すると実感が沸き、その経験がそのままスキルになります。<br />
+<strong>実体験に勝る技術習得法はありません。</strong><br />
+<br />
+<strong>その後、インターネットからどのような経路でサーバーにアクセスしているのか、<br />
+サーバーの各機能の概要説明、サーバー構築する上で守らなければならない<br />
+セキュリティ対策などを説明しました。</strong><br />
+<br />
+自分で構築した直後に説明しますので、より理解しやすく、<br />
+<b>サーバーセキュリティ対策、ネットワークの説明は、とても勉強になったと言って頂けます。</b><br />
+<br />
+やはり、「鉄は熱いうちに打て」ではないですが、<br />
+その場その場で、すぐに必要な事が聞けるのがセミナーのメリットです。<br />
+<br />
+リナックスマスターセミナーでは、<br />
+実際に自分でサーバーを構築、動作検証をして<br />
+「<strong>Linuxの正しい状態</strong>」を、理解・習得できます。<br />
+<br />
+<b>Linuxで挫折する初心者に共通するのは、<br />
+「どのような設定が正しい状態なのか」、<br />
+「実行結果がどうのようになれば正しい状態なのか」<br />
+「どこが間違っているのか」<br />
+が、分からないことです。</b><br />
+<br />
+しかし、セミナーではそれを短時間に実体験を通じて習得できます。<br />
+<br />
+書籍に載っている技術を、すべて勉強することは望ましいことですが、<br />
+それらすべてが決して現場、実践で必要な技術とは限りませんし、<br />
+時間が限られている人にとって現実的ではありません。<br />
+<br />
+<strong>本当に現場で使う技術を厳選し、安全で安定したサーバーを<br />
+構築する技術を体系的に２日間という短期間で技術修得できるのは、<br />
+時間の節約として非常に有効です。</strong><br />
+<br />
+セミナー中の２日間は、休憩時間や懇親会に関係なくどんなご質問にもお答えします。<br />
+それまで分からなかったことが、その場でクリアになると大変好評を頂いています。<br />
+<br />
+更に、<br />
+<strong>・どう学習すれば、Linux技術を最短でマスターできるか。</strong><br />
+<strong>・なぜ、Linux本ではエラーになって先に進めなくなるのか。</strong><br />
+<strong>・その回避法とは。</strong><br />
+<br />
+という事も私の経験を踏まえてお話しますので、<br />
+その後も様々なLinux技術を自力でマスターしていただくことが可能です。<br />
+<br />
+セミナーに参加した人の話を聞くと、<br />
+やはり実機を使った実技はわかりやすく、<br />
+自宅で学習するのとは違い、集中して取り組めるので<br />
+短時間でスキルアップを実感できるという感想を多く頂きます。<br />
+<br />
+<strong>特にCentOS7の様なこれまでのCentOS6系とは<br />
+大きく仕様が異なる技術は、セミナー受講した方が、<br />
+本当に必要な情報と技術を効率よく吸収できます。</strong><br />
+<br />
+翌日も真剣にセミナーに取り組んで頂きました。<br />
+本セミナーは少人数なので、アットホームな感じで質問しやすく、<br />
+集中できる環境なのもメリットです。<br />
+<span class="mt-enclosure mt-enclosure-image" style="display: inline;"><a href="https://www.linuxmaster.jp/linux_blog/assets_c/2019/03/DSC09908-2457.html" onclick="window.open('https://www.linuxmaster.jp/linux_blog/assets_c/2019/03/DSC09908-2457.html','popup','width=1024,height=768,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img src="https://www.linuxmaster.jp/linux_blog/assets_c/2019/03/DSC09908-thumb-300x225-2457.jpg" width="300" height="225" alt="DSC09908.jpg" class="mt-image-none" style="" /></a></span>
+<br />
+リナックスマスターセミナーは、受講者のスキル差を十分にカバーする為、<br />
+最大６名の<strong>少人数</strong>で行います。<br />
+実機で一人一人しっかりとサポートする環境で行いますので、<br />
+それぞれの学習スピードに合わせて<br />
+丁寧なサポートをする為、この人数が限界です。<br />
+<br />
+<strong>学習に必要な機材、Linux用サーバー、管理するWindowsPCすべてをレンタルします。<br />
+筆記用具さえあれば、現場で使うLinux技術を2日という短時間で習得できます。</strong><br />
+<br />
+<b>また、自分のスキルが足りなくて、<br />
+セミナーについていけるか心配という方でも、<br />
+Linuxに興味があって、キーボードが打てれば、<br />
+サーバー構築できる内容、構成になっています。</b><br />
+<br />
+<b>これまでも未経験の方が何人も受講していますが、<br />
+最後まで内容をやり遂げていますのでご安心ください。</b><br />
+<br />
+また、それでも不安という人のために、<br />
+↓の受講特典も用意していますので、受講後の学習も安心です。<br />
+<br />
+<strong>受講特典は、<br />
+・受講後１年間の再受講は、何回でも無料。<br />
+・リナックスマスター・ホームスタディ講座【初級編】(21,000円)で自宅学習ができます。　<br />
+・受講後１年間は、メールとサポートフォーラムでの質問サポートが受けられます。<br />
+</strong><br />
+<br />
+１回の参加では不安という方は、<br />
+ぜひ再受講も視野に入れて受講して頂ければと思います。<br />
+<br />
+また当セミナーでは、もし直前で都合が悪くなり、キャンセルになった場合でも、<br />
+「再受講枠」を利用して受講することができます。<br />
+もし突発的な予定で参加出来なくても、再受講が可能なセミナーなので<br />
+安心して申し込みができる特典として好評です。<br />
+<br />
+リナックスマスターセミナーは、しっかりとしたサーバー構築手順と、<br />
+セキュリティ対策が学べるので、「サーバーの正しい状態」が理解でき、<br />
+自信に変わります。<br />
+<br />
+特にセキュリティは、現在進行形でサーバー運用した結果をフィードバックしますので、<br />
+検証済みの対策が学べます。<br />
+<br />
+更にセミナーでは疑問点がその場で解決するのと、<br />
+2日間の成果として1台のサーバーが構築でき、<br />
+その構築に必要な技術が学べる点もご支持を頂いています。<br />
+<br />
+1度でもサーバー構築が出来た経験があるのとないのでは、<br />
+更に高度なLinux技術を身につける上で大きな差になります。<br />
+<br />
+エラーで先に進めないと面白くないし、モチベーションも下がりますものね。<br />
+市販の書籍や独学で、いつもエラーになって先に進めないという人ほど、<br />
+セミナーはオススメです。<br />
+<br />
+次回のセミナー開催は、下記ページにてご案内しています。<br />
+参加ご希望の方は、いますぐ↓をクリックしてください。<br />
+<a href="https://www.linuxmaster.jp/2010/08/centos55.html">リナックスマスター２日間集中セミナー(CentOS版)のお申し込みはこちら</a>]]>
+    </content>
+</entry>
+
+<entry>
+    <title>2019年2月1回目リナックスマスターセミナーを開催しました。</title>
+    <link rel="alternate" type="text/html" href="https://www.linuxmaster.jp/linux_blog/2019/04/201921.html" />
+    <id>tag:www.linuxmaster.jp,2019:/linux_blog//5.1445</id>
+
+    <published>2019-04-01T06:04:29Z</published>
+    <updated>2019-03-25T06:19:15Z</updated>
+
+    <summary></summary>
+    <author>
+        <name>pakira</name>
+        
+    </author>
+    
+        <category term="Linuxセミナー報告" scheme="http://www.sixapart.com/ns/types#category" />
+    
+    
+    <content type="html" xml:lang="ja" xml:base="https://www.linuxmaster.jp/linux_blog/">
+        <![CDATA[リナックスマスター.JPの宮崎です。<br />
+<br />
+2/23（土）〜2/24（日）の2日間、<br />
+2019年2月1回目のリナックスマスター２日間集中セミナーを開催しました。<br />
+<br />
+次回以降のセミナーの日程や詳細は↓のページで公開しています。<br />
+参加ご希望の方は、いますぐ↓URLをクリックしてください。<br />
+<span class="mt-enclosure mt-enclosure-image" style="display: inline;"><a href="https://www.linuxmaster.jp/linux_blog/assets_c/2019/03/MIYA6276-2439.html" onclick="window.open('https://www.linuxmaster.jp/linux_blog/assets_c/2019/03/MIYA6276-2439.html','popup','width=1024,height=682,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img src="https://www.linuxmaster.jp/linux_blog/assets_c/2019/03/MIYA6276-thumb-300x199-2439.jpg" width="300" height="199" alt="MIYA6276.jpg" class="mt-image-none" style="" /></a></span>]]>
+        <![CDATA[<br />
+東京都、埼玉県、三重県、愛知県から4名の方が受講してくださいました。<br />
+<br />
+今回もCentOS7での開催となり、ネットワークの説明、インストールからスタートし、<br />
+FTPサーバー、WEBサーバー、データベースサーバーのインストールと設定を行い、<br />
+インターネットにサーバー公開して、自分の携帯やスマホでアクセスして動作検証をしました。<br />
+<br />
+<b>自分で構築したサーバーにインターネットからアクセスして、<br />
+Webサイトが表示された時には、皆さん感動しそれを構築できた実績が自信になります。</b><br />
+<br />
+<strong>Linux技術習得で一番重要な事は、自分で動作検証を行うことです。</strong><br />
+<br />
+自分で動作検証すると実感が沸き、その経験がそのままスキルになります。<br />
+<strong>実体験に勝る技術習得法はありません。</strong><br />
+<br />
+<strong>その後、インターネットからどのような経路でサーバーにアクセスしているのか、<br />
+サーバーの各機能の概要説明、サーバー構築する上で守らなければならない<br />
+セキュリティ対策などを説明しました。</strong><br />
+<br />
+自分で構築した直後に説明しますので、より理解しやすく、<br />
+<b>サーバーセキュリティ対策、ネットワークの説明は、とても勉強になったと言って頂けます。</b><br />
+<br />
+やはり、「鉄は熱いうちに打て」ではないですが、<br />
+その場その場で、すぐに必要な事が聞けるのがセミナーのメリットです。<br />
+<br />
+リナックスマスターセミナーでは、<br />
+実際に自分でサーバーを構築、動作検証をして<br />
+「<strong>Linuxの正しい状態</strong>」を、理解・習得できます。<br />
+<br />
+<b>Linuxで挫折する初心者に共通するのは、<br />
+「どのような設定が正しい状態なのか」、<br />
+「実行結果がどうのようになれば正しい状態なのか」<br />
+「どこが間違っているのか」<br />
+が、分からないことです。</b><br />
+<br />
+しかし、セミナーではそれを短時間に実体験を通じて習得できます。<br />
+<br />
+書籍に載っている技術を、すべて勉強することは望ましいことですが、<br />
+それらすべてが決して現場、実践で必要な技術とは限りませんし、<br />
+時間が限られている人にとって現実的ではありません。<br />
+<br />
+<strong>本当に現場で使う技術を厳選し、安全で安定したサーバーを<br />
+構築する技術を体系的に２日間という短期間で技術修得できるのは、<br />
+時間の節約として非常に有効です。</strong><br />
+<br />
+セミナー中の２日間は、休憩時間や懇親会に関係なくどんなご質問にもお答えします。<br />
+それまで分からなかったことが、その場でクリアになると大変好評を頂いています。<br />
+<br />
+更に、<br />
+<strong>・どう学習すれば、Linux技術を最短でマスターできるか。</strong><br />
+<strong>・なぜ、Linux本ではエラーになって先に進めなくなるのか。</strong><br />
+<strong>・その回避法とは。</strong><br />
+<br />
+という事も私の経験を踏まえてお話しますので、<br />
+その後も様々なLinux技術を自力でマスターしていただくことが可能です。<br />
+<br />
+セミナーに参加した人の話を聞くと、<br />
+やはり実機を使った実技はわかりやすく、<br />
+自宅で学習するのとは違い、集中して取り組めるので<br />
+短時間でスキルアップを実感できるという感想を多く頂きます。<br />
+<br />
+<strong>特にCentOS7の様なこれまでのCentOS6系とは<br />
+大きく仕様が異なる技術は、セミナー受講した方が、<br />
+本当に必要な情報と技術を効率よく吸収できます。</strong><br />
+<br />
+翌日も真剣にセミナーに取り組んで頂きました。<br />
+本セミナーは少人数なので、アットホームな感じで質問しやすく、<br />
+集中できる環境なのもメリットです。<br />
+<span class="mt-enclosure mt-enclosure-image" style="display: inline;"><a href="https://www.linuxmaster.jp/linux_blog/assets_c/2019/03/MIYA6287-2436.html" onclick="window.open('https://www.linuxmaster.jp/linux_blog/assets_c/2019/03/MIYA6287-2436.html','popup','width=1024,height=682,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img src="https://www.linuxmaster.jp/linux_blog/assets_c/2019/03/MIYA6287-thumb-300x199-2436.jpg" width="300" height="199" alt="MIYA6287.jpg" class="mt-image-none" style="" /></a></span>
+<br />
+リナックスマスターセミナーは、受講者のスキル差を十分にカバーする為、<br />
+最大６名の<strong>少人数</strong>で行います。<br />
+実機で一人一人しっかりとサポートする環境で行いますので、<br />
+それぞれの学習スピードに合わせて<br />
+丁寧なサポートをする為、この人数が限界です。<br />
+<br />
+<strong>学習に必要な機材、Linux用サーバー、管理するWindowsPCすべてをレンタルします。<br />
+筆記用具さえあれば、現場で使うLinux技術を2日という短時間で習得できます。</strong><br />
+<br />
+<b>また、自分のスキルが足りなくて、<br />
+セミナーについていけるか心配という方でも、<br />
+Linuxに興味があって、キーボードが打てれば、<br />
+サーバー構築できる内容、構成になっています。</b><br />
+<br />
+<b>これまでも未経験の方が何人も受講していますが、<br />
+最後まで内容をやり遂げていますのでご安心ください。</b><br />
+<br />
+また、それでも不安という人のために、<br />
+↓の受講特典も用意していますので、受講後の学習も安心です。<br />
+<br />
+<strong>受講特典は、<br />
+・受講後１年間の再受講は、何回でも無料。<br />
+・リナックスマスター・ホームスタディ講座【初級編】(21,000円)で自宅学習ができます。　<br />
+・受講後１年間は、メールとサポートフォーラムでの質問サポートが受けられます。<br />
+</strong><br />
+<br />
+１回の参加では不安という方は、<br />
+ぜひ再受講も視野に入れて受講して頂ければと思います。<br />
+<br />
+また当セミナーでは、もし直前で都合が悪くなり、キャンセルになった場合でも、<br />
+「再受講枠」を利用して受講することができます。<br />
+もし突発的な予定で参加出来なくても、再受講が可能なセミナーなので<br />
+安心して申し込みができる特典として好評です。<br />
+<br />
+リナックスマスターセミナーは、しっかりとしたサーバー構築手順と、<br />
+セキュリティ対策が学べるので、「サーバーの正しい状態」が理解でき、<br />
+自信に変わります。<br />
+<br />
+特にセキュリティは、現在進行形でサーバー運用した結果をフィードバックしますので、<br />
+検証済みの対策が学べます。<br />
+<br />
+更にセミナーでは疑問点がその場で解決するのと、<br />
+2日間の成果として1台のサーバーが構築でき、<br />
+その構築に必要な技術が学べる点もご支持を頂いています。<br />
+<br />
+1度でもサーバー構築が出来た経験があるのとないのでは、<br />
+更に高度なLinux技術を身につける上で大きな差になります。<br />
+<br />
+エラーで先に進めないと面白くないし、モチベーションも下がりますものね。<br />
+市販の書籍や独学で、いつもエラーになって先に進めないという人ほど、<br />
+セミナーはオススメです。<br />
+<br />
+次回のセミナー開催は、下記ページにてご案内しています。<br />
+参加ご希望の方は、いますぐ↓をクリックしてください。<br />
+<a href="https://www.linuxmaster.jp/2010/08/centos55.html">リナックスマスター２日間集中セミナー(CentOS版)のお申し込みはこちら</a>]]>
+    </content>
+</entry>
+
+<entry>
+    <title>2019年1月2回目リナックスマスターセミナーを開催しました。</title>
+    <link rel="alternate" type="text/html" href="https://www.linuxmaster.jp/linux_blog/2019/03/201912.html" />
+    <id>tag:www.linuxmaster.jp,2019:/linux_blog//5.1444</id>
+
+    <published>2019-03-27T05:58:55Z</published>
+    <updated>2019-03-25T06:19:21Z</updated>
+
+    <summary></summary>
+    <author>
+        <name>pakira</name>
+        
+    </author>
+    
+        <category term="Linuxセミナー報告" scheme="http://www.sixapart.com/ns/types#category" />
+    
+    
+    <content type="html" xml:lang="ja" xml:base="https://www.linuxmaster.jp/linux_blog/">
+        <![CDATA[リナックスマスター.JPの宮崎です。<br />
+<br />
+1/30（水）〜1/31（木）の2日間、<br />
+2019年1月2回目のリナックスマスター２日間集中セミナーを開催しました。<br />
+<br />
+次回以降のセミナーの日程や詳細は↓のページで公開しています。<br />
+参加ご希望の方は、いますぐ↓URLをクリックしてください。<br />
+<a href="https://www.linuxmaster.jp/2010/08/centos55.html">リナックスマスター2日間集中セミナー</a><br />
+<br />
+<span class="mt-enclosure mt-enclosure-image" style="display: inline;"><a href="https://www.linuxmaster.jp/linux_blog/assets_c/2019/03/DSC09847-2442.html" onclick="window.open('https://www.linuxmaster.jp/linux_blog/assets_c/2019/03/DSC09847-2442.html','popup','width=800,height=600,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img src="https://www.linuxmaster.jp/linux_blog/assets_c/2019/03/DSC09847-thumb-300x225-2442.jpg" width="300" height="225" alt="DSC09847.jpg" class="mt-image-none" style="" /></a></span>]]>
+        <![CDATA[<br />
+東京都、佐賀県、石川県から5名の方が受講してくださいました。<br />
+<br />
+今回もCentOS7での開催となり、ネットワークの説明、インストールからスタートし、<br />
+FTPサーバー、WEBサーバー、データベースサーバーのインストールと設定を行い、<br />
+インターネットにサーバー公開して、自分の携帯やスマホでアクセスして動作検証をしました。<br />
+<br />
+<b>自分で構築したサーバーにインターネットからアクセスして、<br />
+Webサイトが表示された時には、皆さん感動しそれを構築できた実績が自信になります。</b><br />
+<br />
+<strong>Linux技術習得で一番重要な事は、自分で動作検証を行うことです。</strong><br />
+<br />
+自分で動作検証すると実感が沸き、その経験がそのままスキルになります。<br />
+<strong>実体験に勝る技術習得法はありません。</strong><br />
+<br />
+<strong>その後、インターネットからどのような経路でサーバーにアクセスしているのか、<br />
+サーバーの各機能の概要説明、サーバー構築する上で守らなければならない<br />
+セキュリティ対策などを説明しました。</strong><br />
+<br />
+自分で構築した直後に説明しますので、より理解しやすく、<br />
+<b>サーバーセキュリティ対策、ネットワークの説明は、とても勉強になったと言って頂けます。</b><br />
+<br />
+やはり、「鉄は熱いうちに打て」ではないですが、<br />
+その場その場で、すぐに必要な事が聞けるのがセミナーのメリットです。<br />
+<br />
+リナックスマスターセミナーでは、<br />
+実際に自分でサーバーを構築、動作検証をして<br />
+「<strong>Linuxの正しい状態</strong>」を、理解・習得できます。<br />
+<br />
+<b>Linuxで挫折する初心者に共通するのは、<br />
+「どのような設定が正しい状態なのか」、<br />
+「実行結果がどうのようになれば正しい状態なのか」<br />
+「どこが間違っているのか」<br />
+が、分からないことです。</b><br />
+<br />
+しかし、セミナーではそれを短時間に実体験を通じて習得できます。<br />
+<br />
+書籍に載っている技術を、すべて勉強することは望ましいことですが、<br />
+それらすべてが決して現場、実践で必要な技術とは限りませんし、<br />
+時間が限られている人にとって現実的ではありません。<br />
+<br />
+<strong>本当に現場で使う技術を厳選し、安全で安定したサーバーを<br />
+構築する技術を体系的に２日間という短期間で技術修得できるのは、<br />
+時間の節約として非常に有効です。</strong><br />
+<br />
+セミナー中の２日間は、休憩時間や懇親会に関係なくどんなご質問にもお答えします。<br />
+それまで分からなかったことが、その場でクリアになると大変好評を頂いています。<br />
+<br />
+更に、<br />
+<strong>・どう学習すれば、Linux技術を最短でマスターできるか。</strong><br />
+<strong>・なぜ、Linux本ではエラーになって先に進めなくなるのか。</strong><br />
+<strong>・その回避法とは。</strong><br />
+<br />
+という事も私の経験を踏まえてお話しますので、<br />
+その後も様々なLinux技術を自力でマスターしていただくことが可能です。<br />
+<br />
+セミナーに参加した人の話を聞くと、<br />
+やはり実機を使った実技はわかりやすく、<br />
+自宅で学習するのとは違い、集中して取り組めるので<br />
+短時間でスキルアップを実感できるという感想を多く頂きます。<br />
+<br />
+<strong>特にCentOS7の様なこれまでのCentOS6系とは<br />
+大きく仕様が異なる技術は、セミナー受講した方が、<br />
+本当に必要な情報と技術を効率よく吸収できます。</strong><br />
+<br />
+翌日も真剣にセミナーに取り組んで頂きました。<br />
+本セミナーは少人数なので、アットホームな感じで質問しやすく、<br />
+集中できる環境なのもメリットです。<br />
+<span class="mt-enclosure mt-enclosure-image" style="display: inline;"><a href="https://www.linuxmaster.jp/linux_blog/assets_c/2019/03/MIYA5836-2445.html" onclick="window.open('https://www.linuxmaster.jp/linux_blog/assets_c/2019/03/MIYA5836-2445.html','popup','width=800,height=533,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img src="https://www.linuxmaster.jp/linux_blog/assets_c/2019/03/MIYA5836-thumb-300x199-2445.jpg" width="300" height="199" alt="MIYA5836.jpg" class="mt-image-none" style="" /></a></span>
+<br />
+リナックスマスターセミナーは、受講者のスキル差を十分にカバーする為、<br />
+最大６名の<strong>少人数</strong>で行います。<br />
+実機で一人一人しっかりとサポートする環境で行いますので、<br />
+それぞれの学習スピードに合わせて<br />
+丁寧なサポートをする為、この人数が限界です。<br />
+<br />
+<strong>学習に必要な機材、Linux用サーバー、管理するWindowsPCすべてをレンタルします。<br />
+筆記用具さえあれば、現場で使うLinux技術を2日という短時間で習得できます。</strong><br />
+<br />
+<b>また、自分のスキルが足りなくて、<br />
+セミナーについていけるか心配という方でも、<br />
+Linuxに興味があって、キーボードが打てれば、<br />
+サーバー構築できる内容、構成になっています。</b><br />
+<br />
+<b>これまでも未経験の方が何人も受講していますが、<br />
+最後まで内容をやり遂げていますのでご安心ください。</b><br />
+<br />
+また、それでも不安という人のために、<br />
+↓の受講特典も用意していますので、受講後の学習も安心です。<br />
+<br />
+<strong>受講特典は、<br />
+・受講後１年間の再受講は、何回でも無料。<br />
+・リナックスマスター・ホームスタディ講座【初級編】(21,000円)で自宅学習ができます。　<br />
+・受講後１年間は、メールとサポートフォーラムでの質問サポートが受けられます。<br />
+</strong><br />
+<br />
+１回の参加では不安という方は、<br />
+ぜひ再受講も視野に入れて受講して頂ければと思います。<br />
+<br />
+また当セミナーでは、もし直前で都合が悪くなり、キャンセルになった場合でも、<br />
+「再受講枠」を利用して受講することができます。<br />
+もし突発的な予定で参加出来なくても、再受講が可能なセミナーなので<br />
+安心して申し込みができる特典として好評です。<br />
+<br />
+リナックスマスターセミナーは、しっかりとしたサーバー構築手順と、<br />
+セキュリティ対策が学べるので、「サーバーの正しい状態」が理解でき、<br />
+自信に変わります。<br />
+<br />
+特にセキュリティは、現在進行形でサーバー運用した結果をフィードバックしますので、<br />
+検証済みの対策が学べます。<br />
+<br />
+更にセミナーでは疑問点がその場で解決するのと、<br />
+2日間の成果として1台のサーバーが構築でき、<br />
+その構築に必要な技術が学べる点もご支持を頂いています。<br />
+<br />
+1度でもサーバー構築が出来た経験があるのとないのでは、<br />
+更に高度なLinux技術を身につける上で大きな差になります。<br />
+<br />
+エラーで先に進めないと面白くないし、モチベーションも下がりますものね。<br />
+市販の書籍や独学で、いつもエラーになって先に進めないという人ほど、<br />
+セミナーはオススメです。<br />
+<br />
+次回のセミナー開催は、下記ページにてご案内しています。<br />
+参加ご希望の方は、いますぐ↓をクリックしてください。<br />
+<a href="https://www.linuxmaster.jp/2010/08/centos55.html">リナックスマスター２日間集中セミナー(CentOS版)のお申し込みはこちら</a>]]>
+    </content>
+</entry>
+
+<entry>
+    <title>2019年1月1回目リナックスマスターセミナーを開催しました。</title>
+    <link rel="alternate" type="text/html" href="https://www.linuxmaster.jp/linux_blog/2019/03/201911.html" />
+    <id>tag:www.linuxmaster.jp,2019:/linux_blog//5.1442</id>
+
+    <published>2019-03-25T05:53:06Z</published>
+    <updated>2019-03-25T05:58:25Z</updated>
+
+    <summary></summary>
+    <author>
+        <name>pakira</name>
+        
+    </author>
+    
+        <category term="Linuxセミナー報告" scheme="http://www.sixapart.com/ns/types#category" />
+    
+    
+    <content type="html" xml:lang="ja" xml:base="https://www.linuxmaster.jp/linux_blog/">
+        <![CDATA[リナックスマスター.JPの宮崎です。<br />
+<br />
+1/26（土）〜1/27（日）の2日間、<br />
+2019年1月1回目のリナックスマスター２日間集中セミナーを開催しました。<br />
+<br />
+次回以降のセミナーの日程や詳細は↓のページで公開しています。<br />
+参加ご希望の方は、いますぐ↓URLをクリックしてください。<br />
+<a href="https://www.linuxmaster.jp/2010/08/centos55.html">リナックスマスター2日間集中セミナー</a><br />
+<br />
+<span class="mt-enclosure mt-enclosure-image" style="display: inline;"><a href="https://www.linuxmaster.jp/linux_blog/assets_c/2019/03/DSC09822-2418.html" onclick="window.open('https://www.linuxmaster.jp/linux_blog/assets_c/2019/03/DSC09822-2418.html','popup','width=800,height=600,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img src="https://www.linuxmaster.jp/linux_blog/assets_c/2019/03/DSC09822-thumb-300x225-2418.jpg" width="300" height="225" alt="DSC09822.jpg" class="mt-image-none" style="" /></a></span>]]>
+        <![CDATA[<br />
+東京都、大阪府、京都府、福岡県から6名の方が受講してくださいました。<br />
+<br />
+今回もCentOS7での開催となり、ネットワークの説明、インストールからスタートし、<br />
+FTPサーバー、WEBサーバー、データベースサーバーのインストールと設定を行い、<br />
+インターネットにサーバー公開して、自分の携帯やスマホでアクセスして動作検証をしました。<br />
+<br />
+<b>自分で構築したサーバーにインターネットからアクセスして、<br />
+Webサイトが表示された時には、皆さん感動しそれを構築できた実績が自信になります。</b><br />
+<br />
+<strong>Linux技術習得で一番重要な事は、自分で動作検証を行うことです。</strong><br />
+<br />
+自分で動作検証すると実感が沸き、その経験がそのままスキルになります。<br />
+<strong>実体験に勝る技術習得法はありません。</strong><br />
+<br />
+<strong>その後、インターネットからどのような経路でサーバーにアクセスしているのか、<br />
+サーバーの各機能の概要説明、サーバー構築する上で守らなければならない<br />
+セキュリティ対策などを説明しました。</strong><br />
+<br />
+自分で構築した直後に説明しますので、より理解しやすく、<br />
+<b>サーバーセキュリティ対策、ネットワークの説明は、とても勉強になったと言って頂けます。</b><br />
+<br />
+やはり、「鉄は熱いうちに打て」ではないですが、<br />
+その場その場で、すぐに必要な事が聞けるのがセミナーのメリットです。<br />
+<br />
+リナックスマスターセミナーでは、<br />
+実際に自分でサーバーを構築、動作検証をして<br />
+「<strong>Linuxの正しい状態</strong>」を、理解・習得できます。<br />
+<br />
+<b>Linuxで挫折する初心者に共通するのは、<br />
+「どのような設定が正しい状態なのか」、<br />
+「実行結果がどうのようになれば正しい状態なのか」<br />
+「どこが間違っているのか」<br />
+が、分からないことです。</b><br />
+<br />
+しかし、セミナーではそれを短時間に実体験を通じて習得できます。<br />
+<br />
+書籍に載っている技術を、すべて勉強することは望ましいことですが、<br />
+それらすべてが決して現場、実践で必要な技術とは限りませんし、<br />
+時間が限られている人にとって現実的ではありません。<br />
+<br />
+<strong>本当に現場で使う技術を厳選し、安全で安定したサーバーを<br />
+構築する技術を体系的に２日間という短期間で技術修得できるのは、<br />
+時間の節約として非常に有効です。</strong><br />
+<br />
+セミナー中の２日間は、休憩時間や懇親会に関係なくどんなご質問にもお答えします。<br />
+それまで分からなかったことが、その場でクリアになると大変好評を頂いています。<br />
+<br />
+更に、<br />
+<strong>・どう学習すれば、Linux技術を最短でマスターできるか。</strong><br />
+<strong>・なぜ、Linux本ではエラーになって先に進めなくなるのか。</strong><br />
+<strong>・その回避法とは。</strong><br />
+<br />
+という事も私の経験を踏まえてお話しますので、<br />
+その後も様々なLinux技術を自力でマスターしていただくことが可能です。<br />
+<br />
+セミナーに参加した人の話を聞くと、<br />
+やはり実機を使った実技はわかりやすく、<br />
+自宅で学習するのとは違い、集中して取り組めるので<br />
+短時間でスキルアップを実感できるという感想を多く頂きます。<br />
+<br />
+<strong>特にCentOS7の様なこれまでのCentOS6系とは<br />
+大きく仕様が異なる技術は、セミナー受講した方が、<br />
+本当に必要な情報と技術を効率よく吸収できます。</strong><br />
+<br />
+翌日も真剣にセミナーに取り組んで頂きました。<br />
+本セミナーは少人数なので、アットホームな感じで質問しやすく、<br />
+集中できる環境なのもメリットです。<br />
+<span class="mt-enclosure mt-enclosure-image" style="display: inline;"><a href="https://www.linuxmaster.jp/linux_blog/assets_c/2019/03/MIYA5830-2421.html" onclick="window.open('https://www.linuxmaster.jp/linux_blog/assets_c/2019/03/MIYA5830-2421.html','popup','width=800,height=533,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img src="https://www.linuxmaster.jp/linux_blog/assets_c/2019/03/MIYA5830-thumb-300x199-2421.jpg" width="300" height="199" alt="MIYA5830.jpg" class="mt-image-none" style="" /></a></span>
+<br />
+リナックスマスターセミナーは、受講者のスキル差を十分にカバーする為、<br />
+最大６名の<strong>少人数</strong>で行います。<br />
+実機で一人一人しっかりとサポートする環境で行いますので、<br />
+それぞれの学習スピードに合わせて<br />
+丁寧なサポートをする為、この人数が限界です。<br />
+<br />
+<strong>学習に必要な機材、Linux用サーバー、管理するWindowsPCすべてをレンタルします。<br />
+筆記用具さえあれば、現場で使うLinux技術を2日という短時間で習得できます。</strong><br />
+<br />
+<b>また、自分のスキルが足りなくて、<br />
+セミナーについていけるか心配という方でも、<br />
+Linuxに興味があって、キーボードが打てれば、<br />
+サーバー構築できる内容、構成になっています。</b><br />
+<br />
+<b>これまでも未経験の方が何人も受講していますが、<br />
+最後まで内容をやり遂げていますのでご安心ください。</b><br />
+<br />
+また、それでも不安という人のために、<br />
+↓の受講特典も用意していますので、受講後の学習も安心です。<br />
+<br />
+<strong>受講特典は、<br />
+・受講後１年間の再受講は、何回でも無料。<br />
+・リナックスマスター・ホームスタディ講座【初級編】(21,000円)で自宅学習ができます。　<br />
+・受講後１年間は、メールとサポートフォーラムでの質問サポートが受けられます。<br />
+</strong><br />
+<br />
+１回の参加では不安という方は、<br />
+ぜひ再受講も視野に入れて受講して頂ければと思います。<br />
+<br />
+また当セミナーでは、もし直前で都合が悪くなり、キャンセルになった場合でも、<br />
+「再受講枠」を利用して受講することができます。<br />
+もし突発的な予定で参加出来なくても、再受講が可能なセミナーなので<br />
+安心して申し込みができる特典として好評です。<br />
+<br />
+リナックスマスターセミナーは、しっかりとしたサーバー構築手順と、<br />
+セキュリティ対策が学べるので、「サーバーの正しい状態」が理解でき、<br />
+自信に変わります。<br />
+<br />
+特にセキュリティは、現在進行形でサーバー運用した結果をフィードバックしますので、<br />
+検証済みの対策が学べます。<br />
+<br />
+更にセミナーでは疑問点がその場で解決するのと、<br />
+2日間の成果として1台のサーバーが構築でき、<br />
+その構築に必要な技術が学べる点もご支持を頂いています。<br />
+<br />
+1度でもサーバー構築が出来た経験があるのとないのでは、<br />
+更に高度なLinux技術を身につける上で大きな差になります。<br />
+<br />
+エラーで先に進めないと面白くないし、モチベーションも下がりますものね。<br />
+市販の書籍や独学で、いつもエラーになって先に進めないという人ほど、<br />
+セミナーはオススメです。<br />
+<br />
+次回のセミナー開催は、下記ページにてご案内しています。<br />
+参加ご希望の方は、いますぐ↓をクリックしてください。<br />
+<a href="https://www.linuxmaster.jp/2010/08/centos55.html">リナックスマスター２日間集中セミナー(CentOS版)のお申し込みはこちら</a>]]>
+    </content>
+</entry>
+
+<entry>
+    <title>MySQLコンパイル時にc++: internal compiler error: Killed (program cc1plus)が発生した時の対処法</title>
+    <link rel="alternate" type="text/html" href="https://www.linuxmaster.jp/linux_blog/2019/03/mysqlc-internal-compiler-error-killed-program-cc1plus.html" />
+    <id>tag:www.linuxmaster.jp,2019:/linux_blog//5.1441</id>
+
+    <published>2019-03-12T05:43:18Z</published>
+    <updated>2019-03-25T06:25:21Z</updated>
+
+    <summary></summary>
+    <author>
+        <name>pakira</name>
+        
+    </author>
+    
+        <category term="Linuxエラー対処法" scheme="http://www.sixapart.com/ns/types#category" />
+    
+    
+    <content type="html" xml:lang="ja" xml:base="https://www.linuxmaster.jp/linux_blog/">
+        <![CDATA[<p>MySQLをコンパイルしている時に、下記エラーが発生して<br />
+処理が停止してしまう場合の対処法をご紹介します。</p>
+
+<p><em>[ 45%] Built target rpl<br />
+[ 45%] Built target comp_sql<br />
+[ 45%] Built target GenSysSchema<br />
+[ 45%] Built target gen_lex_token<br />
+[ 45%] Built target GenDigestServerSource<br />
+[ 45%] Built target GenBootstrapPriv<br />
+[ 45%] Building CXX object sql/CMakeFiles/sql.dir/item_geofunc.cc.o<br />
+c++: internal compiler error: Killed (program cc1plus)<br />
+Please submit a full bug report,<br />
+with preprocessed source if appropriate.<br />
+See <http://bugzilla.redhat.com/bugzilla> for instructions.<br />
+make[2]: *** [sql/CMakeFiles/sql.dir/item_geofunc.cc.o] Error 4<br />
+make[1]: *** [sql/CMakeFiles/sql.dir/all] Error 2<br />
+make: *** [all] Error 2</em><br />
+</p>]]>
+        <![CDATA[<p>エラーメッセージとしては、下記に注目します。<br />
+<strong>c++: internal compiler error: Killed (program cc1plus)</strong><br />
+このエラーの原因は、メモリ不足になり、<br />
+メモリを増量するなり、Swap領域を追加して対応する必要があります。</p>
+
+<p>本現象は、MySQLに限らず発生するので、<br />
+その場合はメモリ状況を確認してください。<br />
+</p>]]>
+    </content>
+</entry>
+
+<entry>
+    <title>Let&apos;s EncryptのSSL証明書更新処理がエラーになった場合の対処</title>
+    <link rel="alternate" type="text/html" href="https://www.linuxmaster.jp/linux_blog/2019/02/lets-encrypt.html" />
+    <id>tag:www.linuxmaster.jp,2019:/linux_blog//5.1440</id>
+
+    <published>2019-02-22T16:04:06Z</published>
+    <updated>2019-03-25T06:25:02Z</updated>
+
+    <summary></summary>
+    <author>
+        <name>pakira</name>
+        
+    </author>
+    
+        <category term="Linuxエラー対処法" scheme="http://www.sixapart.com/ns/types#category" />
+    
+    
+    <content type="html" xml:lang="ja" xml:base="https://www.linuxmaster.jp/linux_blog/">
+        <![CDATA[<p>無料SSL証明書として有名なLet's Encryptを使用していて、<br />
+証明書更新処理で下記エラーが発生しました。<br />
+自動更新処理でも同様のエラーが発生しています。</p>
+
+<p><b>■エラーログ</b><br />
+<strong>OSError: Command /opt/eff.org/certbot/venv/bin/python2.7 - setuptools pip wheel failed with error code 1</strong></p>]]>
+        <![CDATA[<p><b>■実行ログ</b><br />
+# <b>certbot-auto renew --force-renew --dry-run && systemctl restart nginx.service</b><br />
+Bootstrapping dependencies for RedHat-based OSes... (you can skip this with --no-bootstrap)<br />
+yum は /bin/yum です<br />
+yum はハッシュされています (/bin/yum)<br />
+読み込んだプラグイン:fastestmirror, langpacks<br />
+Loading mirror speeds from cached hostfile<br />
+ * base: ftp.iij.ad.jp<br />
+ * extras: ftp-srv2.kddilabs.jp<br />
+ * rpmforge: ftp.kddilabs.jp<br />
+ * updates: ftp.iij.ad.jp<br />
+パッケージ gcc-4.8.5-36.el7.x86_64 はインストール済みか最新バージョンです<br />
+パッケージ augeas-libs-1.4.0-6.el7_6.1.x86_64 はインストール済みか最新バージョンです<br />
+パッケージ 1:openssl-1.0.2k-16.el7.x86_64 はインストール済みか最新バージョンです<br />
+パッケージ 1:openssl-devel-1.0.2k-16.el7.x86_64 はインストール済みか最新バージョンです<br />
+パッケージ libffi-devel-3.0.13-18.el7.x86_64 はインストール済みか最新バージョンです<br />
+パッケージ redhat-rpm-config-9.1.0-87.el7.centos.noarch はインストール済みか最新バージョンです<br />
+パッケージ ca-certificates-2018.2.22-70.0.el7_5.noarch はインストール済みか最新バージョンです<br />
+パッケージ python-devel-2.7.5-76.el7.x86_64 はインストール済みか最新バージョンです<br />
+パッケージ python-virtualenv-15.1.0-2.el7.noarch はインストール済みか最新バージョンです<br />
+パッケージ python-tools-2.7.5-76.el7.x86_64 はインストール済みか最新バージョンです<br />
+パッケージ python-pip は利用できません。<br />
+何もしません<br />
+Creating virtual environment...<br />
+Traceback (most recent call last):<br />
+  File "/usr/lib/python2.7/site-packages/virtualenv.py", line 2327, in <module><br />
+    main()<br />
+  File "/usr/lib/python2.7/site-packages/virtualenv.py", line 712, in main<br />
+    symlink=options.symlink)<br />
+  File "/usr/lib/python2.7/site-packages/virtualenv.py", line 944, in create_environment<br />
+    download=download,<br />
+  File "/usr/lib/python2.7/site-packages/virtualenv.py", line 900, in install_wheel<br />
+    call_subprocess(cmd, show_stdout=False, extra_env=env, stdin=SCRIPT)<br />
+  File "/usr/lib/python2.7/site-packages/virtualenv.py", line 796, in call_subprocess<br />
+    % (cmd_desc, proc.returncode))<br />
+<strong>OSError: Command /opt/eff.org/certbot/venv/bin/python2.7 - setuptools pip wheel failed with error code 1</strong></p>
+
+<p>対応としては、python-pipをインストールして、pipをアップグレードします。<br />
+実行コマンドは下記の通りです。</p>
+
+<p><b>■対応手順</b><br />
+# <b>yum --enablerepo=epel install  python-pip</b><br />
+# <b>pip install --upgrade setuptools</b><br />
+# <b>pip install --upgrade virtualenv</b><br />
+# <b>pip install --upgrade pip</b></p>
+
+<p>上記を実行することで、更新処理が行えるようになりました。</p>]]>
+    </content>
+</entry>
+
+<entry>
+    <title>/lib/ld-linux.so.2: bad ELF interpreter: そのようなファイルやディレクトリはありません</title>
+    <link rel="alternate" type="text/html" href="https://www.linuxmaster.jp/linux_blog/2019/01/libld-linuxso2-bad-elf-interpreter.html" />
+    <id>tag:www.linuxmaster.jp,2019:/linux_blog//5.1439</id>
+
+    <published>2019-01-26T03:03:23Z</published>
+    <updated>2019-01-29T08:43:35Z</updated>
+
+    <summary></summary>
+    <author>
+        <name>pakira</name>
+        
+    </author>
+    
+        <category term="Linuxエラー対処法" scheme="http://www.sixapart.com/ns/types#category" />
+    
+    
+    <content type="html" xml:lang="ja" xml:base="https://www.linuxmaster.jp/linux_blog/">
+        <![CDATA[<p> CentOS 64bit環境で下記エラーが発生した場合の対処法を紹介します。</p>
+
+<p><b>エラーメッセージ内容</b><br />
+<strong>/lib/ld-linux.so.2: bad ELF interpreter: そのようなファイルやディレクトリはありません</strong><br />
+<strong>/lib/ld-linux.so.2: bad ELF interpreter: No such file or directory </strong><br />
+</p>]]>
+        <![CDATA[<p><b>原因</b><br />
+OSが64bit環境で、32bitでビルドされたコマンドを実行すると上記エラーが出ます。</p>
+
+<p><b>対応手順</b><br />
+32bitでビルドされたコマンドを実行できるように<br />
+glibc 32bit互換ライブラリをインストールします。<br />
+root権限で下記コマンドを実行し、ld-linux.so.2をインストールすることで解決します。<br />
+# <strong>yum install ld-linux.so.2</strong><br />
+</p>]]>
+    </content>
+</entry>
+
+<entry>
+    <title>warning: connect to transport private/smtp-amavis: No such file or directoryの対処法</title>
+    <link rel="alternate" type="text/html" href="https://www.linuxmaster.jp/linux_blog/2019/01/warning-connect-to-transport-privatesmtp-amavis-no-such-file-or-directory.html" />
+    <id>tag:www.linuxmaster.jp,2019:/linux_blog//5.1438</id>
+
+    <published>2019-01-15T15:45:47Z</published>
+    <updated>2019-01-29T08:43:49Z</updated>
+
+    <summary></summary>
+    <author>
+        <name>pakira</name>
+        
+    </author>
+    
+        <category term="Linuxエラー対処法" scheme="http://www.sixapart.com/ns/types#category" />
+    
+    
+    <content type="html" xml:lang="ja" xml:base="https://www.linuxmaster.jp/linux_blog/">
+        <![CDATA[<p>Postfix + Clam AntiVirus + SpamAssassin環境下で、<br />
+/var/log/maillogファイルに下記ログが出力され、<br />
+メール送信が出来ない場合の対処法を紹介します。<br />
+<strong>warning: connect to transport private/smtp-amavis: No such file or directory</strong><br />
+</p>]]>
+        <![CDATA[<p>上記警告ログが出力され、メール送信ができない場合、<br />
+/var/spool/postfix/private/smtp-amavisディレクトリが<br />
+存在しないのが原因となります。</p>
+
+<p>では、なぜこのディレクトリが存在しないのかというと、<br />
+疑うべきは、/etc/postfix/master.cfファイルになります。<br />
+このファイルに誤りがないか確認を行ってください。</p>
+
+<p>今回サポートして原因調査を行ったところ下記の単純記述ミスが<br />
+原因でした。</p>
+
+<p>誤）<br />
+<b>mtp-amavis unix - - n - 2 smtp</b></p>
+
+<p>正）<br />
+<strong>smtp-amavis unix - - n - 2 smtp</strong></p>
+
+<p>行頭の「s」がなく、恐らく本人が気づかない内に<br />
+誤って削除したものと思われます。<br />
+</p>]]>
+    </content>
+</entry>
+
+<entry>
+    <title>2018年12月リナックスマスターセミナーを開催しました。</title>
+    <link rel="alternate" type="text/html" href="https://www.linuxmaster.jp/linux_blog/2018/12/201812-1.html" />
+    <id>tag:www.linuxmaster.jp,2018:/linux_blog//5.1437</id>
+
+    <published>2018-12-13T00:18:12Z</published>
+    <updated>2018-12-13T00:21:03Z</updated>
+
+    <summary></summary>
+    <author>
+        <name>pakira</name>
+        
+    </author>
+    
+        <category term="Linuxセミナー報告" scheme="http://www.sixapart.com/ns/types#category" />
+    
+    
+    <content type="html" xml:lang="ja" xml:base="https://www.linuxmaster.jp/linux_blog/">
+        <![CDATA[ リナックスマスター.JPの宮崎です。<br />
+<br />
+12/6（木）〜12/7（金）の2日間、<br />
+2018年12月のリナックスマスター２日間集中セミナーを開催しました。<br />
+<br />
+次回以降のセミナーの日程や詳細は↓のページで公開しています。<br />
+参加ご希望の方は、いますぐ↓URLをクリックしてください。<br />
+<a href="https://www.linuxmaster.jp/2010/08/centos55.html">リナックスマスター2日間集中セミナー</a><br />
+<br />
+<span class="mt-enclosure mt-enclosure-image" style="display: inline;"><a href="https://www.linuxmaster.jp/linux_blog/assets_c/2018/12/DSC09797-2412.html" onclick="window.open('https://www.linuxmaster.jp/linux_blog/assets_c/2018/12/DSC09797-2412.html','popup','width=1280,height=960,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img src="https://www.linuxmaster.jp/linux_blog/assets_c/2018/12/DSC09797-thumb-300x225-2412.jpg" width="300" height="225" alt="DSC09797.jpg" class="mt-image-none" style="" /></a></span>]]>
+        <![CDATA[<br />
+千葉県、兵庫県、福井県から3名の方が受講してくださいました。<br />
+<br />
+今回もCentOS7での開催となり、ネットワークの説明、インストールからスタートし、<br />
+FTPサーバー、WEBサーバー、データベースサーバーのインストールと設定を行い、<br />
+インターネットにサーバー公開して、自分の携帯やスマホでアクセスして動作検証をしました。<br />
+<br />
+<b>自分で構築したサーバーにインターネットからアクセスして、<br />
+Webサイトが表示された時には、皆さん感動しそれを構築できた実績が自信になります。</b><br />
+<br />
+<strong>Linux技術習得で一番重要な事は、自分で動作検証を行うことです。</strong><br />
+<br />
+自分で動作検証すると実感が沸き、その経験がそのままスキルになります。<br />
+<strong>実体験に勝る技術習得法はありません。</strong><br />
+<br />
+<strong>その後、インターネットからどのような経路でサーバーにアクセスしているのか、<br />
+サーバーの各機能の概要説明、サーバー構築する上で守らなければならない<br />
+セキュリティ対策などを説明しました。</strong><br />
+<br />
+自分で構築した直後に説明しますので、より理解しやすく、<br />
+<b>サーバーセキュリティ対策、ネットワークの説明は、とても勉強になったと言って頂けます。</b><br />
+<br />
+やはり、「鉄は熱いうちに打て」ではないですが、<br />
+その場その場で、すぐに必要な事が聞けるのがセミナーのメリットです。<br />
+<br />
+リナックスマスターセミナーでは、<br />
+実際に自分でサーバーを構築、動作検証をして<br />
+「<strong>Linuxの正しい状態</strong>」を、理解・習得できます。<br />
+<br />
+<b>Linuxで挫折する初心者に共通するのは、<br />
+「どのような設定が正しい状態なのか」、<br />
+「実行結果がどうのようになれば正しい状態なのか」<br />
+「どこが間違っているのか」<br />
+が、分からないことです。</b><br />
+<br />
+しかし、セミナーではそれを短時間に実体験を通じて習得できます。<br />
+<br />
+書籍に載っている技術を、すべて勉強することは望ましいことですが、<br />
+それらすべてが決して現場、実践で必要な技術とは限りませんし、<br />
+時間が限られている人にとって現実的ではありません。<br />
+<br />
+<strong>本当に現場で使う技術を厳選し、安全で安定したサーバーを<br />
+構築する技術を体系的に２日間という短期間で技術修得できるのは、<br />
+時間の節約として非常に有効です。</strong><br />
+<br />
+セミナー中の２日間は、休憩時間や懇親会に関係なくどんなご質問にもお答えします。<br />
+それまで分からなかったことが、その場でクリアになると大変好評を頂いています。<br />
+<br />
+更に、<br />
+<strong>・どう学習すれば、Linux技術を最短でマスターできるか。</strong><br />
+<strong>・なぜ、Linux本ではエラーになって先に進めなくなるのか。</strong><br />
+<strong>・その回避法とは。</strong><br />
+<br />
+という事も私の経験を踏まえてお話しますので、<br />
+その後も様々なLinux技術を自力でマスターしていただくことが可能です。<br />
+<br />
+セミナーに参加した人の話を聞くと、<br />
+やはり実機を使った実技はわかりやすく、<br />
+自宅で学習するのとは違い、集中して取り組めるので<br />
+短時間でスキルアップを実感できるという感想を多く頂きます。<br />
+<br />
+<strong>特にCentOS7の様なこれまでのCentOS6系とは<br />
+大きく仕様が異なる技術は、セミナー受講した方が、<br />
+本当に必要な情報と技術を効率よく吸収できます。</strong><br />
+<br />
+翌日も真剣にセミナーに取り組んで頂きました。<br />
+本セミナーは少人数なので、アットホームな感じで質問しやすく、<br />
+集中できる環境なのもメリットです。<br />
+<span class="mt-enclosure mt-enclosure-image" style="display: inline;"><a href="https://www.linuxmaster.jp/linux_blog/assets_c/2018/12/DSC09807-2415.html" onclick="window.open('https://www.linuxmaster.jp/linux_blog/assets_c/2018/12/DSC09807-2415.html','popup','width=1280,height=960,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img src="https://www.linuxmaster.jp/linux_blog/assets_c/2018/12/DSC09807-thumb-300x225-2415.jpg" width="300" height="225" alt="DSC09807.jpg" class="mt-image-none" style="" /></a></span>
+<br />
+リナックスマスターセミナーは、受講者のスキル差を十分にカバーする為、<br />
+最大６名の<strong>少人数</strong>で行います。<br />
+実機で一人一人しっかりとサポートする環境で行いますので、<br />
+それぞれの学習スピードに合わせて<br />
+丁寧なサポートをする為、この人数が限界です。<br />
+<br />
+<strong>学習に必要な機材、Linux用サーバー、管理するWindowsPCすべてをレンタルします。<br />
+筆記用具さえあれば、現場で使うLinux技術を2日という短時間で習得できます。</strong><br />
+<br />
+<b>また、自分のスキルが足りなくて、<br />
+セミナーについていけるか心配という方でも、<br />
+Linuxに興味があって、キーボードが打てれば、<br />
+サーバー構築できる内容、構成になっています。</b><br />
+<br />
+<b>これまでも未経験の方が何人も受講していますが、<br />
+最後まで内容をやり遂げていますのでご安心ください。</b><br />
+<br />
+また、それでも不安という人のために、<br />
+↓の受講特典も用意していますので、受講後の学習も安心です。<br />
+<br />
+<strong>受講特典は、<br />
+・受講後１年間の再受講は、何回でも無料。<br />
+・リナックスマスター・ホームスタディ講座【初級編】(21,000円)で自宅学習ができます。　<br />
+・受講後１年間は、メールとサポートフォーラムでの質問サポートが受けられます。<br />
+</strong><br />
+<br />
+１回の参加では不安という方は、<br />
+ぜひ再受講も視野に入れて受講して頂ければと思います。<br />
+<br />
+また当セミナーでは、もし直前で都合が悪くなり、キャンセルになった場合でも、<br />
+「再受講枠」を利用して受講することができます。<br />
+もし突発的な予定で参加出来なくても、再受講が可能なセミナーなので<br />
+安心して申し込みができる特典として好評です。<br />
+<br />
+リナックスマスターセミナーは、しっかりとしたサーバー構築手順と、<br />
+セキュリティ対策が学べるので、「サーバーの正しい状態」が理解でき、<br />
+自信に変わります。<br />
+<br />
+特にセキュリティは、現在進行形でサーバー運用した結果をフィードバックしますので、<br />
+検証済みの対策が学べます。<br />
+<br />
+更にセミナーでは疑問点がその場で解決するのと、<br />
+2日間の成果として1台のサーバーが構築でき、<br />
+その構築に必要な技術が学べる点もご支持を頂いています。<br />
+<br />
+1度でもサーバー構築が出来た経験があるのとないのでは、<br />
+更に高度なLinux技術を身につける上で大きな差になります。<br />
+<br />
+エラーで先に進めないと面白くないし、モチベーションも下がりますものね。<br />
+市販の書籍や独学で、いつもエラーになって先に進めないという人ほど、<br />
+セミナーはオススメです。<br />
+<br />
+次回のセミナー開催は、下記ページにてご案内しています。<br />
+参加ご希望の方は、いますぐ↓をクリックしてください。<br />
+<a href="https://www.linuxmaster.jp/2010/08/centos55.html">リナックスマスター２日間集中セミナー(CentOS版)のお申し込みはこちら</a>]]>
+    </content>
+</entry>
+
+<entry>
+    <title>2018年11月2回目リナックスマスターセミナーを開催しました。</title>
+    <link rel="alternate" type="text/html" href="https://www.linuxmaster.jp/linux_blog/2018/12/2018112.html" />
+    <id>tag:www.linuxmaster.jp,2018:/linux_blog//5.1436</id>
+
+    <published>2018-12-07T00:14:20Z</published>
+    <updated>2018-12-13T00:17:34Z</updated>
+
+    <summary></summary>
+    <author>
+        <name>pakira</name>
+        
+    </author>
+    
+        <category term="Linuxセミナー報告" scheme="http://www.sixapart.com/ns/types#category" />
+    
+    
+    <content type="html" xml:lang="ja" xml:base="https://www.linuxmaster.jp/linux_blog/">
+        <![CDATA[ リナックスマスター.JPの宮崎です。<br />
+<br />
+11/21（水）〜11/22（木）の2日間、<br />
+2018年11月2回目のリナックスマスター２日間集中セミナーを開催しました。<br />
+<br />
+次回以降のセミナーの日程や詳細は↓のページで公開しています。<br />
+参加ご希望の方は、いますぐ↓URLをクリックしてください。<br />
+<a href="https://www.linuxmaster.jp/2010/08/centos55.html">リナックスマスター2日間集中セミナー</a><br />
+<br />
+<span class="mt-enclosure mt-enclosure-image" style="display: inline;"><a href="https://www.linuxmaster.jp/linux_blog/assets_c/2018/12/MIYA4305-2406.html" onclick="window.open('https://www.linuxmaster.jp/linux_blog/assets_c/2018/12/MIYA4305-2406.html','popup','width=1280,height=853,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img src="https://www.linuxmaster.jp/linux_blog/assets_c/2018/12/MIYA4305-thumb-300x199-2406.jpg" width="300" height="199" alt="MIYA4305.jpg" class="mt-image-none" style="" /></a></span>]]>
+        <![CDATA[<br />
+埼玉県、千葉県、宮城県、岐阜県から5名の方が受講してくださいました。<br />
+<br />
+今回もCentOS7での開催となり、ネットワークの説明、インストールからスタートし、<br />
+FTPサーバー、WEBサーバー、データベースサーバーのインストールと設定を行い、<br />
+インターネットにサーバー公開して、自分の携帯やスマホでアクセスして動作検証をしました。<br />
+<br />
+<b>自分で構築したサーバーにインターネットからアクセスして、<br />
+Webサイトが表示された時には、皆さん感動しそれを構築できた実績が自信になります。</b><br />
+<br />
+<strong>Linux技術習得で一番重要な事は、自分で動作検証を行うことです。</strong><br />
+<br />
+自分で動作検証すると実感が沸き、その経験がそのままスキルになります。<br />
+<strong>実体験に勝る技術習得法はありません。</strong><br />
+<br />
+<strong>その後、インターネットからどのような経路でサーバーにアクセスしているのか、<br />
+サーバーの各機能の概要説明、サーバー構築する上で守らなければならない<br />
+セキュリティ対策などを説明しました。</strong><br />
+<br />
+自分で構築した直後に説明しますので、より理解しやすく、<br />
+<b>サーバーセキュリティ対策、ネットワークの説明は、とても勉強になったと言って頂けます。</b><br />
+<br />
+やはり、「鉄は熱いうちに打て」ではないですが、<br />
+その場その場で、すぐに必要な事が聞けるのがセミナーのメリットです。<br />
+<br />
+リナックスマスターセミナーでは、<br />
+実際に自分でサーバーを構築、動作検証をして<br />
+「<strong>Linuxの正しい状態</strong>」を、理解・習得できます。<br />
+<br />
+<b>Linuxで挫折する初心者に共通するのは、<br />
+「どのような設定が正しい状態なのか」、<br />
+「実行結果がどうのようになれば正しい状態なのか」<br />
+「どこが間違っているのか」<br />
+が、分からないことです。</b><br />
+<br />
+しかし、セミナーではそれを短時間に実体験を通じて習得できます。<br />
+<br />
+書籍に載っている技術を、すべて勉強することは望ましいことですが、<br />
+それらすべてが決して現場、実践で必要な技術とは限りませんし、<br />
+時間が限られている人にとって現実的ではありません。<br />
+<br />
+<strong>本当に現場で使う技術を厳選し、安全で安定したサーバーを<br />
+構築する技術を体系的に２日間という短期間で技術修得できるのは、<br />
+時間の節約として非常に有効です。</strong><br />
+<br />
+セミナー中の２日間は、休憩時間や懇親会に関係なくどんなご質問にもお答えします。<br />
+それまで分からなかったことが、その場でクリアになると大変好評を頂いています。<br />
+<br />
+更に、<br />
+<strong>・どう学習すれば、Linux技術を最短でマスターできるか。</strong><br />
+<strong>・なぜ、Linux本ではエラーになって先に進めなくなるのか。</strong><br />
+<strong>・その回避法とは。</strong><br />
+<br />
+という事も私の経験を踏まえてお話しますので、<br />
+その後も様々なLinux技術を自力でマスターしていただくことが可能です。<br />
+<br />
+セミナーに参加した人の話を聞くと、<br />
+やはり実機を使った実技はわかりやすく、<br />
+自宅で学習するのとは違い、集中して取り組めるので<br />
+短時間でスキルアップを実感できるという感想を多く頂きます。<br />
+<br />
+<strong>特にCentOS7の様なこれまでのCentOS6系とは<br />
+大きく仕様が異なる技術は、セミナー受講した方が、<br />
+本当に必要な情報と技術を効率よく吸収できます。</strong><br />
+<br />
+翌日も真剣にセミナーに取り組んで頂きました。<br />
+本セミナーは少人数なので、アットホームな感じで質問しやすく、<br />
+集中できる環境なのもメリットです。<br />
+<span class="mt-enclosure mt-enclosure-image" style="display: inline;"><a href="https://www.linuxmaster.jp/linux_blog/assets_c/2018/12/MIYA4393-2409.html" onclick="window.open('https://www.linuxmaster.jp/linux_blog/assets_c/2018/12/MIYA4393-2409.html','popup','width=1280,height=853,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img src="https://www.linuxmaster.jp/linux_blog/assets_c/2018/12/MIYA4393-thumb-300x199-2409.jpg" width="300" height="199" alt="MIYA4393.jpg" class="mt-image-none" style="" /></a></span>
+<br />
+リナックスマスターセミナーは、受講者のスキル差を十分にカバーする為、<br />
+最大６名の<strong>少人数</strong>で行います。<br />
+実機で一人一人しっかりとサポートする環境で行いますので、<br />
+それぞれの学習スピードに合わせて<br />
+丁寧なサポートをする為、この人数が限界です。<br />
+<br />
+<strong>学習に必要な機材、Linux用サーバー、管理するWindowsPCすべてをレンタルします。<br />
+筆記用具さえあれば、現場で使うLinux技術を2日という短時間で習得できます。</strong><br />
+<br />
+<b>また、自分のスキルが足りなくて、<br />
+セミナーについていけるか心配という方でも、<br />
+Linuxに興味があって、キーボードが打てれば、<br />
+サーバー構築できる内容、構成になっています。</b><br />
+<br />
+<b>これまでも未経験の方が何人も受講していますが、<br />
+最後まで内容をやり遂げていますのでご安心ください。</b><br />
+<br />
+また、それでも不安という人のために、<br />
+↓の受講特典も用意していますので、受講後の学習も安心です。<br />
+<br />
+<strong>受講特典は、<br />
+・受講後１年間の再受講は、何回でも無料。<br />
+・リナックスマスター・ホームスタディ講座【初級編】(21,000円)で自宅学習ができます。　<br />
+・受講後１年間は、メールとサポートフォーラムでの質問サポートが受けられます。<br />
+</strong><br />
+<br />
+１回の参加では不安という方は、<br />
+ぜひ再受講も視野に入れて受講して頂ければと思います。<br />
+<br />
+また当セミナーでは、もし直前で都合が悪くなり、キャンセルになった場合でも、<br />
+「再受講枠」を利用して受講することができます。<br />
+もし突発的な予定で参加出来なくても、再受講が可能なセミナーなので<br />
+安心して申し込みができる特典として好評です。<br />
+<br />
+リナックスマスターセミナーは、しっかりとしたサーバー構築手順と、<br />
+セキュリティ対策が学べるので、「サーバーの正しい状態」が理解でき、<br />
+自信に変わります。<br />
+<br />
+特にセキュリティは、現在進行形でサーバー運用した結果をフィードバックしますので、<br />
+検証済みの対策が学べます。<br />
+<br />
+更にセミナーでは疑問点がその場で解決するのと、<br />
+2日間の成果として1台のサーバーが構築でき、<br />
+その構築に必要な技術が学べる点もご支持を頂いています。<br />
+<br />
+1度でもサーバー構築が出来た経験があるのとないのでは、<br />
+更に高度なLinux技術を身につける上で大きな差になります。<br />
+<br />
+エラーで先に進めないと面白くないし、モチベーションも下がりますものね。<br />
+市販の書籍や独学で、いつもエラーになって先に進めないという人ほど、<br />
+セミナーはオススメです。<br />
+<br />
+次回のセミナー開催は、下記ページにてご案内しています。<br />
+参加ご希望の方は、いますぐ↓をクリックしてください。<br />
+<a href="https://www.linuxmaster.jp/2010/08/centos55.html">リナックスマスター２日間集中セミナー(CentOS版)のお申し込みはこちら</a>]]>
+    </content>
+</entry>
+
+<entry>
+    <title>2018年11月1回目リナックスマスターセミナーを開催しました。</title>
+    <link rel="alternate" type="text/html" href="https://www.linuxmaster.jp/linux_blog/2018/12/2018111.html" />
+    <id>tag:www.linuxmaster.jp,2018:/linux_blog//5.1435</id>
+
+    <published>2018-12-01T00:11:31Z</published>
+    <updated>2018-12-13T00:14:12Z</updated>
+
+    <summary></summary>
+    <author>
+        <name>pakira</name>
+        
+    </author>
+    
+        <category term="Linuxセミナー報告" scheme="http://www.sixapart.com/ns/types#category" />
+    
+    
+    <content type="html" xml:lang="ja" xml:base="https://www.linuxmaster.jp/linux_blog/">
+        <![CDATA[ リナックスマスター.JPの宮崎です。<br />
+<br />
+11/17（土）〜11/18（日）の2日間、<br />
+2018年11月1回目のリナックスマスター２日間集中セミナーを開催しました。<br />
+<br />
+次回以降のセミナーの日程や詳細は↓のページで公開しています。<br />
+参加ご希望の方は、いますぐ↓URLをクリックしてください。<br />
+<a href="https://www.linuxmaster.jp/2010/08/centos55.html">リナックスマスター2日間集中セミナー</a><br />
+<br />
+<span class="mt-enclosure mt-enclosure-image" style="display: inline;"><a href="https://www.linuxmaster.jp/linux_blog/assets_c/2018/12/MIYA4283-2400.html" onclick="window.open('https://www.linuxmaster.jp/linux_blog/assets_c/2018/12/MIYA4283-2400.html','popup','width=1280,height=853,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img src="https://www.linuxmaster.jp/linux_blog/assets_c/2018/12/MIYA4283-thumb-300x199-2400.jpg" width="300" height="199" alt="MIYA4283.jpg" class="mt-image-none" style="" /></a></span>]]>
+        <![CDATA[<br />
+東京都、神奈川県から3名の方が受講してくださいました。<br />
+<br />
+今回もCentOS7での開催となり、ネットワークの説明、インストールからスタートし、<br />
+FTPサーバー、WEBサーバー、データベースサーバーのインストールと設定を行い、<br />
+インターネットにサーバー公開して、自分の携帯やスマホでアクセスして動作検証をしました。<br />
+<br />
+<b>自分で構築したサーバーにインターネットからアクセスして、<br />
+Webサイトが表示された時には、皆さん感動しそれを構築できた実績が自信になります。</b><br />
+<br />
+<strong>Linux技術習得で一番重要な事は、自分で動作検証を行うことです。</strong><br />
+<br />
+自分で動作検証すると実感が沸き、その経験がそのままスキルになります。<br />
+<strong>実体験に勝る技術習得法はありません。</strong><br />
+<br />
+<strong>その後、インターネットからどのような経路でサーバーにアクセスしているのか、<br />
+サーバーの各機能の概要説明、サーバー構築する上で守らなければならない<br />
+セキュリティ対策などを説明しました。</strong><br />
+<br />
+自分で構築した直後に説明しますので、より理解しやすく、<br />
+<b>サーバーセキュリティ対策、ネットワークの説明は、とても勉強になったと言って頂けます。</b><br />
+<br />
+やはり、「鉄は熱いうちに打て」ではないですが、<br />
+その場その場で、すぐに必要な事が聞けるのがセミナーのメリットです。<br />
+<br />
+リナックスマスターセミナーでは、<br />
+実際に自分でサーバーを構築、動作検証をして<br />
+「<strong>Linuxの正しい状態</strong>」を、理解・習得できます。<br />
+<br />
+<b>Linuxで挫折する初心者に共通するのは、<br />
+「どのような設定が正しい状態なのか」、<br />
+「実行結果がどうのようになれば正しい状態なのか」<br />
+「どこが間違っているのか」<br />
+が、分からないことです。</b><br />
+<br />
+しかし、セミナーではそれを短時間に実体験を通じて習得できます。<br />
+<br />
+書籍に載っている技術を、すべて勉強することは望ましいことですが、<br />
+それらすべてが決して現場、実践で必要な技術とは限りませんし、<br />
+時間が限られている人にとって現実的ではありません。<br />
+<br />
+<strong>本当に現場で使う技術を厳選し、安全で安定したサーバーを<br />
+構築する技術を体系的に２日間という短期間で技術修得できるのは、<br />
+時間の節約として非常に有効です。</strong><br />
+<br />
+セミナー中の２日間は、休憩時間や懇親会に関係なくどんなご質問にもお答えします。<br />
+それまで分からなかったことが、その場でクリアになると大変好評を頂いています。<br />
+<br />
+更に、<br />
+<strong>・どう学習すれば、Linux技術を最短でマスターできるか。</strong><br />
+<strong>・なぜ、Linux本ではエラーになって先に進めなくなるのか。</strong><br />
+<strong>・その回避法とは。</strong><br />
+<br />
+という事も私の経験を踏まえてお話しますので、<br />
+その後も様々なLinux技術を自力でマスターしていただくことが可能です。<br />
+<br />
+セミナーに参加した人の話を聞くと、<br />
+やはり実機を使った実技はわかりやすく、<br />
+自宅で学習するのとは違い、集中して取り組めるので<br />
+短時間でスキルアップを実感できるという感想を多く頂きます。<br />
+<br />
+<strong>特にCentOS7の様なこれまでのCentOS6系とは<br />
+大きく仕様が異なる技術は、セミナー受講した方が、<br />
+本当に必要な情報と技術を効率よく吸収できます。</strong><br />
+<br />
+翌日も真剣にセミナーに取り組んで頂きました。<br />
+本セミナーは少人数なので、アットホームな感じで質問しやすく、<br />
+集中できる環境なのもメリットです。<br />
+<span class="mt-enclosure mt-enclosure-image" style="display: inline;"><a href="https://www.linuxmaster.jp/linux_blog/assets_c/2018/12/MIYA4296-2403.html" onclick="window.open('https://www.linuxmaster.jp/linux_blog/assets_c/2018/12/MIYA4296-2403.html','popup','width=1280,height=853,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img src="https://www.linuxmaster.jp/linux_blog/assets_c/2018/12/MIYA4296-thumb-300x199-2403.jpg" width="300" height="199" alt="MIYA4296.jpg" class="mt-image-none" style="" /></a></span>
+<br />
+リナックスマスターセミナーは、受講者のスキル差を十分にカバーする為、<br />
+最大６名の<strong>少人数</strong>で行います。<br />
+実機で一人一人しっかりとサポートする環境で行いますので、<br />
+それぞれの学習スピードに合わせて<br />
+丁寧なサポートをする為、この人数が限界です。<br />
+<br />
+<strong>学習に必要な機材、Linux用サーバー、管理するWindowsPCすべてをレンタルします。<br />
+筆記用具さえあれば、現場で使うLinux技術を2日という短時間で習得できます。</strong><br />
+<br />
+<b>また、自分のスキルが足りなくて、<br />
+セミナーについていけるか心配という方でも、<br />
+Linuxに興味があって、キーボードが打てれば、<br />
+サーバー構築できる内容、構成になっています。</b><br />
+<br />
+<b>これまでも未経験の方が何人も受講していますが、<br />
+最後まで内容をやり遂げていますのでご安心ください。</b><br />
+<br />
+また、それでも不安という人のために、<br />
+↓の受講特典も用意していますので、受講後の学習も安心です。<br />
+<br />
+<strong>受講特典は、<br />
+・受講後１年間の再受講は、何回でも無料。<br />
+・リナックスマスター・ホームスタディ講座【初級編】(21,000円)で自宅学習ができます。　<br />
+・受講後１年間は、メールとサポートフォーラムでの質問サポートが受けられます。<br />
+</strong><br />
+<br />
+１回の参加では不安という方は、<br />
+ぜひ再受講も視野に入れて受講して頂ければと思います。<br />
+<br />
+また当セミナーでは、もし直前で都合が悪くなり、キャンセルになった場合でも、<br />
+「再受講枠」を利用して受講することができます。<br />
+もし突発的な予定で参加出来なくても、再受講が可能なセミナーなので<br />
+安心して申し込みができる特典として好評です。<br />
+<br />
+リナックスマスターセミナーは、しっかりとしたサーバー構築手順と、<br />
+セキュリティ対策が学べるので、「サーバーの正しい状態」が理解でき、<br />
+自信に変わります。<br />
+<br />
+特にセキュリティは、現在進行形でサーバー運用した結果をフィードバックしますので、<br />
+検証済みの対策が学べます。<br />
+<br />
+更にセミナーでは疑問点がその場で解決するのと、<br />
+2日間の成果として1台のサーバーが構築でき、<br />
+その構築に必要な技術が学べる点もご支持を頂いています。<br />
+<br />
+1度でもサーバー構築が出来た経験があるのとないのでは、<br />
+更に高度なLinux技術を身につける上で大きな差になります。<br />
+<br />
+エラーで先に進めないと面白くないし、モチベーションも下がりますものね。<br />
+市販の書籍や独学で、いつもエラーになって先に進めないという人ほど、<br />
+セミナーはオススメです。<br />
+<br />
+次回のセミナー開催は、下記ページにてご案内しています。<br />
+参加ご希望の方は、いますぐ↓をクリックしてください。<br />
+<a href="https://www.linuxmaster.jp/2010/08/centos55.html">リナックスマスター２日間集中セミナー(CentOS版)のお申し込みはこちら</a>]]>
+    </content>
+</entry>
+
+<entry>
+    <title>2018年10月2回目リナックスマスターセミナーを開催しました。</title>
+    <link rel="alternate" type="text/html" href="https://www.linuxmaster.jp/linux_blog/2018/11/2018102.html" />
+    <id>tag:www.linuxmaster.jp,2018:/linux_blog//5.1434</id>
+
+    <published>2018-11-20T00:02:50Z</published>
+    <updated>2018-12-13T00:10:29Z</updated>
+
+    <summary></summary>
+    <author>
+        <name>pakira</name>
+        
+    </author>
+    
+        <category term="Linuxセミナー報告" scheme="http://www.sixapart.com/ns/types#category" />
+    
+    
+    <content type="html" xml:lang="ja" xml:base="https://www.linuxmaster.jp/linux_blog/">
+        <![CDATA[  リナックスマスター.JPの宮崎です。<br />
+<br />
+10/30（火）〜10/31（水）の2日間、<br />
+2018年10月2回目のリナックスマスター２日間集中セミナーを開催しました。<br />
+<br />
+次回以降のセミナーの日程や詳細は↓のページで公開しています。<br />
+参加ご希望の方は、いますぐ↓URLをクリックしてください。<br />
+<a href="https://www.linuxmaster.jp/2010/08/centos55.html">リナックスマスター2日間集中セミナー</a><br />
+<br />
+<span class="mt-enclosure mt-enclosure-image" style="display: inline;"><a href="https://www.linuxmaster.jp/linux_blog/assets_c/2018/12/MIYA3926-2394.html" onclick="window.open('https://www.linuxmaster.jp/linux_blog/assets_c/2018/12/MIYA3926-2394.html','popup','width=1280,height=853,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img src="https://www.linuxmaster.jp/linux_blog/assets_c/2018/12/MIYA3926-thumb-300x199-2394.jpg" width="300" height="199" alt="MIYA3926.jpg" class="mt-image-none" style="" /></a></span>]]>
+        <![CDATA[<br />
+東京都、栃木県、愛知県、兵庫県から6名の方が受講してくださいました。<br />
+<br />
+今回もCentOS7での開催となり、ネットワークの説明、インストールからスタートし、<br />
+FTPサーバー、WEBサーバー、データベースサーバーのインストールと設定を行い、<br />
+インターネットにサーバー公開して、自分の携帯やスマホでアクセスして動作検証をしました。<br />
+<br />
+<b>自分で構築したサーバーにインターネットからアクセスして、<br />
+Webサイトが表示された時には、皆さん感動しそれを構築できた実績が自信になります。</b><br />
+<br />
+<strong>Linux技術習得で一番重要な事は、自分で動作検証を行うことです。</strong><br />
+<br />
+自分で動作検証すると実感が沸き、その経験がそのままスキルになります。<br />
+<strong>実体験に勝る技術習得法はありません。</strong><br />
+<br />
+<strong>その後、インターネットからどのような経路でサーバーにアクセスしているのか、<br />
+サーバーの各機能の概要説明、サーバー構築する上で守らなければならない<br />
+セキュリティ対策などを説明しました。</strong><br />
+<br />
+自分で構築した直後に説明しますので、より理解しやすく、<br />
+<b>サーバーセキュリティ対策、ネットワークの説明は、とても勉強になったと言って頂けます。</b><br />
+<br />
+やはり、「鉄は熱いうちに打て」ではないですが、<br />
+その場その場で、すぐに必要な事が聞けるのがセミナーのメリットです。<br />
+<br />
+リナックスマスターセミナーでは、<br />
+実際に自分でサーバーを構築、動作検証をして<br />
+「<strong>Linuxの正しい状態</strong>」を、理解・習得できます。<br />
+<br />
+<b>Linuxで挫折する初心者に共通するのは、<br />
+「どのような設定が正しい状態なのか」、<br />
+「実行結果がどうのようになれば正しい状態なのか」<br />
+「どこが間違っているのか」<br />
+が、分からないことです。</b><br />
+<br />
+しかし、セミナーではそれを短時間に実体験を通じて習得できます。<br />
+<br />
+書籍に載っている技術を、すべて勉強することは望ましいことですが、<br />
+それらすべてが決して現場、実践で必要な技術とは限りませんし、<br />
+時間が限られている人にとって現実的ではありません。<br />
+<br />
+<strong>本当に現場で使う技術を厳選し、安全で安定したサーバーを<br />
+構築する技術を体系的に２日間という短期間で技術修得できるのは、<br />
+時間の節約として非常に有効です。</strong><br />
+<br />
+セミナー中の２日間は、休憩時間や懇親会に関係なくどんなご質問にもお答えします。<br />
+それまで分からなかったことが、その場でクリアになると大変好評を頂いています。<br />
+<br />
+更に、<br />
+<strong>・どう学習すれば、Linux技術を最短でマスターできるか。</strong><br />
+<strong>・なぜ、Linux本ではエラーになって先に進めなくなるのか。</strong><br />
+<strong>・その回避法とは。</strong><br />
+<br />
+という事も私の経験を踏まえてお話しますので、<br />
+その後も様々なLinux技術を自力でマスターしていただくことが可能です。<br />
+<br />
+セミナーに参加した人の話を聞くと、<br />
+やはり実機を使った実技はわかりやすく、<br />
+自宅で学習するのとは違い、集中して取り組めるので<br />
+短時間でスキルアップを実感できるという感想を多く頂きます。<br />
+<br />
+<strong>特にCentOS7の様なこれまでのCentOS6系とは<br />
+大きく仕様が異なる技術は、セミナー受講した方が、<br />
+本当に必要な情報と技術を効率よく吸収できます。</strong><br />
+<br />
+翌日も真剣にセミナーに取り組んで頂きました。<br />
+本セミナーは少人数なので、アットホームな感じで質問しやすく、<br />
+集中できる環境なのもメリットです。<br />
+<span class="mt-enclosure mt-enclosure-image" style="display: inline;"><a href="https://www.linuxmaster.jp/linux_blog/assets_c/2018/12/MIYA3947-2397.html" onclick="window.open('https://www.linuxmaster.jp/linux_blog/assets_c/2018/12/MIYA3947-2397.html','popup','width=1280,height=853,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img src="https://www.linuxmaster.jp/linux_blog/assets_c/2018/12/MIYA3947-thumb-300x199-2397.jpg" width="300" height="199" alt="MIYA3947.jpg" class="mt-image-none" style="" /></a></span>
+<br />
+リナックスマスターセミナーは、受講者のスキル差を十分にカバーする為、<br />
+最大６名の<strong>少人数</strong>で行います。<br />
+実機で一人一人しっかりとサポートする環境で行いますので、<br />
+それぞれの学習スピードに合わせて<br />
+丁寧なサポートをする為、この人数が限界です。<br />
+<br />
+<strong>学習に必要な機材、Linux用サーバー、管理するWindowsPCすべてをレンタルします。<br />
+筆記用具さえあれば、現場で使うLinux技術を2日という短時間で習得できます。</strong><br />
+<br />
+<b>また、自分のスキルが足りなくて、<br />
+セミナーについていけるか心配という方でも、<br />
+Linuxに興味があって、キーボードが打てれば、<br />
+サーバー構築できる内容、構成になっています。</b><br />
+<br />
+<b>これまでも未経験の方が何人も受講していますが、<br />
+最後まで内容をやり遂げていますのでご安心ください。</b><br />
+<br />
+また、それでも不安という人のために、<br />
+↓の受講特典も用意していますので、受講後の学習も安心です。<br />
+<br />
+<strong>受講特典は、<br />
+・受講後１年間の再受講は、何回でも無料。<br />
+・リナックスマスター・ホームスタディ講座【初級編】(21,000円)で自宅学習ができます。　<br />
+・受講後１年間は、メールとサポートフォーラムでの質問サポートが受けられます。<br />
+</strong><br />
+<br />
+１回の参加では不安という方は、<br />
+ぜひ再受講も視野に入れて受講して頂ければと思います。<br />
+<br />
+また当セミナーでは、もし直前で都合が悪くなり、キャンセルになった場合でも、<br />
+「再受講枠」を利用して受講することができます。<br />
+もし突発的な予定で参加出来なくても、再受講が可能なセミナーなので<br />
+安心して申し込みができる特典として好評です。<br />
+<br />
+リナックスマスターセミナーは、しっかりとしたサーバー構築手順と、<br />
+セキュリティ対策が学べるので、「サーバーの正しい状態」が理解でき、<br />
+自信に変わります。<br />
+<br />
+特にセキュリティは、現在進行形でサーバー運用した結果をフィードバックしますので、<br />
+検証済みの対策が学べます。<br />
+<br />
+更にセミナーでは疑問点がその場で解決するのと、<br />
+2日間の成果として1台のサーバーが構築でき、<br />
+その構築に必要な技術が学べる点もご支持を頂いています。<br />
+<br />
+1度でもサーバー構築が出来た経験があるのとないのでは、<br />
+更に高度なLinux技術を身につける上で大きな差になります。<br />
+<br />
+エラーで先に進めないと面白くないし、モチベーションも下がりますものね。<br />
+市販の書籍や独学で、いつもエラーになって先に進めないという人ほど、<br />
+セミナーはオススメです。<br />
+<br />
+次回のセミナー開催は、下記ページにてご案内しています。<br />
+参加ご希望の方は、いますぐ↓をクリックしてください。<br />
+<a href="https://www.linuxmaster.jp/2010/08/centos55.html">リナックスマスター２日間集中セミナー(CentOS版)のお申し込みはこちら</a>]]>
+    </content>
+</entry>
+
+<entry>
+    <title>2018年10月1回目リナックスマスターセミナーを開催しました。</title>
+    <link rel="alternate" type="text/html" href="https://www.linuxmaster.jp/linux_blog/2018/11/2018101.html" />
+    <id>tag:www.linuxmaster.jp,2018:/linux_blog//5.1433</id>
+
+    <published>2018-11-11T23:53:16Z</published>
+    <updated>2018-12-13T00:02:01Z</updated>
+
+    <summary></summary>
+    <author>
+        <name>pakira</name>
+        
+    </author>
+    
+        <category term="Linuxセミナー報告" scheme="http://www.sixapart.com/ns/types#category" />
+    
+    
+    <content type="html" xml:lang="ja" xml:base="https://www.linuxmaster.jp/linux_blog/">
+        <![CDATA[ リナックスマスター.JPの宮崎です。<br />
+<br />
+10/27（土）〜10/28（日）の2日間、<br />
+2018年10月1回目のリナックスマスター２日間集中セミナーを開催しました。<br />
+<br />
+次回以降のセミナーの日程や詳細は↓のページで公開しています。<br />
+参加ご希望の方は、いますぐ↓URLをクリックしてください。<br />
+<a href="https://www.linuxmaster.jp/2010/08/centos55.html">リナックスマスター2日間集中セミナー</a><br />
+<br />
+<span class="mt-enclosure mt-enclosure-image" style="display: inline;"><a href="https://www.linuxmaster.jp/linux_blog/assets_c/2018/12/MIYA3849-2388.html" onclick="window.open('https://www.linuxmaster.jp/linux_blog/assets_c/2018/12/MIYA3849-2388.html','popup','width=1280,height=853,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img src="https://www.linuxmaster.jp/linux_blog/assets_c/2018/12/MIYA3849-thumb-300x199-2388.jpg" width="300" height="199" alt="MIYA3849.jpg" class="mt-image-none" style="" /></a></span>]]>
+        <![CDATA[<br />
+東京都、福岡県から5名の方が受講してくださいました。<br />
+<br />
+今回もCentOS7での開催となり、ネットワークの説明、インストールからスタートし、<br />
+FTPサーバー、WEBサーバー、データベースサーバーのインストールと設定を行い、<br />
+インターネットにサーバー公開して、自分の携帯やスマホでアクセスして動作検証をしました。<br />
+<br />
+<b>自分で構築したサーバーにインターネットからアクセスして、<br />
+Webサイトが表示された時には、皆さん感動しそれを構築できた実績が自信になります。</b><br />
+<br />
+<strong>Linux技術習得で一番重要な事は、自分で動作検証を行うことです。</strong><br />
+<br />
+自分で動作検証すると実感が沸き、その経験がそのままスキルになります。<br />
+<strong>実体験に勝る技術習得法はありません。</strong><br />
+<br />
+<strong>その後、インターネットからどのような経路でサーバーにアクセスしているのか、<br />
+サーバーの各機能の概要説明、サーバー構築する上で守らなければならない<br />
+セキュリティ対策などを説明しました。</strong><br />
+<br />
+自分で構築した直後に説明しますので、より理解しやすく、<br />
+<b>サーバーセキュリティ対策、ネットワークの説明は、とても勉強になったと言って頂けます。</b><br />
+<br />
+やはり、「鉄は熱いうちに打て」ではないですが、<br />
+その場その場で、すぐに必要な事が聞けるのがセミナーのメリットです。<br />
+<br />
+リナックスマスターセミナーでは、<br />
+実際に自分でサーバーを構築、動作検証をして<br />
+「<strong>Linuxの正しい状態</strong>」を、理解・習得できます。<br />
+<br />
+<b>Linuxで挫折する初心者に共通するのは、<br />
+「どのような設定が正しい状態なのか」、<br />
+「実行結果がどうのようになれば正しい状態なのか」<br />
+「どこが間違っているのか」<br />
+が、分からないことです。</b><br />
+<br />
+しかし、セミナーではそれを短時間に実体験を通じて習得できます。<br />
+<br />
+書籍に載っている技術を、すべて勉強することは望ましいことですが、<br />
+それらすべてが決して現場、実践で必要な技術とは限りませんし、<br />
+時間が限られている人にとって現実的ではありません。<br />
+<br />
+<strong>本当に現場で使う技術を厳選し、安全で安定したサーバーを<br />
+構築する技術を体系的に２日間という短期間で技術修得できるのは、<br />
+時間の節約として非常に有効です。</strong><br />
+<br />
+セミナー中の２日間は、休憩時間や懇親会に関係なくどんなご質問にもお答えします。<br />
+それまで分からなかったことが、その場でクリアになると大変好評を頂いています。<br />
+<br />
+更に、<br />
+<strong>・どう学習すれば、Linux技術を最短でマスターできるか。</strong><br />
+<strong>・なぜ、Linux本ではエラーになって先に進めなくなるのか。</strong><br />
+<strong>・その回避法とは。</strong><br />
+<br />
+という事も私の経験を踏まえてお話しますので、<br />
+その後も様々なLinux技術を自力でマスターしていただくことが可能です。<br />
+<br />
+セミナーに参加した人の話を聞くと、<br />
+やはり実機を使った実技はわかりやすく、<br />
+自宅で学習するのとは違い、集中して取り組めるので<br />
+短時間でスキルアップを実感できるという感想を多く頂きます。<br />
+<br />
+<strong>特にCentOS7の様なこれまでのCentOS6系とは<br />
+大きく仕様が異なる技術は、セミナー受講した方が、<br />
+本当に必要な情報と技術を効率よく吸収できます。</strong><br />
+<br />
+翌日も真剣にセミナーに取り組んで頂きました。<br />
+本セミナーは少人数なので、アットホームな感じで質問しやすく、<br />
+集中できる環境なのもメリットです。<br />
+<span class="mt-enclosure mt-enclosure-image" style="display: inline;"><a href="https://www.linuxmaster.jp/linux_blog/assets_c/2018/12/MIYA3919-2391.html" onclick="window.open('https://www.linuxmaster.jp/linux_blog/assets_c/2018/12/MIYA3919-2391.html','popup','width=1280,height=853,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img src="https://www.linuxmaster.jp/linux_blog/assets_c/2018/12/MIYA3919-thumb-300x199-2391.jpg" width="300" height="199" alt="MIYA3919.jpg" class="mt-image-none" style="" /></a></span>
+<br />
+リナックスマスターセミナーは、受講者のスキル差を十分にカバーする為、<br />
+最大６名の<strong>少人数</strong>で行います。<br />
+実機で一人一人しっかりとサポートする環境で行いますので、<br />
+それぞれの学習スピードに合わせて<br />
+丁寧なサポートをする為、この人数が限界です。<br />
+<br />
+<strong>学習に必要な機材、Linux用サーバー、管理するWindowsPCすべてをレンタルします。<br />
+筆記用具さえあれば、現場で使うLinux技術を2日という短時間で習得できます。</strong><br />
+<br />
+<b>また、自分のスキルが足りなくて、<br />
+セミナーについていけるか心配という方でも、<br />
+Linuxに興味があって、キーボードが打てれば、<br />
+サーバー構築できる内容、構成になっています。</b><br />
+<br />
+<b>これまでも未経験の方が何人も受講していますが、<br />
+最後まで内容をやり遂げていますのでご安心ください。</b><br />
+<br />
+また、それでも不安という人のために、<br />
+↓の受講特典も用意していますので、受講後の学習も安心です。<br />
+<br />
+<strong>受講特典は、<br />
+・受講後１年間の再受講は、何回でも無料。<br />
+・リナックスマスター・ホームスタディ講座【初級編】(21,000円)で自宅学習ができます。　<br />
+・受講後１年間は、メールとサポートフォーラムでの質問サポートが受けられます。<br />
+</strong><br />
+<br />
+１回の参加では不安という方は、<br />
+ぜひ再受講も視野に入れて受講して頂ければと思います。<br />
+<br />
+また当セミナーでは、もし直前で都合が悪くなり、キャンセルになった場合でも、<br />
+「再受講枠」を利用して受講することができます。<br />
+もし突発的な予定で参加出来なくても、再受講が可能なセミナーなので<br />
+安心して申し込みができる特典として好評です。<br />
+<br />
+リナックスマスターセミナーは、しっかりとしたサーバー構築手順と、<br />
+セキュリティ対策が学べるので、「サーバーの正しい状態」が理解でき、<br />
+自信に変わります。<br />
+<br />
+特にセキュリティは、現在進行形でサーバー運用した結果をフィードバックしますので、<br />
+検証済みの対策が学べます。<br />
+<br />
+更にセミナーでは疑問点がその場で解決するのと、<br />
+2日間の成果として1台のサーバーが構築でき、<br />
+その構築に必要な技術が学べる点もご支持を頂いています。<br />
+<br />
+1度でもサーバー構築が出来た経験があるのとないのでは、<br />
+更に高度なLinux技術を身につける上で大きな差になります。<br />
+<br />
+エラーで先に進めないと面白くないし、モチベーションも下がりますものね。<br />
+市販の書籍や独学で、いつもエラーになって先に進めないという人ほど、<br />
+セミナーはオススメです。<br />
+<br />
+次回のセミナー開催は、下記ページにてご案内しています。<br />
+参加ご希望の方は、いますぐ↓をクリックしてください。<br />
+<a href="https://www.linuxmaster.jp/2010/08/centos55.html">リナックスマスター２日間集中セミナー(CentOS版)のお申し込みはこちら</a>]]>
+    </content>
+</entry>
+
+<entry>
+    <title>2018年9月リナックスマスターセミナーを開催しました。</title>
+    <link rel="alternate" type="text/html" href="https://www.linuxmaster.jp/linux_blog/2018/10/20189.html" />
+    <id>tag:www.linuxmaster.jp,2018:/linux_blog//5.1432</id>
+
+    <published>2018-10-01T11:23:51Z</published>
+    <updated>2018-12-13T00:02:12Z</updated>
+
+    <summary></summary>
+    <author>
+        <name>pakira</name>
+        
+    </author>
+    
+        <category term="Linuxセミナー報告" scheme="http://www.sixapart.com/ns/types#category" />
+    
+    
+    <content type="html" xml:lang="ja" xml:base="https://www.linuxmaster.jp/linux_blog/">
+        <![CDATA[リナックスマスター.JPの宮崎です。<br />
+<br />
+9/13（木）〜9/14（金）の2日間、<br />
+2018年9月のリナックスマスター２日間集中セミナーを開催しました。<br />
+<br />
+次回以降のセミナーの日程や詳細は↓のページで公開しています。<br />
+参加ご希望の方は、いますぐ↓URLをクリックしてください。<br />
+<a href="https://www.linuxmaster.jp/2010/08/centos55.html">リナックスマスター2日間集中セミナー</a><br />
+<br />
+<span class="mt-enclosure mt-enclosure-image" style="display: inline;"><a href="https://www.linuxmaster.jp/linux_blog/assets_c/2018/09/MIYA3467-2382.html" onclick="window.open('https://www.linuxmaster.jp/linux_blog/assets_c/2018/09/MIYA3467-2382.html','popup','width=1280,height=853,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img src="https://www.linuxmaster.jp/linux_blog/assets_c/2018/09/MIYA3467-thumb-300x199-2382.jpg" width="300" height="199" alt="MIYA3467.jpg" class="mt-image-none" style="" /></a></span>]]>
+        <![CDATA[<br />
+埼玉県、静岡県、京都府、石川県、マレーシアから6名の方が受講してくださいました。<br />
+<br />
+今回もCentOS7での開催となり、ネットワークの説明、インストールからスタートし、<br />
+FTPサーバー、WEBサーバー、データベースサーバーのインストールと設定を行い、<br />
+インターネットにサーバー公開して、自分の携帯やスマホでアクセスして動作検証をしました。<br />
+<br />
+<b>自分で構築したサーバーにインターネットからアクセスして、<br />
+Webサイトが表示された時には、皆さん感動しそれを構築できた実績が自信になります。</b><br />
+<br />
+<strong>Linux技術習得で一番重要な事は、自分で動作検証を行うことです。</strong><br />
+<br />
+自分で動作検証すると実感が沸き、その経験がそのままスキルになります。<br />
+<strong>実体験に勝る技術習得法はありません。</strong><br />
+<br />
+<strong>その後、インターネットからどのような経路でサーバーにアクセスしているのか、<br />
+サーバーの各機能の概要説明、サーバー構築する上で守らなければならない<br />
+セキュリティ対策などを説明しました。</strong><br />
+<br />
+自分で構築した直後に説明しますので、より理解しやすく、<br />
+<b>サーバーセキュリティ対策、ネットワークの説明は、とても勉強になったと言って頂けます。</b><br />
+<br />
+やはり、「鉄は熱いうちに打て」ではないですが、<br />
+その場その場で、すぐに必要な事が聞けるのがセミナーのメリットです。<br />
+<br />
+リナックスマスターセミナーでは、<br />
+実際に自分でサーバーを構築、動作検証をして<br />
+「<strong>Linuxの正しい状態</strong>」を、理解・習得できます。<br />
+<br />
+<b>Linuxで挫折する初心者に共通するのは、<br />
+「どのような設定が正しい状態なのか」、<br />
+「実行結果がどうのようになれば正しい状態なのか」<br />
+「どこが間違っているのか」<br />
+が、分からないことです。</b><br />
+<br />
+しかし、セミナーではそれを短時間に実体験を通じて習得できます。<br />
+<br />
+書籍に載っている技術を、すべて勉強することは望ましいことですが、<br />
+それらすべてが決して現場、実践で必要な技術とは限りませんし、<br />
+時間が限られている人にとって現実的ではありません。<br />
+<br />
+<strong>本当に現場で使う技術を厳選し、安全で安定したサーバーを<br />
+構築する技術を体系的に２日間という短期間で技術修得できるのは、<br />
+時間の節約として非常に有効です。</strong><br />
+<br />
+セミナー中の２日間は、休憩時間や懇親会に関係なくどんなご質問にもお答えします。<br />
+それまで分からなかったことが、その場でクリアになると大変好評を頂いています。<br />
+<br />
+更に、<br />
+<strong>・どう学習すれば、Linux技術を最短でマスターできるか。</strong><br />
+<strong>・なぜ、Linux本ではエラーになって先に進めなくなるのか。</strong><br />
+<strong>・その回避法とは。</strong><br />
+<br />
+という事も私の経験を踏まえてお話しますので、<br />
+その後も様々なLinux技術を自力でマスターしていただくことが可能です。<br />
+<br />
+セミナーに参加した人の話を聞くと、<br />
+やはり実機を使った実技はわかりやすく、<br />
+自宅で学習するのとは違い、集中して取り組めるので<br />
+短時間でスキルアップを実感できるという感想を多く頂きます。<br />
+<br />
+<strong>特にCentOS7の様なこれまでのCentOS6系とは<br />
+大きく仕様が異なる技術は、セミナー受講した方が、<br />
+本当に必要な情報と技術を効率よく吸収できます。</strong><br />
+<br />
+翌日も真剣にセミナーに取り組んで頂きました。<br />
+本セミナーは少人数なので、アットホームな感じで質問しやすく、<br />
+集中できる環境なのもメリットです。<br />
+<span class="mt-enclosure mt-enclosure-image" style="display: inline;"><a href="https://www.linuxmaster.jp/linux_blog/assets_c/2018/09/MIYA3471-2385.html" onclick="window.open('https://www.linuxmaster.jp/linux_blog/assets_c/2018/09/MIYA3471-2385.html','popup','width=1280,height=853,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img src="https://www.linuxmaster.jp/linux_blog/assets_c/2018/09/MIYA3471-thumb-300x199-2385.jpg" width="300" height="199" alt="MIYA3471.jpg" class="mt-image-none" style="" /></a></span>
+<br />
+リナックスマスターセミナーは、受講者のスキル差を十分にカバーする為、<br />
+最大６名の<strong>少人数</strong>で行います。<br />
+実機で一人一人しっかりとサポートする環境で行いますので、<br />
+それぞれの学習スピードに合わせて<br />
+丁寧なサポートをする為、この人数が限界です。<br />
+<br />
+<strong>学習に必要な機材、Linux用サーバー、管理するWindowsPCすべてをレンタルします。<br />
+筆記用具さえあれば、現場で使うLinux技術を2日という短時間で習得できます。</strong><br />
+<br />
+<b>また、自分のスキルが足りなくて、<br />
+セミナーについていけるか心配という方でも、<br />
+Linuxに興味があって、キーボードが打てれば、<br />
+サーバー構築できる内容、構成になっています。</b><br />
+<br />
+<b>これまでも未経験の方が何人も受講していますが、<br />
+最後まで内容をやり遂げていますのでご安心ください。</b><br />
+<br />
+また、それでも不安という人のために、<br />
+↓の受講特典も用意していますので、受講後の学習も安心です。<br />
+<br />
+<strong>受講特典は、<br />
+・受講後１年間の再受講は、何回でも無料。<br />
+・リナックスマスター・ホームスタディ講座【初級編】(21,000円)で自宅学習ができます。　<br />
+・受講後１年間は、メールとサポートフォーラムでの質問サポートが受けられます。<br />
+</strong><br />
+<br />
+１回の参加では不安という方は、<br />
+ぜひ再受講も視野に入れて受講して頂ければと思います。<br />
+<br />
+また当セミナーでは、もし直前で都合が悪くなり、キャンセルになった場合でも、<br />
+「再受講枠」を利用して受講することができます。<br />
+もし突発的な予定で参加出来なくても、再受講が可能なセミナーなので<br />
+安心して申し込みができる特典として好評です。<br />
+<br />
+リナックスマスターセミナーは、しっかりとしたサーバー構築手順と、<br />
+セキュリティ対策が学べるので、「サーバーの正しい状態」が理解でき、<br />
+自信に変わります。<br />
+<br />
+特にセキュリティは、現在進行形でサーバー運用した結果をフィードバックしますので、<br />
+検証済みの対策が学べます。<br />
+<br />
+更にセミナーでは疑問点がその場で解決するのと、<br />
+2日間の成果として1台のサーバーが構築でき、<br />
+その構築に必要な技術が学べる点もご支持を頂いています。<br />
+<br />
+1度でもサーバー構築が出来た経験があるのとないのでは、<br />
+更に高度なLinux技術を身につける上で大きな差になります。<br />
+<br />
+エラーで先に進めないと面白くないし、モチベーションも下がりますものね。<br />
+市販の書籍や独学で、いつもエラーになって先に進めないという人ほど、<br />
+セミナーはオススメです。<br />
+<br />
+次回のセミナー開催は、下記ページにてご案内しています。<br />
+参加ご希望の方は、いますぐ↓をクリックしてください。<br />
+<a href="https://www.linuxmaster.jp/2010/08/centos55.html">リナックスマスター２日間集中セミナー(CentOS版)のお申し込みはこちら</a>]]>
+    </content>
+</entry>
+
+</feed>

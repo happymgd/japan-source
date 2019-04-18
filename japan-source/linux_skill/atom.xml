@@ -1,0 +1,1937 @@
+<?xml version="1.0" encoding="EUC-JP"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>Linux技術 リナックスマスター.JP（Linuxマスター.JP）</title>
+    <link rel="alternate" type="text/html" href="https://www.linuxmaster.jp/linux_skill/" />
+    <link rel="self" type="application/atom+xml" href="https://www.linuxmaster.jp/linux_skill/atom.xml" />
+    <id>tag:www.linuxmaster.jp,2009-11-09:/linux_skill//4</id>
+    <updated>2019-04-10T06:47:07Z</updated>
+    <subtitle>Linux初心者が上級者になるために必要なLinuxコマンドやTips、サーバー構築手順などの技術情報を無料で公開しています。初心者向けLinux無料マニュアルの配布、現場の技術が身に付くセミナーや通信講座も開催しています。</subtitle>
+    <generator uri="http://www.sixapart.com/movabletype/">Movable Type 4.27-ja</generator>
+
+<entry>
+    <title>dig </title>
+    <link rel="alternate" type="text/html" href="https://www.linuxmaster.jp/linux_skill/2019/04/dig.html" />
+    <id>tag:www.linuxmaster.jp,2019:/linux_skill//4.1451</id>
+
+    <published>2019-04-10T05:35:16Z</published>
+    <updated>2019-04-10T06:47:07Z</updated>
+
+    <summary>digコマンドとは digコマンドは、DNSサーバーにドメイン名を元にIPアドレ...</summary>
+    <author>
+        <name>pakira</name>
+        
+    </author>
+    
+        <category term="CentOS7" scheme="http://www.sixapart.com/ns/types#category" />
+    
+        <category term="Linuxコマンド" scheme="http://www.sixapart.com/ns/types#category" />
+    
+        <category term="LinuxコマンドA-E" scheme="http://www.sixapart.com/ns/types#category" />
+    
+        <category term="ネットワーク管理コマンド" scheme="http://www.sixapart.com/ns/types#category" />
+    
+    
+    <content type="html" xml:lang="ja" xml:base="https://www.linuxmaster.jp/linux_skill/">
+        <![CDATA[<h2>digコマンドとは</h2>
+digコマンドは、DNSサーバーにドメイン名を元にIPアドレスを<br />
+問い合わせる（正引き）コマンドになります。<br />
+CentOS6系まではnslookupが使用されていましたが、<br />
+CentOS7からはdigコマンドの使用が推奨されています。<br />
+<br />
+<h2>digコマンドの書式</h2>
+<strong>dig<オプション><@DNSサーバ>ドメイン名<クエリタイプ><クエリクラス></strong><br />
+※<>の物は省略可<br />
+<table class="table4">
+        <tr>
+          <td class="sb30">書式項目</td>
+          <td class="s70">意味</td>
+        </tr>
+        <tr>
+          <td class="sb30">オプション</td>
+          <td class="s70">digコマンドのオプション</td>
+        </tr>
+        <tr>
+          <td class="sb30">@DNSサーバー</td>
+          <td class="s70">名前解決の問い合わせを行うDNSサーバーを指定します。<br />
+                          省略時は/etc/resolve.confに設定されている<br />DNSサーバーを使用します。</td>
+        </tr>
+        <tr>
+          <td class="sb30">クエリタイプ</td>
+          <td class="s70">どのタイプ（レコード）の名前解決を行いたいか設定します。省略時は「a」（正引き）となる</td>
+        </tr>
+        <tr>
+          <td class="sb30">クエリクラス</td>
+          <td class="s70">クエリタイプを指定しない場合、<br />「in」のインターネットクラスドメインになります。</td>
+        </tr>
+        <tr>
+          <td class="sb30">クエリオプション</td>
+          <td class="s70">表示結果の指定や問い合わせ方法を細かく指定できます。</td>
+        </tr>
+</table><br />
+
+]]>
+        <![CDATA[<h2>digコマンドのオプション</h2>
+<table class="table4">
+        <tr>
+          <td class="sb30">オプション</td>
+          <td class="s70">意味</td>
+        </tr>
+        <tr>
+          <td class="sb30">-4</td>
+          <td class="s70">IPv4で問い合わせします。</td>
+        </tr>
+        <tr>
+          <td class="sb30">-6</td>
+          <td class="s70">IPv6で問い合わせします。</td>
+        </tr>
+        <tr>
+          <td class="sb30">retry=n</td>
+          <td class="s70">再試行の回数を#に設定するnに指定します。</td>
+        </tr>
+        <tr>
+          <td class="sb30">time=n</td>
+          <td class="s70">タイムアウト時間をn秒に設定します。</td>
+        </tr>
+        <tr>
+          <td class="sb30">-x IPアドレス</td>
+          <td class="s70">IPアドレスからドメインを問い合わせる逆引きをします。</td>
+        </tr>
+        <tr>
+          <td class="sb30">+answer</td>
+          <td class="s70">Answerセクションのみ表示します。</td>
+        </tr>
+        <tr>
+          <td class="sb30">+norecurse</td>
+          <td class="s70">再帰問い合わせをしません。</td>
+        </tr>
+        <tr>
+          <td class="sb30">+stats</td>
+          <td class="s70">問い合わせの統計を表示します。</td>
+        </tr>
+        <tr>
+          <td class="sb30">+trace</td>
+          <td class="s70">ルートDNSサーバーから問い合わせを行い、<br />結果を順番に出力します。</td>
+        </tr>
+        <tr>
+          <td class="sb30">+debug、+nodebug</td>
+          <td class="s70">デバッグモードの有効、無効を指定します。</td>
+        </tr>
+        <tr>
+          <td class="sb30">-p ポート番号</td>
+          <td class="s70">問い合わせに使用するポート番号を指定します。<br />デフォルトはポート53</td>
+        </tr>
+
+</table><br />
+
+<h2>digコマンドのクエリタイプ</h2>
+<table class="table4">
+        <tr>
+          <td class="sb30">タイプ</td>
+          <td class="s70">意味</td>
+        </tr>
+        <tr>
+          <td class="sb30">a</td>
+          <td class="s70">ネットワークアドレス、デフォルトでaが指定されています。</td>
+        </tr>
+        <tr>
+          <td class="sb30">any</td>
+          <td class="s70">指定したドメイン名の全ての情報を表示します。</td>
+        </tr>
+        <tr>
+          <td class="sb30">hinfo</td>
+          <td class="s70">ホスト情報を表示します。</td>
+        </tr>
+        <tr>
+          <td class="sb30">mx</td>
+          <td class="s70">メール交換情報を表示します。</td>
+        </tr>
+        <tr>
+          <td class="sb30">ns</td>
+          <td class="s70">DNSサーバー</td>
+        </tr>
+</table><br />
+
+<h2>digコマンドのクエリクラス</h2>
+<table class="table4">
+        <tr>
+          <td class="sb30">クラス</td>
+          <td class="s70">意味</td>
+        </tr>
+        <tr>
+          <td class="sb30">in</td>
+          <td class="s70">インターネットクラスドメイン、<br />デフォルトでinが指定されています。</td>
+        </tr>
+        <tr>
+          <td class="sb30">any</td>
+          <td class="s70">全てのクラス情報を表示します。</td>
+        </tr>
+</table><br />
+
+<h2>digコマンドの実行例</h2>
+<strong>■yahoo.co.jpのIPアドレスを問い合わせます（正引き）</strong><br />
+<div style="border:solid 1px #006699;background-color:#000000;color:#FFFFFF;font-size:13px;padding:10px;"><pre><p>
+[root@Tiger ~]# dig yahoo.co.jp
+
+; <<>> DiG 9.9.4-RedHat-9.9.4-72.el7 <<>> yahoo.co.jp
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 42263
+;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 4, ADDITIONAL: 5
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 4096
+;; QUESTION SECTION:
+;yahoo.co.jp.                   IN      A
+
+;; ANSWER SECTION:
+yahoo.co.jp.            282     IN      A       182.22.59.229
+yahoo.co.jp.            282     IN      A       183.79.135.206
+
+;; AUTHORITY SECTION:
+yahoo.co.jp.            882     IN      NS      ns01.yahoo.co.jp.
+yahoo.co.jp.            882     IN      NS      ns02.yahoo.co.jp.
+yahoo.co.jp.            882     IN      NS      ns11.yahoo.co.jp.
+yahoo.co.jp.            882     IN      NS      ns12.yahoo.co.jp.
+
+;; ADDITIONAL SECTION:
+ns01.yahoo.co.jp.       628     IN      A       118.151.254.133
+ns02.yahoo.co.jp.       298     IN      A       118.151.254.149
+ns11.yahoo.co.jp.       615     IN      A       124.83.255.37
+ns12.yahoo.co.jp.       526     IN      A       124.83.255.101
+
+;; Query time: 6 msec
+;; SERVER: 192.168.0.1#53(192.168.0.1)
+;; WHEN: 水  4月 10 14:45:24 JST 2019
+;; MSG SIZE  rcvd: 212
+</p></pre></div>
+<br />
+<strong>■IPアドレスからドメインを問い合わせます（逆引き）</strong><br />
+<div style="border:solid 1px #006699;background-color:#000000;color:#FFFFFF;font-size:13px;padding:10px;"><pre><p>
+[root@Tiger ~]# dig -x 183.79.135.206
+
+; <<>> DiG 9.9.4-RedHat-9.9.4-72.el7 <<>> -x 183.79.135.206
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 12872
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 4, ADDITIONAL: 5
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 4096
+;; QUESTION SECTION:
+;206.135.79.183.in-addr.arpa.   IN      PTR
+
+;; ANSWER SECTION:
+206.135.79.183.in-addr.arpa. 900 IN     PTR     f1.top.vip.kks.yahoo.co.jp.
+
+;; AUTHORITY SECTION:
+79.183.in-addr.arpa.    450     IN      NS      ns02.yahoo.co.jp.
+79.183.in-addr.arpa.    450     IN      NS      ns11.yahoo.co.jp.
+79.183.in-addr.arpa.    450     IN      NS      ns12.yahoo.co.jp.
+79.183.in-addr.arpa.    450     IN      NS      ns01.yahoo.co.jp.
+
+;; ADDITIONAL SECTION:
+ns01.yahoo.co.jp.       770     IN      A       118.151.254.133
+ns02.yahoo.co.jp.       440     IN      A       118.151.254.149
+ns11.yahoo.co.jp.       758     IN      A       124.83.255.37
+ns12.yahoo.co.jp.       668     IN      A       124.83.255.101
+
+;; Query time: 12 msec
+;; SERVER: 192.168.0.1#53(192.168.0.1)
+;; WHEN: 水  4月 10 15:28:05 JST 2019
+;; MSG SIZE  rcvd: 236
+</p></pre></div>
+<br />
+<strong>■ドメインに対応するNSレコードを表示します。</strong><br />
+<div style="border:solid 1px #006699;background-color:#000000;color:#FFFFFF;font-size:13px;padding:10px;"><pre><p>
+[root@Tiger ~]# dig NS yahoo.co.jp
+
+; <<>> DiG 9.9.4-RedHat-9.9.4-72.el7 <<>> NS yahoo.co.jp
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 32443
+;; flags: qr rd ra; QUERY: 1, ANSWER: 4, AUTHORITY: 0, ADDITIONAL: 5
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 4096
+;; QUESTION SECTION:
+;yahoo.co.jp.                   IN      NS
+
+;; ANSWER SECTION:
+yahoo.co.jp.            641     IN      NS      ns02.yahoo.co.jp.
+yahoo.co.jp.            641     IN      NS      ns11.yahoo.co.jp.
+yahoo.co.jp.            641     IN      NS      ns12.yahoo.co.jp.
+yahoo.co.jp.            641     IN      NS      ns01.yahoo.co.jp.
+
+;; ADDITIONAL SECTION:
+ns01.yahoo.co.jp.       390     IN      A       118.151.254.133
+ns02.yahoo.co.jp.       60      IN      A       118.151.254.149
+ns11.yahoo.co.jp.       378     IN      A       124.83.255.37
+ns12.yahoo.co.jp.       288     IN      A       124.83.255.101
+
+;; Query time: 9 msec
+;; SERVER: 192.168.0.1#53(192.168.0.1)
+;; WHEN: 水  4月 10 15:34:25 JST 2019
+;; MSG SIZE  rcvd: 180
+</p></pre></div>
+<br />
+<strong>■出力を少なく表示します</strong><br />
+<div style="border:solid 1px #006699;background-color:#000000;color:#FFFFFF;font-size:13px;padding:10px;"><pre><p>
+[root@Tiger ~]# dig yahoo.com +short
+98.137.246.8
+98.138.219.231
+98.138.219.232
+72.30.35.9
+72.30.35.10
+98.137.246.7
+[root@Tiger ~]# dig -x 98.137.246.7 +short
+media-router-fp1.prod1.media.vip.gq1.yahoo.com.
+</p></pre></div>
+<br />
+<strong>■特定のDNSサーバーに問い合わせを行います。</strong>
+<div style="border:solid 1px #006699;background-color:#000000;color:#FFFFFF;font-size:13px;padding:10px;"><pre><p>
+[root@Tiger ~]# dig A yahoo.co.jp @8.8.8.8
+
+; <<>> DiG 9.9.4-RedHat-9.9.4-72.el7 <<>> A yahoo.co.jp @8.8.8.8
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 65504
+;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 512
+;; QUESTION SECTION:
+;yahoo.co.jp.                   IN      A
+
+;; ANSWER SECTION:
+yahoo.co.jp.            116     IN      A       182.22.59.229
+yahoo.co.jp.            116     IN      A       183.79.135.206
+
+;; Query time: 42 msec
+;; SERVER: 8.8.8.8#53(8.8.8.8)
+;; WHEN: 水  4月 10 15:33:00 JST 2019
+;; MSG SIZE  rcvd: 72
+</p></pre></div>
+<br />
+<strong>■ドメインのすべての情報を表示します。</strong>
+<div style="border:solid 1px #006699;background-color:#000000;color:#FFFFFF;font-size:13px;padding:10px;"><pre><p>
+[root@Tiger ~]# dig ANY yahoo.co.jp
+
+; <<>> DiG 9.9.4-RedHat-9.9.4-72.el7 <<>> ANY yahoo.co.jp
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 60771
+;; flags: qr rd ra; QUERY: 1, ANSWER: 11, AUTHORITY: 4, ADDITIONAL: 29
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 4096
+;; QUESTION SECTION:
+;yahoo.co.jp.                   IN      ANY
+
+;; ANSWER SECTION:
+yahoo.co.jp.            259     IN      A       182.22.59.229
+yahoo.co.jp.            259     IN      A       183.79.135.206
+yahoo.co.jp.            746     IN      MX      10 mx3.mail.yahoo.co.jp.
+yahoo.co.jp.            746     IN      MX      10 mx5.mail.yahoo.co.jp.
+yahoo.co.jp.            746     IN      MX      10 mx1.mail.yahoo.co.jp.
+yahoo.co.jp.            746     IN      MX      10 mx2.mail.yahoo.co.jp.
+yahoo.co.jp.            559     IN      NS      ns11.yahoo.co.jp.
+yahoo.co.jp.            559     IN      NS      ns12.yahoo.co.jp.
+yahoo.co.jp.            559     IN      NS      ns01.yahoo.co.jp.
+yahoo.co.jp.            559     IN      NS      ns02.yahoo.co.jp.
+yahoo.co.jp.            491     IN      TXT     "v=spf1 include:spf.yahoo.co.jp ~all"
+
+;; AUTHORITY SECTION:
+yahoo.co.jp.            559     IN      NS      ns02.yahoo.co.jp.
+yahoo.co.jp.            559     IN      NS      ns11.yahoo.co.jp.
+yahoo.co.jp.            559     IN      NS      ns12.yahoo.co.jp.
+yahoo.co.jp.            559     IN      NS      ns01.yahoo.co.jp.
+
+;; ADDITIONAL SECTION:
+mx1.mail.yahoo.co.jp.   746     IN      A       182.22.12.114
+mx1.mail.yahoo.co.jp.   746     IN      A       182.22.12.118
+mx1.mail.yahoo.co.jp.   746     IN      A       182.22.12.119
+mx1.mail.yahoo.co.jp.   746     IN      A       183.79.16.114
+mx1.mail.yahoo.co.jp.   746     IN      A       183.79.16.118
+mx1.mail.yahoo.co.jp.   746     IN      A       183.79.16.119
+mx2.mail.yahoo.co.jp.   746     IN      A       182.22.12.113
+mx2.mail.yahoo.co.jp.   746     IN      A       182.22.12.116
+mx2.mail.yahoo.co.jp.   746     IN      A       182.22.12.117
+mx2.mail.yahoo.co.jp.   746     IN      A       183.79.16.113
+mx2.mail.yahoo.co.jp.   746     IN      A       183.79.16.116
+mx2.mail.yahoo.co.jp.   746     IN      A       183.79.16.117
+mx3.mail.yahoo.co.jp.   746     IN      A       183.79.16.249
+mx3.mail.yahoo.co.jp.   746     IN      A       182.22.12.244
+mx3.mail.yahoo.co.jp.   746     IN      A       182.22.12.248
+mx3.mail.yahoo.co.jp.   746     IN      A       182.22.12.249
+mx3.mail.yahoo.co.jp.   746     IN      A       183.79.16.243
+mx3.mail.yahoo.co.jp.   746     IN      A       183.79.16.248
+mx5.mail.yahoo.co.jp.   743     IN      A       183.79.16.246
+mx5.mail.yahoo.co.jp.   743     IN      A       183.79.16.247
+mx5.mail.yahoo.co.jp.   743     IN      A       182.22.12.243
+mx5.mail.yahoo.co.jp.   743     IN      A       182.22.12.246
+mx5.mail.yahoo.co.jp.   743     IN      A       182.22.12.247
+mx5.mail.yahoo.co.jp.   743     IN      A       183.79.16.244
+ns01.yahoo.co.jp.       308     IN      A       118.151.254.133
+ns02.yahoo.co.jp.       879     IN      A       118.151.254.149
+ns11.yahoo.co.jp.       296     IN      A       124.83.255.37
+ns12.yahoo.co.jp.       206     IN      A       124.83.255.101
+
+;; Query time: 7 msec
+;; SERVER: 192.168.0.1#53(192.168.0.1)
+;; WHEN: 水  4月 10 15:35:47 JST 2019
+;; MSG SIZE  rcvd: 785
+</p></pre></div>
+<br />
+<strong>■ルートDNSサーバーから問い合わせを行います。</strong>
+<div style="border:solid 1px #006699;background-color:#000000;color:#FFFFFF;font-size:13px;padding:10px;"><pre><p>
+[root@Tiger ~]# dig yahoo.co.jp +trace
+
+; <<>> DiG 9.9.4-RedHat-9.9.4-72.el7 <<>> yahoo.co.jp +trace
+;; global options: +cmd
+.                       48131   IN      NS      e.root-servers.net.
+.                       48131   IN      NS      f.root-servers.net.
+.                       48131   IN      NS      g.root-servers.net.
+.                       48131   IN      NS      h.root-servers.net.
+.                       48131   IN      NS      i.root-servers.net.
+.                       48131   IN      NS      j.root-servers.net.
+.                       48131   IN      NS      k.root-servers.net.
+.                       48131   IN      NS      l.root-servers.net.
+.                       48131   IN      NS      m.root-servers.net.
+.                       48131   IN      NS      a.root-servers.net.
+.                       48131   IN      NS      b.root-servers.net.
+.                       48131   IN      NS      c.root-servers.net.
+.                       48131   IN      NS      d.root-servers.net.
+;; Received 811 bytes from 192.168.0.1#53(192.168.0.1) in 99 ms
+
+jp.                     172800  IN      NS      c.dns.jp.
+jp.                     172800  IN      NS      d.dns.jp.
+jp.                     172800  IN      NS      f.dns.jp.
+jp.                     172800  IN      NS      g.dns.jp.
+jp.                     172800  IN      NS      a.dns.jp.
+jp.                     172800  IN      NS      h.dns.jp.
+jp.                     172800  IN      NS      b.dns.jp.
+jp.                     172800  IN      NS      e.dns.jp.
+jp.                     86400   IN      DS      54004 8 1 0EC348CC7E6D3213CC89E5867088043FC7D5C111
+jp.                     86400   IN      DS      54004 8 2 5F4B24F667BC70880720D10DF317DC8FF80C63E586D504E6BBFE53F0 B9ECC040
+jp.                     86400   IN      RRSIG   DS 8 1 86400 20190423050000 20190410040000 25266 . 1XNPLIaga+tJxAU+WaFisNAeXVLxPPiF/LuCK1v+tOHm6zfME32qSKNt WXSyVdewqz8WQXM57VMSy/1FytMWz4Z/Yngow3+hyCmoRoYj7nWY5ZD/ +Y0D7Dor/4qss4lAqeV1/I2D4jH41wUNvRqj/KE6fd8RhAnstDLmdFbE 8l9wWgVVLscvF2ObEHOwsSfLu5BwAlwKq9SBYpquavd4qY5Bn//ALwTR qvkpzn6N5YHxBeFZgyh3GZSaTE4kMLtVx3GstG47h7o0san1ReNnk8ET 4Nm2WI5fxNneI7Qb80Bm0tHJcFJgbxAN9ouj1VUGzdAEdh8nTP7PFGqQ S/lbiA==
+;; Received 867 bytes from 199.9.14.201#53(b.root-servers.net) in 163 ms
+
+yahoo.co.jp.            86400   IN      NS      ns02.yahoo.co.jp.
+yahoo.co.jp.            86400   IN      NS      ns12.yahoo.co.jp.
+yahoo.co.jp.            86400   IN      NS      ns11.yahoo.co.jp.
+yahoo.co.jp.            86400   IN      NS      ns01.yahoo.co.jp.
+P854Q6BEHST3G070EALIGOQN925HA18K.jp. 900 IN NSEC3 1 1 8 6E7C7A05DC P8SH57HVUT16NRM7DTQPP1MQBUQD9BC8 TXT RRSIG
+P854Q6BEHST3G070EALIGOQN925HA18K.jp. 900 IN RRSIG NSEC3 8 2 900 20190506174502 20190406174502 43839 jp. MShzzZQU+bE9SNJ8+Ps1LORuSkg8iLxIL+zwKS0ha0wQwZ3GVwYwUv29 KzHTN9qYqb6XjCdItolNwo+yAPcRjnTK3mhCd9XQh01rBjqXTgV+t8XH V1/dNT6sYQVR7hdbh+5IrGL2VJ+JoAWau2Af/3yRFNC1KUhPMSOu51s5 /Qg=
+VQU21RDPLH6SNTA94J3UL903FA09T5KA.jp. 900 IN NSEC3 1 1 8 6E7C7A05DC VRHREF1KAGU4U9AQES33HM5ES5BNGMD8 TXT RRSIG
+VQU21RDPLH6SNTA94J3UL903FA09T5KA.jp. 900 IN RRSIG NSEC3 8 2 900 20190506174502 20190406174502 43839 jp. IRN2zsNtNAv1vD8KwWExExa3iEttK32pFV7aLN0QXuxDJAmzkMGVQVOo yeXaXX/suCrY7VV+geTVrT6NOiR/am7QiuHwlvVAxOVs2etxM7iSbIPl yBhNbiXuOD9nrmuxI+Qsw+ftSsH/R7/JP9seayY8Vq0UUeZOlMUEeIQh e+k=
+;; Received 672 bytes from 150.100.6.8#53(f.dns.jp) in 33 ms
+
+yahoo.co.jp.            300     IN      A       182.22.59.229
+yahoo.co.jp.            300     IN      A       183.79.135.206
+yahoo.co.jp.            900     IN      NS      ns01.yahoo.co.jp.
+yahoo.co.jp.            900     IN      NS      ns11.yahoo.co.jp.
+yahoo.co.jp.            900     IN      NS      ns02.yahoo.co.jp.
+yahoo.co.jp.            900     IN      NS      ns12.yahoo.co.jp.
+;; Received 212 bytes from 118.151.254.133#53(ns01.yahoo.co.jp) in 4 ms
+</p></pre></div>
+<br />]]>
+    </content>
+</entry>
+
+<entry>
+    <title>CentOS7でrootのSSHログインを無効化する</title>
+    <link rel="alternate" type="text/html" href="https://www.linuxmaster.jp/linux_skill/2019/03/centos7rootssh.html" />
+    <id>tag:www.linuxmaster.jp,2019:/linux_skill//4.1450</id>
+
+    <published>2019-03-31T01:02:47Z</published>
+    <updated>2019-04-10T05:34:28Z</updated>
+
+    <summary>CentOS7環境下で、SSHを使用したrootのログインを禁止するには、 /e...</summary>
+    <author>
+        <name>pakira</name>
+        
+    </author>
+    
+        <category term="CentOS7" scheme="http://www.sixapart.com/ns/types#category" />
+    
+        <category term="CentOS7" scheme="http://www.sixapart.com/ns/types#category" />
+    
+        <category term="Linuxtips" scheme="http://www.sixapart.com/ns/types#category" />
+    
+        <category term="サーバー管理" scheme="http://www.sixapart.com/ns/types#category" />
+    
+        <category term="システム管理" scheme="http://www.sixapart.com/ns/types#category" />
+    
+        <category term="セキュリティ" scheme="http://www.sixapart.com/ns/types#category" />
+    
+    
+    <content type="html" xml:lang="ja" xml:base="https://www.linuxmaster.jp/linux_skill/">
+        <![CDATA[CentOS7環境下で、SSHを使用したrootのログインを禁止するには、<br />
+/etc/ssh/sshd_configファイルを編集します。<br />
+<br />
+SSHは、暗号化された状態でリモート接続することができるサービスで、<br />
+sshdデーモンが提供しています。<br />
+<br />
+CentOSでは、デフォルト環境のままだと、<br />
+SSHでのrootログインが行えてしまいます。<br />
+インターネットに公開するサーバーを構築する場合、<br />
+その設定のままだとセキュリティ上非常に好ましくないので<br />
+無効化する必要があります。<br />
+]]>
+        <![CDATA[<br />
+<strong>■rootのSSHログインを無効化する</strong><br />
+<b>１./etc/ssh/sshd_configファイルを編集します。</b><br />
+「PermitRootLogin yes」の行頭に「#」を挿入して無効化し、<br />
+その下行に「PermitRootLogin no」を追加します。
+<div style="border:solid 1px #006699;background-color:#000000;color:#FFFFFF;font-size:13px;padding:10px;"><pre><p>
+[root@Tiger ~]# <strong>vi /etc/ssh/sshd_config</strong>
+<strong>#</strong>PermitRootLogin yes
+<strong>PermitRootLogin no</strong></p></pre></div>
+上記を設定後、「<strong>:wq</strong>」で保存終了します。<br />
+<br />
+<b>２.sshdを再起動します。</b><br />
+<div style="border:solid 1px #006699;background-color:#000000;color:#FFFFFF;font-size:13px;padding:10px;"><pre><p>
+[root@Tiger ~]# <strong>vi /etc/ssh/sshd_config</strong>
+[root@Tiger ~]# <strong>systemctl restart sshd.service</strong>
+</p></pre></div>
+<br />
+再起動後、rootでSSHログインが行えないことを確認します。<br />
+Tera Termなどのターミナルソフトを使用して、rootログインを<br />
+行って確認しても良いですが、ローカル環境のみでの検証も可能です。<br />
+<br />
+<strong>■ローカル環境でSSHログインテストを行う</strong><br />
+<div style="border:solid 1px #006699;background-color:#000000;color:#FFFFFF;font-size:13px;padding:10px;"><pre><p>
+[root@Tiger ~]# <strong>ssh root@localhost</strong>
+The authenticity of host 'localhost::1)' can't be established.
+ECDSA key fingerprint is SHA256:ff0Zkfvp2qL+b5oR5pTeouh3PQi9TH3mpDyX03JLm6k.
+ECDSA key fingerprint is MD5:56:cf:a4:b1:29:3a:9a:76:a4:be:be:d2:81:34:a5:67.
+Are you sure you want to continue connecting (yes/no)? <strong>yes</strong><b>←初回のみ入力が必要です。</b>
+Warning: Permanently added 'localhost' (ECDSA) to the list of known hosts.
+root@localhost's password:　　<b>←rootパスワードを入力します。</b>
+Permission denied, please try again.
+root@localhost's password:　　<b>←rootパスワードを入力します。</b>
+Permission denied, please try again.
+root@localhost's password:　　<b>←rootパスワードを入力します。</b>
+Permission denied (publickey,gssapi-keyex,gssapi-with-mic,password).
+<b>↑権限が無いのでエラーでログイン出来ないことを確認します。</b>
+</p></pre></div>
+]]>
+    </content>
+</entry>
+
+<entry>
+    <title>CentOS7でfirewalldの確認と停止（ファイアウォール）</title>
+    <link rel="alternate" type="text/html" href="https://www.linuxmaster.jp/linux_skill/2019/03/centos7firewalld.html" />
+    <id>tag:www.linuxmaster.jp,2019:/linux_skill//4.1449</id>
+
+    <published>2019-03-30T05:09:33Z</published>
+    <updated>2019-03-30T05:54:06Z</updated>
+
+    <summary>CentOS7のファイアウォールでは、これまでのCentOS6系で使用されていた...</summary>
+    <author>
+        <name>pakira</name>
+        
+    </author>
+    
+        <category term="CentOS7" scheme="http://www.sixapart.com/ns/types#category" />
+    
+        <category term="CentOS7" scheme="http://www.sixapart.com/ns/types#category" />
+    
+        <category term="Linuxtips" scheme="http://www.sixapart.com/ns/types#category" />
+    
+        <category term="サーバー管理" scheme="http://www.sixapart.com/ns/types#category" />
+    
+        <category term="システム管理" scheme="http://www.sixapart.com/ns/types#category" />
+    
+        <category term="セキュリティ" scheme="http://www.sixapart.com/ns/types#category" />
+    
+    
+    <content type="html" xml:lang="ja" xml:base="https://www.linuxmaster.jp/linux_skill/">
+        <![CDATA[<p>CentOS7のファイアウォールでは、これまでのCentOS6系で使用されていた<br />
+iptablesよりもfirewalldを使用することが推奨されています。</p>
+
+<p>※CentOS7でもiptablesが使用できます。その場合、firewalldを停止する必要があります。<br />
+　逆に、firewalldを使用する場合は、iptablesを停止する必要があります。</p>
+
+<p>インターネットに公開するサーバーでは、ファイアウォールは必須になりますが、<br />
+信頼できる内部ネットワーク、開発環境及びテスト環境では無効にしておいた方が<br />
+良い場合もあります。</p>
+
+<p>本ページでは、CentOS7から推奨されているfirewalldの状態の確認と、<br />
+停止方法を紹介します。</p>]]>
+        <![CDATA[<p><br />
+<strong>■ファイアウォールの確認をする</strong><br />
+[root@Tiger ~]# <strong>firewall-cmd --list-services --zone=public</strong><br />
+ssh dhcpv6-client　←2つの設定のみ許可されています。</p>
+
+<p><strong>■ファイアウォールを停止をする</strong><br />
+ファイアウォールを停止するには、systemctlコマンドを使用します。<br />
+停止方法は、２パターンあります。</p>
+
+<p><strong>・ファイアウォールを直ちに停止する</strong><br />
+この設定は、直ちにファイアウォールを停止することができますが、<br />
+サーバーを再起動すると、再度ファイアウォールが有効になります。<br />
+[root@Tiger ~]# <strong>systemctl stop firewalld.service</strong></p>
+
+<p><strong>・ファイアウォールを恒久的に停止する</strong><br />
+サーバーを再起動してもファイアウォールを停止したままにする場合は、<br />
+本設定を実施します。<br />
+[root@Tiger ~]# <strong>systemctl disable firewalld.service</strong><br />
+Removed symlink /etc/systemd/system/multi-user.target.wants/firewalld.service.<br />
+Removed symlink /etc/systemd/system/dbus-org.fedoraproject.FirewallD1.service.</p>]]>
+    </content>
+</entry>
+
+<entry>
+    <title>CentOS7でSELinuxを無効化する</title>
+    <link rel="alternate" type="text/html" href="https://www.linuxmaster.jp/linux_skill/2019/03/centos7selinux.html" />
+    <id>tag:www.linuxmaster.jp,2019:/linux_skill//4.1448</id>
+
+    <published>2019-03-29T06:59:46Z</published>
+    <updated>2019-03-31T03:44:13Z</updated>
+
+    <summary>CentOS7でSElinuxを無効化する手順を紹介します。 SELinux無効...</summary>
+    <author>
+        <name>pakira</name>
+        
+    </author>
+    
+        <category term="CentOS7" scheme="http://www.sixapart.com/ns/types#category" />
+    
+        <category term="CentOS7" scheme="http://www.sixapart.com/ns/types#category" />
+    
+        <category term="Linuxtips" scheme="http://www.sixapart.com/ns/types#category" />
+    
+        <category term="サーバー管理" scheme="http://www.sixapart.com/ns/types#category" />
+    
+        <category term="システム管理" scheme="http://www.sixapart.com/ns/types#category" />
+    
+        <category term="セキュリティ" scheme="http://www.sixapart.com/ns/types#category" />
+    
+    
+    <content type="html" xml:lang="ja" xml:base="https://www.linuxmaster.jp/linux_skill/">
+        <![CDATA[CentOS7でSElinuxを無効化する手順を紹介します。<br />
+SELinux無効化設定を行う前に、現在のSElinuxの状態を確認しましょう。<br />
+<br />
+SELinuxの状態を確認するには、getenforceコマンドを使用します。<br />
+このコマンドを実行すると、SELinuxの状態が確認できます。<br />
+ステータスは、次の通りです。<br />
+<table class="table4">
+        <tr>
+          <td class="sb30">Enforcing</td>
+          <td class="s70">有効な状態</td>
+        </tr>
+        <tr>
+          <td class="sb30">Permissive</td>
+          <td class="s70">無効な状態であるが、SELinuxのログは記録している状態</td>
+        </tr>
+        <tr>
+          <td class="sb30">Disabled</td>
+          <td class="s70">無効な状態</td>
+        </tr>
+</table><br />]]>
+        <![CDATA[<br />
+<strong>■現在のSELinuxの状態を確認する</strong><br />
+[root@Tiger ~]# <strong>getenforce</strong><br />
+Permissive<br />
+<br />
+<strong>■詳細なSELinuxの状態を確認する</strong><br />
+より詳細なSELinuxの状態を確認するには、sestatusコマンドを使用します。<br />
+[root@Tiger ~]# <strong>sestatus</strong><br />
+SELinux status:                 enabled<br />
+SELinuxfs mount:                /sys/fs/selinux<br />
+SELinux root directory:         /etc/selinux<br />
+Loaded policy name:             targeted<br />
+Current mode:                   permissive<br />
+Mode from config file:          enforcing<br />
+Policy MLS status:              enabled<br />
+Policy deny_unknown status:     allowed<br />
+Max kernel policy version:      31<br />
+<br />
+<strong>■一時的にSELinuxを無効化する</strong><br />
+一時的にSELinuxを無効化する場合は、setenforceコマンドを使用します。<br />
+このコマンドの引数に「0」を与えることで一時的に無効化出来ます。<br />
+この無効化はシステムが再起動するまで有効になります。<br />
+[root@Tiger ~]# <strong>setenforce 0</strong><br />
+<br />
+一時的にSELinuxを有効化するには、引数に「1」を与えます。<br />
+[root@Tiger ~]# <strong>setenforce 1</strong><br />
+<br />
+<strong>■恒久的にSELinuxを無効化する</strong><br />
+システムが再起動しても、恒久的にSELinuxを無効化する場合は、<br />
+/etc/selinux/configファイルを下記の通りに設定します。<br />
+[root@Tiger ~]# <strong>vi /etc/selinux/config</strong><br />
+<strong>#</strong>SELINUX=enforcing<br />
+<strong>SELINUX=disabled</strong><br />
+<br />
+「SELINUX=enforcing」の行頭に「#」を挿入して無効化し、<br />
+その下行に「SELINUX=disabled」を追加します。<br />
+設定したら「<strong>:wq</strong>」保存終了します。<br />
+<br />
+/etc/selinux/configファイルを設定後、<br />
+システムを再起動します。<br />
+[root@Tiger ~]# <strong>shutdown -r now</strong><br />
+<br />]]>
+    </content>
+</entry>
+
+<entry>
+    <title>CentOS7バージョンアップ手順</title>
+    <link rel="alternate" type="text/html" href="https://www.linuxmaster.jp/linux_skill/2018/06/centos.html" />
+    <id>tag:www.linuxmaster.jp,2018:/linux_skill//4.1426</id>
+
+    <published>2018-06-13T01:00:02Z</published>
+    <updated>2019-03-30T05:08:09Z</updated>
+
+    <summary>CentOSを最新バージョンにアップデートする手順を紹介します。 本作業を行うこ...</summary>
+    <author>
+        <name>pakira</name>
+        
+    </author>
+    
+        <category term="CentOS7" scheme="http://www.sixapart.com/ns/types#category" />
+    
+        <category term="Linuxtips" scheme="http://www.sixapart.com/ns/types#category" />
+    
+        <category term="サーバー管理" scheme="http://www.sixapart.com/ns/types#category" />
+    
+        <category term="システム管理" scheme="http://www.sixapart.com/ns/types#category" />
+    
+        <category term="セキュリティ" scheme="http://www.sixapart.com/ns/types#category" />
+    
+    
+    <content type="html" xml:lang="ja" xml:base="https://www.linuxmaster.jp/linux_skill/">
+        <![CDATA[<p>CentOSを最新バージョンにアップデートする手順を紹介します。<br />
+本作業を行うことで、常に最新のCentOS を利用することが可能になります。</p>
+
+<p><strong>注意</strong><br />
+実行タイミングやサーバー環境によっては、システムやアプリケーションの誤作動や<br />
+不具合、場合によっては、サーバー自体が起動しなくなる可能性があります。<br />
+そうなっても良いように、実行する場合は、必ずテスト環境（壊れても良い環境）で<br />
+事前確認を行ってください。</p>
+
+<p>今回の例では、CentOS7.4を使用していますが、<br />
+他のバージョンでも基本的に手順は同じになります。</p>
+
+<p><br />
+<strong>1.Linux のバージョンを確認します。</strong><br />
+$ <b><font color="#dd0000">su -</font></b><br />
+パスワード:  　　　<b>←rootパスワードを入力します(パスワードは入力しても表示されません)</b><br />
+# <b><font color="#dd0000">cat /etc/redhat-release</font></b><br />
+CentOS Linux release 7.4.1708 (Core)</p>
+
+<p><br />
+<strong>2.カーネルバージョンを確認します。</strong><br />
+# <b><font color="#dd0000">uname -a</font></b><br />
+Linux Tiger 3.10.0-693.el7.x86_64 #1 SMP Tue Aug 22 21:09:27 UTC 2017 x86_64 x86_64 x86_64 GNU/Linux</p>
+
+<p><br />
+<strong>3.カーネルをアップデート対象から除外する設定を行います。</strong><br />
+バージョンアップの多くのトラブル原因は、<br />
+カーネルアップデートなので、取り敢えず除外します。<br />
+13 行目に「exclude=kernel*」を追加します。<br />
+# <b><font color="#dd0000">vi /etc/yum.conf</font></b><br />
+--------------------------------------------------------------------<br />
+[main]<br />
+cachedir=/var/cache/yum/$basearch/$releasever<br />
+keepcache=0<br />
+debuglevel=2<br />
+logfile=/var/log/yum.log<br />
+exactarch=1<br />
+obsoletes=1<br />
+gpgcheck=1<br />
+plugins=1<br />
+installonly_limit=5<br />
+bugtracker_url=http://bugs.centos.org/set_project.php?project_id=23&ref=http://bugs.centos.org/bug_repor<br />
+t_page.php?category=yum<br />
+distroverpkg=centos-release<br />
+<strong>exclude=kernel*</strong>　　<b>←「exclude=kernel*」を追加します。</b><br />
+--------------------------------------------------------------------<br />
+編集後、「<b><font color="#dd0000">:wq</font></b>」で保存終了します。</p>
+
+<p><br />
+<strong>4.yumアップデートを実施します。</strong><br />
+yum コマンドでアップデートを実施します。<br />
+途中、処理を続行するか問われるので「y」を入力します。<br />
+※表示される内容は、実行タイミングによって異なります。<br />
+--------------------------------------------------------------------<br />
+# <b><font color="#dd0000">yum update</font></b><br />
+読み込んだプラグイン:fastestmirror, langpacks<br />
+base | 3.6 kB 00:00:00<br />
+extras | 3.4 kB 00:00:00<br />
+updates | 3.4 kB 00:00:00<br />
+(1/4): extras/7/x86_64/primary_db | 147 kB 00:00:03<br />
+(2/4): updates/7/x86_64 /primary_db | 2.0 MB 00:00:08</p>
+
+<p><b><font color="#dd0000">〜中略〜</font></b></p>
+
+<p>libinput x86_64 1.8.4 -2.el7 base 142 k<br />
+libwayland-client x86_64 1.14.0-2.el7 base 32 k<br />
+libwayland-cursor x86_64 1.14.0 -2.el7 base 20 k<br />
+libwayland-server x86_64 1.14.0 -2.el7 base 38 k<br />
+llvm-private x86_64 5.0.0 -3.el7 base 20 M<br />
+lz4 x86_64 1.7.5 -2.el7 base 98 k<br />
+mesa-libwayland-egl x86_64 17.2.3 -8.20171019.el7 base 17 k<br />
+unbound-libs x86_64 1.6.6 -1.el7 base 405 k<br />
+volume_key-libs x86_64 0.3.9-8.el7 base 140 k</p>
+
+<p>トランザクションの要約<br />
+============================================================<br />
+インストール 4 パッケージ(+20 個の依存関係のパッケージ)<br />
+更新 613 パッケージ　　<b>←この辺りの数字は、実行タイミングによって異なります。</b></p>
+
+<p>合計容量: 642 M<br />
+総ダウンロード容量: 641 M<br />
+Is this ok [y/d/N]:  <b><font color="#dd0000">y</font></b>　　<b>←「y」を入力します。</b></p>
+
+<p><b><font color="#dd0000">〜中略〜</font></b></p>
+
+<p>xorg-x11-server-common.x86_64 0:1.19.5-5.el7<br />
+xorg-x11-xinit.x86_64 0:1.3.4-2.el7<br />
+yum.noarch 0:3.4.3-158.el7.centos<br />
+yum-plugin-fastestmirror.noarch 0:1.1.31 -45.el7<br />
+yum-utils.noarch 0:1.1.31-45.el7</p>
+
+<p>置換:<br />
+grub2.x86_64 1:2.02-0.64.el7.centos grub2 -tools.x86_64 1:2.02-0.64.el7.centos</p>
+
+<p>完了しました!<br />
+--------------------------------------------------------------------</p>
+
+<p><br />
+<strong>5.サーバーを再起動します。</strong><br />
+# <b><font color="#dd0000">shutdown -r now</font></b></p>
+
+<p><br />
+<strong>6.再起動後、Linux のバージョンを確認します。</strong><br />
+下記の例では、CentOS7.5 にバージョンアップしていますが、<br />
+実行タイミングによってバージョンが異なる場合があります。<br />
+$ <b><font color="#dd0000">su -</font></b><br />
+パスワード:<br />
+# <b><font color="#dd0000">cat /etc/redhat-release</font></b><br />
+CentOS Linux release 7.5.1804 (Core)</p>
+
+<p><br />
+<strong>7.カーネルバージョンを確認します。</strong><br />
+カーネルのバージョンはアップデートから除外しているので、変わっていません。<br />
+# <b><font color="#dd0000">uname -a</font></b><br />
+Linux Tiger 3.10.0-693.el7.x86_64 #1 SMP Tue Aug 22 21:09:27 UTC 2017 x86_64 x86_64 x86_64 GNU/Linux</p>
+
+<p><br />
+<strong>8.カーネルのバージョンアップをします。</strong><br />
+13 行目の「exclude=kernel*」行頭に「#」を追加します。<br />
+# <b><font color="#dd0000">vi /etc/yum.conf</font></b><br />
+--------------------------------------------------------------------<br />
+[main]<br />
+cachedir=/var/cache/yum/$basearch/$releasever<br />
+keepcache=0<br />
+debuglevel=2<br />
+logfile=/var/log/yum.log<br />
+exactarch=1<br />
+obsoletes=1<br />
+gpgcheck=1<br />
+plugins=1<br />
+installonly_limit=5<br />
+bugtracker_url=http://bugs.centos.org/set_project.php?project_id=23&ref=http://bugs.centos.org/bug_repor<br />
+t_page.php?category=yum<br />
+distroverpkg=centos-release<br />
+<b><font color="#dd0000">#</font></b>exclude=kernel* 　　　<b>←行頭に「#」を追加します。</b><br />
+--------------------------------------------------------------------<br />
+編集後、「<b><font color="#dd0000">:wq</font></b>」で保存終了します。</p>
+
+<p><br />
+<strong>9.yumアップデートを実施します。</strong><br />
+yum コマンドでアップデートを実施します。<br />
+途中、処理を続行するか問われるので「y」を入力します。<br />
+※表示される内容は、実行タイミングによって異なります。<br />
+--------------------------------------------------------------------<br />
+# <b><font color="#dd0000">yum update</font></b><br />
+読み込んだプラグイン:fastestmirror, langpacks<br />
+Loading mirror speeds from cached hostfile<br />
+* base: ftp.nara.wide.ad.jp<br />
+* extras: ftp.nara.wide.ad.jp</p>
+
+<p><b><font color="#dd0000">〜中略〜</font></b></p>
+
+<p>---> パッケージkernel-tools-libs.x86_64 0:3.10.0-693.el7 を更新<br />
+---> パッケージkernel-tools-libs.x86_64 0:3.10.0-862.3.2.el7 をアップデート<br />
+--> 依存性解決を終了しました。</p>
+
+<p>依存性を解決しました</p>
+
+<p>============================================================<br />
+Package アーキテクチャーバージョン リポジトリー 容量<br />
+============================================================<br />
+インストール中:<br />
+kernel x86_64 3.10.0-862.3.2.el7 updates 46 M<br />
+kernel-devel x86_64 3.10.0-862.3.2.el7 updates 16 M<br />
+更新します:<br />
+kernel-headers x86_64 3.10.0-862.3.2.el7 updates 7.1 M<br />
+kernel-tools x86_64 3.10.0-862.3.2.el7 updates 6.2 M<br />
+kernel-tools-libs x86_64 3.10.0-862.3.2.el7 updates 6.2 M</p>
+
+<p>トランザクションの要約<br />
+============================================================<br />
+インストール 2 パッケージ　　<b>←この辺りの数字や内容は、実行タイミングによって異なります。</b><br />
+更新 3 パッケージ</p>
+
+<p>総ダウンロード容量: 81 M<br />
+Is this ok [y/d/N]: <b><font color="#dd0000">y</font></b>　<b>←「y」を入力します。</b></p>
+
+<p>〜中略〜</p>
+
+<p>検証中 : kernel-headers-3.10.0-693.el7.x86_64 7/8<br />
+検証中 : kernel-tools-libs-3.10.0-693.el7.x86_64 8/8</p>
+
+<p>インストール:<br />
+kernel.x86_64 0:3.10.0-862.3.2.el7 kernel -devel.x86_64 0:3.10.0-862.3.2.el7</p>
+
+<p>更新:<br />
+kernel-headers.x86_64 0:3.10.0-862.3.2.el7 kernel-tools.x86_64 0:3.10.0-862.3.2.el7<br />
+kernel-tools-libs.x86_64 0:3.10.0-862.3.2.el7</p>
+
+<p>完了しました!<br />
+--------------------------------------------------------------------</p>
+
+<p><br />
+<strong>10.サーバーを再起動します。</strong><br />
+# <b><font color="#dd0000">shutdown -r now</font></b></p>
+
+<p><br />
+<strong>11.カーネルバージョンを確認します。</strong><br />
+カーネルがバージョンアップしています。<br />
+$ <b><font color="#dd0000">su -</font></b><br />
+パスワード:<br />
+[root@Tiger ~]# <b><font color="#dd0000">uname -a</font></b><br />
+Linux Tiger 3.10.0-862.3.2.el7.x86_64 #1 SMP Mon May 21 23:36:36 UTC 2018 x86_64 x86_64 x86_64 GNU/Linux</p>
+
+<p><br />
+本手順を実施することで、常に最新のCentOS を利用することが出来ます。<br />
+しかし、冒頭でも説明しましたが、アップデートによるトラブルが発生する場合も<br />
+ありますので、実施する際は、必ずテスト環境で問題がないことを確認してから、<br />
+本番環境で実施してください。</p>]]>
+        
+    </content>
+</entry>
+
+<entry>
+    <title>CentOS7のNICをCentOS6系のeth0にする</title>
+    <link rel="alternate" type="text/html" href="https://www.linuxmaster.jp/linux_skill/2018/04/centos7niccentos6eth0.html" />
+    <id>tag:www.linuxmaster.jp,2018:/linux_skill//4.1415</id>
+
+    <published>2018-04-06T03:08:34Z</published>
+    <updated>2018-04-06T03:22:53Z</updated>
+
+    <summary>CentOS7では、NICのパーティション名を自動で割り当てるよう仕様変更されて...</summary>
+    <author>
+        <name>pakira</name>
+        
+    </author>
+    
+        <category term="CentOS7" scheme="http://www.sixapart.com/ns/types#category" />
+    
+        <category term="Linuxtips" scheme="http://www.sixapart.com/ns/types#category" />
+    
+        <category term="デバイス管理" scheme="http://www.sixapart.com/ns/types#category" />
+    
+        <category term="ネットワーク" scheme="http://www.sixapart.com/ns/types#category" />
+    
+    
+    <content type="html" xml:lang="ja" xml:base="https://www.linuxmaster.jp/linux_skill/">
+        <![CDATA[<p>CentOS7では、NICのパーティション名を自動で割り当てるよう仕様変更されています。<br />
+しかし、その仕様でNICを命名されると、一部正しく動作しないソフトウェアが存在します。<br />
+そのようなソフトウェアを利用したい場合、従来のCentOS6系で使用されているeth0に<br />
+NICの名前を変更します。</p>
+
+<p><b>1.「/etc/default/grub」を編集します。</b><br />
+[root@Tiger src]# <strong>grep net.ifnames /etc/default/grub || sed '/^GRUB_CMDLINE_LINUX/s/\"$/ net.ifnames=0 biosdevname=0\"/g' /etc/default/grub</strong><br />
+GRUB_CMDLINE_LINUX="crashkernel=auto rd.lvm.lv=centos_tiger/root rd.lvm.lv=centos_tiger/swap net.ifnames=0 rhgb quiet"</p>
+
+<p><b>2.設定を反映させます。</b><br />
+[root@Tiger src]# <strong>grub2-mkconfig -o /boot/grub2/grub.cfg</strong><br />
+Generating grub configuration file ...<br />
+Found linux image: /boot/vmlinuz-3.10.0-693.el7.x86_64<br />
+Found initrd image: /boot/initramfs-3.10.0-693.el7.x86_64.img<br />
+Found linux image: /boot/vmlinuz-0-rescue-8680acc02b184dddaeb10d6dafc68539<br />
+Found initrd image: /boot/initramfs-0-rescue-8680acc02b184dddaeb10d6dafc68539.img<br />
+done</p>
+
+<p><b>3.NICの設定ファイルをリネームします。</b><br />
+※ifcfg-p4p2 の「ip4p2」の箇所は環境によって異なりますので変更してください。<br />
+[root@Tiger src]# <strong>mv /etc/sysconfig/network-scripts/ifcfg-p4p2 /etc/sysconfig/network-scripts/ifcfg-eth0</strong></p>
+
+<p><b>4.デバイス情報を表示し、MACアドレスを確認します。</b><br />
+[root@Tiger ~]# nmcli device show<br />
+GENERAL.デバイス:                       p4p2<br />
+GENERAL.タイプ:                         ethernet<br />
+GENERAL.ハードウェアアドレス:           <strong>58:8A:5A:29:2B:BA</strong>   <b>←控える</b><br />
+GENERAL.MTU:                            1500<br />
+GENERAL.状態:                           100 (接続済み)<br />
+GENERAL.接続:                           eth0<br />
+GENERAL.CON パス:                       /org/freedesktop/NetworkManager/ActiveConnection/1<br />
+WIRED-PROPERTIES.キャリア:              オン<br />
+IP4.アドレス[1]:                        192.168.0.36/24<br />
+IP4.ゲートウェイ:                       192.168.0.1<br />
+IP4.DNS[1]:                             192.168.0.1<br />
+IP6.アドレス[1]:                        fe80::5a8a:5aff:fe29:2bba/64<br />
+IP6.ゲートウェイ:                       --</p>
+
+<p>GENERAL.デバイス:                       wlan0<br />
+GENERAL.タイプ:                         wifi<br />
+GENERAL.ハードウェアアドレス:           C6:A5:AA:5F:4B:0A<br />
+GENERAL.MTU:                            0<br />
+GENERAL.状態:                           30 (切断済み)<br />
+GENERAL.接続:                           --<br />
+GENERAL.CON パス:                       --</p>
+
+<p>GENERAL.デバイス:                       lo<br />
+GENERAL.タイプ:                         loopback<br />
+GENERAL.ハードウェアアドレス:           00:00:00:00:00:00<br />
+GENERAL.MTU:                            65536<br />
+GENERAL.状態:                           10 (管理無し)<br />
+GENERAL.接続:                           --<br />
+GENERAL.CON パス:                       --<br />
+IP4.アドレス[1]:                        127.0.0.1/8<br />
+IP4.ゲートウェイ:                       --<br />
+IP6.アドレス[1]:                        ::1/128<br />
+IP6.ゲートウェイ:                       --</p>
+
+<p><b>5.NICのデバイスファイルを編集します。</b><br />
+3でリネームしたファイルを編集します。<br />
+[root@Tiger ~]# <strong>vi /etc/sysconfig/network-scripts/ifcfg-eth0</strong><br />
+TYPE=Ethernet<br />
+PROXY_METHOD=none<br />
+BROWSER_ONLY=no<br />
+BOOTPROTO=none<br />
+DEFROUTE=yes<br />
+IPV4_FAILURE_FATAL=no<br />
+IPV6INIT=no<br />
+IPV6_AUTOCONF=yes<br />
+IPV6_DEFROUTE=yes<br />
+IPV6_FAILURE_FATAL=no<br />
+IPV6_ADDR_GEN_MODE=stable-privacy<br />
+<strong>NAME=eth0</strong>　　　　　　　　 <b>←eth0に修正します。</b><br />
+<strong>HWADDR=58:8A:5A:29:2B:BA</strong>　<b>←4で確認したMACアドレスを追加します。</b><br />
+UUID=22f748d6-6718-47ac-bc27-7188a419465f<br />
+<strong>DEVICE=eth0 </strong>             <b>←eth0に修正します。</b><br />
+ONBOOT=yes<br />
+IPADDR=192.168.0.36<br />
+PREFIX=24<br />
+GATEWAY=192.168.0.1<br />
+DNS1=192.168.0.1</p>
+
+<p><b>6.サーバーを再起動します。</b><br />
+[root@Tiger ~]# <strong>shutdown -r now</strong></p>
+
+<p><b>7.再起動後、NIC名をを確認します。</b><br />
+[root@Tiger ~]# <strong>nmcli device show</strong></p>
+
+<p></p>
+
+<p><br />
+</p>]]>
+        
+    </content>
+</entry>
+
+<entry>
+    <title>Linuxのカーネルバージョンを確認する</title>
+    <link rel="alternate" type="text/html" href="https://www.linuxmaster.jp/linux_skill/2018/01/post-175.html" />
+    <id>tag:www.linuxmaster.jp,2018:/linux_skill//4.1412</id>
+
+    <published>2018-01-18T18:38:03Z</published>
+    <updated>2018-01-21T04:24:22Z</updated>
+
+    <summary> Linuxでカーネルのバージョンを確認するには、確認コマンドを実行する方法と ...</summary>
+    <author>
+        <name>pakira</name>
+        
+    </author>
+    
+        <category term="Linuxtips" scheme="http://www.sixapart.com/ns/types#category" />
+    
+        <category term="LinuxコマンドU-Z" scheme="http://www.sixapart.com/ns/types#category" />
+    
+        <category term="システム管理" scheme="http://www.sixapart.com/ns/types#category" />
+    
+        <category term="システム管理コマンド" scheme="http://www.sixapart.com/ns/types#category" />
+    
+    
+    <content type="html" xml:lang="ja" xml:base="https://www.linuxmaster.jp/linux_skill/">
+        <![CDATA[ Linuxでカーネルのバージョンを確認するには、確認コマンドを実行する方法と<br />
+カーネルバージョンを保持したファイルを確認する方法があります。<br />
+<br />
+<h3>コマンドでカーネルバージョンを確認する方法</h3>
+コマンドでカーネルバージョンを確認する場合は、unameコマンドを使用します。<br />
+unameにはいくつかのオプションがありますので、代表的なものを紹介します。<br />
+<br />
+<strong>■カーネルバージョンのみ表示する</strong><br />
+unameコマンドに「-r」オプションを付けて実行します。<br />
+$ <b>uname -r</b><br />
+3.10.0-693.11.6.el7.x86_64<br />
+<br />
+<strong>■ハードウェアアーキテクチャのみ表示する</strong><br />
+unameコマンドに「-m」オプションを付けて実行します。<br />
+$ <b>uname -m</b><br />
+x86_64<br />
+<br />
+<strong>■すべての情報を表示する</strong><br />
+unameコマンドに「-a」オプションを付けて実行します。<br />
+$ <b>uname -a</b><br />
+Linux Tiger 3.10.0-693.11.6.el7.x86_64 #1 SMP Thu Jan 4 01:06:37 UTC 2018 x86_64 x86_64 x86_64 GNU/Linux<br />
+<br />
+<h3>ファイルでカーネルバージョンを確認する方法</h3>
+カーネルバージョン情報は、/proc/version ファイルに保存されています。<br />
+ファイル参照コマンド（cat,more,less,view,viなど）で内容を参照します。<br />
+<br />
+$ <b>cat /proc/version</b><br />
+Linux version 3.10.0-693.11.6.el7.x86_64 (builder@kbuilder.dev.centos.org) (gcc version 4.8.5 20150623 (Red Hat 4.8.5-16) (GCC) ) #1 SMP Thu Jan 4 01:06:37 UTC 2018<br />
+<br />]]>
+        
+    </content>
+</entry>
+
+<entry>
+    <title>cronのログファイル「/var/log/cron」を確認する</title>
+    <link rel="alternate" type="text/html" href="https://www.linuxmaster.jp/linux_skill/2017/11/cronvarlogcron.html" />
+    <id>tag:www.linuxmaster.jp,2017:/linux_skill//4.1406</id>
+
+    <published>2017-11-14T02:56:14Z</published>
+    <updated>2017-11-14T03:08:03Z</updated>
+
+    <summary>Linuxシステムで、定期的にコマンドを実行させる スケジューリング機能としてc...</summary>
+    <author>
+        <name>pakira</name>
+        
+    </author>
+    
+        <category term="Linuxtips" scheme="http://www.sixapart.com/ns/types#category" />
+    
+        <category term="ログ管理" scheme="http://www.sixapart.com/ns/types#category" />
+    
+    
+    <content type="html" xml:lang="ja" xml:base="https://www.linuxmaster.jp/linux_skill/">
+        <![CDATA[<p>Linuxシステムで、定期的にコマンドを実行させる<br />
+スケジューリング機能としてcronがあります。</p>
+
+<p>cronを利用するには、crontabコマンドを使用します。<br />
+詳しくは下記ページをご確認ください。<br />
+<a href="https://www.linuxmaster.jp/linux_skill/2007/06/102crontab.html" target="_blank">crontabコマンド</a></p>
+
+<p>cornの実行結果のログを確認にするには、/var/log/cronファイルを確認します。</p>
+
+<p># <strong>more /var/log/cron</strong><br />
+Nov 14 11:58:01 Tiger CROND[3132]: (pcp) CMD ( /usr/libexec/pcp/bin/pmie_check -C)<br />
+Nov 14 12:00:01 Tiger CROND[3692]: (root) CMD (/usr/lib64/sa/sa1 1 1)<br />
+Nov 14 12:00:01 Tiger CROND[3693]: (root) CMD (/usr/share/clamav/freshclam-sleep)<br />
+Nov 14 12:01:02 Tiger CROND[3715]: (root) CMD (run-parts /etc/cron.hourly)<br />
+Nov 14 12:01:02 Tiger CROND[3717]: (root) CMD (/var/www/system/snortsnarf.sh)<br />
+Nov 14 12:01:02 Tiger run-parts(/etc/cron.hourly)[3715]: starting 0anacron<br />
+Nov 14 12:01:03 Tiger anacron[3731]: Anacron started on 2017-11-14<br />
+Nov 14 12:01:03 Tiger run-parts(/etc/cron.hourly)[3733]: finished 0anacron<br />
+Nov 14 12:01:03 Tiger run-parts(/etc/cron.hourly)[3715]: starting 0yum-hourly.cron<br />
+Nov 14 12:01:03 Tiger run-parts(/etc/cron.hourly)[3739]: finished 0yum-hourly.cron<br />
+Nov 14 12:01:03 Tiger anacron[3731]: Will run job `cron.daily' in 15 min.<br />
+Nov 14 12:01:03 Tiger anacron[3731]: Will run job `cron.weekly' in 35 min.<br />
+Nov 14 12:01:03 Tiger anacron[3731]: Will run job `cron.monthly' in 55 min.<br />
+Nov 14 12:01:03 Tiger anacron[3731]: Jobs will be executed sequentially</p>
+
+<p>上記の様にcronの実行ログが表示されます。</p>
+
+<p><br />
+</p>]]>
+        
+    </content>
+</entry>
+
+<entry>
+    <title>yumでシステムアップデートする（カーネルは除く）</title>
+    <link rel="alternate" type="text/html" href="https://www.linuxmaster.jp/linux_skill/2017/09/yum-1.html" />
+    <id>tag:www.linuxmaster.jp,2017:/linux_skill//4.1403</id>
+
+    <published>2017-09-22T06:18:59Z</published>
+    <updated>2017-09-22T07:01:05Z</updated>
+
+    <summary>yumはrpmをインストールしたり、アップデートするコマンドです。 このyumを...</summary>
+    <author>
+        <name>pakira</name>
+        
+    </author>
+    
+        <category term="Linuxtips" scheme="http://www.sixapart.com/ns/types#category" />
+    
+        <category term="サーバー管理" scheme="http://www.sixapart.com/ns/types#category" />
+    
+        <category term="システム管理" scheme="http://www.sixapart.com/ns/types#category" />
+    
+        <category term="システム管理コマンド" scheme="http://www.sixapart.com/ns/types#category" />
+    
+    
+    <content type="html" xml:lang="ja" xml:base="https://www.linuxmaster.jp/linux_skill/">
+        <![CDATA[yumはrpmをインストールしたり、アップデートするコマンドです。<br />
+このyumを使用することで、Linuxシステムにインストールされている<br />
+すべてのパッケージをアップデートすることができます。<br />
+<br />
+<b>■yumのサブコマンド</b>
+<table class="table4">
+        <tr>
+          <td class="sb30">yum check-update</td>
+          <td class="s70">アップデート可能なパッケージを調査します。</td>
+        </tr>
+        <tr>
+          <td class="sb30">yum update</td>
+          <td class="s70">インストールされている全てのパッケージをアップデートします。</td>
+        </tr>
+        <tr>
+          <td class="sb30">yum update パッケージ</td>
+          <td class="s70">指定したパッケージのみアップデートします。</td>
+        </tr>
+        <tr>
+          <td class="sb30">yum upgrade</td>
+          <td class="s70">システムをアップグレードします。<br />(CentOS7.1→CentOS7.4)<br />実質yum updateと同じ</td>
+        </tr>
+</table><br />
+yum updateにおいて、カーネルアップデートは行わないほうが無難です。<br />
+なぜなら、カーネルアップデートを行うと、<br />
+システムの再起動やサービスの停止措置が必要だったり、<br />
+最悪カーネルパニックが発生して、システムが起動しない場合があるからです。<br />
+<br />
+<br />
+<b>■カーネルを除外してアップデートする</b><br />
+yum -y updateの後ろに「--exclude=kernel*」を指定して実行することで<br />
+カーネルをアップデート対象から除外することできます。<br />
+<br />
+# <strong>yum -y update --exclude=kernel*</strong><br />
+<br />
+ただし、この方法だと毎回「--exclude=kernel*」を指定する必要があり、<br />
+指定し忘れてしまう危険性があります。<br />
+<br />
+そこで、/etc/yum.confにカーネルアップデートを除外する設定を行うのがオススメです。<br />
+<br />
+# <strong>vi /etc/yum.conf</strong><br />
+[main]<br />
+cachedir=/var/cache/yum/$basearch/$releasever<br />
+keepcache=0<br />
+debuglevel=2<br />
+logfile=/var/log/yum.log<br />
+exactarch=1<br />
+obsoletes=1<br />
+gpgcheck=1<br />
+plugins=1<br />
+installonly_limit=5<br />
+<strong>exclude=kernel*</strong>   <b>←追加します。</b><br />
+<br />
+追加したら「:wq」で保存終了します。<br />
+<br />
+<b>・カーネルのバージョンを確認します。</b><br />
+# <strong>uname -r</strong><br />
+3.10.0-229.el7.x86_64<br />
+<br />
+<b>・CentOSのバージョンを確認します。</b><br />
+# cat /etc/redhat-release<br />
+CentOS Linux release 7.1.1503 (Core)<br />
+<br />
+<b>・アップデート可能なパッケージを確認します。</b><br />
+アップデートリストを確認して、カーネルが対象になっていない事を確認します。<br />
+# <strong>yum check-update</strong><br />
+jasper-libs.x86_64                            1.900.1-31.el7                               base<br />
+kbd.x86_64                                    1.15.5-13.el7                                base<br />
+kbd-legacy.noarch                             1.15.5-13.el7                                base<br />
+kbd-misc.noarch                               1.15.5-13.el7                                base<br />
+kexec-tools.x86_64                            2.0.14-17.el7                                base<br />
+kmod.x86_64                                   20-15.el7_4.2                                updates<br />
+kmod-libs.x86_64                              20-15.el7_4.2                                updates<br />
+kpartx.x86_64                                 0.4.9-111.el7                                base<br />
+kpatch.noarch                                 0.4.0-1.el7                                  base<br />
+krb5-devel.x86_64                             1.15.1-8.el7                                 base<br />
+krb5-libs.x86_64                              1.15.1-8.el7                                 base<br />
+langtable.noarch                              0.0.31-3.el7                                 base<br />
+<br />
+<b>・アップデートを実施します。</b><br />
+# <strong>yum update</strong><br />
+<br />
+<b>・アップデート後のカーネルのバージョンを確認します。</b><br />
+# <strong>uname -r</strong><br />
+3.10.0-229.el7.x86_64<br />
+<br />
+<b>・アップデート後のCentOSのバージョンを確認します。</b><br />
+# <strong>cat /etc/redhat-release</strong><br />
+CentOS Linux release 7.4.1708 (Core)　　<b>←CentOS7.4にアップグレードしています。</b><br />
+<br />
+<b>・アップデート後にアップグレード可能なパッケージが存在しないことを確認します。</b><br />
+対象パッケージがなければ問題ありません。<br />
+# <strong>yum check-update</strong><br />
+<br />
+<b>・ログファイルでもアップデート状況の確認が行なえます。</b><br />
+# <strong>less /var/log/yum.log</strong><br />
+Sep 22 15:37:14 Updated: libgcc-4.8.5-16.el7.x86_64<br />
+Sep 22 15:37:15 Installed: 1:grub2-common-2.02-0.64.el7.centos.noarch<br />
+Sep 22 15:37:15 Updated: centos-release-7-4.1708.el7.centos.x86_64<br />
+Sep 22 15:37:16 Updated: setup-2.8.71-7.el7.noarch<br />
+Sep 22 15:37:19 Updated: filesystem-3.2-21.el7.x86_64<br />
+Sep 22 15:37:19 Updated: 1:emacs-filesystem-24.3-20.el7_4.noarch<br />
+Sep 22 15:37:19 Updated: libreport-filesystem-2.1.11-38.el7.centos.x86_64<br />
+Sep 22 15:37:19 Updated: 32:bind-license-9.9.4-51.el7.noarch<br />
+Sep 22 15:37:19 Updated: langtable-0.0.31-3.el7.noarch<br />
+Sep 22 15:37:20 Updated: langtable-data-0.0.31-3.el7.noarch<br />
+Sep 22 15:37:20 Installed: 1:grub2-pc-modules-2.02-0.64.el7.centos.noarch<br />
+Sep 22 15:37:20 Installed: firewalld-filesystem-0.4.4.4-6.el7.noarch<br />
+Sep 22 15:37:20 Updated: 2:vim-filesystem-7.4.160-2.el7.x86_64<br />
+<br />
+<br />
+カーネルアップデートを行わない場合でも、<br />
+何らかの不具合が発生する可能性がありますので、<br />
+アップデートを行う際は、事前に必ずテスト環境での検証を行うことが必要です。<br />
+<br />
+yum upgradeは、「yum update --obsoletes」と同じ扱いになります。<br />
+CentOSでは、/etc/yum.confにobsoletes=1と設定されているため、<br />
+デフォルトで--obsoletesが有効の状態になっています。<br />
+結果的に、「yum update」も「yum upgrade」も同じ扱いになります。<br />
+<br />]]>
+        
+    </content>
+</entry>
+
+<entry>
+    <title>CentOS7でログ容量制限を設定する</title>
+    <link rel="alternate" type="text/html" href="https://www.linuxmaster.jp/linux_skill/2017/08/centos7-8.html" />
+    <id>tag:www.linuxmaster.jp,2017:/linux_skill//4.1396</id>
+
+    <published>2017-08-09T04:29:29Z</published>
+    <updated>2017-08-09T04:47:17Z</updated>
+
+    <summary>ログが肥大化すると、システムファイルの空き容量が無くなり、 システムの動作に悪影...</summary>
+    <author>
+        <name>pakira</name>
+        
+    </author>
+    
+        <category term="CentOS7" scheme="http://www.sixapart.com/ns/types#category" />
+    
+        <category term="Linuxの入門基礎知識" scheme="http://www.sixapart.com/ns/types#category" />
+    
+        <category term="LinuxコマンドF-J" scheme="http://www.sixapart.com/ns/types#category" />
+    
+        <category term="サーバー管理" scheme="http://www.sixapart.com/ns/types#category" />
+    
+        <category term="システム管理" scheme="http://www.sixapart.com/ns/types#category" />
+    
+        <category term="システム管理コマンド" scheme="http://www.sixapart.com/ns/types#category" />
+    
+        <category term="ログ管理" scheme="http://www.sixapart.com/ns/types#category" />
+    
+    
+    <content type="html" xml:lang="ja" xml:base="https://www.linuxmaster.jp/linux_skill/">
+        <![CDATA[<p>ログが肥大化すると、システムファイルの空き容量が無くなり、<br />
+システムの動作に悪影響を及ぼします。<br />
+そのため、ログ容量を予め設定しておくのが一般的です。</p>
+
+<p>CentOS7から採用されているjournaldは、デフォルトでファイルシステムの<br />
+10%がログの容量として割り当てられています。</p>
+
+<p>また、journaldには、ログの肥大化を防ぐために、ログの最大サイズの指定して、<br />
+古いログを自動的に削除するログローテート機能、従来のsyslogデーモン、<br />
+カーネルログバッファ(kmsg)にログ転送するなどの機能があります。</p>
+
+<p><strong>■ログの容量制限をする</strong><br />
+journaldで生成されるログの容量を制限するには、<br />
+「/etc/systemd/journald.conf」ファイルの「SystemMaxUse」パラメータを設定します。<br />
+下記例ではログの容量を256MBに制限しています。</p>
+
+<p># <strong>vi /etc/systemd/journald.conf</strong><br />
+以下、ファイル内容<br />
+#  This file is part of systemd.<br />
+#<br />
+#  systemd is free software; you can redistribute it and/or modify it<br />
+#  under the terms of the GNU Lesser General Public License as published by<br />
+#  the Free Software Foundation; either version 2.1 of the License, or<br />
+#  (at your option) any later version.<br />
+#<br />
+# See journald.conf(5) for details</p>
+
+<p>[Journal]<br />
+#Storage=auto<br />
+Storage=persistent<br />
+#Compress=yes<br />
+#Seal=yes<br />
+#SplitMode=login<br />
+#SyncIntervalSec=5m<br />
+#RateLimitInterval=30s<br />
+#RateLimitBurst=1000<br />
+#SystemMaxUse=<br />
+<strong>SystemMaxUse=256M</strong>　<b>←追加します。</b></p>
+
+<p>追加したら「:wq」で保存終了します。</p>
+
+<p><strong>■journaldサービスを再起動します。</strong><br />
+設定を変更したら、journaldサービスを再起動します。<br />
+# <strong>systemctl restart systemd-journald.service</strong></p>
+
+<p><br />
+<strong>■journaldで管理されているすべてのログ容量を確認する</strong><br />
+journalctlコマンドに「--disk-usage」を付けて実行します。<br />
+# journalctl --disk-usage<br />
+Journals take up 24.0M on disk.<br />
+</p>]]>
+        
+    </content>
+</entry>
+
+<entry>
+    <title>CentOS7でログ保存設定をする</title>
+    <link rel="alternate" type="text/html" href="https://www.linuxmaster.jp/linux_skill/2017/08/centos7-7.html" />
+    <id>tag:www.linuxmaster.jp,2017:/linux_skill//4.1395</id>
+
+    <published>2017-08-08T06:31:36Z</published>
+    <updated>2017-08-08T06:52:04Z</updated>
+
+    <summary>CentOS7のjournaldのログファイルは、/run/log/journa...</summary>
+    <author>
+        <name>pakira</name>
+        
+    </author>
+    
+        <category term="CentOS7" scheme="http://www.sixapart.com/ns/types#category" />
+    
+        <category term="Linuxの入門基礎知識" scheme="http://www.sixapart.com/ns/types#category" />
+    
+    
+    <content type="html" xml:lang="ja" xml:base="https://www.linuxmaster.jp/linux_skill/">
+        <![CDATA[<p>CentOS7のjournaldのログファイルは、/run/log/journalディレクトリに保存されます。<br />
+しかし、/runディレクトリは、tmpsファイルシステムでマウントされているため、<br />
+OSの再起動を行うと、/run/log/journalディレクトリ配下に保存されている<br />
+ログファイルは、削除されてしまいます。</p>
+
+<p># <strong>df -HT | grep tmpfs</strong><br />
+devtmpfs                      devtmpfs   504M     0  504M    0% /dev<br />
+tmpfs                         tmpfs      514M     0  514M    0% /dev/shm<br />
+tmpfs                         tmpfs      514M   14M  501M    3% /run　←tmpfsでマウント<br />
+tmpfs                         tmpfs      514M     0  514M    0% /sys/fs/cgroup</p>
+
+<p>そこで、OSを再起動してもログが削除されないようにするには、<br />
+journaldの設定ファイル「/etc/systemd/journald.conf」に<br />
+「Storage=persistent<」を追加します。</p>
+
+<p><br />
+<strong>■ファイルを編集します。</strong><br />
+# <strong>vi /etc/systemd/journald.conf</strong><br />
+以下、ファイル内容<br />
+#  This file is part of systemd.<br />
+#<br />
+#  systemd is free software; you can redistribute it and/or modify it<br />
+#  under the terms of the GNU Lesser General Public License as published by<br />
+#  the Free Software Foundation; either version 2.1 of the License, or<br />
+#  (at your option) any later version.<br />
+#<br />
+# See journald.conf(5) for details</p>
+
+<p>[Journal]<br />
+#Storage=auto<br />
+<strong>Storage=persistent</strong>　←追加する</p>
+
+<p>追加したら「:wq」で保存終了します。</p>
+
+<p><br />
+<strong>■journaldサービスを再起動します。</strong><br />
+# <strong>systemctl restart systemd-journald.service</strong></p>
+
+<p>「Storage=persistent」設定を行うと、ログの保存先ディレクトリが、<br />
+「/run/log/journal」から「/var/log/journal/」に変更され、<br />
+その配下にmachine-id名が付与されたディレクトリが作成されます。<br />
+そのディレクトリ内にログが永続的に保存されます。</p>
+
+<p># <strong>ls -l /var/log/journal/</strong><br />
+合計 0<br />
+drwxr-xr-x 2 root root 27  8月  8 15:40 c035188450f4455691b947425145773d</p>
+
+<p>※「c035188450f4455691b947425145773d」がmachine-id名が作成されたディレクトリ<br />
+※machine-idは、/etc/machine-idファイルで確認できます。</p>
+
+<p>また、/etc/systemd/journald.confファイルに「Storage=auto」を設定した場合、<br />
+「/var/log/journal/」ディレクトリが存在する場合は、「/var/log/journal/」に保存し、<br />
+存在しない場合は、「/run/log/journal」に保存します。</p>]]>
+        
+    </content>
+</entry>
+
+<entry>
+    <title>CentOS7のログ管理(systemd、journald)</title>
+    <link rel="alternate" type="text/html" href="https://www.linuxmaster.jp/linux_skill/2017/08/centos7systemdjournald.html" />
+    <id>tag:www.linuxmaster.jp,2017:/linux_skill//4.1394</id>
+
+    <published>2017-08-04T05:07:41Z</published>
+    <updated>2017-08-09T03:02:48Z</updated>
+
+    <summary>CentOS7では、これまでログ管理を行っていたsyslogベースの管理手法から...</summary>
+    <author>
+        <name>pakira</name>
+        
+    </author>
+    
+        <category term="CentOS7" scheme="http://www.sixapart.com/ns/types#category" />
+    
+        <category term="Linuxの入門基礎知識" scheme="http://www.sixapart.com/ns/types#category" />
+    
+        <category term="LinuxコマンドF-J" scheme="http://www.sixapart.com/ns/types#category" />
+    
+        <category term="サーバー管理" scheme="http://www.sixapart.com/ns/types#category" />
+    
+        <category term="システム管理" scheme="http://www.sixapart.com/ns/types#category" />
+    
+        <category term="システム管理コマンド" scheme="http://www.sixapart.com/ns/types#category" />
+    
+        <category term="ログ管理" scheme="http://www.sixapart.com/ns/types#category" />
+    
+    
+    <content type="html" xml:lang="ja" xml:base="https://www.linuxmaster.jp/linux_skill/">
+        <![CDATA[CentOS7では、これまでログ管理を行っていたsyslogベースの管理手法から<br />
+systemdがログ管理を行う新しい仕組みが導入されています。<br />
+<br />
+従来のsyslogは、複数システムのログをネットワーク経由で一括管理出来たり、<br />
+多くの管理ソフトウェア製品とも連携が可能でしたが、<br />
+膨大なログの中から欲しい情報を抽出するには、<br />
+様々なコマンドやツールを駆使する必要がありました。<br />
+<br />
+そこでCentOS7では、syslogでのログ抽出作業量を軽減するために、<br />
+以前と比べて格段に情報を抽出しやすい仕組みに変更されています。<br />
+<br />
+<br />
+<strong>■journaldの状態を確認する</strong><br />
+CentOS7では、ログ収集の仕組みとして、「journald」を使用します。<br />
+サービス名は「systemd-journald.service」です。<br />
+<br />
+journaldの起動確認は、systemctlコマンドを実行します。<br />
+# <strong>systemctl status systemd-journald.service</strong><br />
+systemd-journald.service - Journal Service<br />
+   Loaded: loaded (/usr/lib/systemd/system/systemd-journald.service; static)<br />
+   Active: active (running) since 金 2017-08-04 13:39:06 JST; 46min ago<br />
+     Docs: man:systemd-journald.service(8)<br />
+           man:journald.conf(5)<br />
+ Main PID: 712 (systemd-journal)<br />
+   Status: "Processing requests..."<br />
+   CGroup: /system.slice/systemd-journald.service<br />
+           mq712 /usr/lib/systemd/systemd-journald<br />
+<br />
+ 8月 04 13:39:06 Tiger systemd-journal[712]: Runtime journal is using 6.1M (max 48.9M, leavin...M).<br />
+ 8月 04 13:39:06 Tiger systemd-journal[712]: Runtime journal is using 6.1M (max 48.9M, leavin...M).<br />
+ 8月 04 13:39:06 Tiger systemd-journal[712]: Journal started<br />
+ 8月 04 13:39:07 Tiger systemd-journal[712]: Runtime journal is using 6.1M (max 48.9M, leavin...M).<br />
+Hint: Some lines were ellipsized, use -l to show in full.<br />
+<br />
+<br />
+<strong>■ブートログを確認する</strong><br />
+journaldが収集したログを出力するためのコマンドは、「journalctl」になります。<br />
+サーバーに搭載されている各種ハードウェアの情報を確認するには、<br />
+CentOS7が起動した時のブートログを確認します。<br />
+ブートログを確認するには、journalctlコマンドにオプション「-b」を付けて実行します。<br />
+<br />
+# <strong>journalctl -b</strong><br />
+-- Logs begin at 金 2017-08-04 13:39:02 JST, end at 金 2017-08-04 14:29:01 JST. --<br />
+ 8月 04 13:39:02 Tiger systemd-journal[336]: Runtime journal is using 6.1M (max 48.9M, leaving 73.4M<br />
+ 8月 04 13:39:02 Tiger systemd-journal[336]: Runtime journal is using 6.1M (max 48.9M, leaving 73.4M<br />
+ 8月 04 13:39:02 Tiger kernel: Initializing cgroup subsys cpuset<br />
+ 8月 04 13:39:02 Tiger kernel: Initializing cgroup subsys cpu<br />
+ 8月 04 13:39:02 Tiger kernel: Initializing cgroup subsys cpuacct<br />
+ 8月 04 13:39:02 Tiger kernel: Linux version 3.10.0-229.el7.x86_64 (builder@kbuilder.dev.centos.org)<br />
+ 8月 04 13:39:02 Tiger kernel: Command line: BOOT_IMAGE=/vmlinuz-3.10.0-229.el7.x86_64 root=/dev/map<br />
+ 8月 04 13:39:02 Tiger kernel: Disabled fast string operations<br />
+ 8月 04 13:39:02 Tiger kernel: e820: BIOS-provided physical RAM map:<br />
+<br />
+<br />
+<strong>■ログを日時でフィルタリングする</strong><br />
+journalctlコマンドには、日時でログをフィルタリングする機能が備わっています。<br />
+日時開始を「--since=""」で、日時終了を「--until=""」で指定します。<br />
+<br />
+下記例では、2017年8月4日 14時29分〜14時33分1秒までのログを出力しています。<br />
+# <strong>journalctl --since="2017-08-04 14:29:00" --until="2017-08-04 14:33:01"</strong><br />
+-- Logs begin at 金 2017-08-04 13:39:02 JST, end at 金 2017-08-04 14:35:01 JST. --<br />
+ 8月 04 14:29:01 Tiger systemd[1]: Starting Session 62 of user root.<br />
+ 8月 04 14:29:01 Tiger systemd[1]: Started Session 62 of user root.<br />
+ 8月 04 14:29:01 Tiger CROND[5038]: (root) CMD (/var/www/system/check_process.pl > /dev/null 2>&1)<br />
+ 8月 04 14:29:25 Tiger clamd[1113]: SelfCheck: Database status OK.<br />
+ 8月 04 14:29:25 Tiger clamd[1113]: SelfCheck: Database status OK.<br />
+ 8月 04 14:30:01 Tiger systemd[1]: Starting Session 64 of user root.<br />
+ 8月 04 14:30:01 Tiger systemd[1]: Started Session 64 of user root.<br />
+ 8月 04 14:30:01 Tiger systemd[1]: Starting Session 63 of user root.<br />
+ 8月 04 14:30:01 Tiger systemd[1]: Started Session 63 of user root.<br />
+ 8月 04 14:30:01 Tiger CROND[5046]: (root) CMD (/usr/lib64/sa/sa1 1 1)<br />
+ 8月 04 14:30:01 Tiger CROND[5047]: (root) CMD (/var/www/system/check_process.pl > /dev/null 2>&1)<br />
+ 8月 04 14:31:01 Tiger systemd[1]: Starting Session 65 of user root.<br />
+ 8月 04 14:31:01 Tiger systemd[1]: Started Session 65 of user root.<br />
+ 8月 04 14:31:01 Tiger CROND[5056]: (root) CMD (/var/www/system/check_process.pl > /dev/null 2>&1)<br />
+ 8月 04 14:32:01 Tiger systemd[1]: Starting Session 66 of user root.<br />
+ 8月 04 14:32:01 Tiger systemd[1]: Started Session 66 of user root.<br />
+ 8月 04 14:32:01 Tiger CROND[5061]: (root) CMD (/var/www/system/check_process.pl > /dev/null 2>&1)<br />
+<br />
+デフォルトでは、自動的にlessページャが起動するので、<br />
+スペースでページ送りをしますが、<br />
+不要な場合は、「--no-pager」オプションを付与します。<br />
+<br />
+<br />
+<strong>■今日のログを出力する</strong><br />
+実行日当時のログを出力したい場合は、--sinceオプションに「today」を指定します。<br />
+# <strong>journalctl --since=today</strong><br />
+- Logs begin at 金 2017-08-04 13:39:02 JST, end at 金 2017-08-04 14:40:01 JST. --<br />
+ 8月 04 13:39:02 Tiger systemd-journal[336]: Runtime journal is using 6.1M (max 48.9M, leaving 73.4M<br />
+ 8月 04 13:39:02 Tiger systemd-journal[336]: Runtime journal is using 6.1M (max 48.9M, leaving 73.4M<br />
+ 8月 04 13:39:02 Tiger kernel: Initializing cgroup subsys cpuset<br />
+ 8月 04 13:39:02 Tiger kernel: Initializing cgroup subsys cpu<br />
+ 8月 04 13:39:02 Tiger kernel: Initializing cgroup subsys cpuacct<br />
+ 8月 04 13:39:02 Tiger kernel: Linux version 3.10.0-229.el7.x86_64 (builder@kbuilder.dev.centos.org)<br />
+ 8月 04 13:39:02 Tiger kernel: Command line: BOOT_IMAGE=/vmlinuz-3.10.0-229.el7.x86_64 root=/dev/map<br />
+ 8月 04 13:39:02 Tiger kernel: Disabled fast string operations<br />
+ 8月 04 13:39:02 Tiger kernel: e820: BIOS-provided physical RAM map:<br />
+<br />
+他にも「yesterday」や何に使うか分かりませんが「tomorrow」も指定できます。<br />
+<br />
+<br />
+<strong>■特定のサービスに絞ってログを表示する</strong><br />
+特定のサービスのみのログを出力したい場合は、<br />
+「-u」オプションにサービス名を付けて実行します。<br />
+<br />
+下記例では、SSHサービスのログを出力しています。<br />
+# <strong>journalctl --since="2017-08-03 14:29:00" --until="2017-08-04 14:33:01" -u sshd.service</strong><br />
+-- Logs begin at 金 2017-08-04 13:39:02 JST, end at 金 2017-08-04 14:44:01 JST. --<br />
+ 8月 04 13:39:09 Tiger systemd[1]: Starting OpenSSH server daemon...<br />
+ 8月 04 13:39:09 Tiger systemd[1]: Started OpenSSH server daemon.<br />
+ 8月 04 13:39:09 Tiger sshd[1106]: Server listening on 0.0.0.0 port 2222.<br />
+ 8月 04 14:24:24 Tiger sshd[3972]: Accepted publickey for pakira from 192.168.0.80 port 50700 ssh2:<br />
+<br />
+<br />
+<strong>■リアルタイムでログを確認する</strong><br />
+現在、リアルタイムで出力しているログを表示させたい場合は、<br />
+journalctlコマンドに「-f」オプションを付けて実行します。<br />
+従来の「tail -f /var/log/messages」と同様な表示ができます。<br />
+<br />
+# <strong>journalctl -f</strong><br />
+-- Logs begin at 金 2017-08-04 13:39:02 JST. --<br />
+ 8月 04 18:32:01 Tiger systemd[1]: Started Session 267 of user root.<br />
+ 8月 04 18:32:01 Tiger CROND[11781]: (root) CMD (/var/www/system/check_process.pl > /dev/null 2>&1)<br />
+ 8月 04 18:33:01 Tiger systemd[1]: Created slice user-0.slice.<br />
+ 8月 04 18:33:01 Tiger systemd[1]: Starting Session 268 of user root.<br />
+ 8月 04 18:33:01 Tiger systemd[1]: Started Session 268 of user root.<br />
+ 8月 04 18:33:01 Tiger CROND[11787]: (root) CMD (/var/www/system/check_process.pl > /dev/null 2>&1)<br />
+ 8月 04 18:34:01 Tiger systemd[1]: Created slice user-0.slice.<br />
+ 8月 04 18:34:01 Tiger systemd[1]: Starting Session 269 of user root.<br />
+ 8月 04 18:34:01 Tiger systemd[1]: Started Session 269 of user root.<br />
+ 8月 04 18:34:01 Tiger CROND[11793]: (root) CMD (/var/www/system/check_process.pl > /dev/null 2>&1)<br />
+<br />
+<br />
+■プライオリティによるログのフィルタリング<br />
+syslogでは、ログのプライオリティ(緊急度)に応じた管理ができましたが、<br />
+journalctlでも同様の出力が行なえます。<br />
+プライオリティには、緊急度の高いものからemerg、alert、err、warning、<br />
+notice、debugがあります。<br />
+<br />
+<strong>■warningプライオリティを表示する</strong><br />
+特定のプライオリティを表示させるには、journalctlにオプション「-p」を付けて、<br />
+フィルタリングしたいプライオリティを指定します。<br />
+<br />
+下記例では、warningプライオリティを表示しています。<br />
+<br />
+# <strong>journalctl -p warning</strong><br />
+-- Logs begin at 金 2017-08-04 13:39:02 JST, end at 金 2017-08-04 18:42:01 JST. --<br />
+ 8月 04 13:39:02 Tiger kernel: ACPI: RSDP 00000000000f6a10 00024 (v02 PTLTD )<br />
+ 8月 04 13:39:02 Tiger kernel: ACPI: XSDT 000000003feea65b 0005C (v01 INTEL  440BX    06040000 VMW<br />
+ 8月 04 13:39:02 Tiger kernel: ACPI: FACP 000000003fefee73 000F4 (v04 INTEL  440BX    06040000 PTL<br />
+ 8月 04 13:39:02 Tiger kernel: ACPI: DSDT 000000003feec3fc 12A77 (v01 PTLTD  Custom   06040000 MSFT<br />
+ 8月 04 13:39:02 Tiger kernel: ACPI: FACS 000000003fefffc0 00040<br />
+ 8月 04 13:39:02 Tiger kernel: ACPI: BOOT 000000003feec3d4 00028 (v01 PTLTD  $SBFTBL$ 06040000  LTP<br />
+ 8月 04 13:39:02 Tiger kernel: ACPI: APIC 000000003feeb8bd 00742 (v01 PTLTD  ? APIC   06040000  LTP<br />
+ 8月 04 13:39:02 Tiger kernel: ACPI: MCFG 000000003feeb881 0003C (v01 PTLTD  $PCITBL$ 06040000  LTP<br />
+ 8月 04 13:39:02 Tiger kernel: ACPI: SRAT 000000003feea757 008A8 (v02 VMWARE MEMPLUG  06040000 VMW<br />
+ 8月 04 13:39:02 Tiger kernel: ACPI: HPET 000000003feea71f 00038 (v01 VMWARE VMW HPET 06040000 VMW<br />
+ 8月 04 13:39:02 Tiger kernel: ACPI: WAET 000000003feea6f7 00028 (v01 VMWARE VMW WAET 06040000 VMW<br />
+ 8月 04 13:39:02 Tiger kernel: kexec: crashkernel=auto resulted in zero bytes of reserved memory.<br />
+<br />
+<br />
+<strong>■errプライオリティを表示する</strong><br />
+# <strong>journalctl -p err</strong><br />
+-- Logs begin at 金 2017-08-04 13:39:02 JST, end at 金 2017-08-04 18:44:01 JST. --<br />
+ 8月 04 13:39:02 Tiger kernel: Detected CPU family 6 model 78<br />
+ 8月 04 13:39:02 Tiger kernel: Warning: Intel CPU model - this hardware has not undergone upstream t<br />
+ 8月 04 13:39:03 Tiger kernel: sd 0:0:0:0: [sda] Assuming drive cache: write through<br />
+ 8月 04 13:39:07 Tiger kernel: piix4_smbus 0000:00:07.3: Host SMBus controller not enabled!<br />
+ 8月 04 13:39:08 Tiger NetworkManager[839]: _nl_get_vtable: assertion 'vtable.handle' failed<br />
+ 8月 04 13:39:23 Tiger systemd[1]: Failed to start Crash recovery kernel arming.<br />
+<br />
+これまでの例では各プライオリティ名を指定してフィルタリングしましたが、<br />
+これをプライオリティの値で指定することも可能です。<br />
+各プライオリティと値は下記の対応となっています。<br />
+<table class="table4">
+        <tr>
+          <td class="sb30">emerg </td>
+          <td class="s70">0</td>
+        </tr>
+        <tr>
+          <td class="sb30">alert</td>
+          <td class="s70">1</td>
+        </tr>
+        <tr>
+          <td class="sb30">crit</td>
+          <td class="s70">2</td>
+        </tr>
+        <tr>
+          <td class="sb30">err</td>
+          <td class="s70">3</td>
+        </tr>
+        <tr>
+          <td class="sb30">warning</td>
+          <td class="s70">4</td>
+        </tr>
+        <tr>
+          <td class="sb30">notice</td>
+          <td class="s70">5</td>
+        </tr>
+        <tr>
+          <td class="sb30">debug</td>
+          <td class="s70">6</td>
+        </tr>
+</table>
+<br />
+<strong>■emergプライオリティのログをプライオリティ値で表示する</strong><br />
+emergログが存在しないので、loggerコマンドを使用してテストログを吐き出し、<br />
+その後プライオリティ値「0」でemergログを表示します。<br />
+<br />
+# <strong>logger -p daemon.emerg "TEST LOG EMERG"</strong><br />
+#<br />
+Message from syslogd@Tiger at Aug  7 16:23:46 ...<br />
+ pakira:TEST LOG EMERG<br />
+<br />
+# <strong>journalctl -p 0</strong><br />
+-- Logs begin at 月 2017-08-07 15:57:16 JST, end at 月 2017-08-07 16:23:46 JST. --<br />
+ 8月 07 16:23:46 Tiger pakira[3402]: TEST LOG EMERG<br />
+<br />
+<br />
+<strong>■alertプライオリティのログをプライオリティ値で表示する</strong><br />
+プライオリティ値「1」でalertログを表示します。<br />
+<br />
+# <strong>logger -p daemon.alert "TEST LOG ALERT"</strong><br />
+# <strong>journalctl -p 1</strong><br />
+-- Logs begin at 月 2017-08-07 15:57:16 JST, end at 月 2017-08-07 16:26:26 JST. --<br />
+ 8月 07 16:23:46 Tiger pakira[3402]: TEST LOG EMERG<br />
+ 8月 07 16:26:26 Tiger pakira[3789]: TEST LOG ALERT<br />
+<br />
+journalctlを実行すると、alertよりプライオリティの高い<br />
+emergプライオリティも表示されていることが分かります。<br />
+<br />
+<br />
+<strong>■カーネルログを表示する</strong><br />
+カーネルログを表示するには、<br />
+journalctlコマンドにオプション「-k」を付けて実行します。<br />
+従来の「dmesg」コマンドに相当します。<br />
+<br />
+# <strong>journalctl -k</strong><br />
+-- Logs begin at 月 2017-08-07 15:57:16 JST, end at 月 2017-08-07 16:29:01 JST. --<br />
+ 8月 07 15:57:16 Tiger kernel: Initializing cgroup subsys cpuset<br />
+ 8月 07 15:57:16 Tiger kernel: Initializing cgroup subsys cpu<br />
+ 8月 07 15:57:16 Tiger kernel: Initializing cgroup subsys cpuacct<br />
+ 8月 07 15:57:16 Tiger kernel: Linux version 3.10.0-229.el7.x86_64 (builder@kbuilder.dev.centos.org)<br />
+ 8月 07 15:57:16 Tiger kernel: Command line: BOOT_IMAGE=/vmlinuz-3.10.0-229.el7.x86_64 root=/dev/map<br />
+ 8月 07 15:57:16 Tiger kernel: Disabled fast string operations<br />
+ 8月 07 15:57:16 Tiger kernel: e820: BIOS-provided physical RAM map:<br />
+ 8月 07 15:57:16 Tiger kernel: BIOS-e820: [mem 0x0000000000000000-0x000000000009ebff] usable<br />
+ 8月 07 15:57:16 Tiger kernel: BIOS-e820: [mem 0x000000000009ec00-0x000000000009ffff] reserved<br />
+ 8月 07 15:57:16 Tiger kernel: BIOS-e820: [mem 0x00000000000dc000-0x00000000000fffff] reserved<br />
+ 8月 07 15:57:16 Tiger kernel: BIOS-e820: [mem 0x0000000000100000-0x000000003fedffff] usable<br />
+ 8月 07 15:57:16 Tiger kernel: BIOS-e820: [mem 0x000000003fee0000-0x000000003fefefff] ACPI data<br />
+ 8月 07 15:57:16 Tiger kernel: BIOS-e820: [mem 0x000000003feff000-0x000000003fefffff] ACPI NVS<br />
+ 8月 07 15:57:16 Tiger kernel: BIOS-e820: [mem 0x000000003ff00000-0x000000003fffffff] usable<br />
+ 8月 07 15:57:16 Tiger kernel: BIOS-e820: [mem 0x00000000f0000000-0x00000000f7ffffff] reserved<br />
+ 8月 07 15:57:16 Tiger kernel: BIOS-e820: [mem 0x00000000fec00000-0x00000000fec0ffff] reserved<br />
+ 8月 07 15:57:16 Tiger kernel: BIOS-e820: [mem 0x00000000fee00000-0x00000000fee00fff] reserved<br />
+ 8月 07 15:57:16 Tiger kernel: BIOS-e820: [mem 0x00000000fffe0000-0x00000000ffffffff] reserved<br />
+<br />
+<br />
+<strong>■特定のプロセスIDのログを表示する</strong><br />
+特定のプロセスIDに関係するログを表示する場合は、<br />
+journalctlコマンドに「_PID=プロセス番号」を付けて実行します。<br />
+<br />
+# <strong>journalctl _PID=1112</strong><br />
+-- Logs begin at 月 2017-08-07 15:57:16 JST, end at 月 2017-08-07 16:32:01 JST. --<br />
+ 8月 07 15:57:23 Tiger clamd[1112]: clamd daemon 0.98.7 (OS: linux-gnu, ARCH: x86_64, CPU: x86_64)<br />
+ 8月 07 15:57:23 Tiger clamd[1112]: Running as user amavis (UID 991, GID 991)<br />
+ 8月 07 15:57:23 Tiger clamd[1112]: Log file size limited to 1048576 bytes.<br />
+ 8月 07 15:57:23 Tiger clamd[1112]: Reading databases from /var/lib/clamav<br />
+ 8月 07 15:57:23 Tiger clamd[1112]: Not loading PUA signatures.<br />
+ 8月 07 15:57:23 Tiger clamd[1112]: Bytecode: Security mode set to "TrustSigned".<br />
+<br />
+<br />
+<strong>■実行ファイルのパス指定でのログ表示</strong><br />
+journalctlコマンドにサービスを提供する実行ファイルのパスを指定して<br />
+それに関連するログを表示することができます。<br />
+下記例では、SSHサービスの実行ファイルである「/usr/sbin/sshd」関連のログを<br />
+表示しています。<br />
+<br />
+# <strong>journalctl /usr/sbin/sshd</strong><br />
+-- Logs begin at 月 2017-08-07 15:57:16 JST, end at 月 2017-08-07 16:34:06 JST. --<br />
+ 8月 07 15:57:23 Tiger sshd[1105]: Server listening on 0.0.0.0 port 22.<br />
+ 8月 07 16:22:03 Tiger sshd[3308]: Accepted publickey for pakira from 192.168.0.80 port 54097 ssh2:<br />
+ 8月 07 16:22:04 Tiger sshd[3308]: pam_unix(sshd:session): session opened for user pakira by (uid=0)<br />
+<br />
+
+]]>
+        
+    </content>
+</entry>
+
+<entry>
+    <title>Postfixのメールログを確認する</title>
+    <link rel="alternate" type="text/html" href="https://www.linuxmaster.jp/linux_skill/2017/07/postfix-7.html" />
+    <id>tag:www.linuxmaster.jp,2017:/linux_skill//4.1391</id>
+
+    <published>2017-07-25T01:45:23Z</published>
+    <updated>2017-07-24T07:54:54Z</updated>
+
+    <summary>Postfixのログは、「/var/log/maillog」ファイルに出力されま...</summary>
+    <author>
+        <name>pakira</name>
+        
+    </author>
+    
+        <category term="Linuxtips" scheme="http://www.sixapart.com/ns/types#category" />
+    
+        <category term="Postfix" scheme="http://www.sixapart.com/ns/types#category" />
+    
+        <category term="サーバー管理" scheme="http://www.sixapart.com/ns/types#category" />
+    
+        <category term="メールサーバー管理" scheme="http://www.sixapart.com/ns/types#category" />
+    
+    
+    <content type="html" xml:lang="ja" xml:base="https://www.linuxmaster.jp/linux_skill/">
+        <![CDATA[<p>Postfixのログは、「/var/log/maillog」ファイルに出力されます。<br />
+1週間単位で自動ローテションされ、/var/log/maillogファイルの他に<br />
+「/var/log/maillog.1」〜「/var/log/maillog.4」までの4週間分を<br />
+歴として保持しています。</p>
+
+<p>何かトラブルが発生した際、「/var/log/maillog」ファイルを<br />
+確認することで多くの原因を特定することができます。</p>
+
+<p><b>■メールログファイル（/var/log/maillog）を確認する</b><br />
+# <strong>ls -l /var/log/maillog*</strong><br />
+-rw------- 1 root root  1941316  7月 24 16:47 /var/log/maillog<br />
+-rw------- 1 root root 10497049  7月 23 04:02 /var/log/maillog.1<br />
+-rw------- 1 root root 10312833  7月 16 04:02 /var/log/maillog.2<br />
+-rw------- 1 root root 10810720  7月  9 04:02 /var/log/maillog.3<br />
+-rw------- 1 root root  9886779  7月  2 04:02 /var/log/maillog.4</p>
+
+<p>■メールログファイルの内容を確認する<br />
+# <strong>tail /var/log/maillog</strong><br />
+Jul 24 16:47:28 Mail_001_Enetmercury postfix/smtpd[30065]: warning: unknown[80.82.XX.XX]: SASL LOGIN authentication failed: authentication failure<br />
+Jul 24 16:47:29 Mail_001_Enetmercury postfix/smtpd[30065]: disconnect from unknown[80.82.XX.XX]<br />
+Jul 24 16:48:04 Mail_001_Enetmercury postfix/qmgr[1388]: 03D037E257: from=<pakira2@XXXXXXXXXXXXX.net>, size=20169, nrcpt=1 (queue active)<br />
+Jul 24 16:48:05 Mail_001_Enetmercury postfix/smtp[29975]: 03D037E257: to=<kinya.shiraiwa@gmail.co.jp>, relay=none, delay=60457, delays=60456/0.01/0.87/0, dsn=4.4.3, status=deferred (Host or domain name not found. Name service error for name=gmail.co.jp type=MX: Host not found, try again)<br />
+Jul 24 16:49:44 Mail_001_Enetmercury postfix/qmgr[1388]: 813897E249: from=<pakira2@XXXXXXXXXXXXX.net>, size=15939, nrcpt=1 (queue active)<br />
+Jul 24 16:50:14 Mail_001_Enetmercury postfix/smtp[29975]: connect to aaa.com[63.240.XXX.XXX]: Connection timed out (port 25)<br />
+Jul 24 16:50:14 Mail_001_Enetmercury postfix/smtp[29975]: 813897E249: to=<akiara@XXXX.com>, relay=none, delay=60582, delays=60552/0/30/0, dsn=4.4.1, status=deferred (connect to aaa.com[63.240.178.216]: Connection timed out)<br />
+Jul 24 16:50:49 Mail_001_Enetmercury postfix/anvil[30067]: statistics: max connection rate 1/60s for (smtp:80.82.XX.XX) at Jul 24 16:47:27<br />
+Jul 24 16:50:49 Mail_001_Enetmercury postfix/anvil[30067]: statistics: max connection count 1 for (smtp:80.82.XX.XX) at Jul 24 16:47:27<br />
+Jul 24 16:50:49 Mail_001_Enetmercury postfix/anvil[30067]: statistics: max cache size 1 at Jul 24 16:47:27</p>]]>
+        
+    </content>
+</entry>
+
+<entry>
+    <title>MTAをSendmailからPostfixに変更する</title>
+    <link rel="alternate" type="text/html" href="https://www.linuxmaster.jp/linux_skill/2017/07/mtasendmailpostfix.html" />
+    <id>tag:www.linuxmaster.jp,2017:/linux_skill//4.1384</id>
+
+    <published>2017-07-24T01:12:48Z</published>
+    <updated>2017-07-21T06:45:20Z</updated>
+
+    <summary>MTAをSendmailからPostfixに変更する場合は、alternativ...</summary>
+    <author>
+        <name>pakira</name>
+        
+    </author>
+    
+        <category term="Linuxtips" scheme="http://www.sixapart.com/ns/types#category" />
+    
+        <category term="Postfix" scheme="http://www.sixapart.com/ns/types#category" />
+    
+        <category term="サーバー管理" scheme="http://www.sixapart.com/ns/types#category" />
+    
+        <category term="メールサーバー管理" scheme="http://www.sixapart.com/ns/types#category" />
+    
+    
+    <content type="html" xml:lang="ja" xml:base="https://www.linuxmaster.jp/linux_skill/">
+        <![CDATA[<p>MTAをSendmailからPostfixに変更する場合は、alternatives コマンドを実行します。<br />
+実行する際は、「--config」オプションに「mta」を指定します。</p>
+
+<p># <strong>alternatives --config mta</strong></p>
+
+<p>2 プログラムがあり 'mta' を提供します。</p>
+
+<p>  選択       コマンド<br />
+-----------------------------------------------<br />
+*+ 1           /usr/sbin/sendmail.sendmail<br />
+     2           /usr/sbin/sendmail.postfix<br />
+Enter を押して現在の選択 [+] を保持するか、選択番号を入力します:<strong>2</strong>  ←Postfixの2を入力します。</p>
+
+<p># <strong>alternatives --config mta</strong></p>
+
+<p>2 プログラムがあり 'mta' を提供します。</p>
+
+<p>  選択       コマンド<br />
+-----------------------------------------------<br />
+*  1           /usr/sbin/sendmail.sendmail<br />
+ + 2           /usr/sbin/sendmail.postfix</p>
+
+<p>MTAがPostfixに変更されます。</p>
+
+<p>最後に、sendmailを停止し、Postfixを起動します。</p>
+
+<p><br />
+</p>]]>
+        
+    </content>
+</entry>
+
+<entry>
+    <title>Postfixでメールキューを削除する</title>
+    <link rel="alternate" type="text/html" href="https://www.linuxmaster.jp/linux_skill/2017/07/postfix-6.html" />
+    <id>tag:www.linuxmaster.jp,2017:/linux_skill//4.1390</id>
+
+    <published>2017-07-23T01:30:49Z</published>
+    <updated>2017-09-28T08:23:00Z</updated>
+
+    <summary>Postfixでメールキューを削除するには、postsuperコマンドで行なえま...</summary>
+    <author>
+        <name>pakira</name>
+        
+    </author>
+    
+        <category term="Linuxtips" scheme="http://www.sixapart.com/ns/types#category" />
+    
+        <category term="Postfix" scheme="http://www.sixapart.com/ns/types#category" />
+    
+        <category term="サーバー管理" scheme="http://www.sixapart.com/ns/types#category" />
+    
+        <category term="メールサーバー管理" scheme="http://www.sixapart.com/ns/types#category" />
+    
+    
+    <content type="html" xml:lang="ja" xml:base="https://www.linuxmaster.jp/linux_skill/">
+        <![CDATA[<p>Postfixでメールキューを削除するには、postsuperコマンドで行なえます。</p>
+
+<p>postsuperコマンドにオプション「-d」を付け、<br />
+引数にQueue IDを指定します。</p>
+
+<p>Queue IDの確認は、「<a href="https://www.linuxmaster.jp/linux_skill/2017/07/postfix-<br />
+4.html" target="_blank">Postfixでメールキューの状態を確認する</a>」で<br />
+紹介している「postqueue -p」コマンドで行えます。</p>
+
+<p><b>■Queue IDが「CDDE97E240」のキューを削除する</b><br />
+# <strong>postsuper -d CDDE97E240</strong><br />
+postsuper: CDDE97E240: removed<br />
+postsuper: Deleted: 1 message</p>
+
+<p>ソフトウェアの不具合により、メールが溜まってしまった場合は、<br />
+postsuperコマンドに、オプション「-d ALL」を付け、一括削除します。<br />
+# <strong>postsuper -d ALL</strong><br />
+postsuper: Deleted: 6 messages<br />
+</p>]]>
+        
+    </content>
+</entry>
+
+</feed>

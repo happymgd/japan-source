@@ -1,0 +1,656 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="ja">
+<head>
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-9286957635215255",
+          enable_page_level_ads: true
+     });
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, user-scalable=yes, maximum-scale=1.0, minimum-scale=1.0">
+<link rel="canonical" href="07centos64ftpproftpd134c.html">
+
+
+
+
+
+
+
+<title>07.CentOS6.4､ﾇFTP･ｵ｡ｼ･ﾐ｡ｼｹｽﾃﾛ(Proftpd1.3.4c､ﾎ･､･ｹ･ﾈ｡ｼ･・ﾈﾀﾟﾄ・｡ﾃLinux･ｵ｡ｼ･ﾐ｡ｼｹｽﾃﾛ</title>
+
+
+
+
+
+<meta name="description" content="07.CentOS6.4､ﾇFTP･ｵ｡ｼ･ﾐ｡ｼｹｽﾃﾛ(Proftpd1.3.4c､ﾎ･､･ｹ･ﾈ｡ｼ･・ﾈﾀﾟﾄ・ CentOS6.4､ﾋProftpd1.3.4c､､･ｹ･ﾈ｡ｼ･・ｷ､ﾆ｡｢FTP･ｵ｡ｼ･ﾐ｡ｼ､ｽﾃﾛ､ｷ､ﾞ､ｹ｡｣ FTP･ｵ｡ｼ･ﾐ｡ｼ､ﾏ｡｢･ﾍ･ﾃ･ﾈ･・ｼ･ｯ､ﾌ､ｸ､ﾆ｡｢･ﾕ･｡･､･・ｮ､ｹ､・ｿ､皃ﾎｵ｡ﾇｽ､｡､ｹ､・ｵ｡ｼ･ﾐ｡ｼ､ﾘ､ｷ､ﾞ､ｹ｡｣  ､ｿ､ﾈ､ｨ､ﾐ｡｢､｢､ﾊ､ｿ､ｬ･ﾛ｡ｼ･爭ﾚ｡ｼ･ｸ(HTML">
+
+
+<link rel="stylesheet" href="..\..\style.css" type="text/css" media="screen">
+<!--[if lt IE 9]>
+<script src="https://www.linuxmaster.jp/linux_skill/js/html5.js"></script>
+<script src="https://www.linuxmaster.jp/linux_skill/js/css3-mediaqueries.js"></script>
+<![endif]-->
+<script src="https://www.linuxmaster.jp/linux_skill/js/jquery1.7.2.min.js"></script>
+<script src="https://www.linuxmaster.jp/linux_skill/js/script.js"></script>
+<!--
+<script type="text/javascript" src="https://www.linuxmaster.jp/listcollector/script.js"></script>
+-->
+</head>
+<body>
+<header id="header" role="banner">
+	<div class="inner">
+		<hgroup>
+			
+			
+			
+
+			
+			
+			
+			<h1>07.CentOS6.4､ﾇFTP･ｵ｡ｼ･ﾐ｡ｼｹｽﾃﾛ(Proftpd1.3.4c､ﾎ･､･ｹ･ﾈ｡ｼ･・ﾈﾀﾟﾄ・ Linux･ｵ｡ｼ･ﾐ｡ｼｹｽﾃﾛ</h1>
+			
+
+			
+			
+			
+			<h2>07.CentOS6.4､ﾇFTP･ｵ｡ｼ･ﾐ｡ｼｹｽﾃﾛ(Proftpd1.3.4c､ﾎ･､･ｹ･ﾈ｡ｼ･・ﾈﾀﾟﾄ・ Linux･ｵ｡ｼ･ﾐ｡ｼｹｽﾃﾛｼ・遉筅ｷ､ﾆ､､､ﾞ､ｹ｡｣</h2>
+			
+
+			<h2 class="logo"><a href="..\..\..\index.html" rel="home"><img src="..\..\..\images\top_image_title.gif" alt="Linuxｵｻｽﾑ ･・ﾊ･ﾃ･ｯ･ｹ･ﾞ･ｹ･ｿ｡ｼ.JP｡ﾊLinux･ﾞ･ｹ･ｿ｡ｼ.JP｡ﾋ"></a></h2>
+		</hgroup>
+		<div id="headerInfo">
+			| <a href="..\..\..\cat44\index.html">ｲﾒｳｵﾍﾗ</a>
+			| <a href="..\..\..\cat44\index-1.html#profile">ｱｿｱﾄｼﾔ･ﾗ･愠ﾕ･｣｡ｼ･・/a>
+			| <a href="..\..\..\2009\12\post-7.html">､隍ｯ､｢､・ﾁﾌ荀ﾋ､ﾄ､､､ﾆ</a>
+			| <a href="..\..\..\2009\12\post-6.html">､ｪﾌ荀､ｹ遉・ｻ</a> |
+		</div>
+	</div>
+</header>
+
+<nav id="mainNav">
+	<div class="inner">
+		<a class="menu" id="menu"><span>MENU</span></a>
+		<div class="panel">
+			<ul>
+				<li><a href="..\..\..\index.html"><span>･ﾈ･ﾃ･ﾗ･ﾚ｡ｼ･ｸ</span></a></li>
+				<li><a href="..\..\..\cat41\index.html"><span>ﾅｵ･､･ﾈ､ﾋ､ﾄ､､､ﾆ</span></a></li>
+				<li><a href="..\..\index.html"><span>Linuxｵｻｽﾑ</span></a>
+					<ul class="sub-menu">
+						<li><a href="..\..\010linux\index.html"><span>ﾆﾌ邏ﾃﾃﾎｼｱ</span></a></li>
+						<li><a href="..\..\01linuxcommand\index.html"><span>Linux･ｳ･ﾞ･ﾉ</span></a></li>
+						<li><a href="..\..\030linuxtips\index.html"><span>Linux Tips</span></a></li>
+						<li><a href="..\..\010linux\centos7\index.html"><span>CentOS7ﾆﾃｽｸ</span></a></li>
+					</ul>
+				</li>
+				<li><a href="..\..\..\2009\12\post-3.html"><span>ﾌｵﾎﾁｹﾖｺﾂ</span></a>
+					<ul class="sub-menu">
+						<li><a href="..\..\..\2011\01\linux.html"><span>ﾌｵﾎﾁ･ﾞ･ﾋ･螂｢･・/span></a></li>
+					</ul>
+				</li>
+				<li><a href="..\..\..\2009\12\post-4.html"><span>ﾍｭﾎﾁｹﾖｺﾂ</span></a>
+					<ul class="sub-menu">
+						<li><a href="..\..\..\kouza\index.html"><span>･ﾛ｡ｼ･爭ｹ･ｿ･ﾇ･｣ｹﾖｺﾂ</span></a></li>
+						<li><a href="..\..\..\2010\08\centos55.html"><span>･・ﾊ･ﾃ･ｯ･ｹ･ｻ･ﾟ･ﾊ｡ｼ</span></a></li>
+						<li><a href="..\..\..\cloud\index.html"><span>･ｯ･鬣ｦ･ﾉｹｽﾃﾛｹﾖｺﾂ</span></a></li>
+					</ul>
+				</li>
+				<li><a href="..\..\..\linux_blog\index.html"><span>･ｦ･ｧ･ﾖ･愠ｰ</span></a>
+					<ul class="sub-menu">
+						<li><a href="..\..\..\linux_blog\cat60\index.html"><span>Linux･ｻ･ﾟ･ﾊ｡ｼﾊ・/span></a></li>
+						<li><a href="..\..\..\linux_blog\linux-3\index.html"><span>ｵｻｽﾑ｡ｦ･ｻ･ｭ･螂・ﾆ･｣</span></a></li>
+						<li><a href="..\..\..\linux_blog\linux-1\index.html"><span>･ｨ･鬘ｼﾂﾐｽ靈｡</span></a></li>
+					</ul>
+				</li>
+				<li><a href="..\..\..\cat44\index.html"><span>ｲﾒｳｵﾍﾗ</span></a></li>
+			</ul>
+		</div>
+	</div>
+</nav>
+
+
+<div id="wrapper">
+	<div id="content">
+		
+		<section>
+		<article class="content">
+			
+			
+			
+			<header><h2 class="title first"><span>07.CentOS6.4､ﾇFTP･ｵ｡ｼ･ﾐ｡ｼｹｽﾃﾛ(Proftpd1.3.4c､ﾎ･､･ｹ･ﾈ｡ｼ･・ﾈﾀﾟﾄ・</span></h2></header>
+			
+
+			<div class="post">
+				
+				
+				
+				<div class="pan"><a href="..\..\..\index.html" title="home">｣ﾈ｣ﾏ｣ﾍ｣ﾅ</a> ｡・<a href="..\..\index.html" title="home">Linuxｵｻｽﾑ ･・ﾊ･ﾃ･ｯ･ｹ･ﾞ･ｹ･ｿ｡ｼ.JP｡ﾊLinux･ﾞ･ｹ･ｿ｡ｼ.JP｡ﾋ</a> ｡・<a href="..\..\040linux\centos64\index.html">CentOS6.4､ﾇ･ｵ｡ｼ･ﾐ｡ｼｹｽﾃﾛ</a>, <a href="..\..\040linux\index.html">Linux･ｵ｡ｼ･ﾐ｡ｼｹｽﾃﾛ</a> ｡・07.CentOS6.4､ﾇFTP･ｵ｡ｼ･ﾐ｡ｼｹｽﾃﾛ(Proftpd1.3.4c､ﾎ･､･ｹ･ﾈ｡ｼ･・ﾈﾀﾟﾄ・</div>
+				
+
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ･・ﾊ･ﾃ･ｯ･ｹ･ﾞ･ｹ･ｿ｡ｼ･ｿ･､･ﾈ･・ｼ｡ﾊ･・ｯ･讌ﾋ･ﾃ･ﾈ｡ﾋ -->
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9286957635215255" data-ad-slot="9312021656" data-ad-format="link" data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+				<!--｢｣･ｻ･ﾟ･ﾊ｡ｼ｡ｦｹﾖｺﾂｹﾎ｢｣-->
+				<br>
+<b><font color="#dd0000">Linux･ｵ｡ｼ･ﾐ｡ｼｴﾉﾍｼﾔ､ﾎｵｻｽﾑ､ｲﾆ・ﾇｳﾘ､ﾙ､・ﾖｽ鯀ｴｼﾔｸ､ｱ･・ﾊ･ﾃ･ｯ･ｹ･ｻ･ﾟ･ﾊ｡ｼ｡ﾗ</font></b><br>
+ﾆﾈｳﾘ､ﾇ1ﾇｯｰﾊｾ蟲ﾝ､ｫ､・ﾗ･惕ﾎLinuxｵｻｽﾑ､｢､ｿ､ﾃ､ｿ2ﾆ・ﾖ､ﾇｽｬﾆﾀ､ﾇ､ｭ､ﾞ､ｹ｡｣<br>
+<img src="..\..\..\images\arrow2.gif"> <a href="..\..\..\2010\08\centos55.html" target="_blank">･・ﾊ･ﾃ･ｯ･ｹ･ﾞ･ｹ･ｿ｡ｼ｣ｲﾆ・ﾖｽｸﾃ讌ｻ･ﾟ･ﾊ｡ｼ｡ﾚCentOS7ﾈﾇ｡ﾛ</a><br>
+｡｡｡ﾊｺ｣､ｹ､ｰ｢ｬ､ｯ･・ﾃ･ｯ､ｷ､ﾆ､ｯ､ﾀ､ｵ､､｡｣｡ﾋ<br>
+<br>
+<!--
+<b><font color="#dd0000">Linux･ｵ｡ｼ･ﾐ｡ｼｴﾉﾍｼﾔ､ﾎｵｻｽﾑ､ｲﾆ・ﾇｳﾘ､ﾙ､・ﾖｽ鯀ｴｼﾔｸ､ｱ･・ﾊ･ﾃ･ｯ･ｹ･ｻ･ﾟ･ﾊ｡ｼ｡ﾗ</font></b><br>
+30ﾆ・ﾝ､ｫ､ﾃ､ﾆｳﾐ､ｨ､・ﾗ･惕ﾎｵｻｽﾑ､｢､ｿ､ﾃ､ｿ2ﾆ・ﾖ､ﾇｳﾘｽｬ､ﾇ､ｭ､ﾞ､ｹ｡｣<br>
+｡｡<b>｡ｦLinuxﾋﾜ､ﾇ､ﾏ､､､ﾄ､筵ｨ･鬘ｼ､ﾇﾀ隍ﾋｿﾊ､皃ﾊ､､｡｣</b><br>
+｡｡<b>｡ｦｾｭﾍ隍ﾎ､ｿ､皃ﾋ｡｢ﾃｻｴ・ﾖ､ﾇLinux･ｹ･ｭ･・ﾈ､ﾋﾉﾕ､ｱ､ｿ､､｡｣</b><br>
+｡｡<b>｡ｦｼ｡､ﾎｰﾆｷ・ｬLinux､ﾇ｡｢ﾁ盞ﾞ､ﾋ･ｹ･ｭ･・ﾈ､ﾋﾉﾕ､ｱ､ﾊ､ｱ､・ﾐ､ﾊ､鬢ﾊ､､｡｣</b><br>
+､ｽ､ﾊ､｢､ﾊ､ｿ､ﾋｺﾇﾅｬ､ﾊ･ｻ･ﾟ･ﾊ｡ｼ､ﾇ､ｹ｡｣<br>
+<img src="https://www.linuxmaster.jp/images/arrow2.gif"> <a href="https://www.linuxmaster.jp/2010/08/centos55.html" target="_blank">･・ﾊ･ﾃ･ｯ･ｹ･ﾞ･ｹ･ｿ｡ｼ｣ｲﾆ・ﾖｽｸﾃ讌ｻ･ﾟ･ﾊ｡ｼ｡ﾚCentOS7.0ﾈﾇ｡ﾛ</a><br>
+｡｡｡ﾊｺ｣､ｹ､ｰ｢ｬ､ｯ･・ﾃ･ｯ､ｷ､ﾆ､ｯ､ﾀ､ｵ､､｡｣｡ﾋ<br>
+<br>
+Linux･ｵ｡ｼ･ﾐ｡ｼｴﾉﾍｼﾔ､ﾎｵｻｽﾑ､ｿ､ﾃ､ｿ21ﾆ・ﾇｼｫﾂｬﾆﾀ､ﾇ､ｭ､・｣ｰ・ﾎｹﾖｺﾂ<br>
+<img src="https://www.linuxmaster.jp/images/arrow2.gif"> <a href="https://www.linuxmaster.jp/kouza/index.html" target="_blank">･・ﾊ･ﾃ･ｯ･ｹ･ﾞ･ｹ･ｿ｡ｼ｡ｦ･ﾛ｡ｼ･爭ｹ･ｿ･ﾇ･｣ｹﾖｺﾂ｡ﾚCentOS6.3ﾈﾇ｡ﾛ</a><br>
+<br>
+-->
+				<!--｢｣･ｻ･ﾟ･ﾊ｡ｼ｡ｦｹﾖｺﾂｹﾎ｢｣-->
+
+				<p>CentOS6.4､ﾋProftpd1.3.4c､､･ｹ･ﾈ｡ｼ･・ｷ､ﾆ｡｢FTP･ｵ｡ｼ･ﾐ｡ｼ､ｽﾃﾛ､ｷ､ﾞ､ｹ｡｣<br>
+FTP･ｵ｡ｼ･ﾐ｡ｼ､ﾏ｡｢･ﾍ･ﾃ･ﾈ･・ｼ･ｯ､ﾌ､ｸ､ﾆ｡｢･ﾕ･｡･､･・ｮ､ｹ､・ｿ､皃ﾎｵ｡ﾇｽ､｡､ｹ､・ｵ｡ｼ･ﾐ｡ｼ､ﾘ､ｷ､ﾞ､ｹ｡｣ </p>
+
+<p>､ｿ､ﾈ､ｨ､ﾐ｡｢､｢､ﾊ､ｿ､ｬ･ﾛ｡ｼ･爭ﾚ｡ｼ･ｸ(HTML･ﾕ･｡･､･・､釥ﾃ､ｿ､ﾈ､ｭ｡｢･ﾛ｡ｼ･爭ﾚ｡ｼ･ｸ､・br>
+ｸｫ､ｹ､・ｿ､皃ﾋ｡｢Web･ｵ｡ｼ･ﾐ｡ｼ､ﾘHTML･ﾕ･｡･､･・｢･ﾃ･ﾗ･悅ｼ･ﾉ､ｹ､・ｬﾍﾗ､ｬ､｢､熙ﾞ､ｹ｡｣ <br>
+ｺ鋿ｮ､ｷ､ｿHTML･ﾕ･｡･､･・ｵ｡ｼ･ﾐ｡ｼ､ﾋ･｢･ﾃ･ﾗ･悅ｼ･ﾉ､ｹ､・ﾝ､ﾋｻﾈﾍﾑ､ｹ､・ﾎ､ｬ｡ﾖFTP｡ﾗ､ﾇ､ｹ｡｣</p>
+
+<p>ﾋﾜ･ﾚ｡ｼ･ｸ､ﾎﾆ簣ﾆ､ﾂｻﾜ､ｹ､・ﾋ､ﾏ｡｢ｲｼｵｭ･ﾚ｡ｼ･ｸ､ﾎｼ・遉ﾂｹﾔ､ｷ｡｢<br>
+ｻｰ､ﾋCentOS6.4､ﾎｴﾄｶｭ､ｽﾃﾛ､ｹ､・ｬﾍﾗ､ｬ､｢､熙ﾞ､ｹ｡｣<br>
+<a href="..\03\01centos64.html" target="_blank">01.CentOS6.4･ﾕ･｡･､･・ﾎ･ﾀ･ｦ･悅ｼ･ﾉ</a><br>
+<a href="..\03\02centos64cdburnatonce.html" target="_blank">02.CentOS6.4､ﾎ･､･ｹ･ﾈ｡ｼ･・Dｺ鋿ｮ｡ﾊburnatonce､ﾇ･鬣､･ﾆ･｣･ｰ｡ﾋ</a><br>
+<a href="..\03\03centos-64.html" target="_blank">03.CentOS6.4､ﾎ･､･ｹ･ﾈ｡ｼ･・/a><br>
+<a href="04centos64gui.html" target="_blank">04.CentOS6.4､ﾇﾃｼﾋﾊ･ｿ｡ｼ･ﾟ･ﾊ･・ﾋ､ｯﾆｰ､ｹ､・ﾊGUI｡ﾋ</a><br>
+<a href="05centos64webapache22.html" target="_blank">05.CentOS6.4､ﾇWeb･ｵ｡ｼ･ﾐ｡ｼｹｽﾃﾛ(Apache2.2､ﾎ･､･ｹ･ﾈ｡ｼ･・</a><br>
+<a href="05centos64webapache22-1.html" target="_blank">06.CentOS6.4､ﾇWeb･ｵ｡ｼ･ﾐ｡ｼｹｽﾃﾛ(Apache2.2､ﾎﾀﾟﾄ・</a></p>
+
+<p>1.ProFTPD､ﾎｸｰ･ｵ･､･ﾈ､ﾘ･｢･ｯ･ｻ･ｹ､ｷ､ﾞ､ｹ｡｣<br>
+<a href="http://www.proftpd.org/" target="_blank">http://www.proftpd.org/</a><br>
+<span class="mt-enclosure mt-enclosure-image" style="display: inline;"><a href="..\..\assets_c\2013\05\centos64_proftpd134c_inst_001-1089.html" onclick="window.open('https://www.linuxmaster.jp/linux_skill/assets_c/2013/05/centos64_proftpd134c_inst_001-1089.html','popup','width=590,height=475,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img src="..\..\assets_c\2013\05\centos64_proftpd134c_inst_001-thumb-300x241-1089.jpeg" width="300" height="241" alt="centos64_proftpd134c_inst_001.jpg" class="mt-image-none" style=""></a></span><br>
+､筅ｷ｡｢､ｳ､ﾎ･ﾞ･ﾋ･螂｢･・ﾈﾆｱ､ｸ｡｢･ﾐ｡ｼ･ｸ･逾・.3.4c､ｬﾌｵ､､ｾ・遑｢<br>
+ｲｼｵｭ､ﾎ･ﾚ｡ｼ･ｸ､ﾋ･｢･ｯ･ｻ･ｹ､ｷ､ﾆﾆｱ､ｸ･ﾐ｡ｼ･ｸ･逾ｼ熙ｷ､ﾆ､ｯ､ﾀ､ｵ､､｡｣</p>
+
+<p>･ﾕ･｡･､･・ｾ｡ｧproftpd-1.3.4c.tar.gz<br>
+<a href="ftp://ftp.proftpd.org/distrib/source/" target="_blank">ftp://ftp.proftpd.org/distrib/source/</a></p>
+
+<p>2.･ﾀ･ｦ･悅ｼ･ﾉ･｢･ﾉ･・ｹ､ﾎﾇｧ､ｷ､ﾞ､ｹ｡｣<br>
+<span class="mt-enclosure mt-enclosure-image" style="display: inline;"><a href="..\..\assets_c\2013\05\centos64_proftpd134c_inst_002-1092.html" onclick="window.open('https://www.linuxmaster.jp/linux_skill/assets_c/2013/05/centos64_proftpd134c_inst_002-1092.html','popup','width=417,height=458,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img src="..\..\assets_c\2013\05\centos64_proftpd134c_inst_002-thumb-300x329-1092.jpeg" width="300" height="329" alt="centos64_proftpd134c_inst_002.jpg" class="mt-image-none" style=""></a></span></p>
+
+<p>3.2､ﾇｳﾎﾇｧ､ｷ､ｿURL､筅ﾈ､ﾋwget､ﾇproFTPD､ﾀ･ｦ･悅ｼ･ﾉ､ｷ､ﾞ､ｹ｡｣<br>
+--------------------------------------------------------------------------------------<br>
+[root@Tiger src]# <strong>cd /usr/local/src/</strong><br>
+[root@Tiger src]# <strong>wget ftp://ftp.proftpd.org/distrib/source/proftpd-1.3.4c.tar.gz</strong><br>
+--2013-03-20 19:06:28--  ftp://ftp.proftpd.org/distrib/source/proftpd-1.3.4c.tar.gz<br>
+           => `proftpd-1.3.4c.tar.gz'<br>
+ftp.proftpd.org ､NS､ﾋﾌ荀､､｢､・ｻ､ﾆ､､､ﾞ､ｹ... 86.59.114.198<br>
+ftp.proftpd.org|86.59.114.198|:21 ､ﾋﾀﾜﾂｳ､ｷ､ﾆ､､､ﾞ､ｹ... ﾀﾜﾂｳ､ｷ､ﾞ､ｷ､ｿ｡｣<br>
+anonymous ､ﾈ､ｷ､ﾆ･愠ｰ･､･ｷ､ﾆ､､､ﾞ､ｹ... ･愠ｰ･､･ｷ､ﾞ､ｷ､ｿ!<br>
+==> SYST ... ｴｰﾎｻ､ｷ､ﾞ､ｷ､ｿ｡｣    ==> PWD ... ｴｰﾎｻ､ｷ､ﾞ､ｷ､ｿ｡｣<br>
+==> TYPE I ... ｴｰﾎｻ､ｷ､ﾞ､ｷ､ｿ｡｣  ==> CWD (1) /distrib/source ... ｴｰﾎｻ､ｷ､ﾞ､ｷ､ｿ｡｣<br>
+==> SIZE proftpd-1.3.4c.tar.gz ... 7689622<br>
+==> PASV ... ｴｰﾎｻ､ｷ､ﾞ､ｷ､ｿ｡｣    ==> RETR proftpd-1.3.4c.tar.gz ... ｴｰﾎｻ､ｷ､ﾞ､ｷ､ｿ｡｣<br>
+ﾄｹ､ｵ: 7689622 (7.3M) (ｳﾎｾﾚ､ﾏ､｢､熙ﾞ､ｻ､・</p>
+
+<p>100%[===========================================>] 7,689,622   61.3K/s ｻｴﾖ 2m 37s</p>
+
+<p>2013-03-20 19:09:09 (47.7 KB/s) - `proftpd-1.3.4c.tar.gz' ､ﾘﾊﾝﾂｸｽｪﾎｻ [7689622]</p>
+
+<p>[root@Tiger src]#<br>
+--------------------------------------------------------------------------------------<br>
+｢ｨ	､ｿ､ﾞ､ﾋ･ｵ｡ｼ･ﾐ｡ｼ､ｬｽﾅ､ｯ･ﾀ･ｦ･悅ｼ･ﾉ､ｬﾅﾓﾃ讀ﾇｻﾟ､ﾞ､・ﾈ､ｭ､ｬ､｢､熙ﾞ､ｹ｡｣<br>
+､ｽ､ﾎ､隍ｦ､ﾊｾ・遉ﾏ｡｢｡ﾖCtrl｡ﾗ+｡ﾖc｡ﾗ･ｭ｡ｼ､ﾎﾏ､ｷ､ﾆｽ靉､ｯﾀｩｽｪﾎｻ､ｷ｡｢<br>
+ｻｴﾖ､ﾖ､､､ﾆｺﾆﾅﾙ･ﾀ･ｦ･悅ｼ･ﾉ､ｷ､ﾆ､ｯ､ﾀ､ｵ､､｡｣</p>
+
+<p>､ﾞ､ｿ｡｢ﾂｾ､ﾎ･ﾟ･鬘ｼ･ｵ｡ｼ･ﾐ｡ｼ･｢･ﾉ･・ｹ､篌ﾜ､ｻ､ﾆ､ｪ､ｯ､ﾎ､ﾇ｡｢<br>
+､､､ｯ､鯆ﾔ､ﾃ､ﾆ､筵ﾀ･ｦ･悅ｼ･ﾉ､ﾇ､ｭ､ﾊ､､ｾ・遑｢､ｳ､ﾁ､鬢ﾎ･｢･ﾉ･・ｹ､筅ｪｻ釥ｷ､ｯ､ﾀ､ｵ､､｡｣<br>
+<a href="http://ftp.yz.yamagata-u.ac.jp/pub/network/proftpd/distrib/source/" target="_blank">http://ftp.yz.yamagata-u.ac.jp/pub/network/proftpd/distrib/source/</a></p>
+
+<p>4.proFTPD､ｸｳｫ､ｷ､ﾞ､ｹ｡｣<br>
+--------------------------------------------------------------------------------------<br>
+[root@Tiger src]# <strong>tar zxvf proftpd-1.3.4c.tar.gz</strong>｡｡<br>
+proftpd-1.3.4c/<br>
+proftpd-1.3.4c/doc/<br>
+proftpd-1.3.4c/doc/utils/<br>
+proftpd-1.3.4c/doc/utils/ftpcount.html</p>
+
+<p><b>｡ﾁﾃ賽ｬ｡ﾁ</b></p>
+
+<p>proftpd-1.3.4c/README.controls<br>
+proftpd-1.3.4c/CREDITS<br>
+proftpd-1.3.4c/Makefile.in<br>
+proftpd-1.3.4c/README.DSO<br>
+proftpd-1.3.4c/README.ports <br>
+[root@Tiger src]#<br>
+--------------------------------------------------------------------------------------</p>
+
+<p>5.configure､ﾂｹﾔ､ｷ､ﾞ､ｹ｡｣<br>
+--------------------------------------------------------------------------------------<br>
+[root@Tiger src]# <strong>cd proftpd-1.3.4c</strong><br>
+[root@Tiger proftpd-1.3.4c]# <strong>./configure --prefix=/usr/local/proftpd</strong><br>
+checking build system type... i686-pc-linux-gnu<br>
+checking host system type... i686-pc-linux-gnu</p>
+
+<p><b>｡ﾁﾃ賽ｬ｡ﾁ</b></p>
+
+<p>config.status: creating utils/ftpwho.1<br>
+config.status: creating Makefile<br>
+config.status: creating Make.rules<br>
+config.status: creating config.h<br>
+config.status: executing libtool commands<br>
+config.status: executing default commands <br>
+[root@Tiger proftpd-1.3.4c]#<br>
+--------------------------------------------------------------------------------------<br>
+configure､ﾎｸ螟惕ﾋ･ｪ･ﾗ･ｷ･逾ﾈ､ｷ､ﾆ｡ﾖ--prefix=/usr/local/proftpd｡ﾗ､ﾘﾄ熙ｷ､ﾆ､､､ﾞ､ｹ｡｣<br>
+､ｳ､・ﾏproftpd･ｳ･ﾞ･ﾉ､・usr/local/proftpd､ﾘｳﾊﾇｼ､ｹ､・隍ｦ､ﾋｻﾘﾄ熙ｷ､ﾆ､､､ﾞ､ｹ｡｣</p>
+
+<p>6.･ｳ･ﾑ･､･・ﾈ･､･ｹ･ﾈ｡ｼ･・br>
+--------------------------------------------------------------------------------------<br>
+[root@Tiger proftpd-1.3.4c]# <strong>make</strong><br>
+echo \#define BUILD_STAMP \"`date +"%a %b %e %Y %H:%M:%S %Z"`\" > include/buildstamp.h<br>
+cd lib/ && make lib<br>
+make[1]: ･ﾇ･｣･・ｯ･ﾈ･・`/usr/local/src/proftpd-1.3.4c/lib' ､ﾋﾆ､熙ﾞ､ｹ</p>
+
+<p><b>｡ﾁﾃ賽ｬ｡ﾁ</b></p>
+
+<p>gcc -L./lib   -o ftptop utils/ftptop.o utils/scoreboard.o utils/misc.o -lncurses -ltinfo -lsupp -lcrypt -ldl<br>
+gcc -L./lib   -o ftpwho utils/ftpwho.o utils/scoreboard.o utils/misc.o -ltinfo -lsupp -lcrypt -ldl [root@Tiger proftpd-1.3.4c]# <strong>make install</strong><br>
+cd lib/ && make lib<br>
+make[1]: ･ﾇ･｣･・ｯ･ﾈ･・`/usr/local/src/proftpd-1.3.4c/lib' ､ﾋﾆ､熙ﾞ､ｹ<br>
+make[1]: `lib' ､ﾋﾂﾐ､ｷ､ﾆｹﾔ､ｦ､ﾙ､ｭｻﾏ､｢､熙ﾞ､ｻ､・</p>
+
+<p><b>｡ﾁﾃ賽ｬ｡ﾁ</b></p>
+
+<p>make[1]: ･ﾇ･｣･・ｯ･ﾈ･・`/usr/local/src/proftpd-1.3.4c/include' ､ｫ､鮨ﾐ､ﾞ､ｹ<br>
+/usr/bin/install -c -o root -g root -m 0644 proftpd.pc /usr/local/proftpd/lib/pkgconfig/proftpd.pc<br>
+test -z """" || (cd locale/ && make install) <br>
+[root@Tiger proftpd-1.3.4c]#<br>
+--------------------------------------------------------------------------------------</p>
+
+<p>7.proFTPDﾍﾑ･譯ｼ･ｶ｡ｼ･ｰ･・ｼ･ﾗ､鋿ｮ､ｷ､ﾞ､ｹ｡｣<br>
+--------------------------------------------------------------------------------------<br>
+[root@Tiger proftpd-1.3.4c]# <strong>groupadd nogroup</strong><br>
+--------------------------------------------------------------------------------------</p>
+
+<p>8.･ﾕ･｡･､･・・ｽｼｨ､ｹ､・ｿ､皃ﾋ｡｢｡ﾖ/usr/local/proftpd/etc/proftpd.conf｡ﾗ･ﾕ･｡･､･・ﾎ<br>
+｡｡｡｡ｹﾔﾋﾋ｡ﾖListOptions "-a"｡ﾗ､ﾉｲﾃ､ｷ､ﾞ､ｹ｡｣<br>
+--------------------------------------------------------------------------------------<br>
+[root@Tiger proftpd-1.3.4c]# vi /usr/local/proftpd/etc/proftpd.conf</p>
+
+<p>  # We want clients to be able to login with "anonymous" as well as "ftp"<br>
+  UserAlias                     anonymous ftp</p>
+
+<p>  # Limit the maximum number of anonymous logins<br>
+  MaxClients                    10</p>
+
+<p>  # We want 'welcome.msg' displayed at login, and '.message' displayed<br>
+  # in each newly chdired directory.<br>
+  DisplayLogin                  welcome.msg<br>
+  DisplayChdir                  .message</p>
+
+<p>  # Limit WRITE everywhere in the anonymous chroot<br>
+  <limit write=""><br>
+    DenyAll<br>
+  </limit><br>
+</p>
+
+<p><strong>ListOptions "-a"</strong><br>
+--------------------------------------------------------------------------------------<br>
+ﾄﾉｲﾃ､ｷ､ｿ､鬘ﾖ<strong>:wq</strong>｡ﾗ､ﾇﾊﾝﾂｸｽｪﾎｻ､ｷ､ﾞ､ｹ｡｣</p>
+
+<p>9.proFTPDｵｯﾆｰﾍﾑ･ﾕ･｡･､･・鋿ｮ､ｷ､ﾞ､ｹ｡｣<br>
+--------------------------------------------------------------------------------------<br>
+[root@Tiger proftpd-1.3.4c]# <strong>sed -e 's/\/etc\/proftpd.conf/\/usr\/local\/proftpd\/etc\/proftpd.conf/' \</strong><br>
+> <strong>-e 's/\/usr\/sbin/\/usr\/local\/proftpd\/sbin/' \</strong><br>
+> <strong>/usr/local/src/proftpd-1.3.4c/contrib/dist/rpm/proftpd.init.d > /etc/rc.d/init.d/proftpd</strong><br>
+--------------------------------------------------------------------------------------<br>
+｢ｨ ｼﾂｹﾔ､ｹ､・・遉ﾏ｡｢ｾ螟ﾎﾎ网ﾈﾆｱ､ｸ､ﾋ｣ｳｹﾔ､ﾇﾆﾎﾏ､ｷ､ﾆ､ｯ､ﾀ､ｵ､､｡｣<br>
+｡｡｡｡ｹﾔ､ﾎｺﾇｸ螟ﾋ｡ﾖ\ｲｹﾔ｡ﾗ､ﾈﾆﾎﾏ､ｹ､・ﾈ｡｢ｼ｡ｹﾔ､ﾎﾆｬ､ﾋ｡ﾖ>｡ﾗ､ｬｼｫﾆｰ､ﾇﾉｽｼｨ､ｵ､・｢<br>
+｡｡｡｡ｲｹﾔ､ｷ､ﾆ､箍・ﾔ､ﾎ･ｳ･ﾞ･ﾉ､ﾈ､ｷ､ﾆｰｷ､ｦ､ｳ､ﾈ､ｬ､ﾇ､ｭ､ﾞ､ｹ｡｣</p>
+
+<p>｡｡｡｡ｴﾘﾏ｢ｾﾈ､ｷ､ﾆ｡｢ｲｼｵｭ･ﾚ｡ｼ･ｸ､篏ｲｾﾈ､ｷ､ﾆ､ｯ､ﾀ､ｵ､､｡｣<br>
+｡｡｡｡<a href="..\..\..\linux_blog\2010\03\linux-1.html" target="_blank">Linux､ﾇ･ｭ｡ｼ･ﾜ｡ｼ･ﾉ､ｫ､鬘・ｭｹ讀ﾎﾏ､ｹ､・ﾈ･ﾐ･ﾃ･ｯ･ｹ･鬣ﾃ･ｷ･螟ﾋ､ﾊ､ﾃ､ﾆ､ｷ､ﾞ､､､ﾞ､ｹ｡｣</a></p>
+
+<p>10.proFTPDｵｯﾆｰﾍﾑ･ﾕ･｡･､･・ﾔｽｸ､ｷ､ﾞ､ｹ｡｣｡ﾊ32ｹﾔﾌﾜ､｢､ｿ､遙ﾋ<br>
+｡｡｡｡｡ﾖexport PATH=$PATH:/usr/local/proftpd/sbin:/usr/local/proftpd/bin｡ﾗ､ﾉｲﾃ､ｷ､ﾞ､ｹ｡｣<br>
+--------------------------------------------------------------------------------------<br>
+[root@Tiger proftpd-1.3.4c]# <strong>vi /etc/rc.d/init.d/proftpd</strong><br>
+# Source function library.<br>
+. /etc/rc.d/init.d/functions<br>
+<strong>export PATH=$PATH:/usr/local/proftpd/sbin:/usr/local/proftpd/bin</strong><br>
+--------------------------------------------------------------------------------------</p>
+
+<p>11.ProFTPD､ﾎｵｯﾆｰｽ猜・br>
+--------------------------------------------------------------------------------------<br>
+[root@Tiger proftpd-1.3.4c]# <strong>chmod 755 /etc/rc.d/init.d/proftpd</strong><br>
+[root@Tiger proftpd-1.3.4c]# <strong>chkconfig --add proftpd</strong><br>
+[root@Tiger proftpd-1.3.4c]# <strong>chkconfig --level 345 proftpd on</strong><br>
+--------------------------------------------------------------------------------------<br>
+chmod･ｳ･ﾞ･ﾉ､ﾇproftpd･ﾕ･｡･､･・ﾋｼﾂｹﾔｸ｢ｸﾂ､ﾕﾍｿ､ｷ､ﾆ｡｢<br>
+chkconfig --add､ﾇ･ｵ｡ｼ･ﾓ･ｹ､ﾘﾅﾐﾏｿ､ｷ､ﾞ､ｹ｡｣</p>
+
+<p>12.hosts･ﾕ･｡･､･・ﾎﾊﾔｽｸ<br>
+--------------------------------------------------------------------------------------<br>
+[root@Tiger proftpd-1.3.4c]# <strong>echo "127.0.0.1   Tiger" >> /etc/hosts</strong><br>
+--------------------------------------------------------------------------------------<br>
+｢ｨTiger､ﾎｲﾕｽ熙ﾏ｡｢<a href="..\03\03centos-64.html" target="_blank">03.CentOS6.4､ﾎ･､･ｹ･ﾈ｡ｼ･・/a>､ﾎ14､ﾇﾀﾟﾄ熙ｷ､ｿ<br>
+･ﾛ･ｹ･ﾈﾌｾ､ﾟﾄ熙ｷ､ﾆ､ｯ､ﾀ､ｵ､､｡｣</p>
+
+<p>13.ProFTPD､ﾎｵｯﾆｰ<br>
+--------------------------------------------------------------------------------------<br>
+[root@Tiger proftpd-1.3.4c]# <strong>/etc/rc.d/init.d/proftpd start</strong><br>
+proftpd ､ｯﾆｰﾃ・                                          [  OK  ]<br>
+--------------------------------------------------------------------------------------</p>
+
+<p>ｻｲｹﾍ｡ﾋ<br>
+--------------------------------------------------------------------------------------<br>
+｢｣proftpd､ﾎｵｯﾆｰ｡ｦﾄ莉ﾟ･ｳ･ﾞ･ﾉ<br>
+ｵｯﾆｰ<br>
+/etc/rc.d/init.d/proftpd start<br>
+ｺﾆｵｯﾆｰ<br>
+/etc/rc.d/init.d/proftpd restart<br>
+ﾄ莉ﾟ<br>
+/etc/rc.d/init.d/proftpd stop<br>
+--------------------------------------------------------------------------------------</p>
+
+<p>14.･ﾕ･｡･､･｢･ｦ･ｩ｡ｼ･・ﾎﾀﾟﾄ・br>
+<a href="05centos64webapache22.html" target="_blank">05.CentOS6.4､ﾇWeb･ｵ｡ｼ･ﾐ｡ｼｹｽﾃﾛ(Apache2.2､ﾎ･､･ｹ･ﾈ｡ｼ･・</a>､ﾎ12､ﾇ<br>
+Web､ﾄ､ｷ､ｿ､ﾎ､ﾈﾆｱ､ｸｼ・遉ﾇ｡｢FTP､箏ﾄﾀﾟﾄ熙ﾋ､ｷ､ﾞ､ｹ｡｣<br>
+<span class="mt-enclosure mt-enclosure-image" style="display: inline;"><a href="..\..\assets_c\2013\05\centos64_proftpd134c_inst_003-1095.html" onclick="window.open('https://www.linuxmaster.jp/linux_skill/assets_c/2013/05/centos64_proftpd134c_inst_003-1095.html','popup','width=488,height=346,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img src="..\..\assets_c\2013\05\centos64_proftpd134c_inst_003-thumb-300x212-1095.jpeg" width="300" height="212" alt="centos64_proftpd134c_inst_003.jpg" class="mt-image-none" style=""></a></span></p>
+
+<p>15.･ｵ｡ｼ･ﾓ･ｹﾅﾐﾏｿ､ﾎｳﾎﾇｧ<br>
+--------------------------------------------------------------------------------------<br>
+[root@Tiger proftpd-1.3.4c]# <strong>chkconfig --list proftpd</strong><br>
+proftpd         0:off   1:off   2:off   3:on    4:on    5:on    6:off<br>
+--------------------------------------------------------------------------------------<br>
+､ｳ､ﾎ･ｵ｡ｼ･ﾓ･ｹ､ﾋﾅﾐﾏｿ､ｹ､・ﾈ｡｢ｼ｡ｲｯﾆｰｻ､隍・ｫﾆｰ､ﾇFTP､ｬｵｯﾆｰ､ｷ､ﾞ､ｹ｡｣</p>
+
+<p>16.FTP､ﾎﾀﾜﾂｳｳﾎﾇｧ<br>
+ﾅﾞ･ﾋ･螂｢･・ﾇ､ﾏFFFTP､ﾈﾍﾑ､ｷ､ﾆﾀﾜﾂｳｳﾎﾇｧ､ﾔ､､､ﾞ､ｹ｡｣･､･ｹ･ﾈ｡ｼ･・ｷ､ﾆ､､､ﾊ､､ｾ・遉ﾏ｡｢ｲｼｵｭ･ｵ･､･ﾈ､隍鵲FFTP､ﾀ･ｦ･悅ｼ･ﾉ､ｷ､ﾆ､ｯ､ﾀ､ｵ､､｡｣<br>
+｡鰀FFTP<br>
+<a href="http://www.vector.co.jp/soft/win95/net/se061839.html" target="_blank">http://www.vector.co.jp/soft/win95/net/se061839.html</a></p>
+
+<p>･､･ｹ･ﾈ｡ｼ･・ｬｴｰﾎｻ､ｷ､ﾆ｡｢FFFTP､ｯﾆｰ､ｹ､・ﾈｲｼｿﾞ､ﾎｲ靂ﾌ､ｬｵｯﾆｰ､ｷ､ﾞ､ｹ｡｣<br>
+｢｣FFFTP､ﾎﾀﾟﾄ・br>
+<span class="mt-enclosure mt-enclosure-image" style="display: inline;"><a href="..\..\assets_c\2013\05\centos64_proftpd134c_inst_004-1098.html" onclick="window.open('https://www.linuxmaster.jp/linux_skill/assets_c/2013/05/centos64_proftpd134c_inst_004-1098.html','popup','width=406,height=218,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img src="..\..\assets_c\2013\05\centos64_proftpd134c_inst_004-thumb-300x161-1098.jpeg" width="300" height="161" alt="centos64_proftpd134c_inst_004.jpg" class="mt-image-none" style=""></a></span></p>
+
+<p><span class="mt-enclosure mt-enclosure-image" style="display: inline;"><a href="..\..\assets_c\2013\05\centos64_proftpd134c_inst_005-1101.html" onclick="window.open('https://www.linuxmaster.jp/linux_skill/assets_c/2013/05/centos64_proftpd134c_inst_005-1101.html','popup','width=410,height=312,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img src="..\..\assets_c\2013\05\centos64_proftpd134c_inst_005-thumb-300x228-1101.jpeg" width="300" height="228" alt="centos64_proftpd134c_inst_005.jpg" class="mt-image-none" style=""></a></span></p>
+
+<p>ﾂｳ､､､ﾆ｡｢｡ﾖｹ簀ﾙ｡ﾗ･ｿ･ﾖ､ﾒ､鬢ｭ｡｢｡ﾖLIST･ｳ･ﾞ･ﾉ､ﾇ･ﾕ･｡･､･・・霹ﾀ｡ﾗ､ﾋ<br>
+･ﾁ･ｧ･ﾃ･ｯ､ｬﾉﾕ､､､ﾆ､､､ﾊ､､ｾ・遉ﾏﾉﾕ､ｱ､ﾆ｡ﾖOK｡ﾗ､｡ｲｼ､ｷ､ﾞ､ｹ｡｣<br>
+<span class="mt-enclosure mt-enclosure-image" style="display: inline;"><a href="..\..\assets_c\2013\05\centos64_proftpd134c_inst_006-1104.html" onclick="window.open('https://www.linuxmaster.jp/linux_skill/assets_c/2013/05/centos64_proftpd134c_inst_006-1104.html','popup','width=400,height=302,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img src="..\..\assets_c\2013\05\centos64_proftpd134c_inst_006-thumb-300x226-1104.jpeg" width="300" height="226" alt="centos64_proftpd134c_inst_006.jpg" class="mt-image-none" style=""></a></span></p>
+
+<p>｢｣FFFTP､ﾎﾀﾜﾂｳｳﾎﾇｧ<br>
+<span class="mt-enclosure mt-enclosure-image" style="display: inline;"><a href="..\..\assets_c\2013\05\centos64_proftpd134c_inst_007-1107.html" onclick="window.open('https://www.linuxmaster.jp/linux_skill/assets_c/2013/05/centos64_proftpd134c_inst_007-1107.html','popup','width=406,height=218,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img src="..\..\assets_c\2013\05\centos64_proftpd134c_inst_007-thumb-300x161-1107.jpeg" width="300" height="161" alt="centos64_proftpd134c_inst_007.jpg" class="mt-image-none" style=""></a></span></p>
+
+<p><span class="mt-enclosure mt-enclosure-image" style="display: inline;"><a href="..\..\assets_c\2013\05\centos64_proftpd134c_inst_008-1110.html" onclick="window.open('https://www.linuxmaster.jp/linux_skill/assets_c/2013/05/centos64_proftpd134c_inst_008-1110.html','popup','width=567,height=381,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img src="..\..\assets_c\2013\05\centos64_proftpd134c_inst_008-thumb-300x201-1110.jpeg" width="300" height="201" alt="centos64_proftpd134c_inst_008.jpg" class="mt-image-none" style=""></a></span><br>
+｡ﾖ/home/･譯ｼ･ｶ｡ｼﾌｾ/www｡ﾗ･ﾇ･｣･・ｯ･ﾈ･熙ﾋ･｢･ｯ･ｻ･ｹ､ｷ､ﾆ｡｢HTML･ﾕ･｡･､･・FFTP､ﾎｱｦﾂｦ､ﾋ<br>
+･ﾉ･鬣ﾃ･ｰ｡ﾉ･愠ﾃ･ﾗ､ｹ､・ﾐ｡｢･ﾕ･｡･､･・ﾎ･｢･ﾃ･ﾗ･悅ｼ･ﾉ､ｬｽﾐﾍ隍・隍ｦ､ﾋ､ﾊ､遙｢<br>
+HTML･ﾕ･｡･､･・ﾎｹｹｿｷ､ﾔ､ｦ､ｳ､ﾈ､ｬ､ﾇ､ｭ､ﾞ､ｹ｡｣</p>
+
+<p>｢｣ ､筅ｷ｡｢FTPﾀﾜﾂｳ､ｬﾀｮｸｷ､ﾊ､､ｾ・・br>
+FFFTP､ﾎｲｼｵｭ､ﾎｲﾕｽ熙ﾎﾇｧ､ｷ､ﾆ､ｯ､ﾀ､ｵ､､｡｣<br>
+[ﾀﾜﾂｳ]｢ｪ[･ﾛ･ｹ･ﾈ､ﾎﾀﾟﾄ鷯｢ｪ[･ﾛ･ｹ･ﾈｰ・螟ﾎﾂﾐｾﾝ･ﾛ･ｹ･ﾈ､ｪﾂ｢ｪ[ﾀﾟﾄ・ﾑｹｹ]</p>
+
+<p>ﾀﾜﾂｳ､ｬﾀｮｸｷ､ﾊ､､ｾ・・br>
+｡｡｡ﾖｳﾈﾄ･｡ﾗ･ｿ･ﾖ､ﾒ､鬢ｭ｡｢｡ﾖPASV･筍ｼ･ﾉ､ﾈ､ｦ｡ﾗ､ﾎ･ﾁ･ｧ･ﾃ･ｯ､ｬ､ﾉ､ﾎ､隍ｦ､ﾋ､ﾊ､ﾃ､ﾆ､､､・ｫｳﾎﾇｧ､ｷ､ﾆ､ｯ､ﾀ､ｵ､､｡｣<br>
+･ﾁ･ｧ･ﾃ･ｯ､ｬﾉﾕ､､､ﾆ､､､・・遉ﾏｳｰ､ｷ､ﾆﾀﾜﾂｳｳﾎﾇｧ､ﾔ､ﾃ､ﾆ､ｯ､ﾀ､ｵ､､｡｣､ﾞ､ｿ｡｢･ﾁ･ｧ･ﾃ･ｯ､ｬﾉﾕ､､､ﾆ､､､ﾊ､､ｾ・・br>
+､ﾋ､ﾏ｡｢･ﾁ･ｧ･ﾃ･ｯ､､・ﾆﾀﾜﾂｳｳﾎﾇｧ､ﾔ､ﾃ､ﾆ､ﾟ､ﾆ､ｯ､ﾀ､ｵ､､｡｣<br>
+<span class="mt-enclosure mt-enclosure-image" style="display: inline;"><a href="..\..\assets_c\2013\05\centos64_proftpd134c_inst_009-1113.html" onclick="window.open('https://www.linuxmaster.jp/linux_skill/assets_c/2013/05/centos64_proftpd134c_inst_009-1113.html','popup','width=400,height=302,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img src="..\..\assets_c\2013\05\centos64_proftpd134c_inst_009-thumb-300x226-1113.jpeg" width="300" height="226" alt="centos64_proftpd134c_inst_009.jpg" class="mt-image-none" style=""></a></span></p>
+
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ･・ﾊ･ﾃ･ｯ･ｹ･ﾞ･ｹ･ｿ｡ｼｵｭｻ・-->
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9286957635215255" data-ad-slot="1505560112" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+				
+
+				<!--｢｣ﾌｵﾎﾁ･ﾞ･ﾋ･螂｢･・ｼ-->
+				<center>･ｹ･ﾝ･ｵ｡ｼ･ﾉ･・ｯ</center><br>
+<p style="display: inline"><script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ･・ﾊ･ﾃ･ｯ･ｹ･ﾞ･ｹ･ｿ｡ｼｵｭｻｼ･・ｯ･ｿ･ｰ･・-->
+<ins class="adsbygoogle" style="display:inline-block;width:300px;height:250px" data-ad-client="ca-pub-9286957635215255" data-ad-slot="6310330085"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ･・ﾊ･ﾃ･ｯ･ｹ･ﾞ･ｹ･ｿ｡ｼｵｭｻｼ･・ｯ･ｿ･ｰ･・-->
+<ins class="adsbygoogle" style="display:inline-block;width:300px;height:250px" data-ad-client="ca-pub-9286957635215255" data-ad-slot="6310330085"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</p>
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ･・ﾊ･ﾃ･ｯ･ｹ･ﾞ･ｹ･ｿ｡ｼｵｭｻｼ･・ｯ･讌ﾋ･ﾃ･ﾈ -->
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9286957635215255" data-ad-slot="4526475120" data-ad-format="link" data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<br>
+<strong>｢｣CentOS7.4･ｵ｡ｼ･ﾐ｡ｼｹｽﾃﾛ･ﾞ･ﾋ･螂｢･・ｵﾎﾁ･ﾗ･・ｼ･ﾈ</strong><br>
+ｲｼｵｭ｣ｳｺ､ﾎ･ﾞ･ﾋ･螂｢･・ｵﾎﾁ･ﾗ･・ｼ･ﾈ､ｷ､ﾆ､､､ﾞ､ｹ｡｣<br>
+<b>｡ｦCentOS7.4･ｵ｡ｼ･ﾐ｡ｼｹｽﾃﾛ･ﾞ･ﾋ･螂｢･・ﾊ105･ﾚ｡ｼ･ｸ｡ﾋ<br>
+｡ｦVMware Player､ﾇｺ釥・ｾﾁﾛLinuxｴﾄｶｭｹｽﾃﾛ･ﾞ･ﾋ･螂｢･・ﾊ40･ﾚ｡ｼ･ｸ｡ﾋ<br>
+｡ｦ･ﾇ｡ｼ･ｿ･ﾙ｡ｼ･ｹ(PostgreSQL｡ｦMySQL)ｹｽﾃﾛ｡ｦCentOS･ﾐ｡ｼ･ｸ･逾｢･ﾃ･ﾗ･ﾞ･ﾋ･螂｢･・ﾊ33･ﾚ｡ｼ･ｸ｡ﾋ</b><br>
+｢ｨｾ・ﾋｺﾇｿｷ､ﾎCentOS､ｬｻﾈﾍﾑ､ﾇ､ｭ､ﾞ､ｹ｡｣<br>
+ｾﾜ､ｷ､ｯ､ﾏ｢ｭ､ﾎ･ﾚ｡ｼ･ｸ､ﾇﾀ篶ﾀ､ｷ､ﾆ､､､ﾞ､ｹ｡｣ｺ｣､ｹ､ｰ･ｯ･・ﾃ･ｯ､ｷ､ﾆ､ｯ､ﾀ､ｵ､､｡｣<br>
+｡｡<a href="..\..\..\2011\01\linux.html"><img alt="ﾌｵﾎﾁ･ﾞ･ﾋ･螂｢･・ﾀ･ｦ･悅ｼ･ﾉ､ｹ､・ src="..\..\..\images\free_manual_icon.gif"></a>
+
+｡｡<a href="..\..\..\kouza\index.html"><img alt="ﾌｵﾎﾁ･ﾞ･ﾋ･螂｢･・ﾀ･ｦ･悅ｼ･ﾉ､ｹ､・ src="..\..\..\images\home_study_icon.gif"></a>
+
+<br><br><br>
+
+				<!--｢｣ﾌｵﾎﾁ･ﾞ･ﾋ･螂｢･・ｪﾎｻ-->
+			</div>
+		</article>
+		</section>
+</div><!-- / content -->
+
+	<aside id="sidebar">
+		<div id="banners">
+			<p class="banner">
+				<a href="..\..\index.html"><img src="..\..\..\images\banners\banner_s1.jpeg" alt="Linuxｵｻｽﾑ"></a>
+			</p>
+			<p class="banner">
+				<a href="..\..\..\2009\12\post-3.html"><img src="..\..\..\images\banners\banner_s2.jpeg" alt="Linuxﾌｵﾎﾁｹﾖｺﾂ"></a>
+			</p>
+			<p class="banner">
+				<a href="..\..\..\2009\12\post-4.html"><img src="..\..\..\images\banners\banner_s3.jpeg" alt="Linuxﾍｭﾎﾁｹﾖｺﾂ"></a>
+			</p>
+		</div>
+			<ul>
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- ･・ﾊ･ﾃ･ｯ･ｹ･ﾞ･ｹ･ｿ｡ｼ･ｵ･､･ﾉ･ﾐ｡ｼ･・ｯ･讌ﾋ･ﾃ･ﾈ -->
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9286957635215255" data-ad-slot="3959422934" data-ad-format="link" data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+			</ul>
+		<div class="newsTitle">
+			<h3 class="title"><span>Menu</span></h3>
+		</div>
+		<div class="news">
+			<p><a href="..\..\..\index.html"><span>･ﾈ･ﾃ･ﾗ･ﾚ｡ｼ･ｸ</span></a>
+			<p><a href="..\..\index.html"><span>Linuxｵｻｽﾑ</span></a>
+			<p><a href="..\..\010linux\index.html"><span>Linux､ﾎﾆﾌ邏ﾃﾃﾎｼｱ</span></a>
+			<p><a href="..\..\010linux\centos7\index.html"><span>CentOS7</span></a>
+			<p><a href="..\..\01linuxcommand\index.html"><span>Linux･ｳ･ﾞ･ﾉ</span></a>
+			<p><a href="..\..\030linuxtips\index.html"><span>Linux tips</span></a>
+			<p><a href="..\..\2006\01\centos54linux.html"><span>Linux･ｵ｡ｼ･ﾐ｡ｼｹｽﾃﾛ</span></a>
+			<p><a href="..\..\050linux\index.html"><span>Linuxﾍﾑｸ・/span></a>
+			<p><a href="..\..\..\2009\12\post-3.html"><span>Linuxﾌｵﾎﾁｹﾖｺﾂ</span></a>
+			<p><a href="..\..\..\2009\12\post-4.html"><span>Linuxﾍｭﾎﾁｹﾖｺﾂ</span></a>
+			<p><a href="..\..\..\2010\08\centos55.html"><span>Linux･ｻ･ﾟ･ﾊ｡ｼ</span></a>
+			<p><a href="..\..\..\kouza\index.html"><span>Linuxｹﾖｺﾂ</span></a>
+			<p><a href="..\..\..\linux_blog\index.html"><span>ｸｰ･ﾖ･愠ｰ</span></a>
+			<p><a href="..\..\..\linux_blog\cat60\index.html"><span>Linux･ｻ･ﾟ･ﾊ｡ｼﾊ・/span></a>
+			<p><a href="http://www.enetmercury.com" target="_blank"><span>Linux･ｵ｡ｼ･ﾐ｡ｼｹｽﾃﾛｱｿﾍﾑｴﾉﾍ</span></a>
+			<p><a href="https://www.facebook.com/miyazakiandFriends2" target="_blank"><span>Facebookｸｰ･ﾚ｡ｼ･ｸ</span></a>
+			<p><a href="https://www.facebook.com/miyazakiandFriends" target="_blank"><span>ｴﾉﾍｿﾍ､ﾎFacebook･ﾚ｡ｼ･ｸ</span></a>
+		</div>
+		<div class="newsTitle">
+			<h3 class="title"><span>･ｵ･､･ﾈﾆ篋｡ｺ・</span></h3>
+		</div>
+			<ul>
+			<form action="https://www.google.co.jp/cse" id="cse-search-box" target="_blank" accept-charset="UTF-8">
+				<div>
+					<input type="hidden" name="cx" value="partner-pub-9286957635215255:8808115079">
+					<input type="hidden" name="oe" value="EUC-JP">
+					<input type="text" name="q" size="30">
+					<input type="submit" name="sa" value="ｸ｡ｺ・">
+				</div>
+			</form>
+			<script type="text/javascript" src="https://www.google.co.jp/coop/cse/brand?form=cse-search-box&amp;lang=ja"></script>
+			</ul>
+		<div class="newsTitle">
+			<h3 class="title"><span>Linuxｴﾃ</span></h3>
+		</div>
+		<div class="news">
+			<p><a href="..\..\010linux\index.html"><span>Linux､ﾎｴﾃﾃﾎｼｱ</span></a>
+		</div>
+
+		<div class="newsTitle">
+			<h3 class="title"><span>Linux･ｳ･ﾞ･ﾉ</span></h3>
+		</div>
+		<div class="news">
+			<p><a href="..\..\01linuxcommand\index.html"><span>Linux･ｳ･ﾞ･ﾉ</span></a>
+			<p><a href="..\..\01linuxcommand\cat3\index.html"><span>･ﾕ･｡･､･・ｦ･ﾇ･｣･・ｯ･ﾈ･・ﾉﾍ･ｳ･ﾞ･ﾉ</span></a>
+			<p><a href="..\..\01linuxcommand\cat7\index.html"><span>･譯ｼ･ｶ｡ｦ･ｰ･・ｼ･ﾗｴﾉﾍ･ｳ･ﾞ･ﾉ</span></a>
+			<p><a href="..\..\01linuxcommand\cat9\index.html"><span>･ﾆ･ｭ･ｹ･ﾈｽ靉･ｳ･ﾞ･ﾉ</span></a>
+			<p><a href="..\..\01linuxcommand\cat10\index.html"><span>･ﾍ･ﾃ･ﾈ･・ｼ･ｯｴﾉﾍ･ｳ･ﾞ･ﾉ</span></a>
+			<p><a href="..\..\01linuxcommand\cat11\index.html"><span>･ｷ･ｹ･ﾆ･犇ﾉﾍ･ｳ･ﾞ･ﾉ</span></a>
+			<p><a href="..\..\01linuxcommand\cat12\index.html"><span>･ﾗ･愠ｻ･ｹｴﾉﾍ･ｳ･ﾞ･ﾉ</span></a>
+			<p><a href="..\..\01linuxcommand\cat13\index.html"><span>ｰｵｽﾌ｡ｦｲ爍ｦ･｢｡ｼ･ｫ･､･ﾖｴﾉﾍ･ｳ･ﾞ･ﾉ</span></a>
+			<p><a href="..\..\01linuxcommand\cat14\index.html"><span>･ﾑ･ﾃ･ｱ｡ｼ･ｸｴﾉﾍ･ｳ･ﾞ･ﾉ</span></a>
+			<p><a href="..\..\01linuxcommand\linuxa-e\index.html"><span>Linux･ｳ･ﾞ･ﾉA-E</span></a>
+			<p><a href="..\..\01linuxcommand\linuxf-j\index.html"><span>Linux･ｳ･ﾞ･ﾉF-J</span></a>
+			<p><a href="..\..\01linuxcommand\linuxk-o\index.html"><span>Linux･ｳ･ﾞ･ﾉK-O</span></a>
+			<p><a href="..\..\01linuxcommand\linuxp-t\index.html"><span>Linux･ｳ･ﾞ･ﾉP-T</span></a>
+			<p><a href="..\..\01linuxcommand\linuxu-z\index.html"><span>Linux･ｳ･ﾞ･ﾉU-Z</span></a>
+		</div>
+
+		<div class="newsTitle">
+			<h3 class="title"><span>Linux Tips</span></h3>
+		</div>
+		<div class="news">
+			<p><a href="..\..\030linuxtips\index.html"><span>Linux tips</span></a>
+			<p><a href="..\..\030linuxtips\110\index.html"><span>･､･ｹ･ﾈ｡ｼ･・/span></a>
+			<p><a href="..\..\030linuxtips\010\index.html"><span>ｵｯﾆｰ</span></a>
+			<p><a href="..\..\030linuxtips\020\index.html"><span>･譯ｼ･ｶ｡ｼｴﾉﾍ</span></a>
+			<p><a href="..\..\030linuxtips\030\index.html"><span>･ﾇ･｣･・ｯ･ﾈ･遙ｦ･ﾕ･｡･､･・犲・/span></a>
+			<p><a href="..\..\030linuxtips\040\index.html"><span>･ﾇ･｣･ｹ･ｯﾁ犲・/span></a>
+			<p><a href="..\..\030linuxtips\130\index.html"><span>･ﾇ･ﾐ･､･ｹｴﾉﾍ</span></a>
+			<p><a href="..\..\030linuxtips\050\index.html"><span>･ﾆ･ｭ･ｹ･ﾈｽ靉</span></a>
+			<p><a href="..\..\030linuxtips\060\index.html"><span>･ｷ･ｹ･ﾆ･犇ﾉﾍ</span></a>
+			<p><a href="..\..\030linuxtips\070rpm\index.html"><span>RPM</span></a>
+			<p><a href="..\..\030linuxtips\080\index.html"><span>･ﾍ･ﾃ･ﾈ･・ｼ･ｯ</span></a>
+			<p><a href="..\..\030linuxtips\090\index.html"><span>･ｻ･ｭ･螂・ﾆ･｣</span></a>
+			<p><a href="..\..\030linuxtips\100\index.html"><span>･ｵ｡ｼ･ﾐ｡ｼｴﾉﾍ</span></a>
+			<p><a href="..\..\030linuxtips\120\index.html"><span>･愠ｰｴﾉﾍ</span></a>
+			<p><a href="..\..\030linuxtips\web\index.html"><span>Web･ｵ｡ｼ･ﾐ｡ｼｴﾉﾍ</span></a>
+			<p><a href="..\..\030linuxtips\cat68\index.html"><span>･ﾇ｡ｼ･ｿ｡ｼ･ﾙ｡ｼ･ｹｴﾉﾍ</span></a>
+		</div>
+
+		<div class="newsTitle">
+			<h3 class="title"><span>Linux･ｵ｡ｼ･ﾐ｡ｼｹｽﾃﾛ</span></h3>
+		</div>
+		<div class="news">
+			<p><a href="..\..\2010\03\vmware-player-3.html"><span>VMware Player 3､ﾎ･ﾀ･ｦ･悅ｼ･ﾉ､ﾈ･､･ｹ･ﾈ｡ｼ･・/span></a>
+			<p><a href="..\..\2010\03\vmware-player-3-1.html"><span>VMware Player 3､ﾎｻﾈ､､ﾊ</span></a>
+			<p><a href="..\..\040linux\020centos54\index.html"><span>CentOS5.4､ﾇ･ｵ｡ｼ･ﾐ｡ｼｹｽﾃﾛ</span></a>
+		</div>
+
+		<div class="newsTitle">
+			<h3 class="title"><span>Linuxﾍﾑｸ・/span></h3>
+		</div>
+		<div class="news">
+			<p><a href="..\..\050linux\linuxworda-e\index.html"><span>linuxwordA-E</span></a>
+			<p><a href="..\..\050linux\linuxwordf-j\index.html"><span>linuxwordF-J</span></a>
+			<p><a href="..\..\050linux\linuxwordk-o\index.html"><span>linuxwordK-O</span></a>
+		</div>
+
+		<div class="newsTitle">
+			<h3 class="title"><span>Linux･ﾖ･愠ｰ</span></h3>
+		</div>
+		<div class="news">
+			<p><a href="..\..\..\linux_blog\index.html"><span>Linux･ﾖ･愠ｰ</span></a>
+			<p><a href="..\..\..\linux_blog\cat53\index.html"><span>､ｪﾃﾎ､鬢ｻ</span></a>
+			<p><a href="..\..\..\linux_blog\linux-3\index.html"><span>Linuxｾｦｵｻｽﾑ</span></a>
+			<p><a href="..\..\..\linux_blog\linux-1\index.html"><span>Linux･ｨ･鬘ｼﾂﾐｽ靈｡</span></a>
+			<p><a href="..\..\..\linux_blog\cat60\index.html"><span>Linux･ｻ･ﾟ･ﾊ｡ｼﾊ・/span></a>
+			<p><a href="..\..\..\linux_blog\linux\index.html"><span>Linuxﾆ・ｭ</span></a>
+			<p><a href="..\..\..\linux_blog\cat52\index.html"><span>ﾆ・・ﾎﾆ・ｭ</span></a>
+		</div>
+
+		<div class="newsTitle">
+			<h3 class="title"><span>Linux､ﾎｼﾁﾌ・/span></h3>
+		</div>
+		<div class="news">
+			<p><a href="..\..\..\linux_blog\linux-2\index.html"><span>Linux､ﾎｼﾁﾌ・/span></a>
+			<p><a href="..\..\..\linux_blog\linux-2\linux-4\index.html"><span>Linuxﾁｴﾈﾌ</span></a>
+			<p><a href="..\..\..\linux_blog\linux-2\10\index.html"><span>･､･ｹ･ﾈ｡ｼ･・ﾘﾏ｢</span></a>
+			<p><a href="..\..\..\linux_blog\linux-2\cat57\index.html"><span>･ﾍ･ﾃ･ﾈ･・ｼ･ｯｴﾘﾏ｢</span></a>
+			<p><a href="..\..\..\linux_blog\linux-2\vmware-player\index.html"><span>VMware Playerｴﾘﾏ｢</span></a>
+			<p><a href="..\..\..\linux_blog\linux-2\cat58\index.html"><span>､ｽ､ﾎﾂｾ</span></a>
+		</div>
+
+		<div class="newsTitle">
+			<h3 class="title"><span>Linux･ｹ･ｭ･・｢･ﾃ･ﾗ</span></h3>
+		</div>
+		<div class="news">
+			<p><a href="..\..\..\kouza\index.html"><span>Linuxｹﾖｺﾂ</span></a>
+			<p><a href="..\..\..\2010\08\centos55.html"><span>Linux･ｻ･ﾟ･ﾊ｡ｼ</span></a>
+		</div>
+
+		<div class="newsTitle">
+			<h3 class="title"><span>RSSﾅﾐﾏｿ</span></h3>
+		</div>
+			<p>atom:<a href="..\..\..\atom.xml"><img src="..\..\..\images\atom_xml.jpeg"></a>
+			<p>RSS:<a href="..\..\..\index.xml"><img src="..\..\..\images\rss.png"></a>
+		</aside></div>
+		
+	
+
+<!-- / wrapper -->
+<footer id="footer">
+	<div class="inner">
+		<ul>
+			<li><a href="..\..\..\index.html">｣ﾈ｣ﾏ｣ﾍ｣ﾅ</a></li>
+			<li><a href="..\..\..\cat41\index.html">ﾅｵ･､･ﾈ､ﾋ､ﾄ､､､ﾆ</a></li>
+			<li><a href="..\..\index.html">Linuxｵｻｽﾑ</a></li>
+			<li><a href="..\..\..\2009\12\post-3.html">ﾌｵﾎﾁｹﾖｺﾂ</a></li>
+			<li><a href="..\..\..\2009\12\post-4.html">ﾍｭﾎﾁｹﾖｺﾂ</a></li>
+			<li><a href="..\..\..\linux_blog\index.html">･ﾖ･愠ｰ</a></li>
+			<li><a href="..\..\..\2009\12\post-7.html">､隍ｯ､｢､・ﾁﾌ・/a></li>
+			<li><a href="..\..\..\2009\12\post-8.html">ﾆﾃﾄ・ｦｼ隹妤ﾋｴﾘ､ｹ､・ｽｵｭ</a></li>
+			<li class="end"><a href="..\..\..\cat45\index.html">ﾁ・ﾟ･・ｯﾊ鄂ｸ､ﾋ､ﾄ､､､ﾆ</a></li>
+		</ul>
+		<p id="copyright">Copyright &copy; 2009-2019 Linuxｵｻｽﾑ ･・ﾊ･ﾃ･ｯ･ｹ･ﾞ･ｹ･ｿ｡ｼ.JP｡ﾊLinux･ﾞ･ｹ･ｿ｡ｼ.JP｡ﾋ All rights Reserved.
+	</div>
+</footer>
+<!-- / footer -->
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-63594523-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+</body>
+</html>

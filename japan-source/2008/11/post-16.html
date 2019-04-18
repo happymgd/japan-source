@@ -1,0 +1,439 @@
+﻿<!DOCTYPE html>
+<html dir="ltr" lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, user-scalable=yes, maximum-scale=1.0, minimum-scale=1.0">
+<link rel="canonical" href="post-16.html">
+
+
+
+<title>｡ﾚｼﾖﾀｸ､ﾎﾀｼ｡ﾛ･・ﾊ･ﾃ･ｯ･ｹ･ﾞ･ｹ･ｿ｡ｼ｡ｦ･ﾛ｡ｼ･爭ｹ･ｿ･ﾇ･｣ｹﾖｺﾂ｡ﾃLinux･ﾞ･ｹ･ｿ｡ｼ.JP｡ﾊ･・ﾊ･ﾃ･ｯ･ｹ･ﾞ･ｹ･ｿ｡ｼ.JP｡ﾋ</title>
+<meta name="Keywords" content="｡ﾚｼﾖﾀｸ､ﾎﾀｼ｡ﾛ･・ﾊ･ﾃ･ｯ･ｹ･ﾞ･ｹ･ｿ｡ｼ｡ｦ･ﾛ｡ｼ･爭ｹ･ｿ･ﾇ･｣ｹﾖｺﾂ,Linux,Linux･ｳ･ﾞ･ﾉ,Linux Tips,Linuxｵｻｽﾑ">
+
+<link rel="stylesheet" href="..\..\style.css" type="text/css" media="screen">
+<!--[if lt IE 9]>
+<script src="https://www.linuxmaster.jp/js/html5.js"></script>
+<script src="https://www.linuxmaster.jp/js/css3-mediaqueries.js"></script>
+<![endif]-->
+<script src="..\..\js\jquery1.7.2.min.js"></script>
+<script src="..\..\js\script.js"></script>
+</head>
+<body>
+<header id="header" role="banner">
+	<div class="inner">
+		<hgroup>
+			
+			
+			
+			
+			<h1>｡ﾚｼﾖﾀｸ､ﾎﾀｼ｡ﾛ･・ﾊ･ﾃ･ｯ･ｹ･ﾞ･ｹ･ｿ｡ｼ｡ｦ･ﾛ｡ｼ･爭ｹ･ｿ･ﾇ･｣ｹﾖｺﾂ</h1>
+
+			<h2><a href="..\..\index.html" rel="home"><img src="..\..\images\top_image_title.gif" alt="Linux･ﾞ･ｹ･ｿ｡ｼ.JP｡ﾊ･・ﾊ･ﾃ･ｯ･ｹ･ﾞ･ｹ･ｿ｡ｼ.JP｡ﾋ"></a></h2>
+		</hgroup>
+		<div id="headerInfo">
+			| <a href="..\..\cat44\index.html">ｲﾒｳｵﾍﾗ</a>
+			| <a href="..\..\cat44\index-1.html#profile">ｱｿｱﾄｼﾔ･ﾗ･愠ﾕ･｣｡ｼ･・/a>
+			| <a href="..\..\2009\12\post-7.html">､隍ｯ､｢､・ﾁﾌ荀ﾋ､ﾄ､､､ﾆ</a>
+			| <a href="..\..\2009\12\post-6.html">､ｪﾌ荀､ｹ遉・ｻ</a> |
+		</div>
+	</div>
+</header>
+
+<nav id="mainNav">
+	<div class="inner">
+		<a class="menu" id="menu"><span>MENU</span></a>
+		<div class="panel">
+			<ul>
+				<li><a href="..\..\index.html"><span>･ﾈ･ﾃ･ﾗ･ﾚ｡ｼ･ｸ</span></a></li>
+				<li><a href="..\..\cat41\index.html"><span>ﾅｵ･､･ﾈ､ﾋ､ﾄ､､､ﾆ</span></a></li>
+				<li><a href="..\..\linux_skill\index.html"><span>Linuxｵｻｽﾑ</span></a>
+					<ul class="sub-menu">
+						<li><a href="..\..\linux_skill\010linux\index.html"><span>ﾆﾌ邏ﾃﾃﾎｼｱ</span></a></li>
+						<li><a href="..\..\linux_skill\01linuxcommand\index.html"><span>Linux･ｳ･ﾞ･ﾉ</span></a></li>
+						<li><a href="..\..\linux_skill\030linuxtips\index.html"><span>Linux Tips</span></a></li>
+						<li><a href="..\..\linux_skill\010linux\centos7\index.html"><span>CentOS7ﾆﾃｽｸ</span></a></li>
+					</ul>
+				</li>
+				<li><a href="..\..\2009\12\post-3.html"><span>ﾌｵﾎﾁｹﾖｺﾂ</span></a>
+					<ul class="sub-menu">
+						<li><a href="..\..\2011\01\linux.html"><span>ﾌｵﾎﾁ･ﾞ･ﾋ･螂｢･・/span></a></li>
+					</ul>
+				</li>
+				<li><a href="..\..\2009\12\post-4.html"><span>ﾍｭﾎﾁｹﾖｺﾂ</span></a>
+					<ul class="sub-menu">
+						<li><a href="..\..\kouza\index.html"><span>･ﾛ｡ｼ･爭ｹ･ｿ･ﾇ･｣ｹﾖｺﾂ</span></a></li>
+						<li><a href="..\..\2010\08\centos55.html"><span>･・ﾊ･ﾃ･ｯ･ｹ･ｻ･ﾟ･ﾊ｡ｼ</span></a></li>
+						<li><a href="..\..\cloud\index.html"><span>･ｯ･鬣ｦ･ﾉｹｽﾃﾛｹﾖｺﾂ</span></a></li>
+					</ul>
+				</li>
+				<li><a href="..\..\linux_blog\index.html"><span>･ｦ･ｧ･ﾖ･愠ｰ</span></a>
+					<ul class="sub-menu">
+						<li><a href="..\..\linux_blog\cat60\index.html"><span>Linux･ｻ･ﾟ･ﾊ｡ｼﾊ・/span></a></li>
+						<li><a href="..\..\linux_blog\linux-3\index.html"><span>ｵｻｽﾑ｡ｦ･ｻ･ｭ･螂・ﾆ･｣</span></a></li>
+						<li><a href="..\..\linux_blog\linux-1\index.html"><span>･ｨ･鬘ｼﾂﾐｽ靈｡</span></a></li>
+					</ul>
+				</li>
+				<li><a href="..\..\cat44\index.html"><span>ｲﾒｳｵﾍﾗ</span></a></li>
+			</ul>
+		</div>
+	</div>
+</nav>
+
+
+<div id="wrapper">
+	<div id="content">
+		
+		<section>
+		<article class="content">
+			<header><h2 class="title first"><span>｡ﾚｼﾖﾀｸ､ﾎﾀｼ｡ﾛ･・ﾊ･ﾃ･ｯ･ｹ･ﾞ･ｹ･ｿ｡ｼ｡ｦ･ﾛ｡ｼ･爭ｹ･ｿ･ﾇ･｣ｹﾖｺﾂ</span></h2></header>
+			<div class="post">
+			<div class="pan"><a href="..\..\index.html" title="home">｣ﾈ｣ﾏ｣ﾍ｣ﾅ</a> ｡・<a href="..\..\kouza\index-2.html">･・ﾊ･ﾃ･ｯ･ｹ･ﾞ･ｹ･ｿ｡ｼ｡ｦ･ﾛ｡ｼ･爭ｹ･ｿ･ﾇ･｣ｹﾖｺﾂ｡ﾚCentOS7ﾈﾇ｡ﾛ</a> ｡・｡ﾚｼﾖﾀｸ､ﾎﾀｼ｡ﾛ･・ﾊ･ﾃ･ｯ･ｹ･ﾞ･ｹ･ｿ｡ｼ｡ｦ･ﾛ｡ｼ･爭ｹ･ｿ･ﾇ･｣ｹﾖｺﾂ</div>
+
+
+<link rel="stylesheet" href="..\..\semi\linux.css" type="text/css">
+<br>
+<strong><u><font style="FONT-SIZE: 16px">｡ﾚｼﾖﾀｸ､ﾎﾀｼ｡ﾛ･・ﾊ･ﾃ･ｯ･ｹ･ﾞ･ｹ･ｿ｡ｼ｡ｦ･ﾛ｡ｼ･爭ｹ･ｿ･ﾇ･｣ｹﾖｺﾂ</font></u></strong><br>
+<br>
+｡ｦｹﾖｺﾂ､ﾋｴﾘ､ｹ､・ｴｼﾁﾌ荀ﾊ､ﾉ､ﾏ｡｢ｲｼｵｭ･癸ｼ･・ﾋ､ｴﾏ｢ﾍ朗ｺ､ｭ､ﾞ､ｹ､隍ｦ､ｭ､ｪｴ熙､ﾃﾗ､ｷ､ﾞ､ｹ｡｣<br>
+｡｡<a href="mailto:pakira@linuxmaster.jp?subject=･・ﾊ･ﾃ･ｯ･ｹ･ﾞ･ｹ･ｿ｡ｼ｡ｦ･ﾛ｡ｼ･爭ｹ･ｿ･ﾇ･｣ｹﾖｺﾂ､ｪﾌ荀､ｹ遉・ｻ">･ﾛ｡ｼ･爭ｹ･ｿ･ﾇ･｣ｹﾖｺﾂ､ﾋｴﾘ､ｹ､・ｪﾌ荀､ｹ遉・ｻ､ﾏ､ｳ､ﾁ､鬢ｯ･・ﾃ･ｯ､ｷ､ﾆ､ｯ､ﾀ､ｵ､､</a><br>
+<br>
+<b>ｼﾖﾀｸ､ﾎﾀｼ</b><br>
+<table bordercolor="#000000" cellspacing="0" cellpadding="0" width="80%" bgcolor="#feffe6" border="1">
+  <tr>
+    <td style="PADDING-RIGHT: 10px; PADDING-LEFT: 10px; FONT-SIZE: 13px; LINE-HEIGHT: 22px">
+<font color="#000000"><br>
+､荀ﾏ､・ﾇｼｨﾈﾄｷﾁｼｰ､ﾎ･ｵ･ﾝ｡ｼ･ﾈ､ｬﾉﾕ､､､ﾆ､､､ｿ､ｳ､ﾈ､ｬ<br>
+､ﾈ､ﾆ､箒ｷ､ｫ､ﾃ､ｿ､ﾇ､ｹ｡｣<br>
+<br>
+ｽｹ､ﾇﾇ网ﾃ､ｿ･ﾆ･ｭ･ｹ･ﾈ､ﾎｾ・遑｢昉､､､ﾆ､箴ｫﾊｬ､ﾇﾄｴ､ﾙ､・ｷ､ｫ<br>
+､ｹ､ﾙ､ﾏ､｢､熙ﾞ､ｻ､ｷ｡｢ｰ・ﾄｴ､ﾙ､ﾆ､ｽ､・ﾇ､筅・ｫ､鬢ﾊ､､ｾ・遑｢<br>
+ﾌﾌﾅﾝ､ﾋ､ﾊ､ﾃ､ﾆﾅ熙ｲ､ﾆ､ｷ､ﾞ､ｦ､ﾎ､ﾇ｡ｦ｡ｦ｡ｦ｡ﾊｼｫﾊｬ､ﾎﾀﾕﾇ､､ﾊ､ﾎ､ﾇ､ｹ､ｬ｡ﾋ<br>
+<br>
+ｲﾃ､ｨ､ﾆ｡｢ｵﾜｺ熙ｵ､ﾎﾂﾐｱ､ｬﾁ皃､ｻｬｾｰｴｷ､､､ﾇ､ｹ､ﾍ｡｣<br>
+<br>
+ﾇｺ､ﾇ､､､ﾆﾇｮ､ｬｹ筅､ｾﾖ､ﾇﾅ妤ｨ､ｬ､筅鬢ｨ､・ﾎ､ﾇ<br>
+･筵ﾁ･ﾙ｡ｼ･ｷ･逾ｬｲｼ､ｬ､鬢ﾊ､､､ｦ､ﾁ､ﾋﾀ隍ﾋｿﾊ､爨ｳ､ﾈ､ｬｽﾐﾍ隍ﾞ､ｷ､ｿ｡｣<br>
+<br>
+･ﾆ･ｭ･ｹ･ﾈ､ﾋ､ﾄ､､､ﾆ､ﾏ｡｢ｼ・遉ﾎｰ・ﾄｰ・ﾄ､ﾋｲ靂ﾌ､ﾎ･ｭ･罕ﾗ･ﾁ･罍ｼ､ｬ<br>
+､ﾄ､､､ﾆ､､､ｿ､ﾎ､ﾇ｡｢ﾊｸｻ妤ﾈｲ靂ﾌﾆﾄ､ﾎｴﾑﾅﾀ､ｫ､魑ﾘｽｬ､ｹ､・ｳ､ﾈ､ｬ､ﾇ､ｭ｡｢<br>
+､ｳ､ｳ､ﾇ､篆ｹ､ﾎ･ﾆ･ｭ･ｹ･ﾈ､隍熙篩ﾜﾁﾇﾀｲ､鬢ｷ､､､ﾈｴｶ､ｸ､ﾞ､ｷ､ｿ｡｣<br>
+<br>
+ﾋｰ､ｭ､ﾃ､ﾝ､､ｼｫﾊｬ､ｬｺﾇｸ螟ﾞ､ﾇ･ｵ｡ｼ･ﾐ､ｽﾃﾛ､ﾇ､ｭ､ｿ､ﾎ､ﾏ｡｢<br>
+ﾁﾇﾀｲ､鬢ｷ､､･ﾆ･ｭ･ｹ･ﾈ､ﾈｵﾜｺ熙ｵ､ﾎﾁﾇﾀｲ､鬢ｷ､､･ｵ･ﾝ｡ｼ･ﾈ､ﾎ<br>
+､ｪｱ｢､ﾋﾂｾ､ﾊ､熙ﾞ､ｻ､｣<br>
+<br>
+ﾋﾜﾅﾋ､｢､熙ｬ､ﾈ､ｦ､ｴ､ｶ､､､ﾞ､ｷ､ｿ｡ｪ<br>
+<br>
+｡ﾊﾀ鯱ﾕｸｩ ｰﾋﾀｪｺ・ﾍ｡ﾋ<br>
+<br>
+</font></td></tr></table><br>
+
+<a href="..\..\kouza\index.html#omoushikomi"><img src="..\..\images\btn_mousikomi.gif"></a><br>
+<br>
+
+<table bordercolor="#000000" cellspacing="0" cellpadding="0" width="80%" bgcolor="#feffe6" border="1">
+  <tr>
+    <td style="PADDING-RIGHT: 10px; PADDING-LEFT: 10px; FONT-SIZE: 13px; LINE-HEIGHT: 22px">
+<font color="#000000"><br>
+､ﾄ､､､ﾋｴｰﾀｮ､ｷ､ﾞ､ｷ､ｿ Web･ｵ｡ｼ･ﾐ｡ｪ<br>
+ｴｶﾌｵﾎﾌ､ﾇ､ｹ｡｢､ｦ､・ｷ､､､ﾎｰ・ﾀ､ﾋｿﾔ､ｭ､ﾞ､ｹ｡｣<br>
+<br>
+ｽ鯀ｴｼﾔ､ﾎｻ荀ｬ Linux､ﾇ･ｵ｡ｼ･ﾐ､ｬﾋﾜﾅﾋ､ﾇ､ｭ､・ﾎ､ｫ<br>
+､ﾈｻﾗ､､､ﾞ､ｷ､ｿ､ｬ｡｢､ｽ､・ｬ､ﾇ､ｭ､ｿ､ﾎ､ﾇ､ｹ｡｣ <br>
+<br>
+ﾋｭﾉﾙ､ﾊﾆ簣ﾆ､ﾈ･ｵ･ﾝ｡ｼ･ﾈ､ﾎ､ｪ､ｫ､ｲ､ﾈｴｶｼﾕ､ｷ､ﾆ､ｪ､熙ﾞ､ｹ｡｣<br>
+<br>
+ﾋﾜｲｰ､ｵ､ﾘｹﾔ､ｱ､ﾐ｡ﾖｼｫﾂｵ｡ｼ･ﾐ､ﾎｺ釥・｡ﾗ､ﾊ､ﾉ､ﾈ<br>
+､､､ﾃ､ｿﾋﾜ､簓荀ﾃ､ﾆ､､､ﾞ､ｹ､ｷ｡｢･､･ｿ｡ｼ･ﾍ･ﾃ･ﾈ､ﾋ､篆ﾐ､ﾆ､､､ﾞ､ｹ｡｣<br>
+､ｷ､ｫ､ｷ｡｢､・ｫ､鬢ﾊ､､､ｳ､ﾈ､茖｢ﾌﾂ､ﾃ､ｿｻ､ﾊ､ﾉﾃｯ､筝ｵ､ｨ､ﾆ､ｯ､・ﾞ､ｻ､｣<br>
+<br>
+ﾍﾗ､ｹ､・ﾋ･ｵ･ﾝ｡ｼ･ﾈ､ｬ､ﾊ､､､ﾎ､ﾇ､ｹ｡｣<br>
+<br>
+､ｳ､ﾎｹﾖｺﾂ､ﾏﾁｴ､ｯｰ网､､ﾞ､ｹ｡｣､ｷ､ﾃ､ｫ､熙ｷ､ｿ･ｵ･ﾝ｡ｼ･ﾈ､ｬ､｢､熙ﾞ､ｹ｡｣<br>
+､ﾉ､ﾊｼﾁﾌ荀莊ｿﾌ荀ﾋ､簑ﾕﾇ､､､ﾃ､ﾆﾅ妤ｨ､ﾆ､ｯ､・ﾞ､ｹ｡｣<br>
+ｺﾇｸ螟ﾞ､ﾇ､ﾈ､ｳ､ﾈ､妤ｨ､ﾆ､ｯ､・ﾞ､ｹ｡｣<br>
+<br>
+､ﾀ､ｫ､鬢ｳ､ｽ｡｢ｽ鯀ｴｼﾔ､ﾎｻ荀ﾇ､篌ﾇｸ螟ﾞ､ﾇ､荀・・ｲ､・ｬ､ﾇ､ｭ､ﾞ､ｷ､ｿ｡｣<br>
+ｵﾜｺ・ﾍ｡｢､｢､熙ｬ､ﾈ､ｦ､ｴ､ｶ､､､ﾞ､ｷ､ｿ｡｣ｿｴ､隍・ｶｼﾕｿｽ､ｷｾ螟ｲ､ﾞ､ｹ｡｣<br>
+<br>
+｡ﾊﾊ｡ﾅ邵ｩ ｵﾈﾅﾄﾍﾍ｡ﾋ<br>
+<br>
+</font></td></tr></table><br>
+
+<a href="..\..\kouza\index.html#omoushikomi"><img src="..\..\images\btn_mousikomi.gif"></a><br>
+<br>
+
+<table bordercolor="#000000" cellspacing="0" cellpadding="0" width="80%" bgcolor="#feffe6" border="1">
+  <tr>
+    <td style="PADDING-RIGHT: 10px; PADDING-LEFT: 10px; FONT-SIZE: 13px; LINE-HEIGHT: 22px">
+<font color="#000000"><br>
+ﾈｾﾇｯﾁｰ､ﾞ､ﾇLinux､膊ovableType､ﾎｸﾀﾍﾕ､篥ﾎ､鬢ﾊ､､ｻ荀ｬ<br>
+ｶｳ､ｳ､ﾎ･ｻ･ﾟ･ﾊ｡ｼ､ﾖ､ｷ､ﾆ｣ｳ･鋗ﾖ､ﾇｸｫ､ﾇ､ｭ､・br>
+｣ﾗ｣ﾅ｣ﾂｹｽﾃﾛ､ｬ､ﾇ､ｭ､・ﾞ､ﾇ､ﾊ､・ﾈ､ﾏｻﾗ､ﾃ､ﾆ､､､ﾞ､ｻ､ﾇ､､､ｿ｡｣<br>
+<br>
+ｺ｣､ﾏMovableType､ﾈ､ﾃ､ﾆｰｭﾀ・・ｮ､ｷ､ﾊ､ｬ､鬣ﾖ･愠ｰ､ｽﾃﾛﾃ讀ﾇ､ｹ｡｣<br>
+､ﾞ､ｿ｡｢Lpic-101｡｢Lpic-102､ｳ､ｷ､ﾆLpic-I､ﾋﾌｵｻ邉ﾊ､ｹ､・ｳ､ﾈ､ｬ､ﾇ､ｭ､ﾞ､ｷ､ｿ｡｣<br>
+<br>
+ﾋﾜﾅﾋ､ｳ､ﾎ ･ｻ･ﾟ･ﾊ｡ｼ､ﾖ､ｷ､ﾆ､隍ｫ､ﾃ､ｿ､ﾇ､ｹ｡｣<br>
+､｢､熙ｬ､ﾈ､ｦ､ｴ､ｶ､､､ﾞ､ｷ､ｿ｡｣<br>
+<br>
+｡ﾊｷｧﾋﾜｸｩ ｰ､ﾉﾍ｡ﾋ<br>
+<br>
+</font></td></tr></table><br>
+
+<a href="..\..\kouza\index.html#omoushikomi"><img src="..\..\images\btn_mousikomi.gif"></a><br>
+<br>
+
+<table bordercolor="#000000" cellspacing="0" cellpadding="0" width="80%" bgcolor="#feffe6" border="1">
+  <tr>
+    <td style="PADDING-RIGHT: 10px; PADDING-LEFT: 10px; FONT-SIZE: 13px; LINE-HEIGHT: 22px">
+<font color="#000000"><br>
+LPIC､ﾎ･・ﾙ･・ｱ､・ｲﾜ､ﾎｼｳ､ﾇｹ邉ﾊ､ｷ｡｢､ｽ､・ｫ､鬢ｷ､ﾐ､鬢ｯ､ﾎｴﾖ｡｢<br>
+ｱｶ､ｫ､ﾃ､ﾆ､､､ﾞ､ｷ､ｿ｡｣<br>
+<br>
+ｺｯﾋﾋｵﾜｺ熙ｵ､ﾎ･ｵ｡ｼ･ﾐｹﾖｺﾂ､ﾎｰﾆﾆ筅ｫ､ﾆ｡｢<br>
+､筅ｦｰ・ﾙﾊﾙｶｯ､ｷﾄｾ､ｷ､ﾆ､ﾟ､隍ｦ､ﾈｼﾖ､ｷ､ﾆ､､､ﾞ､ｹ｡｣<br>
+<br>
+ｼﾂｺﾝ､ﾋLPIC･・ﾙ･・､ﾇｽﾐ､ﾆ､ｯ､・ｳ･ﾞ･ﾉ､ﾊ､ﾉ､ｬ｡｢<br>
+ｵﾜｺ熙ｵ､ﾎ･ｵ｡ｼ･ﾐｹﾖｺﾂ､ﾇ｡｢ｿ・熙ﾋｽﾐ､ﾆ､ｭ､ﾆ､､､ﾞ､ｷ､ｿ｡｣<br>
+<br>
+LPICｼｳ､ﾎｻ､ﾋ､ﾏ｡｢｡ﾖ､ﾒ､ｿ､ｹ､鰺ﾜ､ﾉ､ﾟｰﾅｵｭ､ｹ､・ﾊｵﾍ､盪､爍ﾋ｡ﾗ､ﾈ､､､ｦ<br>
+ﾊﾙｶｯ､ﾀ､ﾃ､ｿ､ﾎ､ﾇ｡｢ｳﾐ､ｨ､・ﾎ､ﾋ､ﾈ､ﾆ､筝・ｫ､ｷ｡｢､ﾞ､ｿｳﾐ､ｨ､ﾆ､・br>
+､ｹ､ｰ､ﾋﾋｺ､・ﾆ､ｷ､ﾞ､､､ﾞ､ｷ､ｿ｡｣<br>
+<br>
+､ﾄ､ﾞ､遙ｦ｡ｦ｡ｦ<br>
+､､､ｫ､ﾋｼﾂｵ｡､ﾇ･ｳ･ﾞ･ﾉ､｡､､､ﾆ｡｢ﾂﾎｷﾏﾅｪ､ﾋｳﾐ､ｨ､・ｳ､ﾈ､ｬﾂ扈ｫ｡ｩ<br>
+ﾆｬ､ﾋﾆ､・ｫ｡ｩ､ﾈ､､､ｦｻｵ､ｨ､鬢・ﾞ､ｷ､ｿ｡｣<br>
+<br>
+ﾋﾜ､ｯ､皃ﾆ､､､・ﾀ､ｱ､ﾇ､ﾏ｡｢<br>
+｡ﾖ､ﾉ､ﾊｻ､ﾋ｡｢､ﾉ､ﾊ･ｳ･ﾞ･ﾉ､｢､ﾉ､ｦｻﾈ､ｦ､ﾎ､ｫ｡ｩ｡ﾗｼﾂｴｶ､ﾏ､皃ﾞ､ｻ､ﾇ､ｷ､ｿ｡｣<br>
+ｺ｣ｲﾎ･ｵ｡ｼ･ﾐｹﾖｺﾂ､ﾇ｡｢ｼﾂｺﾝ､ﾎｿｧ｡ｹ､ﾊﾀﾟﾄ熙ﾌ､ｷ､ﾆ｡｢<br>
+･ｳ･ﾞ･ﾉ､ﾎｻﾈ､､ﾊ､ｬﾊｬ､ｫ､ﾃ､ﾆ､ｭ､ﾞ､ｷ､ｿ｡｣<br>
+<br>
+｡ﾊﾅ・ﾅﾔ ｰﾂﾀｾﾍﾍ｡ﾋ<br>
+<br>
+</font></td></tr></table><br>
+
+<a href="..\..\kouza\index.html#omoushikomi"><img src="..\..\images\btn_mousikomi.gif"></a><br>
+<br>
+<table bordercolor="#000000" cellspacing="0" cellpadding="0" width="80%" bgcolor="#feffe6" border="1">
+  <tr>
+    <td style="PADDING-RIGHT: 10px; PADDING-LEFT: 10px; FONT-SIZE: 13px; LINE-HEIGHT: 22px">
+<font color="#000000"><br>
+ｵ､ｻ､ﾁ､ﾏ､｢､ﾃ､ｿ､筅ﾎ､ﾎ｡｢､､､ｶ､ﾏ､ｸ､皃隍ｦ､ﾈ､ｷ､ﾆ､筍｢<br>
+ｲｿ､ｫ､鮠熙ﾄ､ｱ､ﾆ､､､､､ﾎ､ｫ､・ｫ､鬢ｺ｡｢ﾊ・ﾖ｡ｦ｡ｦ｡ｦ､ﾎｷｫ､・ﾖ､ｷ､ﾇ､ｷ､ｿ｡｣<br>
+<br>
+､ｽ､ﾊｻ｡｢･皈・ﾞ･ｬ､ﾇ､ｳ､ﾎｹﾖｺﾂ､ﾟ､ﾆ｡｢<br>
+｡ﾖ､ｳ､・ﾀ｡ｪ｡ｪ｡ｪ｡ﾗ､ﾈｻﾗ､､､ﾞ､ｷ､ｿ｡｣<br>
+<br>
+ｲｿ､隍熙筅ｭ､ﾃ､ｫ､ｱ､ｬﾍﾟ､ｷ､ｫ､ﾃ､ｿ､ﾎ､ﾇ､ｹ｡｣<br>
+､ｽ､ｷ､ﾆ｡｢･ｵ･ﾝ｡ｼ･ﾈ､ｬｸ・､､ﾈ､ｭ､､､ﾆ｡｢<br>
+ｺ｣ﾅﾙ､ｳ､ｽﾅﾓﾃ讀ﾇ､荀皃ﾊ､､､ﾇ､､､ｱ､・ｫ､筅ｷ､・ﾊ､､｡ｪ<br>
+､ﾈｴ・ﾔ､､､ﾃ､ﾑ､､､ﾇｿｽ､ｷｹ､ﾟ､ﾞ､ｷ､ｿ｡｣ <br>
+<br>
+ｼﾂｺﾝ､ﾎｹﾖｺﾂﾆ簣ﾆ､ﾏ｡｢ｻﾗ､ﾃ､ｿｰﾊｾ螟ﾋ｡｢<br>
+ﾃ戓ｫ､ﾇ､・ｫ､熙荀ｹ､､･ﾆ･ｭ･ｹ･ﾈ､ﾇｽｫ､熙ﾞ､ｷ､ｿ｡｣<br>
+<br>
+ｽ鯀ｴｼﾔ､ﾇ､篶ﾂ､・ｺｺ鋐ﾈ､ﾊ､皃鬢・ｿ､ﾎ､ﾇ｡｢<br>
+｡ﾖｳﾚ､ｷ､､｡ﾗｵ､ｻ､ﾁ､ｬ､ﾉ､ﾉ､ﾕ､ｯ､鬢ﾟ､ﾞ､ｷ､ｿ｡｣<br>
+<br>
+､､､ｶｹﾔ､ｭｵﾍ､ﾞ､ﾃ､ﾆ､筵ｵ･ﾝ｡ｼ･ﾈｷﾇｼｨﾈﾄ､ﾇﾊｹ､ｱ､ﾐ､､､､｡｢<br>
+､ﾈｻﾗ､ｦ､ﾈ､ｫ､ﾊ､・ﾂｿｴ､ﾇ､ｭ､ﾞ､ｷ､ｿ｡｣ <br>
+<br>
+ｻ荀ﾋ､ﾈ､ﾃ､ﾆLinux､ﾇ･ﾖ･愠ｰｹｽﾃﾛ､ｬ､ﾇ､ｭ､ｿ､ﾎ､ﾏ､ﾈ､ﾃ､ﾆ､篦遉ｭ､ｫ､ﾃ､ｿ､ﾇ､ｹ｡｣<br>
+ｴﾜﾁ犲釥ｬ､・ｫ､・隍ｦ､ﾋ､ﾊ､ﾃ､ｿ､ﾎ､ﾇ｡｢Linux､ﾘ､ﾎｶ・・ﾕｼｱ､ｬ､ｫ､ﾊ､・ｺ､熙ﾞ､ｷ､ｿ｡｣ <br>
+<br>
+ｺﾇｽ鬢ﾎﾊﾉ､ﾛ､ｨ､ｵ､ｻ､ﾆ､ｯ､・ｿ､ｳ､ﾎｹﾖｺﾂ､ﾋﾂ醋ﾑｴｶｼﾕ､ｷ､ﾆ､､､ﾞ､ｹ｡｣<br>
+ﾋﾜﾅﾋ､｢､熙ｬ､ﾈ､ｦ､ｴ､ｶ､､､ﾞ､ｷ､ｿ｡ｪ｡ｪ <br>
+<br>
+｡ﾊﾅ・ﾅﾔ ｹ篶ﾚﾍﾍ｡ﾋ<br>
+<br>
+</font></td></tr></table><br>
+
+<a href="..\..\kouza\index.html#omoushikomi"><img src="..\..\images\btn_mousikomi.gif"></a><br>
+<br>
+
+<table bordercolor="#000000" cellspacing="0" cellpadding="0" width="80%" bgcolor="#feffe6" border="1">
+  <tr>
+    <td style="PADDING-RIGHT: 10px; PADDING-LEFT: 10px; FONT-SIZE: 13px; LINE-HEIGHT: 22px">
+<font color="#000000"><br>
+ｻ荀ﾏ､ｳ､・ﾞ､ﾇ｡｢Linux､ﾞ･ｹ･ｿ｡ｼ､ｹ､ﾙ､ｯ｡｢､､､惕､､晙釥ﾟ､ﾆ､ｭ､ﾞ､ｷ､ｿ｡｣ <br>
+｣ｳﾇｯｰﾊｾ蟠霪･､ﾃ､ｿ､ｬ､､､ｺ､・篌ﾃﾀﾞ､ｷ､ﾞ､ｷ､ｿ｡｣ <br>
+､ｽ､ｷ､ﾆｺ｣｡｢､ｳ､ﾎｹﾖｺﾂ､ﾇ､荀ﾃ､ﾈｾ隍・ﾚ､・ｽ､ｦ､ﾋｴｶ､ｸ､ﾆ､､､ﾞ､ｹ｡｣ <br>
+<br>
+ｺ｣ｲ｢､ｳ､ﾎｹﾖｺﾂ､ｿﾅﾙ､ｫｷｫ､・ﾖ､ｷ､ﾆ､隍ｯ､・ｫ､ﾃ､ｿ､ﾎ､ﾇ､ｹ､ｬ｡｢<br>
+MovableTypeｰ・ﾄ､､･ｹ･ﾈ｡ｼ･・ｹ､・ﾋ､ｷ､ﾆ､筍｢<br>
+､ｽ､・ｬﾆｰｺ釥ｹ､・ﾄｶｭ､ｽﾃﾛ､ｹ､・ｿ､皃ﾋﾍﾍ｡ｹ､ﾊ･ｽ･ﾕ･ﾈ､隍ﾋ<br>
+･､･ｹ･ﾈ｡ｼ･・ｹ､・ｬﾍﾗ､ｬ､｢､遙｢ MovableType､ﾎﾋﾜ､ﾀ､ｱ､・br>
+ﾇ网ﾃ､ﾆ､ｭ､ﾆﾄｴ､ﾙ､ﾆ､篆ﾐﾍ隍ﾊ､､､・ｱ､ﾇ､ｷ､ｿ｡｣<br>
+<br>
+･ｪ･鬣､･ﾞ･ﾋ･螂｢･・筅ﾈ､ｳ､惕ﾉ､ｳ､暙ｬｷ醢釥ｷ､ﾆ､､､ﾆ｡｢<br>
+ｽ鯀ｴｼﾔ､ﾋ､ﾏ､ﾊ､ｫ､ﾊ､ｫﾍｲﾇ､ｭ､ﾞ､ｻ､｣ <br>
+<br>
+ｼﾖ､ｷ､ﾆ｡｢ｻ荀ｬ､ｳ､・ﾞ､ﾇｲｿﾅﾙ､篌ﾃﾀﾞ､ｷ､ﾊ､ｱ､・ﾐ､ﾊ､鬢ﾊ､ｫ､ﾃ､ｿﾌｬ､隍ｯ､・ｫ､ﾃ､ｿ､ﾎ､ﾇ､ｹ｡｣<br>
+<br>
+､ﾞ､ｿ｡｢ｼﾖ､ｷ､ﾆｰ・ﾖﾎﾉ､ｫ､ﾃ､ｿ､ﾎ､ﾏ･ｵ･ﾝ｡ｼ･ﾈ･ﾕ･ｩ｡ｼ･鬣爨ﾇ､ｹ｡｣<br>
+､ｳ､ｳ､ﾇ､ﾎｼﾁﾌ荀ﾏｼﾖﾀｸﾁｴｰﾎｶｦﾍｭｺ篏ｺ､ﾇ､ｹ｡｣<br>
+ｹﾖｻﾕ､ﾎﾃ戓ｫ､ﾇｴﾞﾃﾟ､｢､・憘簣ﾆ､ﾏ､ﾈ､ｭ､ﾋ､ｦ､ﾊ､ｺ､ｫ､ｵ､・ﾞ､ｹ｡｣<br>
+<br>
+ｼｫﾊｬ､ﾋｴﾘｷｸ､ﾎ､ﾊ､､ｼﾁﾌ荀ﾇ､筍｢ｰ・ﾄｰ・ﾄ､ｬLinux､ﾎ･ｹ･ｭ･・｢･ﾃ･ﾗ､ﾋ<br>
+ﾂ遉､､ﾋﾌﾋﾎｩ､ﾁ｡｢ｰ､ｷ､ﾆ･ﾕ･｡･､･・ｷ､ｿｻﾁ､ﾏ｡｢<br>
+ｻ荀ﾎ､ﾀ､ｱ､ﾎｵｮｽﾅ､ﾊlinuxｶｵｲﾊｽﾋ､ﾊ､ﾃ､ﾆ､､､ﾞ､ｹ｡｣<br>
+<br>
+｡ﾊﾀﾐﾀ鋕ｩ｡｡ﾋﾌｷﾁﾍﾍ｡ﾋ<br>
+<br>
+</font></td></tr></table><br>
+
+<a href="..\..\kouza\index.html#omoushikomi"><img src="..\..\images\btn_mousikomi.gif"></a><br>
+<br>
+
+<table bordercolor="#000000" cellspacing="0" cellpadding="0" width="80%" bgcolor="#feffe6" border="1">
+  <tr>
+    <td style="PADDING-RIGHT: 10px; PADDING-LEFT: 10px; FONT-SIZE: 13px; LINE-HEIGHT: 22px">
+<font color="#000000"><br>
+ｺｩ｡｢IT･ｵ･ﾝ｡ｼ･ﾈ､ｴ､ｦﾉﾋｰﾛﾆｰ､ｷ､ｿ､ｳ､ﾈ､ﾇLINUX､ﾈ､､､ｦ<br>
+､筅ﾎ､ﾎﾂｸｺﾟ､ﾎ､熙ﾞ､ｷ､ｿ｡｣<br>
+<br>
+ﾃﾎ､熙ﾏ､ｷ､ｿ､筅ﾎ､ﾎﾆｱﾎｽ､ﾊ､ﾉ､ﾎﾀ､ﾏﾃ､ﾋ､ﾊ､熙ﾊ､ｬ､・br>
+teraterm､ﾙ､ｷ､ｷｻﾈ､ｦ､ｳ､ﾈ､ﾇｸ棏箚ｽ､ｷ､ﾆ､ﾞ､ｷ､ｿ｡｣<br>
+<br>
+､ｽ､ｳ､ﾇ｡｢､ﾈ､｢､・ﾒ､ﾘﾆ､ｷ､ﾆLINUX､ﾎﾊﾙｶｯ､ｬ､ﾆ､・br>
+･ｵ｡ｼ･ﾐ､ﾎｹｽﾃﾛ､ﾋﾄｩﾀ・ｹ､・ｳ､ﾈ､ﾋ､ｷ､ﾞ､ｷ､ｿ｡｣<br>
+<br>
+､ｽ､ﾎﾋﾜ､箙隍ｷ､ﾆｰｭ､ｯ､ﾏ､ﾊ､ｯ｡｢ｼﾌｿｿ､ﾊ､ﾉ､箴隍・､・ﾆ<br>
+･ｷ･ﾗ･・ﾋｺ釥ﾃ､ﾆ､｢､熙・ｫ､熙荀ｹ､ｽ､ｦ､ﾇ､ｷ､ｿ｡｣<br>
+<br>
+､ｽ､ｷ､ﾆﾅｺﾉﾕ､ﾎCD､ｫ､餃inux､､･ｹ･ﾈ｡ｼ･・ｷ､ﾆ､ﾟ､ｿ､筅ﾎ､ﾎ<br>
+･ﾜ･ｿ･ｯ･・ﾃ･ｯ､ｹ､・ﾎ､ﾟ､ﾇｲｿ､箴ｳﾏ､ﾏ､｢､熙ﾞ､ｻ､ﾇ､ｷ､ｿ｡｣ <br>
+ｲｿ､ｹ､・ﾐ､､､､､ﾎ､ｫ､ﾏﾅｳｽｫ､・ﾆ､､､ﾞ､ｷ､ｿ｡｣ <br>
+<br>
+GUI､ﾇﾎｩ､ﾁｾ螟ｬ､・ﾐWindows､ﾎ､隍ｦ､ﾋｰｷ､ｦ､ﾎ､ﾏｲｿ､ﾈ､ｫ､ﾊ､熙ﾞ､ｹ｡｣<br>
+､ﾇ､筅､､ｶﾋﾜ､ﾋｽ､､ﾆ､｢､・隍ｦ､ﾋ･ｳ･ﾞ･ﾉ･鬣､･ｫ､鬢ﾎﾆﾎﾏ､ﾃ､ﾆ､ﾉ､ｦ､ｹ､・ﾎ､ｵ｡ｪ｡ｪ<br>
+､ｽ､ﾊｽ鯡簀ｪ､ﾊ､ｳ､ﾈ､ﾇﾎｩ､ﾁｱﾀｸ､ｷ､ﾆ､ﾞ､ｷ､ｿ｡茖・br>
+<br>
+､ｷ､ﾐ､鬢ｯｴﾖ､ｪ､､､ﾆｵ､､隍・ｾ､ｷ､ﾆ｡｢ﾊﾌ､ﾎｽﾒ､ｵ､ｷ､ﾆ､・｢<br>
+ｵﾜｺ熙ｵ､ﾎ･癸ｼ･・ｻ･ﾟ･ﾊ｡ｼ､ﾎ､遙｢､ｵ､ﾃ､ｽ､ｯ､ｪｴ熙､､ｷ､ﾞ､ｷ､ｿ｡｣ <br>
+<br>
+､ｽ､ﾎｸ蝪｢ｵﾜｺ熙ｵ､ｫ､鬣ｵ｡ｼ･ﾐｹｽﾃﾛ･ｻ･ﾟ･ﾊ｡ｼ､ﾎｰﾆﾆ筅ｬﾍ隍ﾞ､ｷ､ｿ｢・<br>
+<br>
+｡ﾖ､ｳ､・ﾀ｡ｪ｡ﾗ<br>
+<br>
+ｰ・､ﾏﾂ醉酖｡､､､ﾆRedHat､ﾎ･ｹ･ｯ｡ｼ･・ﾋｹﾔ､ﾃ､ﾆ､ﾟ､隍ｦ､ｫ｡ｩ<br>
+､ﾈｹﾍ､ｨ､ｿ､熙筅ｷ､ﾞ､ｷ､ｿ､ｬ｡｢､ｽ､ｳ､ﾞ､ﾇ､ﾎｼﾂｹﾔﾎﾏ､筅ﾊ､ｯ<br>
+､ﾉ､ｦ､ｷ､隍ｦ､ｫ､ﾈﾇｺ､ﾇ､､､ｿ､ﾈ､ｳ､悅｢･癸ｼ･・ﾇ､ﾎｼﾁﾌ荀ﾋ､・br>
+ｼｱﾉﾕ､ｱ､ﾆ､筅鬢ｨ､・ﾊ､ﾆ｡｢､ﾞ､ｵ､ｷ､ｯﾅﾏ､熙ﾋﾁ･､ﾇ､ｷ､ｿ｢・br>
+<br>
+､ﾇ､筍｢ﾋﾜﾅﾏ・､､ﾊｸｶ遉ﾀ､ｱ､ﾀ､ﾃ､ｿ､鬘｣｡｣｡｣､ﾊ､ﾆｿｴﾇﾛ､筅｢､熙ﾞ､ｷ､ｿ｡ｰ｡ｰ｡ｨ<br>
+<br>
+､ﾇ､筅ｹ､ｰ､ﾋｼﾖｿｽ､ｷｹ､ﾟ､ｷ､ﾆ･ﾀ･ｦ･悅ｼ･ﾉ､ｷ､ｿ･ﾞ･ﾋ･螂｢･・ｫ､ﾆ<br>
+ｰ・ﾂｿｴ｡ｰ｡ｰﾋﾜﾅﾋｲ篆ﾇ､ｹ､ﾍ｡｣ﾁ犲釥ｬｰ・ｫ､鮨ｽ､ﾞ､ﾇ､ｷ､ﾃ､ｫ､・､､ﾆ､｢､・ｪ｡ｪ<br>
+<br>
+､ｳ､・ﾊ､鮨鯀ｴｼﾔ､ﾇ･ｵ｡ｼ･ﾐｹｽﾃﾛ､ﾊ､ﾆ､ﾎ､糅ｱ､ﾞ､ｷ､ｿ､ﾍ｡｣<br>
+ﾍﾁﾛ､ﾏｷｫ､・ﾖ､ｷ､ﾇ｡｢､ﾞ､ｺ､ﾏｿﾈﾂﾎ､ﾋｳﾐ､ｨ､ｵ､ｻ､・｣<br>
+<br>
+､筅ﾃ､ﾈ､筅ﾀ｡ｪ､ﾈｻﾗ､､｡｢ｴ霪･､熙ﾞ､ｷ､ｿ｡｣<br>
+ｲｿ､ﾈ､ｫｸｫ､ﾎｰ・箴・ｰ､ﾞ､ﾇﾁ讀ｮﾃ螟ｱ､ﾞ､ｷ､ｿ｢・br>
+<br>
+､ｳ､・筵譯ｼ･ｶ･ﾕ･ｩ｡ｼ･鬣爨ﾈｿﾆﾀﾚ､ﾋｻﾘﾆｳ､ｷ､ﾆｲｼ､ｵ､ﾃ､ｿ<br>
+ｵﾜｺ熙ｵ､ﾎ､ｪｱ｢､ﾇ､ｹ｡｢､｢､熙ｬ､ﾈ､ｦ､ｴ､ｶ､､､ﾞ､ｷ､ｿ｡｣<br>
+<br>
+｡ﾊﾂ郤衙ﾜ ﾊｿｰ賚ﾍ｡ﾋ <br>
+<br>
+</font></td></tr></table><br>
+
+<a href="..\..\kouza\index.html#omoushikomi"><img src="..\..\images\btn_mousikomi.gif"></a><br>
+<br>
+<br>
+｡ｦｹﾖｺﾂ､ﾋｴﾘ､ｹ､・ｴｼﾁﾌ荀ﾊ､ﾉ､ﾏ｡｢ｲｼｵｭ･癸ｼ･・ﾋ､ｴﾏ｢ﾍ朗ｺ､ｭ､ﾞ､ｹ､隍ｦ､ｭ､ｪｴ熙､ﾃﾗ､ｷ､ﾞ､ｹ｡｣<br>
+｡｡<a href="mailto:pakira@linuxmaster.jp?subject=･・ﾊ･ﾃ･ｯ･ｹ･ﾞ･ｹ･ｿ｡ｼ｡ｦ･ﾛ｡ｼ･爭ｹ･ｿ･ﾇ･｣ｹﾖｺﾂ､ｪﾌ荀､ｹ遉・ｻ">･ﾛ｡ｼ･爭ｹ･ｿ･ﾇ･｣ｹﾖｺﾂ､ﾋｴﾘ､ｹ､・ｪﾌ荀､ｹ遉・ｻ､ﾏ､ｳ､ﾁ､鬢ｯ･・ﾃ･ｯ､ｷ､ﾆ､ｯ､ﾀ､ｵ､､</a><br>
+<br>
+｡ｦ<a href="..\..\kouza\index.html">･・ﾊ･ﾃ･ｯ･ｹ･ﾞ･ｹ･ｿ｡ｼ｡ｦ･ﾛ｡ｼ･爭ｹ･ｿ･ﾇ･｣ｹﾖｺﾂ､ﾋﾌ皃・/a><br>
+<br>
+
+
+			</div>
+		</article>
+		</section>
+</div><!-- / content -->
+
+	<aside id="sidebar">
+		<div id="banners">
+			<p class="banner">
+				<a href="..\..\linux_skill\index.html"><img src="..\..\images\banners\banner_s1.jpeg" alt="Linuxｵｻｽﾑ"></a>
+			</p>
+			<p class="banner">
+				<a href="..\..\2009\12\post-3.html"><img src="..\..\images\banners\banner_s2.jpeg" alt="Linuxﾌｵﾎﾁｹﾖｺﾂ"></a>
+			</p>
+			<p class="banner">
+				<a href="..\..\2009\12\post-4.html"><img src="..\..\images\banners\banner_s3.jpeg" alt="Linuxﾍｭﾎﾁｹﾖｺﾂ"></a>
+			</p>
+		</div>
+		<div class="newsTitle">
+			<h3 class="title"><span>Menu</span></h3>
+		</div>
+		<div class="news">
+			<p><a href="..\..\index.html"><span>･ﾈ･ﾃ･ﾗ･ﾚ｡ｼ･ｸ</span></a>
+			<p><a href="..\..\linux_skill\index.html"><span>Linuxｵｻｽﾑ</span></a>
+			<p><a href="..\..\linux_skill\010linux\index.html"><span>Linux､ﾎﾆﾌ邏ﾃﾃﾎｼｱ</span></a>
+			<p><a href="..\..\linux_skill\010linux\centos7\index.html"><span>CentOS7</span></a>
+			<p><a href="..\..\linux_skill\01linuxcommand\index.html"><span>Linux･ｳ･ﾞ･ﾉ</span></a>
+			<p><a href="..\..\linux_skill\030linuxtips\index.html"><span>Linux tips</span></a>
+			<p><a href="..\..\linux_skill\2006\01\centos54linux.html"><span>Linux･ｵ｡ｼ･ﾐ｡ｼｹｽﾃﾛ</span></a>
+			<p><a href="..\..\linux_skill\050linux\index.html"><span>Linuxﾍﾑｸ・/span></a>
+			<p><a href="..\..\2009\12\post-3.html"><span>Linuxﾌｵﾎﾁｹﾖｺﾂ</span></a>
+			<p><a href="..\..\2009\12\post-4.html"><span>Linuxﾍｭﾎﾁｹﾖｺﾂ</span></a>
+			<p><a href="..\..\2010\08\centos55.html"><span>Linux･ｻ･ﾟ･ﾊ｡ｼ</span></a>
+			<p><a href="..\..\kouza\index.html"><span>Linuxｹﾖｺﾂ</span></a>
+			<p><a href="..\..\linux_blog\index.html"><span>ｸｰ･ﾖ･愠ｰ</span></a>
+			<p><a href="..\..\linux_blog\cat60\index.html"><span>Linux･ｻ･ﾟ･ﾊ｡ｼﾊ・/span></a>
+			<p><a href="https://www.facebook.com/miyazakiandFriends2" target="_blank"><span>Facebookｸｰ･ﾚ｡ｼ･ｸ</span></a>
+			<p><a href="https://www.facebook.com/miyazakiandFriends" target="_blank"><span>ｴﾉﾍｿﾍ､ﾎFacebook･ﾚ｡ｼ･ｸ</span></a>
+		</div>
+		<div class="newsTitle">
+			<h3 class="title"><span>･ｵ･､･ﾈﾆ篋｡ｺ・</span></h3>
+		</div>
+			<ul>
+			<form action="https://www.google.co.jp/cse" id="cse-search-box" target="_blank" accept-charset="UTF-8">
+				<div>
+					<input type="hidden" name="cx" value="partner-pub-9286957635215255:8808115079">
+					<input type="hidden" name="oe" value="EUC-JP">
+					<input type="text" name="q" size="30">
+					<input type="submit" name="sa" value="ｸ｡ｺ・">
+				</div>
+			</form>
+			<script type="text/javascript" src="https://www.google.co.jp/coop/cse/brand?form=cse-search-box&amp;lang=ja"></script>
+			</ul>
+		
+	</aside>
+</div><!-- / wrapper -->
+<footer id="footer">
+	<div class="inner">
+		<ul>
+			<li><a href="..\..\index.html">｣ﾈ｣ﾏ｣ﾍ｣ﾅ</a></li>
+			<li><a href="..\..\cat41\index.html">ﾅｵ･､･ﾈ､ﾋ､ﾄ､､､ﾆ</a></li>
+			<li><a href="..\..\linux_skill\index.html">Linuxｵｻｽﾑ</a></li>
+			<li><a href="..\..\2009\12\post-3.html">ﾌｵﾎﾁｹﾖｺﾂ</a></li>
+			<li><a href="..\..\2009\12\post-4.html">ﾍｭﾎﾁｹﾖｺﾂ</a></li>
+			<li><a href="..\..\linux_blog\index.html">･ﾖ･愠ｰ</a></li>
+			<li><a href="..\..\2009\12\post-7.html">､隍ｯ､｢､・ﾁﾌ・/a></li>
+			<li><a href="..\..\2009\12\post-8.html">ﾆﾃﾄ・ｦｼ隹妤ﾋｴﾘ､ｹ､・ｽｵｭ</a></li>
+			<li class="end"><a href="..\..\cat45\index.html">ﾁ・ﾟ･・ｯﾊ鄂ｸ､ﾋ､ﾄ､､､ﾆ</a></li>
+		</ul>
+		<p id="copyright">Copyright &copy; 2009-2019 Linux･ﾞ･ｹ･ｿ｡ｼ.JP｡ﾊ･・ﾊ･ﾃ･ｯ･ｹ･ﾞ･ｹ･ｿ｡ｼ.JP｡ﾋ All rights Reserved.</p>
+	</div>
+</footer>
+<!-- / footer -->
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-63594523-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>

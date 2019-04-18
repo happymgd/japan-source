@@ -1,0 +1,2253 @@
+<?xml version="1.0" encoding="EUC-JP"?>
+<rss version="2.0">
+   <channel>
+      <title>Linuxマスター.JP（リナックスマスター.JP）</title>
+      <link>https://www.linuxmaster.jp/</link>
+      <description>Linux初心者がエキスパートになれる技術情報を公開しています。</description>
+      <language>ja</language>
+      <copyright>Copyright 2019</copyright>
+      <lastBuildDate>Fri, 28 Jan 2011 04:59:25 +0900</lastBuildDate>
+      <generator>http://www.sixapart.com/movabletype/</generator>
+      <docs>http://blogs.law.harvard.edu/tech/rss</docs> 
+
+      
+      <item>
+         <title>CentOS7.4サーバー構築マニュアルを無料ダウンロード【期間限定】</title>
+         <description><![CDATA[<font size="3"><strong>＜＜CentOS7.4サーバー構築マニュアルを無料ダウンロード(計170ページ)＞＞</strong></font><br />
+<br />
+<b><U>全くの初心者でも、簡単にLinuxサーバーが構築できる<br />
+CentOS7.4サーバー構築マニュアルを無料プレゼントしています。<br />
+あなたは新しい事にチャレンジする人でしょうか？<br />
+</U></b><br />
+今すぐ本ページお申込みフォームよりマニュアルをダウンロードしてください。 <br />
+<br />
+<!--
+<TABLE borderColor=#000000 cellSpacing=0 cellPadding=0 width="80%" bgColor=#feffe6 border=1>
+  <TR>
+    <TD style="PADDING-RIGHT: 10px; PADDING-LEFT: 10px; FONT-SIZE: 12px; LINE-HEIGHT: 22px">
+<font color="#000000">
+<strong><font style="FONT-SIZE: 15px">＜＜4月30日までの特別限定特典＞＞</font></strong><br />
+<br />
+<b><U>期間中にお申込み頂ければ、CentOS7系で最新となる<br />
+『CentOS7.4』に対応したマニュアルを無料プレゼントします。</U></b><br />
+これがあれば、自宅で様々なバージョンを利用してLinux、CentOSを学べます。<br />
+※近日リリース予定<br />
+</TD></TR></TABLE>
+<br />
+-->
+<strong><font style="FONT-SIZE: 15px">■プレゼントするLinuxマニュアル</font></strong><br />
+<b>1.CentOS7.4サーバー構築マニュアル（105ページ）</b><br />
+<b>2.VMware Playerで作る仮想Linux環境構築マニュアル（40ページ）</b><br />
+<b>3.データベース(PostgreSQL・MySQL)構築マニュアル（33ページ）</b><br />
+<b>4.CentOSバージョンアップマニュアル（33ページ）</b><br />
+※常に最新のCentOSが利用できます。<br />
+※3と4は一冊のマニュアルになっています。<br />
+
+<br />
+上記３冊のサーバー構築マニュアルを無料で差し上げます。<br />
+今すぐ上記お申込みフォームから、CentOS7.4サーバー構築マニュアルを手に入れてください。 <br />
+<br />
+<b><U>このマニュアルさえあれば、どんな初心者でもすぐにLinuxサーバーを構築できます。</U></b><br />
+<br />
+<strong><font style="FONT-SIZE: 15px">■CentOS7.4サーバー構築マニュアルのダウンロード</font></strong><br />
+申し込みは↓今すぐのフォームに名前（ニックネーム可）と<br />
+メールアドレスを登録するだけです。<br />
+今すぐ登録してください。（お金は一切掛かりません。）<br />
+<form action="http://mailmag.enetmercury.com/distribute/cgi-bin/apply.cgi" name="form1" method="post"  id="form1" target="new">
+	<table class="table2" summary="問い合わせフォーム" width="80%">
+        <tr>
+	<td class="sb30">お名前<span class="red">*</span></td>
+	<td class="s70">姓 <input name="sei" type="text" value="山田" size="10" accesskey="B" tabindex="2" /> 名 <input type='text' value='太郎' name='mei' size='10' tabindex='3' accesskey='3' /> (ニックネーム可)</td>
+        </tr>
+        <tr>
+	<td class="sb30">メールアドレス <span class="red">*</span></td>
+	<td class="s70"><input name="mail" type="text" value="半角英数で記入" size="40" accesskey="C" tabindex="3" /></td>
+        </tr>
+        <tr>
+	<td colspan="2" align="center" class="sb100"><input name="md" type="hidden" id="md" value="guest" />
+	<input type="submit" value="　マニュアルを今すぐダウンロード　" >
+	<input name="md" type="hidden" id="md" value="guest">
+	<input name="id" type="hidden" id="id" value="152448151730067">
+	<input name="cd" type="hidden" id="cd" value="文字">
+        </tr>
+	</table>
+</form>
+</TD></TR></TBODY></TABLE><br />
+
+<strong><font style="FONT-SIZE: 15px">■Linux無料マニュアルの詳細</font></strong><br />
+<b>1.CentOS7.4サーバー構築マニュアル（105ページ）</b><br />
+<b>2.データベース(PostgreSQL・MySQL)構築マニュアル（33ページ）</b><br />
+<b>3.CentOSバージョンアップマニュアル（33ページ）</b><br />
+※常に最新のCentOSが利用できます。<br />
+※2と3は一冊のマニュアルになっています。<br />
+<br />
+　CentOS7.4でLinuxサーバーを構築するマニュアルです。<br />
+　このマニュアルさえあれば、どんな初心者でもすぐにサーバーが構築できます。<br />
+<span class="mt-enclosure mt-enclosure-image" style="display: inline;"><a href="https://www.linuxmaster.jp/assets_c/2015/04/CentOS7.1desk-1682.html" onclick="window.open('https://www.linuxmaster.jp/assets_c/2015/04/CentOS7.1desk-1682.html','popup','width=640,height=407,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img src="https://www.linuxmaster.jp/assets_c/2015/04/CentOS7.1desk-thumb-300x190-1682.jpg" width="300" height="190" alt="CentOS7.1desk.jpg" class="mt-image-none" style="" /></a></span><b>
+<br />
+<br />
+・CentOS7.4サーバー構築マニュアルで実施する内容</b><br />
+<TABLE borderColor=#000000 cellSpacing=0 cellPadding=0 width="50%" bgColor=#feffe6 border=1>
+  <TR>
+    <TD style="PADDING-RIGHT: 10px; PADDING-LEFT: 10px; FONT-SIZE: 12px; LINE-HEIGHT: 22px">
+<font color="#000000">
+　・CentOS7.4のダウンロード<br />
+　・CentOS7.4のインストールCD作成<br />
+　・CentOS7.4のネットワークインストール<br />
+　・CentOS7.4の設定<br />
+　・viエディタの練習<br />
+　・Webサーバー(Apache)のインストール<br />
+　・Webサーバーの設定<br />
+　・FTPサーバー(ProFTPD)のインストール<br />
+　・FTPサーバーの設定<br />
+　・DBサーバー(PostgreSQL,MySQL)のインストール<br />
+　・DBサーバーの設定<br />
+　・最新CentOSのバージョンアップ手順 <font color="#dd0000"><b>New!</b></font><br />
+</TD></TR></TABLE>
+<br />
+
+<b>・VMware Playerで作る仮想Linux環境構築マニュアル（40ページ）</b><br />
+　Windows上にエミュレータと呼ばれるLinux仮想環境を構築し、<br />
+　Excelやwordと同じように、LinuxをWindows上で<br />
+　操作できる環境を構築するマニュアルです。<br />
+<span class="mt-enclosure mt-enclosure-image" style="display: inline;"><a href="https://www.linuxmaster.jp/assets_c/2012/07/vmware-600.html" onclick="window.open('https://www.linuxmaster.jp/assets_c/2012/07/vmware-600.html','popup','width=300,height=187,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img src="https://www.linuxmaster.jp/assets_c/2012/07/vmware-thumb-300x187-600.jpg" width="300" height="187" alt="vmware.jpg" class="mt-image-none" style="" /></a></span>
+<br /><br />
+このマニュアルがあれば、Linux専用のパソコンを用意しなくても<br />
+すぐにLinuxサーバー構築が出来ます。<br />
+無料マニュアルが手に入るのは当サイトだけです。<br />
+<br />
+<br />
+<strong><font style="FONT-SIZE: 15px">■Linux無料マニュアルダウンロード特典</font></strong><br />
+マニュアルを申し込むと、プロのサーバー管理者の裏話や、<br />
+Linux技術向上のテクニックなど、Linux技術を習得する上で<br />
+必要な知識や技術を紹介したメールマガジン【プロ鯖】を無料でお届けします。<br />
+<br />
+そのメールの内容を一部紹介すると・・・。<br />
+<br />
+<b>
+・Linuxコマンドの紹介と解説<br />
+・サーバー構築の設定とテクニック<br />
+・サーバー管理者が使うLinuxテクニック<br />
+・今さら聞けないLinuxの基礎<br />
+・エラーになった時、自分で調査や手がかりを探す方法<br />
+・初心者がLinuxをマスターするために必要なこと<br />
+・LPIC合格に必要な知識<br />
+・IT現場でサーバー管理者を経験し習得したLinux技術<br />
+・システムエンジニアとして後輩エンジニアを教育した際に得た経験と知識<br />
+・多くのメルマガ読者の質問から得たLinux技術を習得する上で重要な事<br />
+・セミナー受講生１６００名が共通して躓くのサーバー構築のポイント<br />
+・Linux本でエラーになる本当の理由<br />
+・サーバー管理者ってどんなことをしているの？<br />
+・初心者はどのLinuxを使えば良いのか？<br />
+・一万時間の法則とLinux技術習得<br />
+・Linuxの普遍的技術をマスターするには<br />
+・サーバーセキュリティの３つのポイント<br />
+・自宅サーバーの稼働で気をつけること<br />
+・ネットワークエンジニアとして養ったサーバーとネットワーク知識<br /></b>
+<br />
+などなど盛りだくさんです。<br />
+<br />
+もし、一つでも気になるものがあれば、今すぐお申込みフォームから<br />
+無料マニュアルをダウンロードしてください。<br />
+<br />
+もちろん、メルマガ解除はいつでもできますのでご安心ください。<br />
+<br />
+<br />
+<strong><font style="FONT-SIZE: 15px">■CentOS7.4サーバー構築マニュアルのダウンロード</font></strong><br />
+申し込みは↓今すぐのフォームに名前（ニックネーム可）と<br />
+メールアドレスを登録するだけです。<br />
+今すぐ登録してください。（お金は一切掛かりません。）<br />
+<form action="http://mailmag.enetmercury.com/distribute/cgi-bin/apply.cgi" name="form1" method="post"  id="form1" target="new">
+	<table class="table2" summary="問い合わせフォーム" width="80%">
+        <tr>
+	<td class="sb30">お名前<span class="red">*</span></td>
+	<td class="s70">姓 <input name="sei" type="text" value="山田" size="10" accesskey="B" tabindex="2" /> 名 <input type='text' value='太郎' name='mei' size='10' tabindex='3' accesskey='3' /> (ニックネーム可)</td>
+        </tr>
+        <tr>
+	<td class="sb30">メールアドレス <span class="red">*</span></td>
+	<td class="s70"><input name="mail" type="text" value="半角英数で記入" size="40" accesskey="C" tabindex="3" /></td>
+        </tr>
+        <tr>
+	<td colspan="2" align="center" class="sb100"><input name="md" type="hidden" id="md" value="guest" />
+	<input type="submit" value="　マニュアルを今すぐダウンロード　" >
+	<input name="md" type="hidden" id="md" value="guest">
+	<input name="id" type="hidden" id="id" value="152448151730067">
+	<input name="cd" type="hidden" id="cd" value="文字">
+        </tr>
+	</table>
+</form>
+</TD></TR></TBODY></TABLE><br />
+<br />
+<strong><font style="FONT-SIZE: 15px">■よくある質問</font></strong><br />
+<TABLE borderColor=#000000 cellSpacing=0 cellPadding=0 width="80%" bgColor=#feffe6 border=1>
+  <TR>
+    <TD style="PADDING-RIGHT: 10px; PADDING-LEFT: 10px; FONT-SIZE: 12px; LINE-HEIGHT: 22px">
+<font color="#000000"><br />
+<b>Q.マニュアルをダウンロードするのにお金は掛かりますか？</b><br />
+<br />
+A.一切掛かりません。<br />
+<br />
+</TD></TR></TABLE>
+<br />
+<TABLE borderColor=#000000 cellSpacing=0 cellPadding=0 width="80%" bgColor=#feffe6 border=1>
+  <TR>
+    <TD style="PADDING-RIGHT: 10px; PADDING-LEFT: 10px; FONT-SIZE: 12px; LINE-HEIGHT: 22px">
+<font color="#000000"><br />
+<b>Q.メールマガジンは解除できますか？</b><br />
+<br />
+A.いつでも簡単に解除できます。解除方法はメルマガの最後に記載しています。<br />
+<br />
+</TD></TR></TABLE><br />
+<br />
+<strong><font style="FONT-SIZE: 15px">■無料マニュアル、無料メルマガ読者の感想</font></strong><br />
+読者から頂いた無料マニュアル、無料メールマガジン【プロ鯖】の感想をそのまま紹介します。<br />
+<TABLE borderColor=#000000 cellSpacing=0 cellPadding=0 width="80%" bgColor=#feffe6 border=1>
+  <TR>
+    <TD style="PADDING-RIGHT: 10px; PADDING-LEFT: 10px; FONT-SIZE: 12px; LINE-HEIGHT: 22px">
+<font color="#000000"><br />
+宮崎様<br />
+<br />
+いつも楽しいメルマガを発行していただき、本当にありがとうございます。<br />
+今日は一言お礼を言わせていただきたくて、メールさせていただいています。<br />
+<br />
+これまでメルマガをいただいたり、無料マニュアルの案内をいただいたりしてもとりあえずダウンロードしたり、仕分けて保存したりしていただけで、
+ざっと目は通すものの、あまりきちんと読んだりはしていませんでした。いずれ時間ができたらと言い訳して先延ばしにばかりしていました。<br />
+<br />
+と、いうのも元々、サイトを見せていただいた動機というのが、ちょっと解決したい問題があって検索をかけているうちにひっかかった、
+というだけで「本気でLinuxを始めたい」というような他の方々のような立派な動機ではなかったかも、というのはあります。<br />
+<br />
+私の仕事が教育兼研究という性格のもので、コンピュータは道具であって、仕事そのものではない、という意識でしたし。
+ただ、よりよい研究環境を構築したい、という気持ちはありました。<br />
+<br />
+今回、職場移転に伴う単身赴任で、家族と離れている中で、ちょっとこの環境構築を追求してみたい、という気持ちが強く出てまいりました。<br />
+<br />
+たまたま先週の土曜日に仕事で遅くまで一人で残っていたので、これまで宮崎様からいただいて保存していたメルマガとマニュアルをすべて、
+印刷してみました。そして、土日をかけてじっくりと読ませていただきました。<br />
+<br />
+最初から最後まで3回は通して読ませていただきました。<br />
+もう、面白くて、面白くて。夢中で読んでしまった、という感じです。<br />
+<br />
+また、これからも繰り返し読ませていただき、そして実践させていただこうと思います。
+このような分かりやすいマニュアルや読者に対する思いやりにあふれたメルマガを発行してくださる宮崎様はきっと温かい方なのだろうと思います。<br />
+<br />
+これまで「無料マニュアルの実践」ということについて、いまひとつ懐疑的だったのは、そもそも「サーバ構築をしたい」という明確な要望を持っていたわけでもなく、
+ただコマンドが分かれば十分と思っていただけなのに、なぜサーバの構築までする必要があるのだろうということでした
+（「サーバ構築」というと、なんだかとても敷居が高いもののように思っていたのですね）。<br />
+<br />
+ですが、メルマガを繰り返し読ませていただくうち、とてもよく意味がわかったような気がしました。
+早速にでも時間を見つけて実機で試してみようと思います。本当の意味で分かるにはやっぱりそれしかないですよね。<br />
+<br />
+（木田さま）<br />
+<br />
+</TD></TR></TABLE><br />
+<br />
+<TABLE borderColor=#000000 cellSpacing=0 cellPadding=0 width="80%" bgColor=#feffe6 border=1>
+  <TR>
+    <TD style="PADDING-RIGHT: 10px; PADDING-LEFT: 10px; FONT-SIZE: 12px; LINE-HEIGHT: 22px">
+<font color="#000000"><br />
+プロ鯖をLPICの定番教科書とされる、いわゆるあずき本のサブ教科書（失礼）として用いることにしました。
+あずき本では理解に苦慮していた箇所が、プロ鯖によって見事に理解、解決できることが多く本当に助かっています。<br />
+<br />
+ただ、読むだけでなく、実例を実際にコマンド入力することによって、理解を深めることができたとともに、
+スキルとしての定着を可能にしているのだと思います。iPhoneやiPadにも入れてどこでもいつでも読めるようになっていますが、
+写真のようにヘッダ（各号の情報）とページを加えプリントアウトし、バインダー綴じにしてみました。<br />
+<br />
+<span class="mt-enclosure mt-enclosure-image" style="display: inline;"><a href="https://www.linuxmaster.jp/assets_c/2011/07/proserve_note-448.html" target="_blank"><img src="https://www.linuxmaster.jp/assets_c/2011/07/proserve_note-thumb-300x224-448.jpg" width="300" height="224" alt="proserve_note.jpg" class="mt-image-none" style="" /></a></span>
+<br />（戸塚さんが印刷したプロ鯖ノート）<br />
+<br />
+A5版のバインダーのため、マシンの横に置いても邪魔にならず書籍のように自然に綴じてしまうこともなくたいへん重宝しております。<br />
+<br />
+少しずつバインダーが厚くなっていく様は、自分のスキルもそれなりに上がっていくようでもあり、
+宮崎さんからのプロ鯖メルマガが楽しみです。この頃では、プロ鯖がメイン教科書となりました。
+こんなにわかりやすい教科書が、無料で配布されていることは、何とも有り難いことです。お世辞ではなく、
+私が今まで読んだ、どんなLinux本よりもわかりやすいと思います。<br />
+<br />
+もちろん、それなりにLinuxの理解が深まったお陰で、それまであまり理解できなかったLinux本も理解できるようになりました。
+加えて、LPICの問題集も今までは問題の内容すら理解できなかったのですが、今では、たとえ自分の回答が間違っていたとしても、
+回答解説を読むことによって納得した上で理解できるようになりました。
+
+全く手応えが感じられなかった問題集も今では少なからず解くのが楽しみになりました。本当に有り難いものです、
+これも「守、破、離」を念頭に諦めずに継続していった結果でしょう。<br />
+<br />
+私は、正規の情報処理の教育を受けたわけではななく、学生時代は文化財を学んでおりました。
+よって、情報処理については全く門外漢でした。文化財プロパーとして職務にあっておりましたが、
+文化財においても好むと好まざるにかかわらず、情報処理が必要とされ、当然そのスキルも必要、
+必須とされるようになってきました。このまま、情報処理スキルを身につけることなく文化財プロパーとして続けていくことに疑問を持ち始めた頃、
+奇しくも業務の異動となりました。<br />
+<br />
+異動した職場は全くの新たな分野、齢四十、今からでも遅くなくいと思いつつ、情報処理スキルの習得、
+具体目標として資格取得を思い立ちました。独学でありましたが、何とかシスアド、基本情報を取得できました。<br />
+<br />
+その後、ネットワーク、Linuxに興味を持ち独学で勉強を始めたわけですが、Linuxはそれまでのシスアド、
+基本情報とは異なり、実際の構築、実践が必要であることを痛感しておりました。
+そんな時、Web上で宮崎さんのサイトを知り、メルマガ、無料講座、サーバ構築講座と続けてお世話になりました。
+宮崎さんの実体験をベースにした解説は、非常に説得力があり、Linuxスキルの習得はもとより、
+各プロ鯖のエッセイ風イントロからは、何よりもやる気、希望、元気をいただいていおります。
+奇しくも、業務でLinuxを使うことなり、自らのスキル習得の努力が報われたようで非常に有り難く思います。<br />
+<br />
+（戸塚さま）<br />
+<br />
+</TD></TR></TABLE><br />
+<br />
+<TABLE borderColor=#000000 cellSpacing=0 cellPadding=0 width="80%" bgColor=#feffe6 border=1>
+  <TR>
+    <TD style="PADDING-RIGHT: 10px; PADDING-LEFT: 10px; FONT-SIZE: 12px; LINE-HEIGHT: 22px">
+<font color="#000000"><br />
+お世話になります。宍戸です。<br />
+<br />
+無料マニュアルの中に出てきたPowerEdge800、私も欲しくなって中古を1万円で仕入れました。
+まだ届いていませんが。練習用にと思いまして。これがサーバーか！かっこいいなと。<br />
+<br />
+書籍はいま6.0のバージョンに合わせたLinuxサーバー入門本で自習中ですが、メルマガで書かれていた通り、確かに誤植や省略が非常に多く、エラーの連発でネットでいろいろ調べながら悪戦苦闘しながらやってます。<br />
+<br />
+まずviコマンドのことが書かれていないのでどうやったら編集できるんだ？とか、シャットダウンしたつもりなのに勝手に再起動してしまい、
+終了するのにはオプション-hが必要なことをようやくネットから調べたりとかです。viコマンド知らないままに編集しようとして、
+いらいらしながら「どうなってんだ」とキーボードをがちゃがちゃ押しまくって偶然「あ、編集できるようになった」とか、そんな感じでした。<br />
+<br />
+ノートパソコンを3台並べ、ハブでつないで練習しています。Winクライアント、Linuxクライアント、Linuxサーバーの組み合わせです。 
+本業の片手間に勉強しているので速度は気まぐれですが、Linuxは面白すぎです。<br />
+<br />
+無料マニュアルをやって、SSHでつながったときやＦＴＰでファイル転送に成功した時は感動しました。<br />
+<br />
+（宍戸さま）<br />
+<br />
+</TD></TR></TABLE><br />
+<br />
+<strong><font style="FONT-SIZE: 15px">■CentOS7.4サーバー構築マニュアルのダウンロード</font></strong><br />
+申し込みは↓今すぐのフォームに名前（ニックネーム可）と<br />
+メールアドレスを登録するだけです。<br />
+今すぐ登録してください。（お金は一切掛かりません。）<br />
+<form action="http://mailmag.enetmercury.com/distribute/cgi-bin/apply.cgi" name="form1" method="post"  id="form1" target="new">
+	<table class="table2" summary="問い合わせフォーム" width="70%">
+        <tr>
+	<td class="sb30">お名前<span class="red">*</span></td>
+	<td class="s70">姓 <input name="sei" type="text" value="山田" size="10" accesskey="B" tabindex="2" /> 名 <input type='text' value='太郎' name='mei' size='10' tabindex='3' accesskey='3' /> (ニックネーム可)</td>
+        </tr>
+        <tr>
+	<td class="sb30">メールアドレス <span class="red">*</span></td>
+	<td class="s70"><input name="mail" type="text" value="半角英数で記入" size="40" accesskey="C" tabindex="3" /></td>
+        </tr>
+        <tr>
+	<td colspan="2" align="center" class="sb100"><input name="md" type="hidden" id="md" value="guest" />
+	<input type="submit" value="　マニュアルを今すぐダウンロード　" >
+	<input name="md" type="hidden" id="md" value="guest">
+	<input name="id" type="hidden" id="id" value="152448151730067">
+	<input name="cd" type="hidden" id="cd" value="文字">
+        </tr>
+	</table>
+</form>]]></description>
+         <link>https://www.linuxmaster.jp/2011/01/linux.html</link>
+         <guid>https://www.linuxmaster.jp/2011/01/linux.html</guid>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">当サイトについて</category>
+        
+        
+         <pubDate>Fri, 28 Jan 2011 04:59:25 +0900</pubDate>
+      </item>
+      
+      <item>
+         <title>【Linuxセミナー】リナックスマスター２日間集中セミナー【CentOS7研修】</title>
+         <description><![CDATA[<LINK rel="stylesheet" href="https://www.linuxmaster.jp/semi/linux.css" type="text/css">
+<strong><U><font style="FONT-SIZE: 16px" color="#dd0000">【Linuxセミナー】リナックスマスター２日間集中セミナー【CentOS7研修】</U></font></strong><br />
+<br />
+<b>本Linuxセミナーは、プロのサーバー管理者がIT現場で使うLinuxサーバーを<br />
+２日間で構築しながら、その技術が学べる実践型</b><strong><U>「初心者向けLinux入門セミナー」</U></strong><b>です。<br />
+研修内容は、独学で1年学ぶ量に相当しますので、<br />
+とにかく早く現場の技術を習得したい人に最適です。</b><br />
+<br />
+<strong>本セミナーを受講すれば、<br />
+サーバー構築から運用管理まで、Linuxを使う上で必要な技術と知識がすべて学べます。</strong><br />
+<b>他に教材は一切必要ありません。</b><br />
+<br />
+<b><U>CentOS7系で最新となる<span style="background-color:#FFFF00">『CentOS7.6』</span>でセミナーを受講できます。<br />
+CentOS7.6に含まれる脆弱性にも対応し、最新のセキュリティを確保した<br />
+サーバーで構築、運用ができます。</U></b><br />
+いち早く最新のCentOS7をマスターしたい方は、今すぐお申込みください。<br />
+<br />
+<strong><U><font style="FONT-SIZE: 14px" color="#dd0000">■Linuxセミナーを受講するメリット</font></U></strong><br />
+・疑問点がその場で解決する。<br />
+・２日という短期間でサーバー構築に必要な技術が学べる。<br />
+・成果物として、しっかりとしたセキュリティ対策が施されたサーバーが自分で構築できる。<br />
+<br />
+<span class="mt-enclosure mt-enclosure-image" style="display: inline;"><a href="https://www.linuxmaster.jp/linux_blog/assets_c/2014/06/DSC07018-1483.html" onclick="window.open('https://www.linuxmaster.jp/linux_blog/assets_c/2014/06/DSC07018-1483.html','popup','width=800,height=600,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img src="https://www.linuxmaster.jp/linux_blog/assets_c/2014/06/DSC07018-thumb-300x225-1483.jpg" width="300" height="225" alt="DSC07018.jpg" class="mt-image-none" style="" /></a></span><br />
+（セミナーの様子）<br />
+<img src="https://www.linuxmaster.jp/images/arrow2.gif"> <A href="https://www.linuxmaster.jp/linux_blog/cat60/" target="_blank">過去のセミナーの様子はこちらをクリックしてください。</a><br />
+<br />
+<!--
+遠方の方や、予定が合わず、当Linuxセミナーへの参加が難しい方の為に、<br />
+自宅で学習できる講座もご用意しています。<br />
+詳しくは下記ページを御覧ください。<br />
+<img src="https://www.linuxmaster.jp/images/arrow2.gif"> <a href="https://www.linuxmaster.jp/kouza/index.html" target="_blank">リナックスマスター・ホームスタディ講座</a><br />
+<br />
+クラウド上にサーバー構築するオンライン講座も御座います。<br />
+詳しくは下記ページを御覧ください。<br />
+<img src="https://www.linuxmaster.jp/images/arrow2.gif"> <a href="https://www.linuxmaster.jp/cloud/index.html" target="_blank">リナックスマスター・ホームスタディ講座【クラウド編】</a><br />
+<br />
+-->
+<strong><U><font style="FONT-SIZE: 14px" color="#dd0000">■Linuxセミナーの目的</font></U></strong><br />
+<b><font style="FONT-SIZE: 14px">２日間の研修でプロのサーバー管理者がIT現場で使うLinuxサーバーを構築し、<br />
+その技術を習得するとともに、「Linuxは決して難しくない。」ことを<br />
+あなたに実感してもらいます。</font></b><br />
+（今までエラーで悩んでいた人でも、<br />
+２日間でLinuxサーバー構築できプロの技術が身につきます。）<br />
+<br />
+本Linuxセミナーでは、大手高額ITスクールや書店で売られている構築本では、<br />
+決して手に入らないIT現場のLinux技術が習得できます。<br />
+<br />
+実際に同機能のLinuxサーバーを業者に依頼すると、最低でも１００万円は請求されます。<br />
+それだけ価値のある構築手順とLinux技術のすべてをあなたに教えします。<br />
+<br />
+<b>また、Linuxをある程度使いこなせるようになるには、少なくとも500時間は必要です。</b><br />
+毎日3時間Linuxの勉強に費やしても1ヶ月で100時間くらい掛かります。<br />
+独学でやっている人が、ある程度自分にスキルが身についた事を実感するには<br />
+半年以上掛かります。<br />
+<br />
+<strong>しかし、本Linuxセミナーなら、２日間に渡って本当に必要な技術を<br />
+厳選してお教えしますので、その時間を約20分の1の20時間〜30時間に短縮できます。</strong><br />
+<br />
+<b>あなたが本Linuxセミナーを受講すれば、インターネットに公開しても安全で、<br />
+高負荷にも耐えるプロのLinuxサーバー構築技術を少ない時間で習得できます。</b><br />
+<br />
+<br />
+<strong><U><font style="FONT-SIZE: 14px" color="#dd0000">■Linuxセミナーの対象者</font></U></strong><br />
+本Linuxセミナーを受講することであなたは下記のようになれます。<br />
+<b><br />
+<font style="FONT-SIZE: 14px">・「Linuxをどこからどう始めて良いのかわからない。」　→　「使いこなせて当然。」</font><br />
+<font style="FONT-SIZE: 14px">・「本ではすぐエラーになって諦めていた。」　→　「エラーの原因を自分でみつけられる。」</font><br />
+<font style="FONT-SIZE: 14px">・「興味はあるが実際に行動するまで至らない。」　→　「どんどん次のステップに進みたい。」</font><br />
+<font style="FONT-SIZE: 14px">・「Linuxは難しい。」　→　「Linuxは簡単で楽しい。」</font><br />
+</b>
+<br />
+また、本Linuxセミナーはこのような方に最適です。<br />
+<br />
+・これからLinuxを始めてみたい方。<br />
+・独学だといつもエラーになって先に進めなくなる方。<br />
+・Linuxをたまに使用するが、ゼロから構築したことがない方。<br />
+・直接Linuxサーバー構築技術を教えて欲しい方。<br />
+・時間を拘束された方が集中して取り組める方。<br />
+・独学だとどうしてもサボり気味になってしまう方。<br />
+・ホームスタディ講座を受講したけど、対面で教えて欲しい方。<br />
+・Linux技術の必要性を常日頃感じているも、本腰を入れて学習した事がない方。<br />
+・システム会社に言われるがまま「OK」しか言えず、自分のLinuxスキル不足を感じている方。<br />
+・Linuxは何となく使えるが、きちんとした教育を受けたことがないので自信が持てない方。<br />
+・サーバー技術を身につけたいプログラマーやSE、ネットワークエンジニアの方。<br />
+・Windowsサーバーの経験しかのない方。<br />
+<br />
+<strong>全くLinuxを触ったことがない初心者はもちろん<br />
+<U>最近は、「仕事でLinuxと関わることが増えたから・・・」という理由で<br />
+受講する方が増えています。<br />
+少し触ったことはあるけど、一から構築したことがないという人にも大変好評です。</U></strong><br />
+<br />
+本Linuxセミナーを受講すれば、プロのLinuxサーバー構築技術が身につき、<br />
+「Linuxは簡単で、楽しいもの。」ということを実感して頂けます。<br />
+<br />
+<br />
+<strong><U><font style="FONT-SIZE: 14px" color="#dd0000">■一人２台の充実したサーバー、クライアント環境でセミナー研修</font></U></strong><br />
+実機演習に勝る、技術習得方法はありません。<br />
+<br />
+LinuxのインストールからWeb、FTP、データベースなどのサーバーソフトウェアの<br />
+インストールと設定、インターネットに公開するサーバーを構築する上で<br />
+必要なサーバーセキュリティ設定、サーバー運用管理スキルなど。<br />
+<br />
+これら全てを、実機演習を通じて習得できます。<br />
+<br />
+「Linuxサーバー管理者が構成を理解した上で運用していく」スキルを身につける為には、<br />
+「実機を利用した実演講習」が必須です。<br />
+<span class="mt-enclosure mt-enclosure-image" style="display: inline;"><a href="https://www.linuxmaster.jp/linux_blog/assets_c/2015/01/DSC09055-1613.html" onclick="window.open('https://www.linuxmaster.jp/linux_blog/assets_c/2015/01/DSC09055-1613.html','popup','width=800,height=600,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img src="https://www.linuxmaster.jp/linux_blog/assets_c/2015/01/DSC09055-thumb-300x225-1613.jpg" width="300" height="225" alt="DSC09055.jpg" class="mt-image-none" style="" /></a></span>
+<br />
+（Linuxセミナールーム）<br />
+<img src="https://www.linuxmaster.jp/images/arrow2.gif"> <A href="https://www.linuxmaster.jp/linux_blog/cat60/" target="_blank">過去のセミナーの様子はこちらをクリックしてください。</a><br />
+<br /><br />
+<strong><U><font style="FONT-SIZE: 14px" color="#dd0000">■少人数制によるキメ細やかなサポート</font></U></strong><br />
+<b><font style="FONT-SIZE: 14px">本Linuxセミナーでは、最大の講座人数を６名（再受講含む）までとしております。</font></b><br />
+本Linuxセミナーでは、実機演習を一人一人しっかりとサポートすること。<br />
+受講者の方々それぞれのスキル差を十分にカバーできること。<br />
+より良い環境で実機による講習を行えること。<br />
+これらを考慮した結果、必然的に少人数制の研修スタイルとなりました。<br />
+<br />
+少人数の為、講師、受講者ともに距離感が縮まり、質問や指摘しやすい環境が生まれ、<br />
+より深い理解を得ることができます。<br />
+<br />
+また、申し込もうとして定員に達してしまった場合は、お断りさせて頂く場合もありますので、<br />
+その点だけご了承頂きますようお願いします。<br />
+<br />
+詳細は下記をご確認の上、セミナーにお申込み頂きますようお願い致します。<br />
+<br />
+<strong><U><font style="FONT-SIZE: 14px" color="#dd0000">■Linuxセミナー詳細</font></U></strong><br />
+<table summary="fx2" class="fx2"><tr><td class="bl80"></td><td class="bl230"><center>セミナー内容</center></td></tr>
+<tr><td class="bl80" style="FONT-SIZE: 13px;">開催予定日時</td><td class="wh240" style="FONT-SIZE: 13px;">
+<br />
+<b>２０１９年Linuxセミナー開催予定日</b><br />
+<strong>※最新の「CentOS7.6」で受講できます。</strong><br />
+<br />
+<strong>・キャンセル待ちのお申し込みは、銀行振込から行なって下さい。</strong><br />
+<A href="https://www.linuxmaster.jp/2009/07/post-20.html#3" target="_blank">＞＞キャンセル待ちについてはこちらをご確認ください。＜＜</a><br />
+<br />
+■<b>２０１９年</b><br />
+・４/２０(土)〜２１(日)(定員５名) <strong>満席 キャンセル待ち受付中</strong><br />
+　１日目　１２：４５〜１８：３０<br />
+　２日目　０９：４５〜１７：３０<br />
+<br />
+・４/２３(火)〜２４(水)(定員５名) <strong>募集中 残り２席</strong><br />
+　１日目　１２：４５〜１８：３０<br />
+　２日目　０９：４５〜１７：３０<br />
+<br />
+・５/２５(土)〜２６(日)(定員５名) <strong>募集中 残り５席</strong><br />
+　１日目　１２：４５〜１８：３０<br />
+　２日目　０９：４５〜１７：３０<br />
+<br />
+・５/３０(木)〜３１(金)(定員５名) <strong>募集中 残り４席</strong><br />
+　１日目　１２：４５〜１８：３０<br />
+　２日目　０９：４５〜１７：３０<br />
+<br />
+※Linuxセミナーの最低開催人数は２名以上になります。<br />
+　定員に満たない場合は、開催を中止し受講料をご返金致します。<br />
+<br />
+※大変ご好評を得ており、早々に「満席」となるケースが増えております。<br />
+　直前でのお申込みが難しくなっておりますので、お早めにお申込み<br />
+　頂くことが確実な受講に繋がります。<br />
+<br />
+<A href="https://www.linuxmaster.jp/semi-zaseki/" target="_blank">＞＞残り座席状況はこちらをクリックしてください＜＜</a><br />
+<br />
+２０１９年Linuxセミナー開催状況<br />
+・第163回：01月26日〜27日（定員5名）<br />
+・第164回：01月30日〜31日（定員5名）<br />
+・第165回：02月23日〜24日（定員5名）<br />
+・第166回：02月27日〜28日（定員5名）<br />
+・第167回：03月23日〜24日（定員5名）<br />
+・第168回：03月26日〜27日（定員5名）<br />
+・第169回：04月20日〜21日（定員5名）<strong>満席 キャンセル待ち受付中</strong><br />
+・第170回：04月23日〜24日（定員5名）<strong>募集中 残り２席</strong><br />
+・第171回：05月25日〜26日（定員5名）<strong>募集中 残り５席</strong><br />
+・第172回：05月30日〜31日（定員5名）<strong>募集中 残り４席</strong><br />
+<br />
+<A href="https://www.linuxmaster.jp/linux_blog/cat60/" target="_blank">＞＞過去のセミナーの様子はこちらをクリックしてください＜＜</a><br />
+<br />
+※２名以上のお申し込みなら、<br />　ご希望の日程でのLinuxセミナー開催も承ります。<br />
+　メールにてお問い合わせください。<br />
+　<img src="https://www.linuxmaster.jp/images/arrow2.gif"> <A href="https://www.linuxmaster.jp/2009/12/post-6.html" target="_blank">セミナー個別開催に関するお問い合わせは、こちらをクリック。</A><br />
+</td></tr>
+<tr><td class="bl80" style="FONT-SIZE: 13px;">内容</td><td class="wh240" style="FONT-SIZE: 13px;">
+CentOS7でWebサーバー構築し、<br />インターネットにサーバー公開して動作確認します。<br />
+</td></tr>
+<tr><td class="bl80" style="FONT-SIZE: 13px;">定員人数</td><td class="wh240" style="FONT-SIZE: 13px;">各先着５名</td></tr>
+<tr><td class="bl80" style="FONT-SIZE: 13px;">受講料</td><td class="wh240" style="FONT-SIZE: 13px;"><font color="#dd0000">限定特別価格５９，８００円（クラウドパッケージは９９，９００円）</font><br />（２日目の昼食代含む）</td></tr>
+<tr><td class="bl80" style="FONT-SIZE: 13px;">開催場所</td><td class="wh240" style="FONT-SIZE: 13px;">埼玉県川越市（車での来場可）<br />
+川越駅からセミナー会場まで無料送迎致します。<br />
+※セミナー期間中駐車無料。但し、台数に限りがあるので先着順<br />
+※<A href="https://www.linuxmaster.jp/2009/07/post-20.html#1" target="_blank">開催場所の詳細情報・川越開催の理由についてはこちら</a>
+</td></tr>
+<tr><td class="bl80" style="FONT-SIZE: 13px;">お支払い方法</td><td class="wh240" style="FONT-SIZE: 13px;">銀行振込・クレジットカード</td></tr>
+<tr><td class="bl80" style="FONT-SIZE: 13px;">備考</td><td class="wh240" style="FONT-SIZE: 13px;">・各セミナーの１日目終了後に希望者で懇親会を行います。<br />
+　こちらは別途親睦会費が必要になりますが、２,５００円〜３,５００円程度を<br />　想定しております。<br />
+・遠方から来られる方は、下記宿泊施設などをご利用ください。<br />
+　<A href="https://goo.gl/JIo0W" target="_blank">セミナー会場近くの宿泊施設</a>（※<A href="https://www.linuxmaster.jp/2009/07/post-20.html#2" target="_blank">お勧めの宿泊施設について</a>）
+</td></tr>
+<tr><td class="bl80" style="FONT-SIZE: 13px;">運営会社</td><td class="wh240" style="FONT-SIZE: 13px;">株式会社イーネットマーキュリー</td></tr>
+</table><br /><br />
+<font color="#000000">
+<font color="#dd0000"><strong><U><font style="FONT-SIZE: 14px">■Linuxセミナー残り座席状況</font></U></strong><br /></font>
+残り座席状況は↓をクリックすると確認できます。<br />
+<A href="https://www.linuxmaster.jp/semi-zaseki/" target="_blank">＞＞残り座席状況はこちらをクリックしてください＜＜</a><br />
+<br /><br />
+<font color="#dd0000"><strong><U><font style="FONT-SIZE: 14px">■Linuxセミナー教材</font></U></strong><br /></font>
+・講座マニュアル<br />
+　（当日に教材として印刷マニュアルを差し上げます。）<br />
+<span class="mt-enclosure mt-enclosure-image" style="display: inline;"><a href="https://www.linuxmaster.jp/assets_c/2012/02/DSC00274-2074.html" onclick="window.open('https://www.linuxmaster.jp/assets_c/2012/02/DSC00274-2074.html','popup','width=800,height=600,scrollbars=no,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false"><img src="https://www.linuxmaster.jp/assets_c/2012/02/DSC00274-thumb-240x180-2074.jpg" width="240" height="180" alt="DSC00274.jpg" class="mt-image-none" style="" /></a></span><br />
+<br /><br />
+<font color="#dd0000"><strong><U><font style="FONT-SIZE: 14px">■Linuxセミナーでご用意して頂く物</font></U></strong><br /></font>
+・筆記用具<br />
+<br /><br />
+<font color="#dd0000"><strong><U><font style="FONT-SIZE: 14px">■Linuxセミナーの内容</font></U></strong><br /></font>
+最新のCentOS7でセミナーが受講できます。<br />
+また、データベースは、MySQLかPostgreSQLのどちらかをセミナー中に選択して頂けます。<br />
+マニュアルには両データベースの導入手順を記載していますので、帰宅後に自分で<br />
+もう片方のデータベースを使ってサーバー構築することができます。<br />
+<br />
+また、セキュリティ意識の高まりと必要性から、下記内容のカリキュラムを<br />
+更新・追加しました。<br />
+<b>・CentOS7リリース後に発見された脆弱性の対応</b><br />
+<b>・アンチウィルスソフトの導入及び設定</b><br />
+<b>・ダイジェスト認証による認証ページの作成</b><br />
+<br />
+今回のカリキュラム更新で、以前よりも強固なセキュリティを備えた<br />
+Linuxサーバーが構築できます。<br />
+<br />
+<TABLE borderColor=#000000 cellSpacing=0 cellPadding=0 width="90%" bgColor=#feffe6 border=1>
+  <TR><TD style="PADDING-RIGHT: 30px; PADDING-LEFT: 30px; FONT-SIZE: 13px; LINE-HEIGHT: 24px">
+<br />
+<b>【Linuxセミナーの内容】</b><br />
+<br />
+○<b>CentOS7.6のインストール</b>　<font color="dd0000"><b>New!</b></font><br />
+・セキュリティとパフォーマンスを重視した<br />
+　専用のカスタムインストールをします。<br />
+<br />
+○iptablesによるファイアウォールの設定<br />
+○<b>systemdによる不要サービスの停止</b>　<font color="dd0000"><b>New!</b></font><br />
+○cronによる自動処理設定<br />
+○SSHによるリモートアクセス設定<br />
+<br />
+○Apache（Webサーバー）のインストール及び、設定<br />
+○Proftpd（FTPサーバー）のインストール及び、設定<br />
+○MySQLまたは、PostgreSQL（データベース）のインストール及び、設定<br />
+　(MySQLまたは、PostgreSQLどちらか好きな方を選択できます。)<br />
+○<b>Clam AntiVirus（アンチウィルスソフト）のインストール及び、設定</b>　<font color="dd0000"><b>New!</b></font><br />
+<br />
+<br />
+○Perlのインストール及び、設定<br />
+○Perlモジュールのインストール及び、設定<br />
+○Movable Typeのインストール及び、設定<br />
+<br />
+○バーチャルドメインでの複数ドメイン運用<br />
+　・１台のサーバーで複数ドメインの運用管理ができます。<br />
+○<b>ダイジェスト認証による暗号化認証ページの設定</b>　<font color="dd0000"><b>New!</b></font><br />
+<br />
+○サーバー運用に必要なオリジナルスクリプトの配布<br />
+　・サーバーサービス監視スクリプト<br />
+　　サーバーが常に正常に稼動しているか自己チェックを行うプログラムです。<br />
+　　サービスが停止している場合、自動起動します。<br />
+<br />
+　・PostgreSQL（データベース）のバックアップスクリプト<br />
+　・MySQL（データベース）のバックアップスクリプト<br />
+　・Webサイトのバックアップスクリプト<br />
+　・バックアップファイル自動転送スクリプト<br />
+<br />
+○ネットワーク環境の確認、設定変更<br />
+○ルータの設定変更<br />
+○ドメインの取得及び、設定<br />
+○サーバー構築に必要なLinuxコマンド<br />
+<br />
+○その他<br />
+　・サーバー構築する際、注意すべきセキュリティ７つのポイント<br />
+　・<b>企業、公官庁サーバーに導入すべきセキュリティ対策</b>　<font color="dd0000"><b>New!</b></font><br />
+　・<b>最新のLinuxセキュリティ情報を楽して入手する方法</b>　<font color="dd0000"><b>New!</b></font><br />
+　・<b>ソースとRPMインストールの違いとメリット、デメリット</b>　<font color="dd0000"><b>New!</b></font><br />
+　・<b>公開サーバーへアクセスできる仕組みの説明</b>　<font color="dd0000"><b>New!</b></font><br />
+　・<b>CentOS6系と7系の変更点</b>　<font color="dd0000"><b>New!</b></font><br />
+　・<b>CentOS7のバージョンアップと絶対に守るべき注意点</b>　<font color="dd0000"><b>New!</b></font><br />
+　・現場でよく使うLinux操作テクニック<br />
+　・VMware Playerの便利な使い方<br />
+　・サーバー公開時に必要なネットワーク知識<br />
+<br />
+いま受講すると、下記期間限定特別ボーナスが受けられます。<br />
+<strong>【期間限定特別ボーナス 1】</strong><br />
+○<b>完全無料で出来る常時SSL(https)化マニュアルを提供</b>　<font color="dd0000"><b>New!</b></font><br />
+  ・Webサイトの通信を「http」から「https」化<br />
+<br />
+<strong>【期間限定特別ボーナス 2】</strong><br />
+○<b>WordPress、PHP環境構築マニュアルを提供</b>　<font color="dd0000"><b>New!</b></font><br />
+　・WordPress、PHP環境を構築<br />
+<br />
+<strong>【期間限定特別ボーナス 3】</strong><br />
+○<b>「CentOS7.6」最新バージョンアップ手順を提供</b>　<font color="dd0000"><b>New!</b></font><br />
+　・「CentOS7.6」を最新の状態にする手順と、<br />
+　　実施する上で絶対に知っておくべき注意点をお教えします。<br />
+<br />
+※上記の内容がまったくわからなくても問題ありません。<br />
+　セミナーの中でしっかりお教えしますのでご安心してください。<br />
+<br />
+<font color="#dd0000"><strong><font style="FONT-SIZE: 14px">※構築したLinuxサーバーを実際にインターネットに公開し、<br />
+　外部からアクセスして動作検証を行います。</font></strong></font><br />
+<br />
+</TD></TR></TABLE>
+<br />
+本、Linuxセミナーでは、Linux技術を２日間という短期間で身につけて頂きますが、<br />
+<br />
+「もし身につかなかったら・・・」と不安に思うかもしれません。<br />
+そのような場合でも安心して受講して頂けるよう下記の特典をご用意しました。<br />
+<br />
+<a name="tokuten"></a>
+<font color="#dd0000"><strong><U><font style="FONT-SIZE: 14px">■Linuxセミナー受講生特典</font></U></strong><br /></font>
+<TABLE borderColor=#000000 cellSpacing=0 cellPadding=0 width="99%" bgColor=#d6ffce border=1>
+  <TR><TD style="PADDING-RIGHT: 30px; PADDING-LEFT: 30px; FONT-SIZE: 13px; LINE-HEIGHT: 24px">
+<br />
+<b>【２０１９年５月までのセミナー受講者限定特典】</b><br />
+いまお申込み頂いた方に、下記の期間限定特典を付けさせて頂きます。<br />
+<br />
+<strong>【特別ボーナス 1】完全無料で出来る常時SSL(https)化マニュアルを提供</strong><br />
+　Webサイト通信を暗号化し、セキュリティを高める常時SSL(https)化<br />
+　マニュアルを特別提供します。<br />
+　これにより、「なりすまし」や「改ざん」、「盗聴」など悪意あるアクセスから<br />
+　Webサイトとユーザーを守ることができ、Webページの表示速度が向上します。<br />
+　また、信頼性の高い無料認証局（Let's Encrypt）が発行したSSLサーバー証明書を<br />
+　使用することで、高額な費用が必要な常時SSL(https)化を完全無料で導入できます。<br />
+　<b>Googleは、常時SSL(https)化しているサイトの検索順位を優遇し、<br />
+　常時SSL(https)化していないサイトは、ブラウザ警告が表示されてしまいます。</b><br />
+　信頼性が高く、SEOに強いWebサイトを運営する上で、<br />
+　常時SSL(https)化は必須技術になっており、その技術を習得できます。<br />
+<br />
+<strong>【特別ボーナス 2】WordPress、PHP環境構築マニュアルを提供</strong><br />
+　サイト構築に人気なWordPress、PHP環境を構築するマニュアルを特別提供します。<br />
+　これがあれば、自分で構築したサーバーでWordPressサイトが運営できます。<br />
+<br />
+<strong>【特別ボーナス 3】脆弱性対応完了済みマニュアルを提供</strong><br />
+　CentOS7.6に含まれる重大な脆弱性をサーバーとして使用するために、<br />
+　最新のセキュリティアップデートに対応したマニュアルを提供します。<br />
+　しかし、ただ単にアップデートすれば良いというものではありません。<br />
+　<b>セキュリティアップデートで注意しなければならないのは、<br />
+　実行後にカーネルパニックなどのシステムエラーが発生することです。</b><br />
+　そうならない為に、どのようなポイントを抑えるべきなのか、<br />
+　サーバー運用するにあたり、アップデート関連のトラブル回避に<br />
+　必要な重要な知識をお教えします。<br />
+　これで受講後も安心してサーバー構築、運用が行えます。<br />
+<br />
+<strong><font style="FONT-SIZE: 14px">1.受講後は、リナックスマスター・ホームスタディ講座【初級編】で自宅学習</font></strong><br />
+　<b>（29,800円の講座が無料で受けられます。）</b><br />
+　受講後は、リナックスマスター・ホームスタディ講座【初級編】を<br />
+　使用して自宅学習ができます。Linuxセミナーを受講して終わりでなく、<br />
+　自宅で何度でも復習して、更に深くLinux技術をマスターする事ができます。<br />
+　質問サポートも充実の１年間付いています。<br />
+　※リナックスマスター・ホームスタディ講座【初級編】代金は、<br />
+　　Linuxセミナー受講料に含まれています。<br />
+　※リナックスマスター・ホームスタディ講座【初級編】に<br />
+　　含まれる特典もセミナー受講で受けて頂けます。<br />
+<br />
+<strong><font style="FONT-SIZE: 14px">2.受講後１年間の長期サポート</font></strong><b>(9,000円分の延長サポート料が無料)</b><br />
+　<U>通常６ヶ月のところ、今なら受講後１年間</U>、メールまたは、専用サポートフォーラムで<br />
+　質問ができるサポートが受けられます。自宅でLinuxセミナーの内容を実行して<br />
+　わからない事があればメール、サポートフォーラムで私に質問してください。<br />
+<br />
+<strong><font style="FONT-SIZE: 14px">3.今だけ限定価格の受講料５９，８００円</font></strong><br />
+　今なら期間限定価格の５９，８００円でLinuxセミナーを受講できます。<br />
+　（正規料金１０８，０００円が、今なら５９，８００円です。）<br />
+<br />
+<strong><font style="FONT-SIZE: 14px">4.Linuxセミナーの再受講が5,400円</font></strong><br />
+　受講後１年間はLinuxセミナーの再受講を5,400円で受けられます。<br />
+　　※毎回、Linuxセミナーでは再受講枠を設けます。<br />
+　　　基本的に何度再受講して頂いても構いませんが、<br />
+　　　再受講希望者が多い場合は調整させて頂く場合がございます。（毎月開催予定）<br />
+<br />
+<strong><font style="FONT-SIZE: 14px">5.リナックスマスター・コマンドリファレンスをプレゼント</font></strong><br />
+　セミナーで使用するコマンドを１冊のリファレンスマニュアルにまとめました。<br />
+　本セミナーは、プロが現場で使うLinux技術を習得できますので、<br />
+　<b>このリファレンスマニュアルを覚えるだけで、<br />
+　あなたもプロと同様にコマンドだけでLinuxが扱えるようになります。</b><br />
+　本当に必要なコマンドだけを厳選して掲載していますので、<br />
+　急いでLinuxを扱えるようにならなければならない人に最適です。<br />
+<br />
+　<b>更に今回は、トラブル時によく使用する「システム管理者コマンド」<br />
+　も特別収録しました。</b><br />
+　これらのコマンドを覚えれば、トラブルになっても<br />
+　システムの状態をすぐに把握できるので怖くありません。<br />
+　※掲載コマンド数は60個程度になります。<br />
+<br />
+<a name="special_package"></a>
+<strong><font style="FONT-SIZE: 14px">6.リナックスマスターセミナー・クラウドパッケージをご用意<br />
+　（総額77,500円もお得）</font></strong><br />
+　Linuxスキルを短期間で身につけるには、セミナーに参加して頂くのが<br />
+　最も効果的ですが、<b>受講後も更に継続してスキルアップして頂けるよう、<br />
+　<strong>リナックスマスター・ホームスタディ講座【クラウド編】をセットにした</strong><br />
+　「クラウドパッケージ」をご用意しました。</b><br />
+　<A href="https://www.linuxmaster.jp/cloud/index.html#naiyou" target="_blank">ホームスタディ講座【クラウド編】の内容はこちらをご確認ください。</A><br />
+<br />
+　<b>クラウドパッケージでお申し込み頂くと、下記講座すべて受講できます。<br />
+　・リナックスマスター２日間集中セミナー<br />
+　・リナックスマスター・ホームスタディ講座【初級編】<br />
+　・リナックスマスター・ホームスタディ講座【クラウド編】</b><br />
+<br />
+　弊社の教材で、Linuxスキルを短期間で効率良く身につけるには、<br />
+　リナックスマスターセミナーを受講後に、ホームスタディ講座【初級編】を<br />
+　ご自宅で取り組んで頂き、期間を空けずホームスタディ講座【クラウド編】で<br />
+　更に高度な技術を習得して頂くことです。<br />
+<br />
+　しかし、これらを別々に受講すると、<br />
+　受講料の負担増、サポート期間不足になってしまいます。<br />
+<br />
+　そこで、割引価格、長期サポートにてこれらのセミナーと講座をセットにしたのが、<br />
+　<b><U>「リナックスマスターセミナー・クラウドパッケージ」</U></b>になります。<br />
+<br />
+　<strong>■クラウドパッケージで受講するメリット</strong><br />
+　<b>・本セミナーとホームスタディ講座【クラウド編】の両方を割引価格で受講できます。</b><br />
+　　別々で受講するより29,700円お得になります。<br />
+　<b>・ホームスタディ講座【クラウド編】特典「セキュリティ強化マニュアル」が付属。</b><br />
+　　企業や公官庁でサーバー構築、運用する上で、必須なセキュリティ対策が学べます。<br />
+　　この内容は、数百万〜数千万掛かるセキュリティ対策と等しいものになります。<br />
+　<b>・ホームスタディ講座【クラウド編】特典「サーバー運用通知メールスクリプト」が付属。</b><br />
+　　サーバー運用に支障を来しそうな現象が発生した場合メール通知するスクリプトです。<br />
+　<b>・ホームスタディ講座【クラウド編】特典「ログ監視ツール導入手順」が付属。</b><br />
+　　日々のサーバー内のログを自動解析し、メール報告するツールになります。<br />
+　<b>・ホームスタディ講座【クラウド編】特典「各脆弱性、不具合対応手順」が付属。</b><br />
+　　CentOS7リリース後にアナウンスされている各脆弱性、不具合に対応します。<br />
+　<b>・ホームスタディ講座【クラウド編】特典「新カリキュラム」が付属。</b><br />
+　　　　DNSサーバー（BIND）構築<br />
+　　　　Zabbix環境構築（統合サーバー監視ソフトウェア）<br />
+　　　　Apache Tomcatのインストール及び、設定<br />
+　　　　Rubyのインストール及び、設定<br />
+　　　　Pythonのインストール及び、設定<br />
+　　　　Javaのインストール及び、設定<br />
+　　　　C/C++のインストール及び、設定<br />
+　　　　Webmin環境構築（GUIサーバー管理ツール）<br />
+　<b>・サポート期間が2年間になります。(18,000円分の延長サポート料が無料)</b><br />
+　<b>・もちろん、29,800円のホームスタディ講座【初級編】もセットになっています。</b><br />
+<br />
+　<b><U>総額77,500円もお得になるコースです。</U></b><br />
+　このコースを受講すれば、Linuxの基礎から応用まで、長期間安心サポートの2年間、<br />
+　何も心配せずにLinuxの学習に取り組めます。<br />
+<br />
+　<b>クラウド編の内容を独学しようとすると、参考書を何冊も読まなければならない上、<br />
+　完成する保証もサポートも無い状況の中、独りで構築する事になります。</b><br />
+<br />
+　<strong><U>何よりクラウド編の内容は、今後もLinuxを使い続けるなら、絶対に避けて</U><br />
+　<U>通れない内容になります。</U></strong><br />
+<br />
+　<b><U>どうしようか迷っている場合、内容、特典から考えて絶対にお得になる</U><br />
+　<U>クラウドパッケージで申し込むことを強くお勧めします。</U></b><br />
+<br />
+　<strong><U>クラウド編は、クラウドサービスを利用してサーバー構築を行う他に、</U><br />
+　<U>専用サーバーを利用したオンプレミス環境での構築にも対応しています。</U></strong><br />
+<br />
+　<b>すぐにクラウド編を始められなくても、サポートが２年間ありますので、<br />
+　いつかお申込みになるつもりなら、この機会にクラウドパッケージを<br />
+　お申込み頂いた方が絶対にお得です。</b><br />
+<br />
+　但し、これら特典は、あまり多くの方に差し上げられません。<br />
+　私が長年苦労してきた経験をベースに、特典としてまとめていますので、<br />
+　その価値を分かる方だけに譲りたいのです。<br />
+<br />
+　<strong><U>従って、これら特典は、</U><br />
+　<U>２０１９年５月までにセミナーを受講する方に限り、受けて頂くことができます。</U><br />　<U>それ以降、特典はありません。</U></strong><br />
+　<b>大変オトクなこれら特典を入手されたい方は、いますぐ、お申し込みください。</b><br />
+<br />
+</TD></TR></TABLE>　<br />
+<br />
+<br />
+<strong><U><font style="FONT-SIZE: 14px">■その他</font></U></strong><br />
+・研修ではLinuxをインストールするサーバー、PCを１人１台ずつ専用のものを<br />
+　レンタルします。また、ご自分のPCを使用してインストールを行いたい方は<br />
+　PCの持参も可能です。<br />
+<br />
+・一度にお教えできる人数の関係上、６名(再受講含む)が限度となりますので<br />
+　先着順とさせて頂きます。<br />
+<br />
+・Linuxセミナー内容以外のご質問にもお答えします。<br />
+<br />
+・その他、Linuxセミナー、研修に関するご質問は、<br />
+　下記メールにご連絡頂きますようきお願い致します。<br />
+　<A href="https://www.linuxmaster.jp/2009/12/post-6.html" target="_blank">Linuxセミナーに関するお問い合わせはこちらをクリックしてください</A><br />
+</font><br /><br />
+<a name="omoushikomi"></a>
+<strong><U><font style="FONT-SIZE: 14px">■Linuxセミナーお申込み</font></U></strong><br />
+<TABLE borderColor=#000000 cellSpacing=0 cellPadding=0 width="97%" bgColor=#feffe6 border=1>
+  <TR>
+    <TD style="PADDING-RIGHT: 10px; PADDING-LEFT: 10px; FONT-SIZE: 13px; LINE-HEIGHT: 22px">
+<font color="#000000">
+<br />
+<b>【Linuxセミナー】リナックスマスター２日間集中セミナー【CentOS7版】</b><br />
+<br />
+・受講料　５９，８００円（<A href="#special_package" target="_blank">クラウドパッケージ</a>は９９，９００円）税込み<br />
+　<b>※<A href="#special_package" target="_blank">クラウドパッケージ</a>は、本セミナーとホームスタディ講座【クラウド編】が<br />
+　　セットになった大変お得なコースです。<br />
+　　内容、特典、価格が圧倒的にお得になりますので、<A href="#special_package" target="_blank">クラウドパッケージ</a>での<br />
+　　お申込みを強くお勧めします。</b><br />
+・各開催日先着５名限定<br />
+・お支払いは<b><U>クレジットカード</U></b>、または<b><U>銀行振込</U></b>からお選びいただけます。<br />
+・<U>クレジットカードでしたら、お申込み後すぐにお席を確保し、</U><br />
+　<U>セミナーのご案内をメールにてお送り致します。</U><br />
+　<U>確実にお席を確保したい方は、クレジットカード決済をおすすめします。</U><br />
+<br />
+<A href="https://www.linuxmaster.jp/semi-zaseki/" target="_blank">＞＞残り座席状況はこちらをクリックしてください＜＜</a><br />
+<br />
+<strong><U><font style="FONT-SIZE: 16px">■クレジットカード</font></U></strong><br />
+<!-- ※※※クレジットカードコード スタート※※※ -->
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="charset" value="EUC-JP">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="UZPXRH2KJECFU">
+<table>
+<tr><td><input type="hidden" name="on0" value="ご希望の受講日・コースをお選びください。">ご希望の受講日・コースをお選びください。</td></tr><tr><td><select name="os0">
+<!--
+	<option value="4/20(土)-21(日)">4/20(土)-21(日) \59,800 JPY</option>
+	<option value="4/20(土)-21(日)クラウドパッケージ">4/20(土)-21(日)クラウドパッケージ \99,900 JPY</option>
+-->
+	<option value="4/23(火)-24(水)">4/23(火)-24(水) \59,800 JPY</option>
+	<option value="4/23(火)-24(水)クラウドパッケージ">4/23(火)-24(水)クラウドパッケージ \99,900 JPY</option>
+	<option value="5/25(土)-26(日)">5/25(土)-26(日) \59,800 JPY</option>
+	<option value="5/25(土)-26(日)クラウドパッケージ">5/25(土)-26(日)クラウドパッケージ \99,900 JPY</option>
+	<option value="5/30(木)-31(金)">5/30(木)-31(金) \59,800 JPY</option>
+	<option value="5/30(木)-31(金)クラウドパッケージ">5/30(木)-31(金)クラウドパッケージ \99,900 JPY</option>
+</select> </td></tr>
+</table>
+<input type="hidden" name="currency_code" value="JPY">
+<input type="image" src="https://www.paypalobjects.com/ja_JP/JP/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - オンラインでより安全・簡単にお支払い">
+<img alt="" border="0" src="https://www.paypalobjects.com/ja_JP/i/scr/pixel.gif" width="1" height="1">
+</form>
+<!-- ※※※クレジットカードコード エンド※※※ -->
+<br />
+<strong><U><font style="FONT-SIZE: 16px">■銀行振込</font></U></strong><br />
+<form action="https://ss1.coressl.jp/mail2.linuxmaster.jp/distribute/cgi-bin/apply.cgi" name="form1" method="post" >
+  <table class="table2" summary="問い合わせフォーム">
+    <tr>
+            <td class="sb30"><font size="-1">
+              姓 ※
+              </font></td>
+            <td class="s70"><input name="sei" type="text" size="25"></td>
+          </tr>
+                    <tr bgcolor="#EEEEEE">
+           <td class="sb30"><font size="-1">
+              名 ※
+              </font></td>
+            <td class="s70"><input name="mei" type="text" size="25"></td>
+          </tr>
+                    <tr bgcolor="#EEEEEE">
+            <td class="sb30"><font size="-1">
+              姓(フリガナ) ※
+              </font></td>
+            <td class="s70"><input name="_sei" type="text" size="25"></td>
+          </tr>
+                    <tr bgcolor="#EEEEEE">
+            <td class="sb30"><font size="-1">
+              名(フリガナ) ※
+              </font></td>
+            <td class="s70"><input name="_mei" type="text" size="25"></td>
+          </tr>
+                    <tr bgcolor="#EEEEEE">
+            <td class="sb30"><font size="-1">
+              メールアドレス ※
+              </font></td>
+            <td class="s70"><input name="mail" type="text" size="25"></td>
+          </tr>
+                    <tr bgcolor="#EEEEEE">
+            <td class="sb30"><font size="-1">
+              メールアドレス確認 ※
+              </font></td>
+            <td class="s70"><input name="_mail" type="text" size="25"></td>
+          </tr>
+                    <tr bgcolor="#EEEEEE">
+            <td class="sb30"><font size="-1">
+              受講希望日 ※
+              </font></td>
+            <td class="s70"><select name="free1">
+<option value="キャンセル待ち 4/20(土)-21(日) \59,800">キャンセル待ち 4/20(土)-21(日) \59,800
+<option value="キャンセル待ち 4/20(土)-21(日)クラウドパッケージ \99,900">キャンセル待ち 4/20(土)-21(日)クラウドパッケージ \99,900
+<option value="4/23(火)-24(水) \59,800">4/23(火)-24(水) \59,800
+<option value="4/23(火)-24(水)クラウドパッケージ \99,900">4/23(火)-24(水)クラウドパッケージ \99,900
+<option value="5/25(土)-26(日) \59,800">5/25(土)-26(日) \59,800
+<option value="5/25(土)-26(日)クラウドパッケージ \99,900">5/25(土)-26(日)クラウドパッケージ \99,900
+<option value="5/30(木)-31(金) \59,800">5/30(木)-31(金) \59,800
+<option value="5/30(木)-31(金)クラウドパッケージ \99,900">5/30(木)-31(金)クラウドパッケージ \99,900
+           </select></td>
+        </tr>
+                    <tr bgcolor="#EEEEEE">
+            <td class="sb30"><font size="-1">
+              会社名
+              </font></td>
+            <td bgcolor="#FFFFFF"><input type="text" name="free2" size="25"></td>
+          </tr>
+        <tr>
+      	<td colspan="2" align="center" class="sb100"><input name="md" type="hidden" id="md" value="guest" />
+        <input type="submit" value="セミナーに今すぐ申し込む" >
+        <input name="md" type="hidden" id="md" value="guest">
+        <input name="id" type="hidden" id="id" value="130795005625050">
+        <input name="cd" type="hidden" id="cd" value="文字">
+      </td>
+    </tr>
+  </table>
+</form>
+<br />
+・※は必須項目になります。<br />
+・法人名義でお申し込みの場合は、会社名をご記入ください。<br />
+・銀行振り込み、クレジットカードでのお支払いが出来ます。<br />
+・クレジットカード決済の場合、PayPalでのお支払いになります。<br />
+・いずれの方法を選択された場合でも、送信される情報は全て最新の技術により<br />
+　暗号化されていますのでご安心ください。<br />
+・クレジットカード決済を選択された場合、送信されたカード情報が弊社に<br />
+　開示されることはございません。<br />
+・PayPalアカウントがない場合、「クレジットカードまたはデビットカードで支払う」<br />
+　から決済をしてください。<br />
+・分割払い、ボーナス払いをご希望の場合は、クレジットカードで一括決済して頂いた後に、<br />
+　ご利用のクレジットカード会社へお支払い方法の変更をお申し出頂くことで<br />
+　分割払い、ボーナス払いへと変更することが出来ます。<br />
+<br />
+</TD></TR></TABLE><br />
+<br />
+<br />
+
+<font color="#dd0000"><strong><U><font style="FONT-SIZE: 14px">■Linuxセミナーのよくある質問</font></U></strong><br /></font>
+<TABLE borderColor=#000000 cellSpacing=0 cellPadding=0 width="80%" bgColor=#feffe6 border=1>
+  <TR>
+    <TD style="PADDING-RIGHT: 10px; PADDING-LEFT: 10px; FONT-SIZE: 13px; LINE-HEIGHT: 22px">
+<font color="#000000"><br />
+Ｑ.領収書や請求書は発行してもらえますか？<br />
+<br />
+お申込み後にご連絡をいただければ、発行致します。<br />
+メール、または<a href="https://www.linuxmaster.jp/2009/12/post-6.html" target="_blank">こちら</a>からご連絡をお願い致します。<br />
+<br />
+</TD></TR></TABLE>
+<br />
+<img src="https://www.linuxmaster.jp/images/arrow2.gif"> <A href="https://www.linuxmaster.jp/2009/07/post-20.html" target="_blank">その他の「よく頂く質問（FAQ）」はこちらをクリックしてください。</a><br />
+（新規ウィンドウが開きます。）<br />
+<br />
+<br />
+<A href="#omoushikomi"><img src="https://www.linuxmaster.jp/images/btn_mousikomi.gif"></A><br />
+<br />
+
+<br />
+<font color="#dd0000"><strong><U><font style="FONT-SIZE: 14px">■Linuxセミナーを受講した方の感想</font></U></strong><br /></font>
+<TABLE borderColor=#000000 cellSpacing=0 cellPadding=0 width="80%" bgColor=#feffe6 border=1>
+  <TR>
+    <TD style="PADDING-RIGHT: 10px; PADDING-LEFT: 10px; FONT-SIZE: 13px; LINE-HEIGHT: 22px">
+<font color="#000000"><br />
+前任者がいなくなって以来、<br />
+Linuxサーバーのスキルを身につけることが急務となりました。<br />
+まったくの素人がリファレンスを片手に黒画面と格闘する日々。<br />
+ファイルの削除さえ、ビクビクしながら「rm -rf」。<br />
+<br />
+Linux関連の講座について、様々な専門学校に問い合せましたが、<br />
+仙台近郊には1つも見当たらない。<br />
+東京近郊で行われている講座も、その大半は、受講料がウン十万。<br />
+会社勤めの私は、数カ月間もの間、スクールに通うのは不可能。<br />
+交通費もバカになりません。<br />
+<br />
+そんなとき、宮崎さん主催の講座に出会いました。<br />
+土日の2日間で開催される集中講座。<br />
+しかも土曜の午後からなので、宿泊は1泊ですみます。<br />
+受講料も５９，８００円！<br />
+<br />
+「もう、これしかないっ！！」<br />
+<br />
+そんな思いで申し込みました。<br />
+<br />
+当日は、雪のため新幹線が4時間も運行不能に。<br />
+かなり遅れて到着した私にも、順を追って説明していただき、<br />
+講座の流れについていくことができました。<br />
+<br />
+<b>宮崎さんが時間をかけて、<br />
+実際に検証されてきたマニュアルは練られているので、わかりやすい！<br />
+<br />
+「コレの意味って、こういうことだったのか」素人にもわかるよう、<br />
+噛み砕いて説明してくださったので、本当に助かりました。<br />
+仕事に活かせるよう、このマニュアルを大事に使います。</b><br />
+<br />
+本当に、ありがとうございました。<br />
+<br />
+（宮城県 30代 菅原さま）<br />
+<br />
+</TD></TR></TABLE><br />
+
+<A href="#omoushikomi"><img src="https://www.linuxmaster.jp/images/btn_mousikomi.gif"></A><br />
+<br />
+
+<TABLE borderColor=#000000 cellSpacing=0 cellPadding=0 width="80%" bgColor=#feffe6 border=1>
+  <TR>
+    <TD style="PADDING-RIGHT: 10px; PADDING-LEFT: 10px; FONT-SIZE: 13px; LINE-HEIGHT: 22px">
+<font color="#000000"><br />
+10月より出向となり、サーバーを構築する部署に配属になりましたが、<br />
+Linuxに触ったこともなく（lsやcdといった基本コマンドすら知りませんでした）、<br />
+独学で勉強を開始したものの、仕事に使えるスキルが身に付いてるかわかりませんでした。<br />
+<br />
+行き詰まっていた時に、このセミナーを見つけ思い切って参加してみました。<br />
+<br />
+<b>実機を使って実際のサーバー構築、<br />
+運用保守を体験出来たのはとても大きかったです。<br />
+独学でいくら勉強しても絶対に身につかない内容だと思います。<br />
+お値段以上の価値がありました。</b><br />
+<br />
+この２日間でやっとLinuxマスターへのスタートが切れたと思います。<br />
+Linuxはスタートするハードルが高いと感じていいましたので本当に有益でした。<br />
+<br />
+（千葉県 20代 林さま）<br /><br />
+</TD></TR></TABLE><br />
+
+<A href="#omoushikomi"><img src="https://www.linuxmaster.jp/images/btn_mousikomi.gif"></A><br />
+<br />
+
+<TABLE borderColor=#000000 cellSpacing=0 cellPadding=0 width="80%" bgColor=#feffe6 border=1>
+  <TR>
+    <TD style="PADDING-RIGHT: 10px; PADDING-LEFT: 10px; FONT-SIZE: 13px; LINE-HEIGHT: 22px">
+<font color="#000000"><br />
+社内ネットワークにLinuxを導入したが、セキュリティ面に対する不安、<br />
+バックアップなどの運用についてきちんとしたノウハウを習得したいと考え受講しました。<br />
+<br />
+<b>セミナーに参加してサーバー構築者として必要な心得が習得出来たこと。<br />
+実機にて動作確認もでき、その場で即トラブルシューティングが出来たことが<br />
+とても満足です。</b><br />
+<br />
+<b>今回のセミナーでサーバー構築と運用に自信が付きました。</b><br />
+<br />
+是非今回のノウハウで、自宅サーバーとホームページ公開に向けて<br />
+準備を進めようと思います。<br />
+有難うございました。<br />
+<br />（東京都 30代 桑山さま）<br />
+<br />
+</TD></TR></TABLE><br />
+
+<A href="https://www.linuxmaster.jp/2010/08/centos55.html#omoushikomi"><img src="https://www.linuxmaster.jp/images/btn_mousikomi.gif"></A><br />
+<br />
+
+<TABLE borderColor=#000000 cellSpacing=0 cellPadding=0 width="80%" bgColor=#feffe6 border=1>
+  <TR>
+    <TD style="PADDING-RIGHT: 10px; PADDING-LEFT: 10px; FONT-SIZE: 13px; LINE-HEIGHT: 22px">
+<font color="#000000"><br />
+仕事でLinuxサーバー（Web、DB等）の管理を急遽、任されることになり、<br />
+少しでも早くスキルを身につけたいと思い受講しました。<br />
+<br />
+<b>Linuxに慣れる必要性は感じていましたが、自分が気になっていたのは運用の部分でした。<br />
+セキュリティの設定、ウィルス対策、DBのバックアップ等実運用で<br />
+すぐに役立ちそうな点をご教授頂けたのが大変良かったです。</b><br />
+<br />
+マニュアルもかゆい所に手が届く感じを受け、精度が高くすごく素晴らしかったです。<br />
+セキュリティの技術等、日進月歩な進化があるものですので、<br />
+「学ぶ」という姿勢を崩さず、この２日間の経験を活かしていこうと思います。<br />
+２日間ありがとうございました。<br />
+<br />（千葉県 30代 斎藤さま）<br />
+<br />
+</TD></TR></TABLE><br />
+
+<img src="https://www.linuxmaster.jp/images/arrow2.gif"> <A href="https://www.linuxmaster.jp/2008/10/post-19.html" target="_blank">その他の「受講生の声」はこちらをクリックしてください。</a><br />
+（新規ウィンドウが開きます。）<br />
+<br />
+<A href="#omoushikomi"><img src="https://www.linuxmaster.jp/images/btn_mousikomi.gif"></A><br />
+<br />
+
+<strong><U><font style="FONT-SIZE: 14px" color="#dd0000">■追伸　なぜ、いまLinuxなのか？</font></U></strong><br />
+<br />
+IT業界でLinuxの需要は非常に高く、信頼性、認知度もありますが、<br />
+それを使いこなせる人材がとても少ないという問題があります。<br />
+<br />
+もし、あなたがLinuxを使いこなせるようになれば、<br />
+顧客や上司にアピールしやすくなり、収入アップなどのチャンスが広がります。<br />
+<strong><U>今から始めておけば、近い将来に貴重な人材としてキャリアアップ、<br />
+転職、就職に必ず役立ちます。</U></strong><br />
+<br />
+<b>また、本セミナーの内容は、<br />
+リナックスマスター・ホームスタディ講座【初級編】と同等になりますが、<br />
+その内容を消化するには、毎日2時間費やしても30日掛かります。<br />
+<br />
+しかし、リナックスマスター２日間集中セミナーは、<br />
+その内容をたった2日間で学習できるので、<br />
+あなたが必要なLinux学習の負担を最小限にできます。<br />
+<br />
+<strong><U>Linuxは、無料で利用でき、尚且つ高機能なOSですが、正しい知識、正しい使い方を<br />
+知らないと、昨今のニュースにあるようにハッキングを受けて、情報漏えいや<br />
+信頼の失墜を招きます。<br />
+<br />
+あなた個人や企業がそのような被害に遭わないよう、セキュリティを充分に考慮した<br />
+正しいLinux知識と技術をお教えします。</U></strong><br />
+<br />
+更に、大手高額ITスクールや、書籍では絶対に手に入らない</b><br />
+<strong><U>プロのサーバー管理者が、現場で使用し、<br />
+ネットで実運用をして実績のある安全なLinux技術を習得できる唯一のセミナーになります。</U></strong><br />
+<br />
+本セミナーを受講すれば、<br />
+初心者でもサーバー構築から運用管理まで、Linuxを使う上で必要な技術と知識が<br />
+すべて学べます。この他に教材は一切必要ありません。<br />
+<br />
+<strong><U>セミナー特典は２０１９年５月受講者で終了となります。それ以降はありません。</U></strong><br />
+<br />
+<b>あなたが真剣にプロのLinux技術を習得したい、<br />
+大変オトクな「特典」を入手されたいと思うのでしたら、いますぐお申込みください。</b><br />
+<br />
+<A href="#omoushikomi"><img src="https://www.linuxmaster.jp/images/btn_mousikomi.gif"></A><br />
+<br />
+<br />
+<A href="https://www.linuxmaster.jp/2009/12/post-6.html" target="_blank">Linuxセミナーに関するお問い合わせはこちらをクリックしてください</A><br />
+<br /><br />]]></description>
+         <link>https://www.linuxmaster.jp/2010/08/centos55.html</link>
+         <guid>https://www.linuxmaster.jp/2010/08/centos55.html</guid>
+        
+        
+         <pubDate>Mon, 16 Aug 2010 15:43:31 +0900</pubDate>
+      </item>
+      
+      <item>
+         <title>Linux30日間無料メールセミナー</title>
+         <description><![CDATA[<strong>＜＜Linux30日間無料メールセミナー＞＞</strong>
+
+Linuxの基本操作から、Linuxサーバー構築まで、コマンドの実行例や
+解説を書いたメールが30日間毎日あなたにお届けします。
+
+この無料セミナーに登録すれば、30日でLinuxが使えるようになります。
+
+申し込みは↓のフォームに名前（ニックネーム可）とメールアドレスを
+登録するだけです。
+<form action='http://www.kigyomail.com/asm/be/user_regist.php' method='post'>
+<input type='hidden' name='SNR_ID' value='pakiraSNRID14' />
+姓:<input type='text' value='山田' name='LastName' size='6' tabindex='2' accesskey='2' />　名:<input type='text' value='太郎' name='FirstName' size='6' tabindex='3' accesskey='3' />（ニックネーム可）<br />
+メールアドレス:<input type='text' value='メールアドレスを入力' name='Mail' size='22' tabindex='4' accesskey='4' />　<input type='submit' value='登録' tabindex='5' accesskey='5' /></form>
+
+<br>
+<br>
+
+<strong>＜＜Linux30日間無料メールセミナーに関するよくある質問＞＞</strong>
+
+<font color="#8b0000">Ｑ．解除は簡単にできますか？</font>
+
+Ａ．簡単にできます。あなたに送られてくるセミナーメールの一番下に解除用ＵＲＬがありますので、
+　　それをクリックしてください。クリック一つで解除できますので注意してください。
+
+<br>
+
+<font color="#8b0000">Ｑ．手違いで今まで配信されていたメールを消してしまいました。
+　　もう一度発行はできないでしょうか？</font>
+
+Ａ．下記のLinuxメールセミナー再送・リスタート依頼フォームより再発行が可能です。
+
+<FONT color="FF0000">■ 購読者向け、再送信フォームのサンプル（なんらかの原因でメールが届かなかった方のために）</font>
+<form action='http://www.kigyomail.com/asm/be/num_resend.php' method='POST'>
+送信シナリオ回数:<input type='test' name='n' size=3>
+<input type='hidden' name='SNR_ID' value='pakiraSNRID14'>
+購読者メールアドレス:<input type='text' name='Mail' size=20>
+<input type='submit' value='指定シナリオ送信'>
+</form>
+
+<br>
+
+<FONT color="FF0000">■ メールセミナー再開フォーム（誤って解除してしまった方のために）</font>
+<form action='http://www.kigyomail.com/asm/be/set_start_no.php' method='POST'>
+<input type='hidden' name='SNR_ID' value='pakiraSNRID14'>
+姓:<input type='text' name='LastName' size='20'>　名:<input type='text' name='FirstName' size='20'><br>
+メールアドレス:<input type='text' name='Mail' size='20'><br>
+<input type='submit' value='リスタート登録'>
+</form>
+
+<br>
+
+<font color="#8b0000">Ｑ．土日のセミナーメールの配信を休みにすることはできませんか？</font>
+
+Ａ．申し訳ありませんが曜日で配信を休みにすることはできません。
+　　一度登録すると、解除または、３０日間を終えるまで連続であなたにメールが届きます。]]></description>
+         <link>https://www.linuxmaster.jp/2009/12/linux30.html</link>
+         <guid>https://www.linuxmaster.jp/2009/12/linux30.html</guid>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">当サイトについて</category>
+        
+        
+         <pubDate>Tue, 29 Dec 2009 16:54:09 +0900</pubDate>
+      </item>
+      
+      <item>
+         <title>Linux有料講座</title>
+         <description><![CDATA[<strong>＜＜ Linux有料講座＞＞</strong>
+
+IT現場で使われている高度なLinux技術をマスターしたいあなたに・・・。
+
+本ページで紹介している講座では、書店で売られている書籍やインターネットでは
+絶対に手に入らないLinux技術を習得することができます。
+
+ぜひ、あなたもプロの技術を身につけて、Linuxを自在に操ってみませんか？
+
+<strong>■Linux通信講座</strong>
+
+　<a href="https://www.linuxmaster.jp/kouza/index.html" target="_blank">【Linux講座】リナックスマスター・ホームスタディ講座</a> <font color="#dd0000"><strong>Update!</strong></font>
+　プロのサーバー管理者がIT現場で使うLinuxサーバー構築技術を
+　自宅にいながら習得できます。構築するサーバーは、
+　Webサーバーやメールサーバーを始め、DBサーバーも構築します。
+
+　<a href="https://www.linuxmaster.jp/cloud/index.html" target="_blank">【Linux講座】リナックスマスター・ホームスタディ講座【クラウド編】</a> <strong>New!</strong>
+　クラウドサービスを利用して、実用的なLinuxサーバーを構築する講座です。
+
+
+<strong>■オフラインセミナー</strong>
+
+　<a href="https://www.linuxmaster.jp/2010/08/centos55.html">【Linuxセミナー】リナックスマスター２日間集中セミナー【CentOS研修】</a> <font color="#dd0000"><strong>Update!</strong></font>
+　プロのサーバー管理者がIT現場で使うLinuxサーバー構築技術が２日間で身につきます。
+
+<!--
+<strong>■Linuxサーバー構築・運用管理</strong>
+
+　<a href="http://www.enetmercury.com/" target="_blank">Linuxサーバー構築、保守、運用管理サービス</a> <strong>当社の新サービス</strong>
+　Linuxサーバー構築・運用管理を代行します。
+　下記のような状況でお困りならぜひお任せ下さい。
+　サーバー導入から管理、運用まで一括して承ります。
+
+　・専任のサーバー管理者を置けない。
+　・Linuxサーバーを導入したいが資金や技術力がない。
+　・自社で運用できるセキュリティー技術がない。
+-->
+
+<<a href="https://www.linuxmaster.jp/2009/12/post-8.html" target="_blank">特定商取引に関する表記</a>>]]></description>
+         <link>https://www.linuxmaster.jp/2009/12/post-4.html</link>
+         <guid>https://www.linuxmaster.jp/2009/12/post-4.html</guid>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">当サイトについて</category>
+        
+        
+         <pubDate>Fri, 11 Dec 2009 16:14:16 +0900</pubDate>
+      </item>
+      
+      <item>
+         <title>Linux無料講座</title>
+         <description><![CDATA[<strong>＜＜Linux無料講座＞＞
+</strong>
+これからLinuxをやってみたいというあなたの為に、気軽に始められるLinuxの無料講座です。
+ぜひこのページで紹介している講座であなたもLinuxを始めてみてください。
+
+<FONT color="FF0000">■<strong>全１７１ページのLinuxマニュアルを期間限定で無料プレゼント</strong></font>
+これからLinuxを始めてみたいというあなたの為に、Linuxサーバー構築の方法を
+解説したマニュアル（全１７１ページ）を期間限定で無料プレゼントしています。
+今すぐダウンロードしてください。
+
+<a href="https://www.linuxmaster.jp/2011/01/linux.html">ダウンロードはいますぐこちらから</a>
+
+<!--
+<FONT color="FF0000">■<strong>Linux30日間無料メールセミナー</strong></font>
+登録したその日から30日間毎日あなたにLinux技術に関する知識を
+メールでお届けします。Linuxの基本操作から、Linuxサーバー構築まで、
+コマンドの実行例や詳しい解説を無料で学ぶことができます。
+
+<a href="https://www.linuxmaster.jp/2009/12/linux30.html">無料メールセミナーのお申し込みは今すぐこちらから</a>
+-->]]></description>
+         <link>https://www.linuxmaster.jp/2009/12/post-3.html</link>
+         <guid>https://www.linuxmaster.jp/2009/12/post-3.html</guid>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">当サイトについて</category>
+        
+        
+         <pubDate>Wed, 09 Dec 2009 16:11:54 +0900</pubDate>
+      </item>
+      
+      <item>
+         <title>よくある質問について</title>
+         <description><![CDATA[・本ページに掲載していないご質問などは、<br />
+　下記メールにご連絡頂きますようきお願い致します。<br />
+<br />
+　<A href="https://www.linuxmaster.jp/2009/12/post-6.html" target="_blank">お問い合わせはこちらをクリックしてください</A></font><br />
+<br />
+<a name="1"></a>
+<table class="table3" summary="ＦＡＱ">
+  <tr>
+    <td class="s10"><img src="<$MTBlogURL$>images/icon_q.jpg" alt="質問" width="27" height="27" /></td>
+    <td class="sb90"><p>質問　申し込んだのですが、その後連絡がありません。</p>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="s10"><img src="<$MTBlogURL$>images/icon_a.jpg" alt="答え" width="27" height="27" /></td>
+    <td class="s90"><p>受講料のお支払いが確認でき次第、<br />
+翌営業日までに詳細案内をメールにて<br />
+お送りさせて頂いております。<br />
+<br />
+もし弊社からの連絡がない場合は、<br />
+お申込み時にご登録頂いたメールアドレスに誤りがあるか、<br />
+お送りしているメールが迷惑メールとして<br />
+扱われている可能性があります。<br />
+<br />
+大変お手数では御座いますが、お名前、申込時のメールアドレス、<br />
+確実に連絡が取れるご連絡先（電話番号、他のメールアドレス等）をご記載の上、<br />
+<a href="https://www.linuxmaster.jp/2009/12/post-6.html" target="_blank">＞＞こちら＜＜</a>からご連絡をお願い致します。<br />
+<br />
+</p></td>
+  </tr>
+</table>
+<br />
+<table class="table3" summary="ＦＡＱ">
+  <tr>
+    <td class="s10"><img src="<$MTBlogURL$>images/icon_q.jpg" alt="質問" width="27" height="27" /></td>
+    <td class="sb90"><p>講座やセミナーの違い、メリットを教えて下さい。<br />
+また、どの教材を受講すれば効率よく学習出来ますか？</p>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="s10"><img src="<$MTBlogURL$>images/icon_a.jpg" alt="答え" width="27" height="27" /></td>
+    <td class="s90"><p>リナックスマスター２日間集中セミナー（以下、リナックスマスターセミナー）とリナックスマスター・ホームスタディ講座【初級編】（以下、ホームスタディ講座【初級編】）はレベルも内容も同じになります。<br />
+<br />
+これら２教材の違いは、リナックスマスターセミナーが対面でお教えするのに対し、ホームスタディ講座【初級編】は、自宅で学習して頂く通信講座になります。<br />
+<br />
+また、更にこれら２教材より高度な内容をお教えするのが、リナックスマスター・ホームスタディ講座【上級編】（以下、ホームスタディ講座【上級編】）及び、リナックスマスター・ホームスタディ講座【クラウド編】（以下、ホームスタディ講座【クラウド編】）になります。セキュリティ対策強化や、より多くのサーバー機能を盛り込んだ内容になっています。<br />
+<br />
+実務レベルのLinuxスキルをお求めなら、ホームスタディ講座【上級編】かホームスタディ講座【クラウド編】を受講するのがお勧めです。<br />
+<br />
+※ホームスタディ講座【上級編】、ホームスタディ講座【クラウド編】と同等のセミナーは開催しておりません。<br />
+<br />
+また、「リナックスマスターセミナー・クラウドパッケージ」とは、リナックスマスターセミナーとホームスタディ講座【クラウド編】がセットになったコースになり、別々に受講するよりも特典、価格がとてもお得なコースです。<br />
+<br />
+これはリナックスマスターセミナーを受講後に、自宅でホームスタディ講座【クラウド編】を学習して頂くコースになり、２日間でLinuxの基礎を学んだ後に更に高度な内容を学習できる弊社の教材の中で最も効率よく学習できるコースです。<br />
+<br />
+※セミナーでLinuxの基礎を学んでいるので、その後のスタートダッシュが違います。<br />
+<br />
+リナックスマスター・ホームスタディ講座【コンプリートコース】（以下、ホームスタディ講座【コンプリートコース】）とは、ホームスタディ講座【初級編】とホームスタディ講座【上級編】の両方を自宅学習したい人向けのコースになり、別々で申し込むよりサポート期間、受講料がお得になっているコースです。<br />
+<br />
+Linuxは、ホームスタディ講座【初級編】の内容だけでは実現出来ることが限られてしまいますし、より多くの事をサーバーで実現するには、ホームスタディ講座【上級編】の内容が必須です。<br />
+<br />
+何よりホームスタディ講座【上級編】の内容は、今後もLinuxを使い続けるなら、絶対に避けて通れない内容になります。<br />
+<br />
+また、ホームスタディ講座【クラウド編】は、ホームスタディ講座【上級編】よりも上位に位置づけられる講座になり、オンプレミス環境だけはなく、様々なクラウド環境でホームスタディ講座【上級編】よりも高度なLinuxサーバーを構築できる講座になっています。<br />
+<br />
+弊社教材で効率よく学習できる順位は下記となります。<br />
+（クリックするとお申し込みページが表示されます。）<br />
+<br />
+１位　<a href="https://www.linuxmaster.jp/2010/08/centos55.html" target="_blank">リナックスマスターセミナー・クラウドパッケージ</a><br />
+２位　<a href="https://www.linuxmaster.jp/2010/08/centos55.html" target="_blank">リナックスマスターセミナー</a><br />
+３位　<a href="https://www.linuxmaster.jp/cloud/index.html" target="_blank">ホームスタディ講座【クラウド編】</a><br />
+３位　<a href="https://www.linuxmaster.jp/kouza/index.html" target="_blank">ホームスタディ講座【コンプリートコース】</a><br />
+４位　<a href="https://www.linuxmaster.jp/kouza/index.html" target="_blank">ホームスタディ講座【上級編】</a><br />
+５位　<a href="https://www.linuxmaster.jp/kouza/index.html" target="_blank">ホームスタディ講座【初級編】</a><br />
+<br />
+やはり、対面で学習できるリナックスマスターセミナーが最も効率よく技術習得ができます。可能であればリナックスマスターセミナーを受講して頂くのが最善です。しかし、遠方にお住まいの方、予定が合わずリナックスマスターセミナーへの参加が難しい方は、自宅学習できるホームスタディ講座が最適です。
+<br />
+</p></td>
+  </tr>
+</table>
+<br />]]></description>
+         <link>https://www.linuxmaster.jp/2009/12/post-7.html</link>
+         <guid>https://www.linuxmaster.jp/2009/12/post-7.html</guid>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">会社概要</category>
+        
+        
+         <pubDate>Fri, 04 Dec 2009 14:48:43 +0900</pubDate>
+      </item>
+      
+      <item>
+         <title>特定商取引に関する表記</title>
+         <description><![CDATA[<p>特定商取引に関する表記</p>
+<table class="table2" summary="問い合わせフォーム">
+        <tr>
+ <td class="sb30">販売業者</td>
+ <td class="s70">株式会社イーネットマーキュリー</td>
+        </tr>
+        <tr>
+ <td class="sb30">運営統括責任者</td>
+
+ <td class="s70">宮崎　智広</td>
+        </tr>
+        <tr>
+          <td class="sb30">所在地</td>
+          <td class="s70">東京都多摩市馬引沢1-8-5-701</td>
+        </tr>
+        <tr>
+          <td class="sb30">電話番号</td>
+
+          <td class="s70">042-376-0004<br />電話での受け付けは行っておりません。メールでご連絡ください。</td>
+        </tr>
+        <tr>
+          <td class="sb30">Eメール</td>
+          <td class="s70"><ul>
+   <li>pakira@linuxmaster.jp</li>
+</td>
+        </tr>
+        <tr>
+          <td class="sb30">販売URL</td>
+          <td class="s70">https://www.linuxmaster.jp/</td>
+        </tr>
+        <tr>
+          <td class="sb30">お支払い方法</td>
+          <td class="s70">銀行振込・郵便振替・クレジットカード・コンビニ決済・BitCash・Paypal（一部銀行振り込みのみの商品もあり）</td>
+        </tr>
+        <tr>
+          <td class="sb30">商品引き渡し方法</td>
+          <td class="s70">代金決済完了後、サポートフォーラムよりダウンロード、またはinfotopユーザーマイページよりダウンロード。</td>
+        </tr>
+        <tr>
+          <td class="sb30">返品・返金について</td>
+          <td class="s70">商品の性質上返品は応じません。データが壊れている場合等や、商品に欠陥がある場合は新品と交換いたします。<br />入金後の返金については、いかなる理由をもっても応じません。</td>
+        </tr>
+        <tr>
+          <td class="sb30">セミナー受講のキャンセル及び、日程変更について</td>
+          <td class="s70">一旦、お申込を頂きました場合、 <br />
+セミナー料金(59,800円)に対し、下記キャンセル料がかかります。 <br />
+<br />
+セミナー30日前〜14日前まで 　 セミナー料金の20％<br />
+セミナー13日前〜7日前まで　　 セミナー料金の60％<br />
+セミナー 6日前〜当日　　　　　セミナー料金の100％<br />
+<br />
+※クラウドパッケージでのお申込みであっても、<br />
+　59,800円に対するパーセンテージになります。<br />
+　差額はご返金します。<br />
+<br />
+また、キャンセルではなく「再受講」扱いとして、受講日を他の日に変更される場合は、別途再受講料を頂きます。<br />
+<br />
+・セミナー21日前から再受講料が発生します。<br />
+・再受講料は5,400円になります。<br />
+・再受講可能期間は1年間です。<br />
+・キャンセルするよりメリットがあります。<br />
+<br />
+キャンセルの際は、メールにてキャンセルの旨ご連絡ください。なお、返金は銀行振込か、クレジットカード会社を通してご返金させて頂きます。また、ご返金の際に必要な振り込み手数料等は差し引かせて頂きます。
+</td>
+        </tr>
+        <tr>
+          <td class="sb30">表現、及び商品に関する注意書</td>
+          <td class="s70">本商品に示された表現や再現性には個人差があり、必ずしも利益や効果を保証したものではございません。</td>
+        </tr>
+        <tr>
+          <td class="sb30">お問合わせ</td>
+          <td class="s70">お問い合わせ、ご質問などはすべてメールのみで受付けとなります。</td>
+        </tr>
+</table>]]></description>
+         <link>https://www.linuxmaster.jp/2009/12/post-8.html</link>
+         <guid>https://www.linuxmaster.jp/2009/12/post-8.html</guid>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">会社概要</category>
+        
+        
+         <pubDate>Thu, 03 Dec 2009 16:43:34 +0900</pubDate>
+      </item>
+      
+      <item>
+         <title>当サイトへのお問い合わせについて</title>
+         <description><![CDATA[<p>弊社教材に関するお問い合わせ、ご相談は以下のフォームにてお願いいたします。</p>
+
+<p>なお教材ではなく、個別のお仕事のご依頼は、決裁権限のある方からのみお受け致します。<br />
+決裁権限が無い方の場合、事前決済を頂いてからご依頼をお願いします。</P>
+<p><b>なお、相見積もりは致しません。<br />
+弊社に依頼されるという方のみご連絡をお願い致します。</b></p>
+
+<p>「とりあえずお会いしたい」「とにかく相談したい」というお問い合わせをよく頂きますが、<br />
+お会いする場合は、有料（30,000円/2H）となります。予めご了承ください。</p>
+
+<h3>フォームでのお問い合わせ</h3>
+<ul class="list2">
+  <li>（<span class="red">*</span>）が付いている項目は記入必須項目です。</li>
+  <li>URLの欄には御社のURL、もしくは参考のURLを記載して下さい。</li>
+  <li>お名前は本名でお願いいたします。</li>
+  <li>必須事項が記載されていない場合、お返事が出来ない場合があります。</li>
+</ul>
+
+<form action="https://ss1.coressl.jp/mail2.linuxmaster.jp/distribute/cgi-bin/apply.cgi" name="form1" method="post"  id="form1" target="new">
+	<table class="table2" summary="問い合わせフォーム">
+        <tr>
+	<td class="sb30">会社名 </td>
+	<td class="s70"><input name="co" type="text" value="全角でお名前" size="30" accesskey="A" tabindex="1" /></td>
+        </tr>
+        <tr>
+	<td class="sb30">お名前 <span class="red">*</span></td>
+	<td class="s70"><input name="name" type="text" value="全角でお名前" size="30" accesskey="B" tabindex="2" /></td>
+        </tr>
+        <tr>
+	<td class="sb30">メールアドレス <span class="red">*</span></td>
+	<td class="s70"><input name="mail" type="text" value="半角英数で記入" size="30" accesskey="C" tabindex="3" /></td>
+        </tr>
+        <tr>
+	<td class="sb30">メールアドレス確認 <span class="red">*</span></td>
+	<td class="s70"><input name="_mail" type="text" value="半角英数で記入" size="30" accesskey="C" tabindex="3" /></td>
+        </tr>
+	<tr>
+	<td class="sb30">電話番号 </td>
+	<td class="s70"><input name="tel" type="text" value="半角英数で記入" size="30" accesskey="D" tabindex="4" /></td>
+	</tr>
+        <tr>
+	<td class="sb30">参考URL・御社URL</td>
+	<td class="s70"><input name="url" type="text" value="http://" size="35" accesskey="E" tabindex="5" /></td>
+        </tr>
+        <tr>
+	<td class="sb30">都道府県 <span class="red">*</span></td>
+	<td class="s70"><select name="address" size="1" tabindex="2">
+	<option>北海道</option>
+	<option>青森県</option>
+	<option>岩手県</option>
+	<option>宮城県</option>
+	<option>秋田県</option>
+	<option>山形県</option>
+	<option>福島県</option>
+	<option>茨城県</option>
+	<option>栃木県</option>
+	<option>群馬県</option>
+	<option>埼玉県</option>
+	<option>千葉県</option>
+	<option>東京都</option>
+	<option>神奈川県</option>
+	<option>新潟県</option>
+	<option>富山県</option>
+	<option>石川県</option>
+	<option>福井県</option>
+	<option>山梨県</option>
+	<option>長野県</option>
+	<option>岐阜県</option>
+	<option>静岡県</option>
+	<option>愛知県</option>
+	<option>三重県</option>
+	<option>滋賀県</option>
+	<option>京都府</option>
+	<option>大阪府</option>
+	<option>兵庫県</option>
+	<option>奈良県</option>
+	<option>和歌山県</option>
+	<option>鳥取県</option>
+	<option>島根県</option>
+	<option>岡山県</option>
+	<option>広島県</option>
+	<option>山口県</option>
+	<option>徳島県</option>
+	<option>香川県</option>
+	<option>愛媛県</option>
+	<option>高知県</option>
+	<option>福岡県</option>
+	<option>佐賀県</option>
+	<option>長崎県</option>
+	<option>熊本県</option>
+	<option>大分県</option>
+	<option>宮崎県</option>
+	<option>鹿児島県</option>
+	<option>沖縄県</option>
+	<option>全国</option>
+	<option>海外</option>
+	</select></td>
+        </tr>
+
+	<tr>
+	<td class="sb30">お問い合わせ内容について<span class="red">*</span></td>
+	<td class="s70">
+	<select name="free3" tabindex="4">
+	<option value="リナックスマスター・ホームスタディ講座について">リナックスマスター・ホームスタディ講座について
+	<option value="リナックスマスターセミナーについて">リナックスマスターセミナーについて
+	<option value="Linuxネットショップマスター講座(LNM)について">Linuxネットショップマスター講座(LNM)について
+	<option value="上記以外のお問い合わせ">上記以外のお問い合わせ
+	</select>
+	</tr>
+
+        <tr>
+	<td class="sb30">お問い合わせ<span class="red">*</span></td>
+	<td class="s70"><textarea name="free1" cols="35" rows="20" accesskey="F" tabindex="6">ご相談、お問い合わせをどうぞ</textarea></td>
+        </tr>
+
+	<tr>
+	<td class="sb30">どちらで当社を<br />
+	  知りましたか</td>
+	<td class="s70">
+	<select name="free2" tabindex="4">
+	<option value="YAHOO">YAHOO</option>
+	<option value="Google">Google</option>
+	<option value="MSN">MSN</option>
+	<option value="その他の検索エンジン">その他の検索エンジン</option>
+	<option value="メールマガジン">メールマガジン</option>
+	<option value="上記以外">上記以外</option>
+	</select>
+	</tr>
+
+        <tr>
+	<td colspan="2" align="center" class="sb100"><input name="md" type="hidden" id="md" value="guest" />
+	<input name="id" type="hidden" id="id" value="133232418213664">
+	<input name="submit" type="submit" onClick="returnMakeForm.send(this.form);" value="　送信確認画面へ　" />
+	<input name="cd" type="hidden" id="cd" value="文字" /></td>
+        </tr>
+	</table>
+</form>
+
+<h3>メールでのお問い合わせ</h3>
+	<p>メールでのお問い合わせは以下のメールアドレスです</p>
+	<p><img src="<$MTBlogURL$>images/mail.gif" alt="メールアドレス" width="300" height="60"></p>
+	<p>スパム防止のため、画像になっています。</p>
+	<p>大変お手数で申し訳ありません。</p>
+	<p>メーラなどに直接打ち込みをしていただければと思います。</p>
+
+<p class="fb">メールでのお問い合わせ必要事項</p>
+<ul class="list2">
+  <li>件名：<$MTBlogName encode_html="1"$>への問い合わせ</li>
+  <li>お名前</li>
+  <li>お問い合わせ内容</li>
+</ul>
+	<p>以上を記載してお送りください。</p>
+	<p>必要事項が記載されていない場合、当社からのお返事はできない場合があります。</p>]]></description>
+         <link>https://www.linuxmaster.jp/2009/12/post-6.html</link>
+         <guid>https://www.linuxmaster.jp/2009/12/post-6.html</guid>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">会社概要</category>
+        
+        
+         <pubDate>Wed, 02 Dec 2009 10:10:08 +0900</pubDate>
+      </item>
+      
+      <item>
+         <title>プライバシーポリシー</title>
+         <description><![CDATA[<p>弊社は、個人情報とは、個人情報の保護に関する法律に規定される個人に関する情報、ならびに特定の個人と結びついて使用されるメールアドレス、パスワード、および個人情報と一体となったその他の個人に関する属性情報であると認識しています。 </p>
+<p>弊社では、個人情報保護について、以下のプライバシーポリシーに従い取り組んでおります。</p>
+<p>お客様  の情報をお預かりする事業者として、個人情報保護規程をはじめとする各種規程を整備し、適正な取扱いと保護に努めております。</p>
+<table class="table2" summary="問い合わせフォーム">
+        <tr>
+ <td class="sb30">はじめに</td>
+ <td class="s70"><ul>
+   <li>「弊社」は、各種法的サービスのご提供にあたり、お客様の個人情報をお預かりしております。</li>
+   <li>弊社は、法律を取り扱う国家資格者の事務所として個人情報を保護し、お客様に更なる信頼性と安心感をご提供できるように努めて参ります。</li>
+   <li>弊社は、個人情報に関する法令を遵守し、個人情報の適切な取り扱いを実現致します。</li>
+   </ul></td>
+        </tr>
+        <tr>
+ <td class="sb30">個人情報の取得について</td>
+
+ <td class="s70">弊社は、偽りその他不正の手段によらず適正に個人情報を取得致します。</td>
+        </tr>
+        <tr>
+          <td class="sb30">個人情報の利用について</td>
+          <td class="s70"><p>弊社は、個人情報を以下の利用目的の達成に必要な範囲内で、利用致します。<br />
+            以下に定めのない目的で個人情報を利用する場合、あらかじめご本人の同意を得た上で行ないます。</p>
+            <ul>
+
+              <li>（１）お見積のご依頼・ご相談に対する回答及び資料送付</li>
+              <li>（２）ご注文いただいた商品の発送</li>
+              <li>（３）セミナー情報、各種商品・サービスに関する情報提供</li>
+          </ul></td>
+        </tr>
+        <tr>
+          <td class="sb30">個人情報の安全管理について</td>
+
+          <td class="s70">弊社は、取り扱う個人情報の漏洩、滅失またはき損の防止その他の個人情報の安全管理のために必要かつ適切な措置を講じます。</td>
+        </tr>
+        <tr>
+          <td class="sb30">個人情報の委託について</td>
+          <td class="s70">弊社は、個人情報の取り扱いの全部または一部を第三者に委託する場合は、当該第三者について厳正な調査を行い、取り扱いを委託された個人情報の安全管理が図られるよう当該第三者に対する必要かつ適切な監督を行います。</td>
+        </tr>
+        <tr>
+
+          <td class="sb30">個人情報の第三者提供について</td>
+          <td class="s70">弊社は、個人情報保護法等の法令に定めのある場合を除き、個人情報をあらかじめご本人の同意を得ることなく、第三者に提供致しません。</td>
+        </tr>
+        <tr>
+          <td class="sb30">個人情報の開示・訂正等について</td>
+          <td class="s70">弊社は、ご本人から自己の個人情報についての開示の請求がある場合、速やかに開示を致します。<br />
+          その際、ご本人であることが確認できない場合には、開示に応じません。<br />
+
+          個人情報の内容に誤りがあり、ご本人から訂正・追加・削除の請求がある場合、調査の上、速やかにこれらの請求に対応致します。<br />
+          その際、ご本人であることが確認できない場合には、これらの請求に応じません。</td>
+        </tr>
+        <tr>
+          <td class="sb30">組織・体制</td>
+          <td class="s70">弊社は、弊社代表を個人情報管理責任者とし、個人情報の適正な管理及び継続的な改善を実施致します。</td>
+        </tr>
+
+        <tr>
+          <td class="sb30">本方針の変更</td>
+          <td class="s70">本方針の内容は変更されることがあります。<br />
+          変更後の本方針については、弊社が別途定める場合を除いて、当サイトに掲載した時から効力を生じるものとします。</td>
+        </tr>
+</table>]]></description>
+         <link>https://www.linuxmaster.jp/2009/12/post-1.html</link>
+         <guid>https://www.linuxmaster.jp/2009/12/post-1.html</guid>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">会社概要</category>
+        
+        
+         <pubDate>Tue, 01 Dec 2009 15:46:07 +0900</pubDate>
+      </item>
+      
+      <item>
+         <title>リンクページ</title>
+         <description><![CDATA[<strong>＜＜リンクページ＞＞ </strong>
+
+<font color="#dd0000">■Linux/UNIX関係のリンク</font>
+<a href="http://blog.offline-net.com/" target="_blank">よしまさのブログ</a>
+埼玉県さいたま市在住、2男2女のパパが、Linuxの技術情報をを公開しています。
+インストール手順や設定などをコマンドベースで掲載していて、とても参考になります。
+
+<font color="#dd0000">■その他の相互リンク</font>
+<a href="http://www.team-hiryu.com/" target="_blank">サバイバルゲームチーム飛龍</a>
+サバイバルゲームをスポーツとして活動しているチームです。
+
+]]></description>
+         <link>https://www.linuxmaster.jp/2009/11/post-2.html</link>
+         <guid>https://www.linuxmaster.jp/2009/11/post-2.html</guid>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">相互リンク</category>
+        
+        
+         <pubDate>Wed, 11 Nov 2009 16:10:07 +0900</pubDate>
+      </item>
+      
+      <item>
+         <title>この度は、お申込みありがとうございます。</title>
+         <description><![CDATA[<br />
+<b><big>この度は、申し込みありがとうございます。</big><br />
+<br />
+<big>お支払いが完了しましたので、お取引の詳細メールをお送りさせて頂きました。</big><br />
+<br />
+<big>弊社での受講手続きが完了次第、マニュアルのダウンロード方法などを</big><br />
+<big>記載した受講案内メールをお送りします。</big><br />
+<big>大変お手数では御座いますが、ご確認をお願いします。</big><br />
+<br />
+<big>１日以上経ってもメールが届かない場合、</big><br />
+<big>下記のメールアドレスまでご連絡をお願いいたします。</big><br />
+<br />
+<big>pakira@linuxmaster.jp</big><br />
+<big>info@linuxweb.biz</big></b><br />
+<br />
+<big><strong>また、メールが「迷惑メールフォルダ」などに入っている場合もありますので</strong></big><br />
+<big><strong>あわせてご確認をお願いします。</strong></big><br />
+<br />
+<!-- Google Code for &#12522;&#12490;&#12483;&#12463;&#12473;&#12510;&#12473;&#12479;&#12540;&#12475;&#12511;&#12490;&#12540; Conversion Page -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 975838043;
+var google_conversion_language = "en";
+var google_conversion_format = "3";
+var google_conversion_color = "ffffff";
+var google_conversion_label = "fvKGCK2P7XMQ27ao0QM";
+var google_remarketing_only = false;
+/* ]]&gt; */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//www.googleadservices.com/pagead/conversion/975838043/?label=fvKGCK2P7XMQ27ao0QM&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+
+
+<!-- Google Code for &#36092;&#20837;/&#36009;&#22770; Conversion Page -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 1066973692;
+var google_conversion_language = "ja";
+var google_conversion_format = "1";
+var google_conversion_color = "ffffff";
+var google_conversion_label = "_4MzCMbGSBD88-L8Aw";
+var google_conversion_value = 0;
+/* ]]&gt; */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//www.googleadservices.com/pagead/conversion/1066973692/?value=0&amp;label=_4MzCMbGSBD88-L8Aw&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+]]></description>
+         <link>https://www.linuxmaster.jp/2009/07/post-17.html</link>
+         <guid>https://www.linuxmaster.jp/2009/07/post-17.html</guid>
+        
+        
+         <pubDate>Wed, 29 Jul 2009 15:09:26 +0900</pubDate>
+      </item>
+      
+      <item>
+         <title>お問い合わせありがとうございます。</title>
+         <description><![CDATA[<br />
+<b><big>お問い合わせありがとうございます。</big><br />
+<big>内容をご確認させて頂き次第、ご返信させて頂きます。</big><br />
+<br />
+<big>２日以上経ってもメールが届かない場合、</big><br />
+<big>下記のメールアドレスまでご連絡をお願いいたします。</big><br />
+<br />
+<big>pakira@linuxmaster.jp</big><br />
+<big>info@linuxweb.biz</big></b><br />
+<br />
+<big><strong>また、まれに弊社からのご返信が、迷惑メールフォルダに入っている場合が御座います。</strong></big><br />
+<big><strong>大変お手数では御座いますが、そちらもご確認頂きますようお願い致します。</strong></big><br />
+<br />
+<br />]]></description>
+         <link>https://www.linuxmaster.jp/2009/07/post-9.html</link>
+         <guid>https://www.linuxmaster.jp/2009/07/post-9.html</guid>
+        
+        
+         <pubDate>Tue, 28 Jul 2009 12:21:52 +0900</pubDate>
+      </item>
+      
+      <item>
+         <title>お申し込みありがとうございます。</title>
+         <description><![CDATA[<br />
+<b><big>申し込みありがとうございます。</big><br />
+<br />
+<big>お申し込み後のお手続き方法を記載したメールをお送りしました。</big><br />
+<big>大変お手数では御座いますが、ご確認をお願いします。</big><br />
+<br />
+<big>３０分経ってもメールが届かない場合、</big><br />
+<big>下記のメールアドレスまでご連絡をお願いいたします。</big><br />
+<br />
+<big>pakira@linuxmaster.jp</big><br />
+<big>info@linuxweb.biz</big></b><br />
+<br />
+<big><strong>また、メールが「迷惑メールフォルダ」などに入っている場合もありますので</strong></big><br />
+<big><strong>あわせてご確認をお願いします。</strong></big><br />
+<br />
+<!-- Google Code for &#36092;&#20837;/&#36009;&#22770; Conversion Page -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 1066973692;
+var google_conversion_language = "ja";
+var google_conversion_format = "1";
+var google_conversion_color = "ffffff";
+var google_conversion_label = "_4MzCMbGSBD88-L8Aw";
+var google_conversion_value = 0;
+/* ]]&gt; */
+</script>
+<script type="text/javascript" src="http://www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="http://www.googleadservices.com/pagead/conversion/1066973692/?value=0&amp;label=_4MzCMbGSBD88-L8Aw&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript><!-- Google Code for &#36092;&#20837;/&#36009;&#22770; Conversion Page -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 1066973692;
+var google_conversion_language = "ja";
+var google_conversion_format = "1";
+var google_conversion_color = "ffffff";
+var google_conversion_label = "_4MzCMbGSBD88-L8Aw";
+var google_conversion_value = 0;
+/* ]]&gt; */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//www.googleadservices.com/pagead/conversion/1066973692/?value=0&amp;label=_4MzCMbGSBD88-L8Aw&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+]]></description>
+         <link>https://www.linuxmaster.jp/2009/07/post-12.html</link>
+         <guid>https://www.linuxmaster.jp/2009/07/post-12.html</guid>
+        
+        
+         <pubDate>Tue, 28 Jul 2009 04:35:07 +0900</pubDate>
+      </item>
+      
+      <item>
+         <title>【よく頂くご質問】リナックスマスター２日間集中セミナー</title>
+         <description><![CDATA[<LINK rel="stylesheet" href="https://www.linuxmaster.jp/semi/linux.css" type="text/css">
+<br />
+<strong><U><font style="FONT-SIZE: 16px" color="#dd0000">【よく頂くご質問】リナックスマスター２日間集中セミナー</U></font></strong><br />
+<br />
+<br />
+・本ページに掲載していないご質問などは、下記よりご連絡頂きますようきお願い致します。<br />
+<A href="https://www.linuxmaster.jp/2009/12/post-6.html" target="_blank">リナックスマスター２日間集中セミナーに関するお問い合わせは、<br />
+こちらをクリックしてください</A></font><br />
+<br />
+<a name="1"></a>
+<table class="table3" summary="ＦＡＱ">
+  <tr>
+    <td class="s10"><img src="<$MTBlogURL$>images/icon_q.jpg" alt="質問" width="27" height="27" /></td>
+    <td class="sb90"><p>質問　リナックスマスターセミナーの会場が、埼玉県川越市なのはなぜですか？<br />　　　また、住所はどこですか？</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="s10"><img src="<$MTBlogURL$>images/icon_a.jpg" alt="答え" width="27" height="27" /></td>
+    <td class="s90"><p>リナックスマスターセミナーの会場は、知人のレンタルルームの為、<br />弊社所在地とは異なっております。<br />
+また、知人に借りる事で会場費を抑えることができ、<br />その分、受講料をお安くできるメリット、<br />進捗状況によって時間延長ができるメリットなどがあります。<br />
+<br />
+住所等は下記のとおりです。<br />
+<br />
+■会場<br />
+　さくらハウス<br />
+　〒350-0054<br />
+　埼玉県川越市三久保町24-6<br />
+　049-265-3151<br />
+<!--
+　<A href="http://www.sakurahouse.info/" target="_blank">さくらハウス</a><br />
+　（上記ハウスの1階リビングがセミナールームになります。）<br />
+-->
+<br />
+Facebookにもその事を記載しておりますので、もし宜しければご確認ください。<br />
+<A href="https://www.facebook.com/photo.php?fbid=435691363151938&set=a.286087851445624.77057.278765742177835&type=1&theater" target="_blank">Facebookのセミナー報告ページ</a>
+<br />
+<br />
+</p></td>
+  </tr>
+</table>
+
+<a name="2"></a>
+<table class="table3" summary="ＦＡＱ">
+  <tr>
+    <td class="s10"><img src="<$MTBlogURL$>images/icon_q.jpg" alt="質問" width="27" height="27" /></td>
+    <td class="sb90"><p>質問　セミナー受講にあたり、ホテルを利用したと思っています。<br />　　　セミナー会場に近いホテルを教えてください。</p>
+    </td>
+  </tr>
+  <tr>
+    <td class="s10"><img src="<$MTBlogURL$>images/icon_a.jpg" alt="答え" width="27" height="27" /></td>
+    <td class="s90"><p>セミナー会場に近いホテルは下記になります。<br />
+・川越第一ホテル<br />
+・川越東武ホテル<br />
+・カプセルイン川越<br />
+<br />
+予約などは下記ページから行なってください。<br />
+<A href="http://goo.gl/JIo0W" target="_blank">セミナー会場近くの宿泊施設</a>
+</p></td>
+  </tr>
+</table>
+
+<a name="3"></a>
+<table class="table3" summary="ＦＡＱ">
+  <tr>
+    <td class="s10"><img src="<$MTBlogURL$>images/icon_q.jpg" alt="質問" width="27" height="27" /></td>
+    <td class="sb90"><p>質問　キャンセル待ちの手続きについて教えてください。</p>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="s10"><img src="<$MTBlogURL$>images/icon_a.jpg" alt="答え" width="27" height="27" /></td>
+    <td class="s90"><p>キャンセル待ちは、「<A href="https://www.linuxmaster.jp/2010/08/centos55.html#omoushikomi" target="_blank">Linuxセミナーお申込み</a>」の<br />
+「銀行振込」フォームよりお申込みください。<br />
+お席に空きが出ましたら弊社よりご連絡をさせて頂きます。<br />
+<br />
+お申込み後、弊社より送信致しますメールにも、<br />
+詳細を記載してあります。ご確認をお願い致します。<br />
+<br />
+※お席に空きが出るまで、受講料のお振込みは御座いません。<br />
+<br />
+</p></td>
+  </tr>
+</table>
+
+<a name="4"></a>
+<table class="table3" summary="ＦＡＱ">
+  <tr>
+    <td class="s10"><img src="<$MTBlogURL$>images/icon_q.jpg" alt="質問" width="27" height="27" /></td>
+    <td class="sb90"><p>質問　セミナー申込み後、連絡がありません。</p>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="s10"><img src="<$MTBlogURL$>images/icon_a.jpg" alt="答え" width="27" height="27" /></td>
+    <td class="s90"><p>セミナー受講料のお支払いが確認でき次第、<br />
+翌営業日までにセミナーの詳細案内をメールにて<br />
+お送りさせて頂いております。<br />
+<br />
+もし弊社からの連絡がない場合は、お申込み時に<br />
+ご登録頂いたメールアドレスに誤りがあるか、<br />
+お送りしているメールが迷惑メールとして<br />
+扱われているかになるかと思います。<br />
+<br />
+大変お手数では御座いますが、お名前、<br />
+申込時のメールアドレス、ご連絡先（電話番号、他のメールアドレス等）を<br />
+ご記載の上、<a href="https://www.linuxmaster.jp/2009/12/post-6.html" target="_blank">＞＞こちら＜＜</a>からご連絡をお願い致します。<br />
+<br />
+</p></td>
+  </tr>
+</table>
+
+<a name="5"></a>
+<table class="table3" summary="ＦＡＱ">
+  <tr>
+    <td class="s10"><img src="<$MTBlogURL$>images/icon_q.jpg" alt="質問" width="27" height="27" /></td>
+    <td class="sb90"><p>質問　セミナー受講前にホームスタディ講座で学習することはできますか？</p>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="s10"><img src="<$MTBlogURL$>images/icon_a.jpg" alt="答え" width="27" height="27" /></td>
+    <td class="s90"><p>受講料をお支払い後、ご連絡頂ければ<br />
+セミナー受講前でもホームスタディ講座で学習して頂くことができます。
+</p><br /></td>
+  </tr>
+</table>
+
+
+<a name="6"></a>
+<table class="table3" summary="ＦＡＱ">
+  <tr>
+    <td class="s10"><img src="<$MTBlogURL$>images/icon_q.jpg" alt="質問" width="27" height="27" /></td>
+    <td class="sb90"><p>質問　法人名義で申し込みたいのですが、どうしたら良いですか？</p>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="s10"><img src="<$MTBlogURL$>images/icon_a.jpg" alt="答え" width="27" height="27" /></td>
+    <td class="s90"><p><a href="https://www.linuxmaster.jp/2009/12/post-6.html" target="_blank">＞＞こちら＜＜</a>からご連絡頂ければ個別に対応させて頂きます。<br />
+<br />
+ご連絡頂く際、下記情報のご記載をお願い致します。<br />
+・受講者様のお名前<br />
+・メールアドレス<br />
+・御社名<br />
+・受講希望日、及び受講希望コース<br />
+</p><br /></td>
+  </tr>
+</table>
+
+<a name="7"></a>
+<table class="table3" summary="ＦＡＱ">
+  <tr>
+    <td class="s10"><img src="<$MTBlogURL$>images/icon_q.jpg" alt="質問" width="27" height="27" /></td>
+    <td class="sb90"><p>直前の申込みで、銀行振込が間に合いません。どうしたら良いですか？</p>
+    </td>
+  </tr>
+
+  <tr>
+    <td class="s10"><img src="<$MTBlogURL$>images/icon_a.jpg" alt="答え" width="27" height="27" /></td>
+    <td class="s90"><p><a href="https://www.linuxmaster.jp/2009/12/post-6.html" target="_blank">＞＞こちら＜＜</a>からご連絡頂ければ、受講できるよう個別に対応させて頂きます。<br />
+<br />
+ご連絡頂く際、下記情報のご記載をお願い致します。<br />
+・お名前<br />
+・メールアドレス<br />
+・すぐに連絡がつく電話番号<br />
+</p><br /></td>
+  </tr>
+</table>]]></description>
+         <link>https://www.linuxmaster.jp/2009/07/post-20.html</link>
+         <guid>https://www.linuxmaster.jp/2009/07/post-20.html</guid>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">リナックスマスター２日間集中セミナー【CentOS版】</category>
+        
+        
+         <pubDate>Sun, 05 Jul 2009 14:08:19 +0900</pubDate>
+      </item>
+      
+      <item>
+         <title>【各講座内容】リナックスマスター・ホームスタディ講座</title>
+         <description><![CDATA[<LINK rel="stylesheet" href="https://www.linuxmaster.jp/semi/linux.css" type="text/css">
+<br />
+<strong><U><font style="FONT-SIZE: 16px" color="#dd0000">【各講座内容】リナックスマスター・ホームスタディ講座</U></font></strong><br />
+<br />
+<br />
+・講座に関するご質問などは、下記メールにご連絡頂きますようきお願い致します。<br />
+　<A href="mailto:pakira@linuxmaster.jp?subject=リナックスマスター・ホームスタディ講座お問い合わせ">ホームスタディ講座に関するお問い合わせはこちらをクリックしてください</A></font><br />
+<br />
+<a name="syo"></a>
+<font color="#dd0000"><strong><U><font style="FONT-SIZE: 15px">■リナックスマスター・ホームスタディ講座【初級編】の内容</font></U></strong></font><br />
+<TABLE borderColor=#000000 cellSpacing=0 cellPadding=0 width="85%" bgColor=#feffe6 border=1>
+  <TR><TD style="PADDING-RIGHT: 30px; PADDING-LEFT: 30px; FONT-SIZE: 13px; LINE-HEIGHT: 24px">
+<br />
+○<b>CentOS7.1のインストール</b><br />
+　・セキュリティとパフォーマンスを重視した<br />
+　　専用のカスタムインストールをします。<br />
+<br />
+○iptablesによるファイアウォールの設定<br />
+○systemctlによる不要サービスの停止<br />
+○cronによる自動処理設定<br />
+○SSHによるリモートアクセス設定<br />
+<br />
+○Apache（Webサーバー）のインストール及び、設定<br />
+○Proftpd（FTPサーバー）のインストール及び、設定<br />
+○MySQLまたは、PostgreSQL（データベース）のインストール及び、設定<br />
+　(MySQLまたは、PostgreSQLどちらか片方、または両方を使用できます。)<br />
+○Clam AntiVirus（アンチウィルスソフト）のインストール及び、設定<br />
+<br />
+○Perlのインストール及び、設定<br />
+○Perlモジュールのインストール及び、設定<br />
+○Movable Typeのインストール及び、設定<br />
+<!--
+○Movable Typeの使用方法、運用方法<br />
+○Movable TypeでのWebサイト公開法<br />
+　※Movable Typeは無償で利用できるMTOSを利用します。<br />
+-->
+<br />
+○バーチャルドメインでの複数ドメイン運用<br />
+　・１台のサーバーで複数ドメインの運用管理ができます。<br />
+○ダイジェスト認証による暗号化認証ページの設定<br />
+<br />
+○サーバー運用に必要なオリジナルスクリプトの配布<br />
+　・サーバーサービス監視スクリプト<br />
+　　サーバーが常に正常に稼動しているか自己チェックを行うプログラムです。<br />
+　　サービスが停止している場合、自動起動します。<br />
+<br />
+　・PostgreSQL（データベース）のバックアップスクリプト<br />
+　・MySQL（データベース）のバックアップスクリプト<br />
+　・Webサイトのバックアップスクリプト<br />
+　・バックアップファイル自動転送スクリプト<br />
+<br />
+<strong>■期間限定特典</strong><br />
+<b>期間限定特典として、<br />
+下記セキュリティ強化設定のマニュアルをプレゼントします。</b><br />
+-----------------------------<br />
+<b>○OpenSSL脆弱性対応</b><br />
+<b>○glibcライブラリ脆弱性対応</b><br />
+-----------------------------<br />
+<br />
+○ネットワーク環境の確認、設定変更<br />
+○ルータの設定変更<br />
+○ドメインの取得及び、設定<br />
+○サーバー構築に必要はLinuxコマンド<br />
+<br />
+○その他<br />
+　・サーバー構築する際、注意すべきセキュリティ７つのポイント<br />
+　・現場でよく使うLinux操作テクニック<br />
+　・VMware Playerの便利な使い方<br />
+　・サーバー公開時に必要なネットワーク知識<br />
+<br />
+※上記の内容がまったくわからなくても問題ありません。<br />
+　講座の中でしっかりお教えしますのでご安心してください。<br />
+<br />
+</TD></TR></TABLE>
+<br />
+<br />
+<a name="ex"></a>
+<font color="#dd0000"><strong><U><font style="FONT-SIZE: 15px">■リナックスマスター・ホームスタディ講座【上級編】の内容</font></U></strong></font><br />
+<TABLE borderColor=#000000 cellSpacing=0 cellPadding=0 width="85%" bgColor=#feffe6 border=1>
+  <TR><TD style="PADDING-RIGHT: 30px; PADDING-LEFT: 30px; FONT-SIZE: 13px; LINE-HEIGHT: 24px">
+<br />
+○<b>CentOS7.1のインストール</b><br />
+　・セキュリティとパフォーマンスを重視した<br />
+　　専用のカスタムインストールをします。<br />
+<br />
+○iptablesによるファイアウォールの設定<br />
+○systemctlによる不要サービスの停止<br />
+○cronによる自動処理設定<br />
+○SSHによるリモートアクセス設定<br />
+○SSLのインストール及び、設定
+<br />
+○Apache（Webサーバー）のインストール及び、設定<br />
+　・SSLによるセキュアWebサーバー機能を追加<br />
+○Proftpd（FTPサーバー）のインストール及び、設定<br />
+　・FTPにセキュリティ機能(SSL)を追加したFTPSを追加<br />
+○MySQLまたは、PostgreSQL（データベース）のインストール及び、設定<br />
+　(MySQLまたは、PostgreSQLどちらか片方、または両方を使用できます。)<br />
+○Postfix（SMTPサーバー）のインストール及び、設定<br />
+○Dovecot（POP、IMAPサーバー）のインストール及び、設定<br />
+○SASL（メール不正中継防止対策）のインストール及び、設定<br />
+○スパムメール対策設定<br />
+○Clam AntiVirus（アンチウィルスソフト）のインストール及び、設定<br />
+○サーバー及びメールのウィルス対策設定<br />
+<br />
+<strong>■期間限定特典</strong><br />
+<b>期間限定特典として、<br />
+下記セキュリティ強化設定のマニュアルをプレゼントします。</b><br />
+-----------------------------<br />
+<b>○Tripwire(改ざん検知 ホスト型IDS) のインストール及び、設定</b><br />
+<b>○chkrootkit(rootkit検知ツール) のインストール及び、設定</b><br />
+<b>○Snort(ネットワーク型IDS) のインストール及び、設定</b><br />
+<b>○PortSentry(ポートスキャン対策) のインストール及び、設定</b><br />
+<b>○公開鍵暗号方式(SSH)の設定</b><br />
+<br />
+<b>○Logwatch(ログ監視ツール)のインストール及び、設定</b><br />
+<br />
+<b>○OpenSSL脆弱性対応</b><br />
+<b>○glibcライブラリ脆弱性対応</b><br />
+<b>○PHP脆弱性対応</b><br />
+<b>○WordPress不具合対応</b><br />
+<br />
+<b>○ディスク使用率チェックスクリプト</b><br />
+<b>○ウィルス検出通知メールスクリプト</b><br />
+<b>○ファイル改竄検知報告メールスクリプト</b><br />
+<b>○rootkit検出通知メールスクリプト</b><br />
+-----------------------------<br />
+<br />
+○Perlのインストール及び、設定<br />
+○Perlモジュールのインストール及び、設定<br />
+○PHPのインストール及び、設定<br />
+○Movable Typeのインストール及び、設定<br />
+<!--
+○Movable Typeの使用方法、運用方法<br />
+○Movable TypeでのWebサイト公開法<br />
+　※Movable Typeは無償で利用できるMTOSを利用します。<br />
+-->
+○XOOPSのインストール及び、設定<br />
+○GeekLogのインストール及び、設定<br />
+○Word Pressのインストール及び、設定<br />
+<br />
+○バーチャルドメインでの複数ドメイン運用<br />
+　・１台のサーバーで複数ドメインの運用管理ができます。<br />
+○ダイジェスト認証による暗号化認証ページの設定<br />
+<br />
+○サーバー運用に必要なオリジナルスクリプトの配布<br />
+　・サーバーサービス監視スクリプト<br />
+　　サーバーが常に正常に稼動しているか自己チェックを行うプログラムです。<br />
+　　サービスが停止している場合、自動起動します。<br />
+<br />
+　・PostgreSQL（データベース）のバックアップスクリプト<br />
+　・MySQL（データベース）のバックアップスクリプト<br />
+　・Webサイトのバックアップスクリプト<br />
+　・バックアップファイル自動転送スクリプト<br />
+<br />
+○ネットワーク環境の確認、設定変更<br />
+○ルータの設定変更<br />
+○ドメインの取得及び、設定<br />
+○サーバー構築に必要はLinuxコマンド<br />
+<br />
+○その他<br />
+　・サーバー構築する際、注意すべきセキュリティ７つのポイント<br />
+　・現場でよく使うLinux操作テクニック<br />
+　・VMware Playerの便利な使い方<br />
+　・サーバー公開時に必要なネットワーク知識<br />
+<br />
+※上記の内容がまったくわからなくても問題ありません。<br />
+　講座の中でしっかりお教えしますのでご安心してください。<br />
+<br />
+</TD></TR></TABLE>
+<br />
+
+・講座に関するご質問などは、下記メールにご連絡頂きますようきお願い致します。<br />
+　<A href="mailto:pakira@linuxmaster.jp?subject=リナックスマスター・ホームスタディ講座お問い合わせ">ホームスタディ講座に関するお問い合わせはこちらをクリックしてください</A></font><br />
+<br />
+・<A href="https://www.linuxmaster.jp/kouza/index.html">リナックスマスター・ホームスタディ講座に戻る</a><br />
+<br />
+]]></description>
+         <link>https://www.linuxmaster.jp/2008/11/post-18.html</link>
+         <guid>https://www.linuxmaster.jp/2008/11/post-18.html</guid>
+        
+          <category domain="http://www.sixapart.com/ns/types#category">リナックスマスター・ホームスタディ講座【CentOS7版】</category>
+        
+        
+         <pubDate>Sun, 02 Nov 2008 22:01:34 +0900</pubDate>
+      </item>
+      
+   </channel>
+</rss>
